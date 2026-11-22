@@ -1,0 +1,11 @@
+{
+ "case_id": "mini-example",
+ "doi": "10.0000/example.1",
+ "output_contract": {
+  "case_id": "string",
+  "status": "string",
+  "graph": "nodes+edges with evidence",
+  "queries": ">=3 executed queries",
+  "alignment": "merge basis and non-merges"
+ }
+}

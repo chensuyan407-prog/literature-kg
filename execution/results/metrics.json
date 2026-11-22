@@ -1,0 +1,32 @@
+{
+ "negative_controls_entity_accuracy": 1.0,
+ "negative_controls_relation_accuracy": 1.0,
+ "alignment_precision_skill": 1.0,
+ "alignment_recall_skill": 1.0,
+ "alignment_precision_naive": 0.5,
+ "alignment_recall_naive": 0.75,
+ "alignment_false_merges_naive": [
+  "C1a+C1b",
+  "JS1+JS2",
+  "PSO1+PSO2"
+ ],
+ "incremental_node_id_retention": 1.0,
+ "incremental_edge_id_retention": 1.0,
+ "failure_handling_checks_passed": 6,
+ "failure_handling_checks_total": 6,
+ "deterministic_rebuild": true,
+ "case1_status": "success",
+ "case1_nodes": 99,
+ "case1_edges": 114,
+ "case1_cross_paper_concepts": 10,
+ "case1_rejected_items": 0,
+ "case1_needs_review_edges": 10,
+ "case1_conflict_records": 5,
+ "case1_queries_ok": 9,
+ "case1_queries_total": 10,
+ "case1_evidence_items_reverified": 210,
+ "case1_check_ok": true,
+ "case1_evidence_exact_or_normalized_fraction": 1.0,
+ "run_all_exit": 0,
+ "tests_exit": 0
+}

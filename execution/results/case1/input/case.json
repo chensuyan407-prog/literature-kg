@@ -1,0 +1,22 @@
+{
+ "case_id": "local-go-adsorption-kg",
+ "doi": "10.1021/acsomega.6c05759",
+ "title": "Comparative Adsorption of Mono‑, Di‑, and Tricarboxylic Acids on Magnetically Modified Graphene Oxide: Influence of Molecular Structure on Adsorption Behavior",
+ "task": "Build one evidence-bound knowledge graph over both papers; run >=3 queries; record cross-paper merges and non-merges.",
+ "materials": [
+  "primary-material.json",
+  "secondary-material.json",
+  "material.json",
+  "corpus-manifest.json",
+  "secondary-publisher.xml"
+ ],
+ "output_contract": {
+  "case_id": "string",
+  "status": "success|partial|failed",
+  "graph": "nodes and edges with source_id, paragraph_id, quote",
+  "queries": "at least 3 executed queries with results and evidence",
+  "alignment": "cross-paper merge basis and non-merge conflicts",
+  "uncertainty": "unreported / undecidable items",
+  "sources": "per-paper provenance"
+ }
+}

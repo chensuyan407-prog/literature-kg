@@ -1,0 +1,9 @@
+[
+ {"id": "q1", "question": "Which adsorbates were tested with which adsorbent, and what maximum capacity was reported (per paper)?", "op": "predicate", "args": ["TESTED_ON,HAS_RESULT"]},
+ {"id": "q2", "question": "Which isotherm / kinetic models fit each paper's data, and which model won under which sample?", "op": "predicate", "args": ["FITS,OUTPERFORMS,COMPARED_WITH"]},
+ {"id": "q3", "question": "What does each paper say about the pseudo-second-order kinetic model?", "op": "neighbors", "args": ["pseudo-second-order model"], "depth": 2},
+ {"id": "q4", "question": "Is there a connection between MGO (paper A) and the HA-rGO composite (paper B)?", "op": "path", "args": ["MGO", "HA-rGO composite"]},
+ {"id": "q5", "question": "Which mechanisms are invoked, and with what strength?", "op": "type", "args": ["Mechanism"]},
+ {"id": "q6", "question": "Does any paper report BET surface area of the HA-rGO composite?", "op": "neighbors", "args": ["HA-rGO composite"], "predicate": "CHARACTERIZED_BY", "source": "paper-B"},
+ {"id": "q7", "question": "Find XPS in paper B", "op": "find", "args": ["X-ray photoelectron spectroscopy"], "source": "paper-B"}
+]

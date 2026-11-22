@@ -1,0 +1,226 @@
+{
+ "note": "heuristic hints, not graph content; verify in text",
+ "sources": {
+  "paper-A": {
+   "abbreviations": {
+    "MGO": {
+     "expansions": {
+      "modified graphene oxide": 2
+     },
+     "paragraphs": [
+      "p-0001",
+      "p-0004"
+     ]
+    },
+    "XRD": {
+     "expansions": {
+      "X-ray diffraction": 1
+     },
+     "paragraphs": [
+      "p-0001"
+     ]
+    },
+    "FTIR": {
+     "expansions": {
+      "Fourier transform infrared spectroscopy": 1
+     },
+     "paragraphs": [
+      "p-0001"
+     ]
+    },
+    "AC": {
+     "expansions": {
+      "activated carbon": 4
+     },
+     "paragraphs": [
+      "p-0001",
+      "p-0003",
+      "p-0035",
+      "p-0040"
+     ]
+    },
+    "PSO": {
+     "expansions": {
+      "pseudo-second-order": 3
+     },
+     "paragraphs": [
+      "p-0001",
+      "p-0024",
+      "p-0024"
+     ]
+    },
+    "GO": {
+     "expansions": {
+      "graphene oxide": 1
+     },
+     "paragraphs": [
+      "p-0002"
+     ]
+    },
+    "AIP": {
+     "expansions": {
+      "anhydrous interfacial polymerization": 1
+     },
+     "paragraphs": [
+      "p-0003"
+     ]
+    },
+    "FeCl3": {
+     "expansions": {
+      "ferric chloride": 1
+     },
+     "paragraphs": [
+      "p-0006"
+     ]
+    },
+    "HCl": {
+     "expansions": {
+      "hydrochloric acid": 1
+     },
+     "paragraphs": [
+      "p-0006"
+     ]
+    },
+    "DEA": {
+     "expansions": {
+      "diethylamine": 1
+     },
+     "paragraphs": [
+      "p-0006"
+     ]
+    },
+    "IPD": {
+     "expansions": {
+      "intraparticle diffusion": 2
+     },
+     "paragraphs": [
+      "p-0024",
+      "p-0026"
+     ]
+    }
+   },
+   "frequent_terms": [
+    "graphene oxide",
+    "lactic acid",
+    "adsorption capacity",
+    "functional groups",
+    "surface area",
+    "mgo composite",
+    "hydrogen bonding",
+    "organic acids",
+    "oxygen-containing functional",
+    "oxygen-containing functional groups",
+    "citric acids",
+    "succinic and citric",
+    "citric acid",
+    "iron oxide",
+    "organic acid",
+    "mass balance",
+    "adsorption performance",
+    "graphene oxide-based",
+    "adsorption behavior",
+    "succinic acid",
+    "lactic succinic",
+    "specific surface",
+    "activated carbon",
+    "ac reference",
+    "adsorption process",
+    "specific surface area",
+    "surface chemistry",
+    "surface interactions",
+    "mgo surface",
+    "equilibrium concentration",
+    "been reported",
+    "pore radius",
+    "concentration range",
+    "investigated acids",
+    "max mg",
+    "active sites",
+    "fe3o4 nanoparticles",
+    "functional group",
+    "acid molecules",
+    "mg min"
+   ]
+  },
+  "paper-B": {
+   "abbreviations": {
+    "HA": {
+     "expansions": {
+      "humic acid": 1,
+      "Humic acids": 1
+     },
+     "paragraphs": [
+      "p-0001",
+      "p-0002"
+     ]
+    },
+    "O/C": {
+     "expansions": {
+      "oxygen-to-carbon ratio": 1
+     },
+     "paragraphs": [
+      "p-0019"
+     ]
+    },
+    "FTIR": {
+     "expansions": {
+      "Fourier transform infrared": 1
+     },
+     "paragraphs": [
+      "p-0021"
+     ]
+    },
+    "EDS": {
+     "expansions": {
+      "energy-dispersive X-ray spectroscopy": 1
+     },
+     "paragraphs": [
+      "p-0027"
+     ]
+    }
+   },
+   "frequent_terms": [
+    "humic acid",
+    "graphene oxide",
+    "reduced graphene",
+    "reduced graphene oxide",
+    "functional groups",
+    "ha-rgo composite",
+    "oxygen-containing functional",
+    "oxygen-containing functional groups",
+    "thermal stability",
+    "initial humic",
+    "initial humic acid",
+    "surface morphology",
+    "adsorption capacity",
+    "phenol adsorption",
+    "ha rgo",
+    "hydrogen bonding",
+    "ftir spectroscopy",
+    "carbon structure",
+    "elemental composition",
+    "acid and reduced",
+    "ultrasonic treatment",
+    "humic matrix",
+    "incorporation of reduced",
+    "oxygen content",
+    "initial components",
+    "composite formation",
+    "residual mass",
+    "composite structure",
+    "oxygen-containing groups",
+    "formation of more",
+    "carbon content",
+    "same time",
+    "thermogravimetric analysis",
+    "electron microscopy",
+    "aromatic carbon",
+    "high degree",
+    "degree of aromatization",
+    "humic substances",
+    "scanning electron",
+    "acid reduced"
+   ]
+  }
+ }
+}

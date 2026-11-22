@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1030" height="276" viewBox="0 0 1030 276" font-family="Helvetica,Arial,sans-serif" font-size="11">
+<rect width="1030" height="276" fill="#ffffff"/>
+<text x="20" y="20" font-size="14" font-weight="bold">q6: Does any paper report BET surface area of the HA-rGO composite?</text>
+<text x="40" y="44" font-size="12" font-weight="bold" fill="#333">paper paper-A</text>
+<text x="370" y="44" font-size="12" font-weight="bold" fill="#333">concepts in &gt;=2 papers (one node, per-paper edges)</text>
+<text x="700" y="44" font-size="12" font-weight="bold" fill="#333">paper paper-B</text>
+<path d="M706,60 Q856.5,73.0 706,86" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>CHARACTERIZED_BY [paper-B p-0018] The elemental composition of the samples was determined using an Elementar Unicube elemental analyzer</title></path>
+<path d="M706,60 L364,60" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>CHARACTERIZED_BY [paper-B p-0042] FTIR spectroscopy was used to study the functional composition of the initial humic acid, reduced graphene oxide, and synthesized HA-rGO composite.</title></path>
+<path d="M706,60 Q882.5,125.0 706,190" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>CHARACTERIZED_BY [paper-B p-0052] The thermal stability of the initial humic acid, reduced graphene oxide, and HA-rGO composite was investigated by thermogravimetric analysis</title></path>
+<path d="M706,60 Q876.0,112.0 706,164" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>CHARACTERIZED_BY [paper-B p-0062] The morphological features of the initial humic acid, reduced graphene oxide, and HA-rGO composite were studied by scanning electron microscopy.</title></path>
+<path d="M706,60 Q863.0,86.0 706,112" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>CHARACTERIZED_BY [paper-B p-0070] energy-dispersive X-ray spectroscopy with elemental mapping was performed</title></path>
+<path d="M706,60 Q869.5,99.0 706,138" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>CHARACTERIZED_BY [paper-B p-0020] The content of oxygen-containing functional groups was determined by selective chemical binding followed by titrimetric analysis.</title></path>
+<circle cx="370" cy="60" r="6" fill="#2ca02c"><title>C:Method:fourier-transform-infrared-spectroscopy</title></circle><text x="380" y="64">Fourier transform infrared spectroscopy <tspan fill="#888" font-size="9">Method</tspan></text>
+<circle cx="700" cy="60" r="6" fill="#17becf"><title>paper-B:Sample:humic-acid-reduced-graphene-oxide-compos</title></circle><text x="710" y="64">humic acid/reduced graphene oxide compos… <tspan fill="#888" font-size="9">Sample</tspan></text>
+<circle cx="700" cy="190" r="6" fill="#2ca02c"><title>C:Method:thermogravimetric-analysis</title></circle><text x="710" y="194">thermogravimetric analysis <tspan fill="#888" font-size="9">Method</tspan></text>
+<circle cx="700" cy="164" r="6" fill="#2ca02c"><title>C:Method:scanning-electron-microscopy</title></circle><text x="710" y="168">scanning electron microscopy <tspan fill="#888" font-size="9">Method</tspan></text>
+<circle cx="700" cy="112" r="6" fill="#2ca02c"><title>C:Method:energy-dispersive-x-ray-spectroscopy</title></circle><text x="710" y="116">energy-dispersive X-ray spectroscopy <tspan fill="#888" font-size="9">Method</tspan></text>
+<circle cx="700" cy="138" r="6" fill="#2ca02c"><title>C:Method:functional-group-titrimetric-analysis</title></circle><text x="710" y="142">functional-group titrimetric analysis <tspan fill="#888" font-size="9">Method</tspan></text>
+<circle cx="700" cy="86" r="6" fill="#2ca02c"><title>C:Method:elemental-analysis</title></circle><text x="710" y="90">elemental analysis <tspan fill="#888" font-size="9">Method</tspan></text>
+<circle cx="40" cy="238" r="5" fill="#444444"/><text x="48" y="242" font-size="10">Paper</text>
+<circle cx="160" cy="238" r="5" fill="#8c6d31"/><text x="168" y="242" font-size="10">Researcher</text>
+<circle cx="280" cy="238" r="5" fill="#1f77b4"/><text x="288" y="242" font-size="10">Material</text>
+<circle cx="400" cy="238" r="5" fill="#17becf"/><text x="408" y="242" font-size="10">Sample</text>
+<circle cx="520" cy="238" r="5" fill="#2ca02c"/><text x="528" y="242" font-size="10">Method</text>
+<circle cx="640" cy="238" r="5" fill="#98df8a"/><text x="648" y="242" font-size="10">Model</text>
+<circle cx="760" cy="238" r="5" fill="#9467bd"/><text x="768" y="242" font-size="10">Task</text>
+<circle cx="40" cy="256" r="5" fill="#e377c2"/><text x="48" y="260" font-size="10">Metric</text>
+<circle cx="160" cy="256" r="5" fill="#ff7f0e"/><text x="168" y="260" font-size="10">Measurement</text>
+<circle cx="280" cy="256" r="5" fill="#d62728"/><text x="288" y="260" font-size="10">Conclusion</text>
+<circle cx="400" cy="256" r="5" fill="#bcbd22"/><text x="408" y="260" font-size="10">Dataset</text>
+<circle cx="520" cy="256" r="5" fill="#7f7f7f"/><text x="528" y="260" font-size="10">Instrument</text>
+<circle cx="640" cy="256" r="5" fill="#c49c94"/><text x="648" y="260" font-size="10">Condition</text>
+<circle cx="760" cy="256" r="5" fill="#8c564b"/><text x="768" y="260" font-size="10">Mechanism</text>
+</svg>

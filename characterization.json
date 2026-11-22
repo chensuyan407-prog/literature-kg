@@ -1,0 +1,156 @@
+{
+ "deviations_from_paper": [
+  {
+   "target": "negative controls: entity accept/reject decisions",
+   "metric": "absolute_error",
+   "actual_value": 1.0,
+   "reference_value": 1.0,
+   "score": 1.0,
+   "explanation": "7 designed entities: fabricated quote, wrong paragraph id, other paper's text, unknown type must be rejected; 3 valid accepted",
+   "evidence_artifact": "metrics",
+   "tolerance": 0.5
+  },
+  {
+   "target": "negative controls: relation decisions",
+   "metric": "absolute_error",
+   "actual_value": 1.0,
+   "reference_value": 1.0,
+   "score": 1.0,
+   "explanation": "9 designed relations: fabricated quote, wrong paragraph, unknown predicate, reversed domain, unknown key rejected; wrong number flagged; hedged quote downgraded",
+   "evidence_artifact": "metrics",
+   "tolerance": 0.5
+  },
+  {
+   "target": "cross-paper alignment precision (designed set)",
+   "metric": "absolute_error",
+   "actual_value": 1.0,
+   "reference_value": 1.0,
+   "score": 1.0,
+   "explanation": "naive baseline (equal name or any shared alias string) precision = 0.5, false merges ['C1a+C1b', 'JS1+JS2', 'PSO1+PSO2']",
+   "evidence_artifact": "metrics",
+   "tolerance": 0.5
+  },
+  {
+   "target": "cross-paper alignment recall (designed set)",
+   "metric": "absolute_error",
+   "actual_value": 1.0,
+   "reference_value": 1.0,
+   "score": 1.0,
+   "explanation": "naive baseline recall = 0.75 (misses plural variant)",
+   "evidence_artifact": "metrics",
+   "tolerance": 0.5
+  },
+  {
+   "target": "incremental update: node id retention",
+   "metric": "absolute_error",
+   "actual_value": 1.0,
+   "reference_value": 1.0,
+   "score": 1.0,
+   "explanation": "graph(A) then graph(A+B) with --previous",
+   "evidence_artifact": "metrics",
+   "tolerance": 0.5
+  },
+  {
+   "target": "incremental update: edge id retention",
+   "metric": "absolute_error",
+   "actual_value": 1.0,
+   "reference_value": 1.0,
+   "score": 1.0,
+   "explanation": "graph(A) then graph(A+B) with --previous",
+   "evidence_artifact": "metrics",
+   "tolerance": 0.5
+  },
+  {
+   "target": "failure handling checks",
+   "metric": "absolute_error",
+   "actual_value": 6,
+   "reference_value": 6,
+   "score": 1.0,
+   "explanation": "empty input, missing secondary text, XML-only fallback, empty queries, determinism, broken extraction JSON",
+   "evidence_artifact": "metrics",
+   "tolerance": 3
+  },
+  {
+   "target": "real two-paper case: evidence re-verified by independent checker",
+   "metric": "absolute_error",
+   "actual_value": 1.0,
+   "reference_value": 1.0,
+   "score": 1.0,
+   "explanation": "210 evidence items re-checked against paragraphs; exact/normalized fraction 1.0",
+   "evidence_artifact": "case1_result",
+   "tolerance": 0.5
+  },
+  {
+   "target": "real two-paper case: queries with results",
+   "metric": "absolute_error",
+   "actual_value": 9,
+   "reference_value": 9,
+   "score": 1.0,
+   "explanation": "q7 (XPS in paper B) is expected to return no_result: the paper states XPS was not performed",
+   "evidence_artifact": "case1_queries",
+   "tolerance": 3
+  }
+ ],
+ "envelope": [
+  {
+   "param": "papers_per_graph",
+   "min": 1,
+   "max": 2,
+   "tested": true
+  },
+  {
+   "param": "paragraphs_per_paper",
+   "min": 3,
+   "max": 129,
+   "tested": true
+  },
+  {
+   "param": "input_formats",
+   "min": 1,
+   "max": 3,
+   "tested": true,
+   "unit": "JSON (two schemas), JATS XML fallback, no-manifest"
+  },
+  {
+   "param": "papers_per_graph",
+   "min": 3,
+   "max": 10,
+   "tested": false
+  },
+  {
+   "param": "PDF-only input",
+   "min": 1,
+   "max": 1,
+   "tested": false
+  }
+ ],
+ "failure_modes": [
+  {
+   "condition": "entity named only by pronoun or implied ('the composite')",
+   "symptom": "edge kept with needs_review flag; not rejected",
+   "evidence_artifact": "case1_result"
+  },
+  {
+   "condition": "synonyms with different words not declared as alias (e.g. magnetite vs Fe3O4 across papers)",
+   "symptom": "two nodes; merge only via agent override with reason",
+   "evidence_artifact": "metrics"
+  },
+  {
+   "condition": "values only in tables/figures (not in paragraph text)",
+   "symptom": "not in graph; listed under not_reported",
+   "evidence_artifact": "case1_result"
+  },
+  {
+   "condition": "approximate quote (>=90% tokens, 6-token anchor)",
+   "symptom": "accepted with match=approx and listed as uncertain",
+   "evidence_artifact": "metrics"
+  },
+  {
+   "condition": "extraction recall",
+   "symptom": "not measured: scripts verify what the agent extracted, not what it missed",
+   "evidence_artifact": "metrics"
+  }
+ ],
+ "sensitivity": [],
+ "notes": "Mechanism tests on local data. The real case uses two CC-BY 4.0 articles (ACS Omega 2026, doi 10.1021/acsomega.6c05759; Materials 2026, doi 10.3390/ma19163371) shaped like the challenge input; extraction files were written by the agent (Claude) following SKILL.md, so case numbers show what the pipeline does with one agent's extraction, not a DeepSeek baseline-vs-Skill comparison (the platform runs that). reference_value is the designed ground truth."
+}

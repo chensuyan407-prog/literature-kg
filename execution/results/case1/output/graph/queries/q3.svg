@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1030" height="224" viewBox="0 0 1030 224" font-family="Helvetica,Arial,sans-serif" font-size="11">
+<rect width="1030" height="224" fill="#ffffff"/>
+<text x="20" y="20" font-size="14" font-weight="bold">q3: What does each paper say about the pseudo-second-order kinetic model?</text>
+<text x="40" y="44" font-size="12" font-weight="bold" fill="#333">paper paper-A</text>
+<text x="370" y="44" font-size="12" font-weight="bold" fill="#333">concepts in &gt;=2 papers (one node, per-paper edges)</text>
+<text x="700" y="44" font-size="12" font-weight="bold" fill="#333">paper paper-B</text>
+<path d="M376,60 L34,86" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>FITS [paper-A p-0059] The experimental data for all acids exhibited an excellent fit with the PSO model (R 2 &gt; 0.99)</title></path>
+<path d="M46,60 Q196.5,73.0 46,86" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>HAS_RESULT [paper-A p-0059] The experimental data for all acids exhibited an excellent fit with the PSO model (R 2 &gt; 0.99)</title></path>
+<path d="M46,86 Q196.5,99.0 46,112" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>SUPPORTS [paper-A p-0059] This confirms that the adsorption rate is governed by chemical interactions (chemisorption).</title></path>
+<path d="M376,60 L694,86" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>FITS [paper-B p-0098] The pseudo-second-order model also showed better agreement for the HA–rGO composite</title></path>
+<path d="M376,60 L694,60" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>OUTPERFORMS [paper-B p-0100] the kinetic data for HA and HA–rGO were better described by the pseudo-second-order model</title></path>
+<path d="M706,60 L364,60" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>COMPARED_WITH [paper-B p-0100] whereas both models provided a comparable fit for rGO</title></path>
+<path d="M706,86 Q863.0,112.0 706,138" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>UNDER_CONDITION [paper-B p-0031] Kinetic experiments were performed at an initial phenol concentration of 7.5 mg/dm3.</title></path>
+<path d="M706,86 Q856.5,99.0 706,112" stroke="#999" stroke-width="0.8" fill="none" opacity="0.55"><title>CONTRADICTS [paper-B p-0100] These models should be regarded as empirical descriptions of the adsorption-rate data</title></path>
+<circle cx="40" cy="60" r="6" fill="#17becf"><title>paper-A:Sample:magnetically-modified-graphene-oxide-com</title></circle><text x="50" y="64">magnetically modified graphene oxide com… <tspan fill="#888" font-size="9">Sample</tspan></text>
+<circle cx="370" cy="60" r="6" fill="#2ca02c"><title>C:Method:pseudo-second-order-kinetic-model</title></circle><text x="380" y="64">pseudo-second-order kinetic model <tspan fill="#888" font-size="9">Method</tspan></text>
+<circle cx="40" cy="86" r="6" fill="#ff7f0e"><title>paper-A:Measurement:pso-fit-r2-0-99-for-all-acids</title></circle><text x="50" y="90">PSO fit R2 &gt; 0.99 for all acids <tspan fill="#888" font-size="9">Measurement</tspan></text>
+<circle cx="40" cy="112" r="6" fill="#d62728"><title>paper-A:Conclusion:pso-fit-confirms-chemisorption-controlle</title></circle><text x="50" y="116">PSO fit confirms chemisorption-controlle… <tspan fill="#888" font-size="9">Conclusion</tspan></text>
+<circle cx="700" cy="60" r="6" fill="#2ca02c"><title>C:Method:pseudo-first-order-kinetic-model</title></circle><text x="710" y="64">pseudo-first-order kinetic model <tspan fill="#888" font-size="9">Method</tspan></text>
+<circle cx="700" cy="138" r="6" fill="#c49c94"><title>paper-B:Condition:kinetics-at-initial-phenol-7-5-mg-dm3</title></circle><text x="710" y="142">kinetics at initial phenol 7.5 mg/dm3 <tspan fill="#888" font-size="9">Condition</tspan></text>
+<circle cx="700" cy="86" r="6" fill="#ff7f0e"><title>paper-B:Measurement:hargo-kinetics-pso-r2-0-9939-vs-pfo-0-97</title></circle><text x="710" y="90">HA–rGO kinetics: PSO R2 0.9939 vs PFO 0.… <tspan fill="#888" font-size="9">Measurement</tspan></text>
+<circle cx="700" cy="112" r="6" fill="#d62728"><title>paper-B:Conclusion:pso-pfo-fits-are-empirical-and-do-not-es</title></circle><text x="710" y="116">PSO/PFO fits are empirical and do not es… <tspan fill="#888" font-size="9">Conclusion</tspan></text>
+<circle cx="40" cy="186" r="5" fill="#444444"/><text x="48" y="190" font-size="10">Paper</text>
+<circle cx="160" cy="186" r="5" fill="#8c6d31"/><text x="168" y="190" font-size="10">Researcher</text>
+<circle cx="280" cy="186" r="5" fill="#1f77b4"/><text x="288" y="190" font-size="10">Material</text>
+<circle cx="400" cy="186" r="5" fill="#17becf"/><text x="408" y="190" font-size="10">Sample</text>
+<circle cx="520" cy="186" r="5" fill="#2ca02c"/><text x="528" y="190" font-size="10">Method</text>
+<circle cx="640" cy="186" r="5" fill="#98df8a"/><text x="648" y="190" font-size="10">Model</text>
+<circle cx="760" cy="186" r="5" fill="#9467bd"/><text x="768" y="190" font-size="10">Task</text>
+<circle cx="40" cy="204" r="5" fill="#e377c2"/><text x="48" y="208" font-size="10">Metric</text>
+<circle cx="160" cy="204" r="5" fill="#ff7f0e"/><text x="168" y="208" font-size="10">Measurement</text>
+<circle cx="280" cy="204" r="5" fill="#d62728"/><text x="288" y="208" font-size="10">Conclusion</text>
+<circle cx="400" cy="204" r="5" fill="#bcbd22"/><text x="408" y="208" font-size="10">Dataset</text>
+<circle cx="520" cy="204" r="5" fill="#7f7f7f"/><text x="528" y="208" font-size="10">Instrument</text>
+<circle cx="640" cy="204" r="5" fill="#c49c94"/><text x="648" y="208" font-size="10">Condition</text>
+<circle cx="760" cy="204" r="5" fill="#8c564b"/><text x="768" y="208" font-size="10">Mechanism</text>
+</svg>

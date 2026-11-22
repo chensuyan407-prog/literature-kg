@@ -1,0 +1,264 @@
+{
+ "T1_negative_controls": {
+  "entities": {
+   "expected": {
+    "chitosan": "reject",
+    "succinic acid": "reject",
+    "humic acid": "reject",
+    "thing": "reject",
+    "MGO composite": "accept",
+    "lactic acid": "accept",
+    "qmax 334.45 mg/g": "accept"
+   },
+   "got": {
+    "chitosan": "reject",
+    "succinic acid": "reject",
+    "humic acid": "reject",
+    "thing": "reject",
+    "MGO composite": "accept",
+    "lactic acid": "accept",
+    "qmax 334.45 mg/g": "accept"
+   },
+   "correct": 7,
+   "total": 7
+  },
+  "relations": {
+   "rows": [
+    {
+     "case": "TESTED_ON MGO->LA @p-0010",
+     "expected": "accept",
+     "got": "accept"
+    },
+    {
+     "case": "HAS_RESULT MGO->m1 @p-0055",
+     "expected": "accept",
+     "got": "accept"
+    },
+    {
+     "case": "TESTED_ON MGO->LA @p-0010",
+     "expected": "reject",
+     "got": "reject"
+    },
+    {
+     "case": "TESTED_ON MGO->LA @p-0040",
+     "expected": "reject",
+     "got": "reject"
+    },
+    {
+     "case": "ADSORBS_STRONGLY MGO->LA @p-0010",
+     "expected": "reject",
+     "got": "reject"
+    },
+    {
+     "case": "HAS_RESULT LA->MGO @p-0010",
+     "expected": "reject",
+     "got": "reject"
+    },
+    {
+     "case": "TESTED_ON MGO->chitosan @p-0010",
+     "expected": "reject",
+     "got": "reject"
+    },
+    {
+     "case": "HAS_RESULT MGO->m_bad @p-0055",
+     "expected": "flag",
+     "got": "flag"
+    },
+    {
+     "case": "ATTRIBUTED_TO m1->Hb @p-0065",
+     "expected": "hedged",
+     "got": "hedged"
+    }
+   ],
+   "correct": 9,
+   "total": 9
+  },
+  "pass": true
+ },
+ "T2_alignment": {
+  "skill": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "false_merges": [],
+   "missed_merges": []
+  },
+  "naive_baseline": {
+   "precision": 0.5,
+   "recall": 0.75,
+   "false_merges": [
+    "C1a+C1b",
+    "JS1+JS2",
+    "PSO1+PSO2"
+   ],
+   "missed_merges": [
+    "L1+L2"
+   ]
+  },
+  "conflict_kinds_recorded": [
+   "abbreviation_homonym",
+   "possible_same_person",
+   "same_label_different_object",
+   "similar_name_review"
+  ],
+  "conflicts": [
+   {
+    "kind": "possible_same_person",
+    "names": [
+     "J. Smith"
+    ],
+    "abbreviation": null,
+    "expansions": null,
+    "decision": "not_merged"
+   },
+   {
+    "kind": "same_label_different_object",
+    "names": [
+     "Composite C1"
+    ],
+    "abbreviation": null,
+    "expansions": null,
+    "decision": "not_merged"
+   },
+   {
+    "kind": "abbreviation_homonym",
+    "names": null,
+    "abbreviation": "pso",
+    "expansions": {
+     "S1": [
+      "particleswarmoptimization"
+     ],
+     "S2": [
+      "pseudosecondorder"
+     ]
+    },
+    "decision": "not_merged"
+   },
+   {
+    "kind": "similar_name_review",
+    "names": [
+     "Graphene Oxide",
+     "reduced graphene oxide"
+    ],
+    "abbreviation": null,
+    "expansions": null,
+    "decision": "not_merged"
+   }
+  ],
+  "pass": true
+ },
+ "T3_incremental": {
+  "v1_nodes": 63,
+  "v2_nodes": 99,
+  "v1_ids_kept": "57/57",
+  "v1_edges_kept": "64/64",
+  "change_log_actions": {
+   "node_extended": 10,
+   "node_added": 36,
+   "edge_added": 50
+  },
+  "nodes_extended_with_paper_B": [
+   "Fourier transform infrared spectroscopy",
+   "Langmuir isotherm model",
+   "Freundlich isotherm model",
+   "pseudo-second-order kinetic model",
+   "graphene oxide",
+   "maximum adsorption capacity",
+   "equilibrium adsorption capacity",
+   "hydrogen bonding",
+   "π–π interactions",
+   "sodium hydroxide"
+  ],
+  "pass": true
+ },
+ "T4_failures": {
+  "empty_input": {
+   "ingest_exit": 2,
+   "result_status": "failed",
+   "status_detail": [
+    "build_graph failed",
+    "only 0 queries returned results (need >=3)"
+   ],
+   "pass": true
+  },
+  "missing_secondary_text": {
+   "ingest_status": "partial",
+   "warnings": [
+    "source paper-B listed in manifest but no paragraphs found (material missing?)"
+   ],
+   "pass": true
+  },
+  "xml_fallback": {
+   "paper_B_paragraphs": 129,
+   "location_kind": [
+    "generated"
+   ],
+   "warnings": [
+    "source paper-B: paragraphs taken from publisher XML (129)"
+   ],
+   "pass": true
+  },
+  "empty_queries": {
+   "find_exit": 1,
+   "find_status": "no_result",
+   "find_reason": "no node named or aliased 'unobtainium'",
+   "path_status": "no_result",
+   "path_reason": "endpoint not found: phenol",
+   "pass": true
+  },
+  "deterministic_rebuild": {
+   "sha256_run1": "027400c1f36bffae",
+   "sha256_run2": "027400c1f36bffae",
+   "pass": true
+  },
+  "broken_extraction_file": {
+   "exit": 0,
+   "warnings": [
+    "paper-B.json: invalid JSON (Expecting property name enclosed in double quotes: line 1 column 2 (char 1)); file skipped",
+    "no extraction file for source paper-B (graph is partial for this paper)"
+   ],
+   "pass": true
+  },
+  "pass": true
+ },
+ "T5_real_case": {
+  "status": "success",
+  "stats": {
+   "nodes": 99,
+   "edges": 114,
+   "shared_concepts": 10,
+   "nodes_by_source": {
+    "paper-A": 57,
+    "paper-B": 52
+   },
+   "edges_by_source": {
+    "paper-A": 59,
+    "paper-B": 55
+   },
+   "rejected": 0,
+   "conflicts": 5,
+   "needs_review_edges": 10
+  },
+  "queries": {
+   "q1": "ok",
+   "q2": "ok",
+   "q3": "ok",
+   "q4": "ok",
+   "q5": "ok",
+   "q6": "ok",
+   "q7": "no_result",
+   "q_shared": "ok",
+   "q_results": "ok",
+   "q_uncertain": "ok"
+  },
+  "edge_evidence_match": {
+   "exact": 105,
+   "normalized": 0,
+   "approx": 0
+  },
+  "check": {
+   "ok": true,
+   "evidence_items_checked": 210
+  },
+  "pass": true
+ }
+}

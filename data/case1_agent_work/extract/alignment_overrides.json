@@ -1,0 +1,26 @@
+{
+ "merge": [],
+ "split": [],
+ "conflicts": [
+  {"kind": "interpretation_conflict", "about": ["pseudo-second-order kinetic model", "chemisorption"],
+   "reason": "paper-A reads a PSO fit as confirming chemisorption; paper-B states PSO/PFO fits do not establish the chemical nature of adsorption. Different systems; kept as two paper-scoped conclusions, not resolved.",
+   "evidence": [
+    {"source_id": "paper-A", "paragraph_id": "p-0059", "quote": "This confirms that the adsorption rate is governed by chemical interactions (chemisorption)."},
+    {"source_id": "paper-B", "paragraph_id": "p-0100", "quote": "do not, by themselves, establish the chemical nature of adsorption or identify a unique rate-controlling mechanism"}]},
+  {"kind": "interpretation_conflict", "about": ["Langmuir isotherm model", "monolayer adsorption"],
+   "reason": "paper-A takes Langmuir agreement as suggesting monolayer adsorption on homogeneous sites; paper-B says a Langmuir fit is not direct proof of that.",
+   "evidence": [
+    {"source_id": "paper-A", "paragraph_id": "p-0069", "quote": "suggesting predominantly monolayer adsorption on a homogeneous distribution of active sites"},
+    {"source_id": "paper-B", "paragraph_id": "p-0095", "quote": "not as direct proof of a strictly homogeneous monolayer adsorption mechanism"}]},
+  {"kind": "within_paper_value_conflict", "about": ["R2 = 0.826 lactic acid on MGO"],
+   "reason": "paper-A gives R2 = 0.826 for lactic acid both as the Freundlich fit (p-0054) and as the Temkin fit (p-0056); tables not available to resolve.",
+   "evidence": [
+    {"source_id": "paper-A", "paragraph_id": "p-0054", "quote": "the high correlation coefficient (R 2 = 0.826)"},
+    {"source_id": "paper-A", "paragraph_id": "p-0056", "quote": "The high correlation with the Temkin model (R 2 = 0.826 for lactic acid)"}]},
+  {"kind": "within_paper_claim_conflict", "about": ["MGO vs magnetic AC, lactic acid"],
+   "reason": "p-0053 claims MGO is superior across the entire concentration range, p-0051 reports AC slightly higher below ~3 g/L.",
+   "evidence": [
+    {"source_id": "paper-A", "paragraph_id": "p-0053", "quote": "This confirms the superior performance of the MGO composite across the entire concentration range."},
+    {"source_id": "paper-A", "paragraph_id": "p-0051", "quote": "the activated carbon-based adsorbent exhibits a slightly higher adsorption capacity than the MGO composite"}]}
+ ]
+}

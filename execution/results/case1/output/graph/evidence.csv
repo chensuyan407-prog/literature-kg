@@ -1,0 +1,232 @@
+﻿item_kind,item_id,source_id,paragraph_id,match,quote
+node,paper-A:Researcher:ebubekir-ekinci,paper-A,corpus-manifest,metadata,Ebubekir Ekinci
+node,paper-A:Researcher:hasan-uslu,paper-A,corpus-manifest,metadata,Hasan Uslu
+node,paper-A:Researcher:sahika-sena-bayazit,paper-A,corpus-manifest,metadata,Şahika Sena Bayazit
+node,paper-A:Researcher:mehmet-yetisen,paper-A,corpus-manifest,metadata,Mehmet Yetişen
+node,paper-A:Sample:magnetically-modified-graphene-oxide-com,paper-A,p-0001,exact,using a magnetically modified graphene oxide (MGO) composite
+node,paper-A:Sample:magnetically-modified-activated-carbon-r,paper-A,p-0001,exact,in comparison with a magnetically modified activated carbon (AC) reference
+node,paper-A:Sample:magnetically-modified-activated-carbon-r,paper-A,p-0008,exact,The same protocol was applied to AC to prepare the AC-based magnetic reference.
+node,C:Method:chemical-coprecipitation,paper-A,p-0007,exact,The MGO composite was synthesized via a modified chemical coprecipitation route.
+node,C:Method:x-ray-diffraction,paper-A,p-0009,exact,X-ray diffraction (XRD; PANalytical-EMPYREAN)
+node,C:Method:fourier-transform-infrared-spectroscopy,paper-A,p-0009,exact,"Fourier transform infrared spectroscopy (FTIR; Bruker VERTEX 70, Germany)"
+node,C:Method:fourier-transform-infrared-spectroscopy,paper-B,p-0021,exact,The functional groups in the samples were identified by Fourier transform infrared (FTIR) spectroscopy.
+node,C:Method:brunaueremmettteller-method,paper-A,p-0009,exact,The specific surface area was determined via the multipoint Brunauer–Emmett–Teller (BET) method
+node,C:Method:acidbase-titration-with-naoh,paper-A,p-0012,exact,The acid concentration was determined via titration with standardized 0.1 N NaOH.
+node,C:Method:two-sample-t-test,paper-A,p-0028,exact,a two-sample t-test was performed on the experimental data sets
+node,C:Method:langmuir-isotherm-model,paper-A,p-0017,exact,The Langmuir model assumes that adsorption occurs on a homogeneous surface via monolayer coverage
+node,C:Method:langmuir-isotherm-model,paper-B,p-0029,exact,The equilibrium adsorption data were analyzed using the Langmuir and Freundlich isotherm models.
+node,C:Method:freundlich-isotherm-model,paper-A,p-0020,exact,The Freundlich isotherm is an empirical model used to describe multilayer adsorption on heterogeneous surfaces
+node,C:Method:freundlich-isotherm-model,paper-B,p-0029,exact,The equilibrium adsorption data were analyzed using the Langmuir and Freundlich isotherm models.
+node,C:Method:temkin-isotherm-model,paper-A,p-0022,exact,The Temkin model accounts for the effects of indirect adsorbent–adsorbate interactions
+node,C:Method:pseudo-second-order-kinetic-model,paper-A,p-0024,exact,The linear form of the pseudo-second-order (PSO) kinetic model is expressed as follows
+node,C:Method:pseudo-second-order-kinetic-model,paper-B,p-0031,exact,The kinetic data were analyzed using the pseudo-first-order and pseudo-second-order models.
+node,C:Material:graphene-oxide,paper-A,p-0006,exact,GO and AC were utilized as the primary adsorbent materials.
+node,C:Material:graphene-oxide,paper-A,p-0002,exact,graphene oxide (GO) has emerged as a particularly promising functional material
+node,C:Material:graphene-oxide,paper-B,p-0034,exact,These results indicate substantial removal of oxygen-containing groups compared with graphene oxide
+node,C:Method:intraparticle-diffusion-model,paper-A,p-0026,exact,The intraparticle diffusion (IPD) model was further applied to elucidate the diffusion mechanism
+node,C:Task:recovery-of-organic-acids-from-aqueous-s,paper-A,p-0001,exact,This study investigates the efficient adsorption and recovery of biotechnologically significant organic acids
+node,C:Metric:maximum-adsorption-capacity,paper-A,p-0018,exact,q max (mg/g) is the theoretical maximum monolayer adsorption capacity
+node,C:Metric:maximum-adsorption-capacity,paper-B,p-0029,exact,where qm is the maximum monolayer adsorption capacity (mg/g)
+node,C:Metric:equilibrium-adsorption-capacity,paper-A,p-0013,exact,the adsorption capacity at equilibrium (Q e) was calculated using the following equation
+node,C:Metric:equilibrium-adsorption-capacity,paper-B,p-0028,exact,The adsorption capacity qe (mg/g) and removal efficiency J (%) were calculated using the following equations
+node,C:Metric:specific-surface-area,paper-A,p-0009,exact,The specific surface area was determined via the multipoint Brunauer–Emmett–Teller (BET) method
+node,C:Metric:dimensionless-separation-factor,paper-A,p-0018,exact,the dimensionless separation factor (R L) was calculated using the following equation
+node,C:Metric:pseudo-second-order-rate-constant,paper-A,p-0025,exact,k 2 (g/mg·min) represents the second-order adsorption rate constant
+node,C:Metric:capacity-retention-rate,paper-A,p-0015,exact,The capacity retention rate was calculated by comparing the q e of each cycle to the initial adsorption capacity.
+node,C:Mechanism:hydrogen-bonding,paper-A,p-0010,exact,promoting recovery through hydrogen bonding and π–π interactions
+node,C:Mechanism:hydrogen-bonding,paper-B,p-0005,exact,including hydrogen bonding and π–π interactions between aromatic fragments
+node,C:Mechanism:interactions,paper-A,p-0010,exact,promoting recovery through hydrogen bonding and π–π interactions
+node,C:Mechanism:interactions,paper-B,p-0082,exact,One of the most probable interaction types is π–π stacking between the aromatic fragments of humic acid
+node,C:Material:activated-carbon,paper-A,p-0003,exact,Conventional adsorbents such as activated carbon (AC) are widely employed
+node,C:Mechanism:chemisorption,paper-A,p-0059,exact,This confirms that the adsorption rate is governed by chemical interactions (chemisorption).
+node,C:Mechanism:steric-hindrance,paper-A,p-0060,exact,which causes significant steric hindrance during diffusion into the 4.12 nm mesoporous framework
+node,paper-A:Condition:batch-adsorption-at-25-c-10-mg-adsorbent,paper-A,p-0010,exact,"The experiments were performed at 25 °C with an agitation speed of 120 rpm, utilizing 10 mg of adsorbent in a 20 mL solution volume."
+node,paper-A:Measurement:mgo-specific-surface-area-37-94-m2-g,paper-A,p-0039,exact,the specific surface area of the MGO was determined to be 37.94 m2/g
+node,paper-A:Measurement:magnetic-ac-specific-surface-area-40-38,paper-A,p-0040,exact,which exhibited a slightly higher surface area (40.38 m2/g)
+node,paper-A:Measurement:mgo-average-pore-radius-4-12-nm,paper-A,p-0039,exact,the average pore radius was found to be 4.12 nm
+node,paper-A:Measurement:mgo-qmax-for-lactic-acid-334-45-mg-g,paper-A,p-0001,exact,Lactic acid exhibited the highest maximum adsorption capacity (q max = 334.45 mg/g)
+node,paper-A:Measurement:magnetic-ac-qmax-for-lactic-acid-74-6-mg,paper-A,p-0040,exact,its maximum adsorption capacity for lactic acid was substantially lower (q max = 74.6 mg/g)
+node,paper-A:Measurement:mean-qe-succinic-acid-mgo-188-6-vs-ac-67,paper-A,p-0045,exact,the overall mean adsorption capacity (Q e) was determined as 188.6 mg/g for MGO-based and 67.8 mg/g for AC-based adsorbents
+node,paper-A:Measurement:mean-qe-citric-acid-mgo-213-vs-ac-73-7-m,paper-A,p-0048,exact,the overall mean adsorption capacity was determined to be 213 mg/g for MGO-based and 73.7 mg/g for AC-based adsorbents
+node,C:Material:magnetite,paper-A,p-0007,exact,Magnetite (Fe3O4) precipitation was induced by the dropwise addition of ammonia solution
+node,paper-A:Measurement:pso-k2-lactic-0-007-succinic-0-0023-citr,paper-A,p-0059,exact,"The rate constants (k 2) were determined as 0.007, 0.0023, and 0.0019 g/mg·min for lactic, succinic, and citric acids, respectively."
+node,paper-A:Measurement:pso-fit-r2-0-99-for-all-acids,paper-A,p-0059,exact,The experimental data for all acids exhibited an excellent fit with the PSO model (R 2 > 0.99)
+node,paper-A:Measurement:rl-between-2-3-106-and-2-8-103,paper-A,p-0063,exact,were between 2.3 × 10–6 and 2.8 × 10–3
+node,paper-A:Measurement:capacity-retention-after-5-cycles-lactic,paper-A,p-0067,exact,The capacity retention rates after the fifth cycle were found to be 87.8% for succinic acid and 84.2% for citric acid.
+node,paper-A:Measurement:capacity-retention-after-5-cycles-lactic,paper-A,p-0067,exact,decreasing only slightly from its initial value to 91.4% by the end of the fifth cycle
+node,paper-A:Measurement:temkin-r2-0-7580-897-on-mgo,paper-A,p-0056,exact,with correlation coefficients (R 2) ranging from 0.758 to 0.897 for the MGO-based adsorbent
+node,paper-A:Measurement:lactic-acid-on-mgo-r2-0-826-reported-for,paper-A,p-0054,exact,the high correlation coefficient (R 2 = 0.826) and the 1/n value of 0.01
+node,paper-A:Measurement:lactic-acid-on-mgo-r2-0-826-reported-for,paper-A,p-0056,exact,The high correlation with the Temkin model (R 2 = 0.826 for lactic acid)
+node,paper-A:Measurement:below-3-g-l-lactic-acid-ac-adsorbs-sligh,paper-A,p-0051,exact,the activated carbon-based adsorbent exhibits a slightly higher adsorption capacity than the MGO composite
+node,paper-A:Conclusion:pso-fit-confirms-chemisorption-controlle,paper-A,p-0001,exact,confirming a chemisorption-controlled mechanism for all investigated acids
+node,paper-A:Conclusion:adsorption-governed-by-surface-chemistry,paper-A,p-0040,exact,which directly underscores that surface area is not the primary determinant of efficiency in these systems
+node,paper-A:Conclusion:mgo-outperforms-magnetic-ac-across-the-e,paper-A,p-0053,exact,This confirms the superior performance of the MGO composite across the entire concentration range.
+node,C:Material:diethylamine,paper-A,p-0008,exact,Diethylamine was introduced to promote nanoparticle anchoring
+node,paper-A:Conclusion:k2-decreases-with-molecular-complexity-d,paper-A,p-0060,exact,demonstrates a clear inverse correlation between molecular complexity and kinetic performance
+node,paper-A:Conclusion:langmuir-agreement-suggests-predominantl,paper-A,p-0069,exact,suggesting predominantly monolayer adsorption on a homogeneous distribution of active sites
+node,C:Material:lactic-acid,paper-A,p-0006,exact,"lactic acid (monocarboxylic), succinic acid (dicarboxylic), and citric acid (tricarboxylic)"
+node,C:Material:succinic-acid,paper-A,p-0006,exact,succinic acid (dicarboxylic)
+node,C:Material:citric-acid,paper-A,p-0006,exact,citric acid (tricarboxylic)
+node,C:Material:sodium-hydroxide,paper-A,p-0015,exact,The spent adsorbent was then treated with 0.1 M NaOH as a desorption agent
+node,C:Material:sodium-hydroxide,paper-B,p-0016,exact,the pH of the medium was adjusted to 9 by adding sodium hydroxide solution
+node,paper-A:Paper,paper-A,corpus-manifest,metadata,doi=10.1021/acsomega.6c05759
+node,paper-B:Researcher:alma-khassenovna-zhakina,paper-B,corpus-manifest,metadata,Alma Khassenovna Zhakina
+node,paper-B:Researcher:oxana-vasilievna-arnt,paper-B,corpus-manifest,metadata,Oxana Vasilievna Arnt
+node,paper-B:Researcher:yevgeniy-petrovich-vassilets,paper-B,corpus-manifest,metadata,Yevgeniy Petrovich Vassilets
+node,paper-B:Researcher:almat-maulenuly-zhakin,paper-B,corpus-manifest,metadata,Almat Maulenuly Zhakin
+node,paper-B:Researcher:zainulla-muldakhmetov,paper-B,corpus-manifest,metadata,Zainulla Muldakhmetov
+node,paper-B:Sample:humic-acid-reduced-graphene-oxide-compos,paper-B,p-0001,exact,A composite based on humic acid (HA) and reduced graphene oxide (rGO) was synthesized
+node,paper-B:Sample:initial-humic-acid-sample-shubarkol-coal,paper-B,p-0012,exact,"Humic acid, isolated from oxidized coal from the Shubarkol deposit (Karaganda, Kazakhstan)"
+node,C:Method:thermogravimetric-analysis,paper-B,p-0023,exact,examined by simultaneous thermogravimetric and differential thermal analysis using an STA 6000 instrument
+node,C:Method:scanning-electron-microscopy,paper-B,p-0025,exact,Surface morphology was studied by scanning electron microscopy using a MIRA 3 microscope
+node,C:Method:energy-dispersive-x-ray-spectroscopy,paper-B,p-0027,exact,"energy-dispersive X-ray spectroscopy (EDS) (TESCAN, Brno, Czech Republic)"
+node,C:Method:functional-group-titrimetric-analysis,paper-B,p-0020,exact,The content of oxygen-containing functional groups was determined by selective chemical binding followed by titrimetric analysis.
+node,C:Method:pseudo-first-order-kinetic-model,paper-B,p-0031,exact,The kinetic data were analyzed using the pseudo-first-order and pseudo-second-order models.
+node,C:Task:phenol-adsorption-from-aqueous-solution,paper-B,p-0028,exact,Phenol adsorption was evaluated as a preliminary functional test of the synthesized HA-rGO composite.
+node,paper-B:Sample:rgo-sample-sigma-aldrich,paper-B,p-0013,exact,"Reduced graphene oxide from Sigma-Aldrich (St. Louis, MO, USA) was used as the modifying component."
+node,C:Metric:atomic-oxygen-to-carbon-ratio,paper-B,p-0019,exact,the atomic oxygen-to-carbon ratio (O/C) was calculated from elemental-analysis data
+node,C:Metric:residual-mass-at-1000-c,paper-B,p-0058,exact,The most pronounced differences between the samples are observed in the residual mass at 1000 °C.
+node,C:Mechanism:non-covalent-interactions,paper-B,p-0081,exact,This suggests that composite formation occurs mainly through non-covalent interactions between the components.
+node,paper-B:Condition:static-batch-25-c-phenol-0-515-mg-dm3-0,paper-B,p-0028,exact,The experiments were performed under static batch conditions at 25 °C using freshly prepared aqueous phenol solutions with initial concentrations ranging from 0.5 to 15 mg/dm3.
+node,paper-B:Condition:kinetics-at-initial-phenol-7-5-mg-dm3,paper-B,p-0031,exact,Kinetic experiments were performed at an initial phenol concentration of 7.5 mg/dm3.
+node,paper-B:Measurement:carbon-content-ha-47-34-ha-rgo-55-61-wt,paper-B,p-0001,exact,The incorporation of rGO increased the carbon content from 47.34 to 55.61 wt.%
+node,C:Material:humic-acid,paper-B,p-0002,exact,Humic acids (HA) are natural high-molecular-weight organic compounds
+node,paper-B:Measurement:oxygen-content-ha-48-31-ha-rgo-40-79-wt,paper-B,p-0001,exact,decreased the oxygen content from 48.31 to 40.79 wt.%
+node,paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g,paper-B,p-0001,exact,the total content of carboxyl and phenolic hydroxyl groups increased from 5.00 to 5.47 mmol/g
+node,paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m,paper-B,p-0036,exact,The calculated atomic O/C ratio for the initial humic acid is 0.77
+node,paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m,paper-B,p-0037,exact,"For the HA-rGO composite, the O/C ratio decreases to 0.73."
+node,paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m,paper-B,p-0036,exact,this value is expectedly lower (0.36)
+node,paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m,paper-B,p-0037,exact,a simple mechanical mixture would be expected to have an O/C ratio of approximately 0.66 (calculated value)
+node,paper-B:Measurement:residual-mass-at-1000-c-ha-59-21-ha-rgo,paper-B,p-0058,exact,"The residual mass of the initial humic acid is 59.21%, whereas that of the HA-rGO composite increases to 70.03%."
+node,paper-B:Measurement:residual-mass-at-1000-c-ha-59-21-ha-rgo,paper-B,p-0058,exact,whose residual mass reaches 84.23%
+node,paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h,paper-B,p-0094,exact,"The maximum adsorption capacity calculated according to the Langmuir model was 7.10 mg/g for HA–rGO, compared with 6.02 mg/g for rGO and 4.65 mg/g for HA."
+node,paper-B:Measurement:hargo-isotherm-fit-langmuir-r2-0-9804-vs,paper-B,p-0094,exact,"phenol adsorption on the HA–rGO composite was better described by the Langmuir model, with R2 = 0.9804, whereas the Freundlich model gave R2 = 0.9515"
+node,paper-B:Measurement:ha-isotherm-fit-freundlich-r2-0-9092-vs,paper-B,p-0092,exact,"The adsorption of phenol on HA was better described by the Freundlich model, for which the coefficient of determination was R2 = 0.9092, compared with R2 = 0.8502 for the Langmuir model."
+node,paper-B:Measurement:rgo-isotherm-fit-langmuir-r2-0-9266-vs-f,paper-B,p-0093,exact,"with R2 values of 0.9266 and 0.9299, respectively"
+node,paper-B:Measurement:hargo-kinetics-pso-r2-0-9939-vs-pfo-0-97,paper-B,p-0098,exact,"The pseudo-second-order model also showed better agreement for the HA–rGO composite, with an R2 value of 0.9939 compared with 0.9727 for the pseudo-first-order model."
+node,paper-B:Measurement:rgo-kinetics-pfo-r2-0-9973-vs-pso-0-9968,paper-B,p-0099,exact,The pseudo-first-order model exhibited a marginally higher R2 value of 0.9973 compared with 0.9968 for the pseudo-second-order model.
+node,C:Material:reduced-graphene-oxide,paper-B,p-0004,exact,reduced graphene oxide (rGO) is of particular interest because of its high degree of aromatization
+node,paper-B:Conclusion:hargo-composite-forms-mainly-through-non,paper-B,p-0087,exact,formation of the HA-rGO composite occurs mainly through a set of non-covalent interactions
+node,paper-B:Conclusion:rgo-incorporation-improves-thermal-stabi,paper-B,p-0061,exact,the incorporation of reduced graphene oxide substantially improves the thermal stability of humic acid
+node,paper-B:Conclusion:pso-pfo-fits-are-empirical-and-do-not-es,paper-B,p-0100,exact,"do not, by themselves, establish the chemical nature of adsorption or identify a unique rate-controlling mechanism"
+node,paper-B:Conclusion:langmuir-fit-is-a-mathematical-descripti,paper-B,p-0095,exact,the model fit should be regarded primarily as a mathematical description of the equilibrium data and not as direct proof of a strictly homogeneous monolayer adsorption mechanism
+node,paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad,paper-B,p-0104,exact,Hydrogen bonding and π–π interactions are therefore considered plausible contributions rather than directly demonstrated elementary mechanisms.
+node,paper-B:Conclusion:results-are-a-preliminary-demonstration,paper-B,p-0103,exact,the present results should be regarded as a preliminary demonstration of enhanced phenol interaction rather than evidence of superiority over existing adsorbents
+node,C:Material:phenol,paper-B,p-0010,exact,its adsorption behavior toward phenol as a model aromatic pollutant
+node,C:Method:ultrasonic-treatment,paper-B,p-0015,exact,The composite was synthesized by ultrasonic treatment in an aqueous medium.
+node,C:Method:elemental-analysis,paper-B,p-0018,exact,The elemental composition of the samples was determined using an Elementar Unicube elemental analyzer
+node,paper-B:Paper,paper-B,corpus-manifest,metadata,doi=10.3390/ma19163371
+edge,R:c615684295,paper-A,corpus-manifest,metadata,Ebubekir Ekinci
+edge,R:651b84bb71,paper-A,corpus-manifest,metadata,Hasan Uslu
+edge,R:fc8338a370,paper-A,corpus-manifest,metadata,Şahika Sena Bayazit
+edge,R:92488b76ab,paper-A,corpus-manifest,metadata,Mehmet Yetişen
+edge,R:0bb864d6f5,paper-B,corpus-manifest,metadata,Alma Khassenovna Zhakina
+edge,R:2fb60bf061,paper-B,corpus-manifest,metadata,Oxana Vasilievna Arnt
+edge,R:18c7e15f48,paper-B,corpus-manifest,metadata,Yevgeniy Petrovich Vassilets
+edge,R:a3d1b796c2,paper-B,corpus-manifest,metadata,Almat Maulenuly Zhakin
+edge,R:fb4480be8a,paper-B,corpus-manifest,metadata,Zainulla Muldakhmetov
+edge,R:e77c72cd63,paper-A,p-0001,exact,This study investigates the efficient adsorption and recovery of biotechnologically significant organic acids
+edge,R:63a570417f,paper-A,p-0007,exact,"Briefly, 0.5 g of GO was dispersed in 60 mL of deionized water"
+edge,R:678d9f4408,paper-A,p-0004,exact,magnetic modification using Fe3O4 nanoparticles to produce magnetically modified graphene oxide (MGO)
+edge,R:dca1c581b1,paper-A,p-0008,exact,"the wet precipitate was treated with a mixture of acetic acid (22.6 mL), methanol (22.6 mL), and diethylamine (9.56 mL)"
+edge,R:354e0123f8,paper-A,p-0008,exact,The same protocol was applied to AC to prepare the AC-based magnetic reference.
+edge,R:40bf8d48a6,paper-A,p-0007,exact,The MGO composite was synthesized via a modified chemical coprecipitation route.
+edge,R:9e3864d7fc,paper-A,p-0009,exact,The crystalline structure and functional groups of MGO were identified using X-ray diffraction
+edge,R:099eca213f,paper-A,p-0009,exact,"Fourier transform infrared spectroscopy (FTIR; Bruker VERTEX 70, Germany), respectively"
+edge,R:a93d96d75b,paper-A,p-0001,exact,Brunauer–Emmett–Teller (BET) analysis
+edge,R:055f28f960,paper-A,p-0010,exact,"All adsorption experiments for lactic, succinic, and citric acids were conducted using a standardized protocol"
+edge,R:2ab6235da3,paper-A,p-0010,exact,"All adsorption experiments for lactic, succinic, and citric acids were conducted using a standardized protocol"
+edge,R:946ec678d8,paper-A,p-0010,exact,"All adsorption experiments for lactic, succinic, and citric acids were conducted using a standardized protocol"
+edge,R:9e21786776,paper-A,p-0039,exact,the specific surface area of the MGO was determined to be 37.94 m2/g
+edge,R:c2528ab39d,paper-A,p-0039,exact,"According to BET analysis, the specific surface area of the MGO was determined to be 37.94 m2/g"
+edge,R:8eff3a8d6d,paper-A,p-0039,exact,the specific surface area of the MGO was determined to be 37.94 m2/g
+edge,R:ff9d0623c5,paper-A,p-0040,exact,"parallel textural characterization was conducted on a magnetic activated carbon (AC) reference, which exhibited a slightly higher surface area (40.38 m2/g)"
+edge,R:ade13a0d77,paper-A,p-0039,exact,the average pore radius was found to be 4.12 nm
+edge,R:84caa7e3dc,paper-A,p-0055,exact,The maximum adsorption capacity of MGO for lactic acid (334.45 mg/g) is highly competitive
+edge,R:bbcf1f2a31,paper-A,p-0001,exact,Lactic acid exhibited the highest maximum adsorption capacity (q max = 334.45 mg/g)
+edge,R:0c004f6d90,paper-A,p-0010,exact,"The experiments were performed at 25 °C with an agitation speed of 120 rpm, utilizing 10 mg of adsorbent in a 20 mL solution volume."
+edge,R:6b4e0aa54a,paper-A,p-0040,exact,its maximum adsorption capacity for lactic acid was substantially lower (q max = 74.6 mg/g)
+edge,R:2448e5d304,paper-A,p-0045,exact,the overall mean adsorption capacity (Q e) was determined as 188.6 mg/g for MGO-based and 67.8 mg/g for AC-based adsorbents
+edge,R:059ba82e69,paper-A,p-0045,exact,a two-sample t-test was conducted on the data set presented in Table
+edge,R:a734792f57,paper-A,p-0048,exact,the overall mean adsorption capacity was determined to be 213 mg/g for MGO-based and 73.7 mg/g for AC-based adsorbents
+edge,R:767c404946,paper-A,p-0045,exact,These results clearly establish that the MGO composite provides a vastly superior affinity and saturation capacity for succinic acid recovery compared to the AC reference.
+edge,R:430f6ca25c,paper-A,p-0040,exact,its maximum adsorption capacity for lactic acid was substantially lower (q max = 74.6 mg/g)
+edge,R:c7a068a0e3,paper-A,p-0051,exact,"specifically below approximately 3 g/L, the activated carbon-based adsorbent exhibits a slightly higher adsorption capacity than the MGO composite"
+edge,R:4920adda60,paper-A,p-0051,exact,the activated carbon-based adsorbent exhibits a slightly higher adsorption capacity than the MGO composite
+edge,R:0959aec3c4,paper-A,p-0051,exact,the activated carbon-based adsorbent exhibits a slightly higher adsorption capacity than the MGO composite
+edge,R:ea38705f6c,paper-A,p-0059,exact,The experimental data for all acids exhibited an excellent fit with the PSO model (R 2 > 0.99)
+edge,R:f4c2774b5a,paper-A,p-0059,exact,The experimental data for all acids exhibited an excellent fit with the PSO model (R 2 > 0.99)
+edge,R:cf02fa110f,paper-A,p-0059,exact,This confirms that the adsorption rate is governed by chemical interactions (chemisorption).
+edge,R:c0ff76634b,paper-A,p-0001,exact,confirming a chemisorption-controlled mechanism for all investigated acids
+edge,R:40dcb0566e,paper-A,p-0059,exact,"The rate constants (k 2) were determined as 0.007, 0.0023, and 0.0019 g/mg·min"
+edge,R:7bd20ae92a,paper-A,p-0059,exact,"The rate constants (k 2) were determined as 0.007, 0.0023, and 0.0019 g/mg·min"
+edge,R:ee53d5a025,paper-A,p-0060,exact,A comparative analysis of the rate constants decreasing from lactic (0.007 g/mg·min) and succinic (0.0023 g/mg·min) to citric acid (0.0019 g/mg·min)
+edge,R:1a9ac04a6a,paper-A,p-0060,exact,which causes significant steric hindrance during diffusion into the 4.12 nm mesoporous framework of the MGO
+edge,R:64b56e7276,paper-A,p-0046,exact,Both AC- and graphene oxide-based samples exhibit good agreement with the Langmuir isotherm model.
+edge,R:bc20df6309,paper-A,p-0046,exact,Both AC- and graphene oxide-based samples exhibit good agreement with the Langmuir isotherm model.
+edge,R:9233d01c87,paper-A,p-0056,exact,the Temkin model provided a satisfactory fit for all investigated organic acids
+edge,R:240330ce00,paper-A,p-0054,exact,"Specifically, for lactic acid on MGO, the high correlation coefficient (R 2 = 0.826)"
+edge,R:478254844c,paper-A,p-0056,exact,The high correlation with the Temkin model (R 2 = 0.826 for lactic acid)
+edge,R:ae05f8f9da,paper-A,p-0063,exact,the dimensionless separation factor (R L) was calculated for each acid–adsorbent system
+edge,R:47f2658b4f,paper-A,p-0063,exact,R L values for all investigated acids on both adsorbents across the studied concentration range (10–100 g/L) were between 2.3 × 10–6 and 2.8 × 10–3
+edge,R:a978919823,paper-A,p-0067,exact,The capacity retention rates after the fifth cycle were found to be 87.8% for succinic acid and 84.2% for citric acid.
+edge,R:e570e0b686,paper-A,p-0015,exact,The capacity retention rate was calculated by comparing the q e of each cycle to the initial adsorption capacity.
+edge,R:665966f364,paper-A,p-0065,exact,which may facilitate supplementary hydrogen bonding interactions with the oxygen-functionalized graphene oxide surface
+edge,R:44b16954f5,paper-A,p-0040,exact,its exceptional adsorption capacity (q max = 334.45 mg/g for lactic acid) confirms that the adsorption performance is governed by the synergistic effect of pore accessibility and surface chemistry rather than surface area alone
+edge,R:e14fb1b98d,paper-A,p-0040,exact,which directly underscores that surface area is not the primary determinant of efficiency in these systems
+edge,R:b113e63e89,paper-A,p-0069,exact,"While the Langmuir model demonstrated excellent agreement (R 2 > 0.95), suggesting predominantly monolayer adsorption on a homogeneous distribution of active sites"
+edge,R:94f2af36f0,paper-A,p-0041,exact,which facilitate specific hydrogen bonding and π–π interactions that are absent in the purely physical framework of the AC reference
+edge,R:f6b5a17c10,paper-A,p-0041,exact,which facilitate specific hydrogen bonding and π–π interactions that are absent in the purely physical framework of the AC reference
+edge,R:dbac516b91,paper-A,p-0038,exact,"Unlike activated carbon, graphene oxide possesses a layered graphitic framework rich in oxygen-containing functional groups"
+edge,R:2fe738ca1d,paper-A,p-0060,exact,The lowest k 2 value observed for citric acid (0.0019 g/mg·min) is quantitatively consistent with its bulky tricarboxylic structure
+edge,R:f533c77089,paper-A,p-0015,exact,The spent adsorbent was then treated with 0.1 M NaOH as a desorption agent
+edge,R:b2bd17500c,paper-B,p-0010,exact,as well as to preliminarily evaluate its adsorption behavior toward phenol as a model aromatic pollutant
+edge,R:7d46f5ce75,paper-B,p-0016,exact,The HA:rGO mass ratio was 80:20.
+edge,R:b2e05b45a0,paper-B,p-0016,exact,"After stabilization of the system, reduced graphene oxide was introduced into the suspension."
+edge,R:ce819ae3e6,paper-B,p-0012,exact,"Humic acid, isolated from oxidized coal from the Shubarkol deposit"
+edge,R:434f81c1c2,paper-B,p-0013,exact,"Reduced graphene oxide from Sigma-Aldrich (St. Louis, MO, USA) was used as the modifying component."
+edge,R:05577cb609,paper-B,p-0015,exact,The composite was synthesized by ultrasonic treatment in an aqueous medium.
+edge,R:da17652332,paper-B,p-0016,exact,the pH of the medium was adjusted to 9 by adding sodium hydroxide solution
+edge,R:d864fd647c,paper-B,p-0018,exact,The elemental composition of the samples was determined using an Elementar Unicube elemental analyzer
+edge,R:2570df7e0b,paper-B,p-0042,exact,"FTIR spectroscopy was used to study the functional composition of the initial humic acid, reduced graphene oxide, and synthesized HA-rGO composite."
+edge,R:717daa1dab,paper-B,p-0052,exact,"The thermal stability of the initial humic acid, reduced graphene oxide, and HA-rGO composite was investigated by thermogravimetric analysis"
+edge,R:6f1bd19312,paper-B,p-0062,exact,"The morphological features of the initial humic acid, reduced graphene oxide, and HA-rGO composite were studied by scanning electron microscopy."
+edge,R:c1c6a7e8f4,paper-B,p-0070,exact,energy-dispersive X-ray spectroscopy with elemental mapping was performed
+edge,R:4e1ef8e791,paper-B,p-0020,exact,The content of oxygen-containing functional groups was determined by selective chemical binding followed by titrimetric analysis.
+edge,R:55a4fca013,paper-B,p-0035,exact,"The carbon content increases to 55.61 wt.%, whereas the oxygen content decreases to 40.79 wt.%."
+edge,R:2422d31bad,paper-B,p-0018,exact,"The contents of carbon, hydrogen, and oxygen were calculated according to the standard procedures provided by the instrument software."
+edge,R:72db0db2f6,paper-B,p-0035,exact,"The carbon content increases to 55.61 wt.%, whereas the oxygen content decreases to 40.79 wt.%."
+edge,R:c3615510ca,paper-B,p-0038,exact,the HA-rGO composite shows an increase in Σ(COOH + OH) to 5.47 mmol/g compared with the initial humic acid (5.00 mmol/g)
+edge,R:7bb75c0227,paper-B,p-0020,exact,the total content of carboxyl and phenolic hydroxyl groups was determined by treating the samples with barium hydroxide solution
+edge,R:10d8b47ec4,paper-B,p-0037,exact,"For the HA-rGO composite, the O/C ratio decreases to 0.73."
+edge,R:7a50df097f,paper-B,p-0036,exact,The calculated atomic O/C ratio for the initial humic acid is 0.77
+edge,R:b3509e8b17,paper-B,p-0058,exact,"The residual mass of the initial humic acid is 59.21%, whereas that of the HA-rGO composite increases to 70.03%."
+edge,R:a2666fac04,paper-B,p-0061,exact,an increase in residual mass at 1000 °C from 59.21 to 70.03%
+edge,R:f7cc3341c6,paper-B,p-0058,exact,The residual mass of the initial humic acid is 59.21%
+edge,R:21f9429969,paper-B,p-0061,exact,as confirmed by lower mass losses at the main decomposition stages and an increase in residual mass at 1000 °C from 59.21 to 70.03%
+edge,R:a298178a6f,paper-B,p-0028,exact,Phenol adsorption was evaluated as a preliminary functional test of the synthesized HA-rGO composite.
+edge,R:b237c7e16a,paper-B,p-0094,exact,The maximum adsorption capacity calculated according to the Langmuir model was 7.10 mg/g for HA–rGO
+edge,R:23edaff13b,paper-B,p-0094,exact,The maximum adsorption capacity calculated according to the Langmuir model was 7.10 mg/g for HA–rGO
+edge,R:e40c01f0f8,paper-B,p-0028,exact,The experiments were performed under static batch conditions at 25 °C using freshly prepared aqueous phenol solutions with initial concentrations ranging from 0.5 to 15 mg/dm3.
+edge,R:aa2d423e03,paper-B,p-0089,exact,the HA-rGO composite exhibited a higher adsorption capacity toward phenol than the initial humic acid and rGO
+edge,R:7dbf743e4e,paper-B,p-0089,exact,the HA-rGO composite exhibited a higher adsorption capacity toward phenol than the initial humic acid and rGO
+edge,R:baf9270632,paper-B,p-0094,exact,"phenol adsorption on the HA–rGO composite was better described by the Langmuir model, with R2 = 0.9804"
+edge,R:2cb5c11409,paper-B,p-0094,exact,"phenol adsorption on the HA–rGO composite was better described by the Langmuir model, with R2 = 0.9804, whereas the Freundlich model gave R2 = 0.9515"
+edge,R:4082be4336,paper-B,p-0092,exact,The adsorption of phenol on HA was better described by the Freundlich model
+edge,R:22295aa5d1,paper-B,p-0092,exact,"for which the coefficient of determination was R2 = 0.9092, compared with R2 = 0.8502 for the Langmuir model"
+edge,R:73b58d054f,paper-B,p-0093,exact,neither model can be considered unambiguously predominant for rGO within the investigated concentration range
+edge,R:b3fdf59987,paper-B,p-0093,exact,"For rGO, the Langmuir and Freundlich models showed comparable agreement with the experimental data"
+edge,R:bcdd4a6376,paper-B,p-0098,exact,The pseudo-second-order model also showed better agreement for the HA–rGO composite
+edge,R:c8aa7dc20a,paper-B,p-0100,exact,the kinetic data for HA and HA–rGO were better described by the pseudo-second-order model
+edge,R:0bc53907b0,paper-B,p-0100,exact,whereas both models provided a comparable fit for rGO
+edge,R:2cfa5e2574,paper-B,p-0099,exact,The pseudo-first-order model exhibited a marginally higher R2 value of 0.9973 compared with 0.9968 for the pseudo-second-order model.
+edge,R:4f584d488e,paper-B,p-0031,exact,Kinetic experiments were performed at an initial phenol concentration of 7.5 mg/dm3.
+edge,R:e4b8301c5e,paper-B,p-0100,exact,These models should be regarded as empirical descriptions of the adsorption-rate data
+edge,R:34b3eca17d,paper-B,p-0081,exact,This suggests that composite formation occurs mainly through non-covalent interactions between the components.
+edge,R:b3b6109d60,paper-B,p-0087,exact,including π–π stacking of aromatic structures and hydrogen bonding between the functional groups of the components
+edge,R:e745caf967,paper-B,p-0087,exact,including π–π stacking of aromatic structures and hydrogen bonding between the functional groups of the components
+edge,R:387b947927,paper-B,p-0090,exact,"Carboxyl, phenolic, and hydroxyl groups present in humic acid may participate in hydrogen bonding with phenol molecules"
+edge,R:44944ed1b0,paper-B,p-0090,exact,the graphene-like aromatic domains of rGO may promote π–π interactions with the aromatic ring of phenol
+edge,R:6ca7e73ccf,paper-B,p-0104,exact,Hydrogen bonding and π–π interactions are therefore considered plausible contributions
+edge,R:19e8333da3,paper-B,p-0103,exact,The adsorption capacity of HA–rGO is lower than the values reported for some highly porous graphene-based adsorbents [49].
+edge,R:313959db79,paper-B,p-0034,exact,These results indicate substantial removal of oxygen-containing groups compared with graphene oxide

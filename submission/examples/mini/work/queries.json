@@ -1,0 +1,28 @@
+[
+ {
+  "id": "q1",
+  "question": "Which adsorbent reached which capacity for methylene blue (per paper)?",
+  "op": "neighbors",
+  "args": [
+   "methylene blue"
+  ],
+  "depth": 2,
+  "predicate": "TESTED_ON,HAS_RESULT"
+ },
+ {
+  "id": "q2",
+  "question": "Is 'PSO' the same method in both papers?",
+  "op": "find",
+  "args": [
+   "PSO"
+  ]
+ },
+ {
+  "id": "q3",
+  "question": "What does each paper say about Composite C1?",
+  "op": "neighbors",
+  "args": [
+   "Composite C1"
+  ]
+ }
+]

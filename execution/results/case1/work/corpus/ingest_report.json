@@ -1,0 +1,61 @@
+{
+ "status": "ok",
+ "input_root": "C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\bundle\\execution\\results\\case1\\input",
+ "case_id": "local-go-adsorption-kg",
+ "files": [
+  {
+   "file": "material.json",
+   "bytes": 141269,
+   "sha256": "ae8cad2fb58a3dbd64f3194edc1d03995478274375bb6242dead7c88ad5e5fb3",
+   "paragraphs": 183,
+   "role": "summary_index"
+  },
+  {
+   "file": "primary-material.json",
+   "bytes": 66561,
+   "sha256": "55d11f2c04992108be55001b95e32ea7ec0557fcf372abaa8a80a195e82592c1",
+   "paragraphs": 73,
+   "role": "source_text"
+  },
+  {
+   "file": "secondary-material.json",
+   "bytes": 69337,
+   "sha256": "121a0f8a62d2397c741c4c48d98cd38843a72d0a3eede9a9b54b76b5e3840bd0",
+   "paragraphs": 110,
+   "role": "source_text"
+  },
+  {
+   "file": "secondary-publisher.xml",
+   "bytes": 155069,
+   "sha256": "9d3e64cc65a754352d60b7ad6c3cb7d1bc50554697b9242bf6c4f49e7cf96fe3",
+   "paragraphs": 129,
+   "role": "publisher_xml"
+  },
+  {
+   "file": "task.md",
+   "bytes": 478,
+   "sha256": "0aa1dbd5975a5726c06c851cf83276a34af9707a1a4e156012e7e6f4ea95ce6d"
+  }
+ ],
+ "sources": [
+  {
+   "source_id": "paper-A",
+   "doi": "10.1021/acsomega.6c05759",
+   "paragraph_count": 73,
+   "location_kind": [
+    "id"
+   ]
+  },
+  {
+   "source_id": "paper-B",
+   "doi": "10.3390/ma19163371",
+   "paragraph_count": 110,
+   "location_kind": [
+    "paragraph_id"
+   ]
+  }
+ ],
+ "paragraphs_total": 183,
+ "duplicate_text_conflicts": [],
+ "warnings": []
+}

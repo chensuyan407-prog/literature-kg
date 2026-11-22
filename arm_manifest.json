@@ -1,0 +1,191 @@
+{
+ "arm_version": "1.1",
+ "paper": {
+  "title": "阅读15｜文献知识图谱构建 — literature-kg Skill",
+  "challenge_id": "product-arena-10-760d1a0b"
+ },
+ "entrypoint": "src/reproduce.py",
+ "environment": {
+  "dependencies": "requirements.txt",
+  "python_version": ">=3.9",
+  "gpu_required": false,
+  "extra_packages": [
+   "matplotlib>=3.5 (optional, PNG previews)",
+   "PyMuPDF>=1.23 (optional, PDF input)"
+  ]
+ },
+ "execution": {
+  "log_path": "execution/run.log",
+  "exit_code": 0,
+  "ran_at": "2026-11-22T14:30:53.088522Z",
+  "wall_time_s": 6.37,
+  "ran_by": "agent",
+  "artifacts": [
+   {
+    "id": "metrics",
+    "path": "execution/results/metrics.json",
+    "type": "metric",
+    "format": "json",
+    "checksum_sha256": "2f368118dc534a23192d96b8242cccef815fdf435dc4c85bc9b6f28a063c7e5d"
+   },
+   {
+    "id": "test_report",
+    "path": "execution/results/tests/test_report.json",
+    "type": "data",
+    "format": "json",
+    "checksum_sha256": "45e742da7b8e51d177996d001d56762cc9dd0a6acb5eea4f138b30ee72bd632e"
+   },
+   {
+    "id": "case1_result",
+    "path": "execution/results/case1/output/result.json",
+    "type": "data",
+    "format": "json",
+    "checksum_sha256": "796545017e9b4a5537cfb1a6446a0fcf61c013814a55790252a81e79dd77b9ca"
+   },
+   {
+    "id": "case1_graph",
+    "path": "execution/results/case1/output/graph/graph.json",
+    "type": "data",
+    "format": "json",
+    "checksum_sha256": "11b39a48b621f639b06272cb90a278437c4a58270ed8f6231d0a4c8f8c8831a8"
+   },
+   {
+    "id": "case1_graphml",
+    "path": "execution/results/case1/output/graph/graph.graphml",
+    "type": "data",
+    "format": "other",
+    "checksum_sha256": "737392dd8ebbdea7f0457569f47559178c408aaed49e667adbb51b0fbee0cb19"
+   },
+   {
+    "id": "case1_edges_csv",
+    "path": "execution/results/case1/output/graph/edges.csv",
+    "type": "table",
+    "format": "csv",
+    "checksum_sha256": "002164febecc2255346f0b8fe27fad135483a3b088ac3a1bdb17e5ec13e03b15"
+   },
+   {
+    "id": "case1_queries",
+    "path": "execution/results/case1/output/queries.md",
+    "type": "data",
+    "format": "other",
+    "checksum_sha256": "724581312d21e21b805006af85d3d0481535e4211ad3b413dcef6dafddfee84e"
+   },
+   {
+    "id": "case1_overview_png",
+    "path": "execution/results/case1/output/graph/graph.png",
+    "type": "figure",
+    "format": "png",
+    "checksum_sha256": "51776205db4f0c29e1ce8220c6875b426544b302a0d981d9592c7ebdfc048e48"
+   },
+   {
+    "id": "case1_query_shared_png",
+    "path": "execution/results/case1/output/graph/queries/q_shared.png",
+    "type": "figure",
+    "format": "png",
+    "checksum_sha256": "dbc9e920385b761c5b86d76db68e4ea80e1f59d35eb7d9f5151f2e1612a137e3"
+   },
+   {
+    "id": "case1_html",
+    "path": "execution/results/case1/output/graph/graph.html",
+    "type": "data",
+    "format": "other",
+    "checksum_sha256": "59d0eb7cdb183de42be62cccc23c08a6fd59b0187d92a9d754a710654ae3d3c5"
+   }
+  ]
+ },
+ "expected_outputs": [
+  {
+   "name": "negative controls: entity accept/reject decisions",
+   "type": "metric",
+   "produced_by": [
+    "metrics"
+   ],
+   "comparison_method": "numeric_tolerance"
+  },
+  {
+   "name": "negative controls: relation decisions",
+   "type": "metric",
+   "produced_by": [
+    "metrics"
+   ],
+   "comparison_method": "numeric_tolerance"
+  },
+  {
+   "name": "cross-paper alignment precision (designed set)",
+   "type": "metric",
+   "produced_by": [
+    "metrics"
+   ],
+   "comparison_method": "numeric_tolerance"
+  },
+  {
+   "name": "cross-paper alignment recall (designed set)",
+   "type": "metric",
+   "produced_by": [
+    "metrics"
+   ],
+   "comparison_method": "numeric_tolerance"
+  },
+  {
+   "name": "incremental update: node id retention",
+   "type": "metric",
+   "produced_by": [
+    "metrics"
+   ],
+   "comparison_method": "numeric_tolerance"
+  },
+  {
+   "name": "incremental update: edge id retention",
+   "type": "metric",
+   "produced_by": [
+    "metrics"
+   ],
+   "comparison_method": "numeric_tolerance"
+  },
+  {
+   "name": "failure handling checks",
+   "type": "metric",
+   "produced_by": [
+    "metrics"
+   ],
+   "comparison_method": "numeric_tolerance"
+  },
+  {
+   "name": "real two-paper case: evidence re-verified by independent checker",
+   "type": "metric",
+   "produced_by": [
+    "case1_result"
+   ],
+   "comparison_method": "numeric_tolerance"
+  },
+  {
+   "name": "real two-paper case: queries with results",
+   "type": "metric",
+   "produced_by": [
+    "case1_queries"
+   ],
+   "comparison_method": "numeric_tolerance"
+  }
+ ],
+ "characterization": {
+  "path": "characterization.json"
+ },
+ "trace": "trace/trace.jsonl",
+ "skills_used": [
+  {
+   "skill_id": "literature-kg",
+   "version": "0.1.0"
+  }
+ ],
+ "provenance": {
+  "created_by": "agent",
+  "toolchain": "Claude Code + Python 3.13.14"
+ },
+ "handoff": {
+  "status": "partial",
+  "next_suggestion": "Run the Skill with the platform's DeepSeek harness on the fixed cases; measure extraction recall against a hand-labelled set; add 3+ paper corpora.",
+  "modality_notes": {
+   "skills": "Skill lives in submission/ (SKILL.md + scripts + schema + examples); copy of SKILL.md in skills/SKILL.md"
+  }
+ }
+}

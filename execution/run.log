@@ -1,0 +1,31 @@
+[2026-11-22T14:30:53.253348Z] python 3.13.14 on Windows
+[2026-11-22T14:30:53.372608Z] $ python src\make_case.py data\raw execution\results\case1\input  (exit 0)
+case written to C:\Users\12117\Desktop\bohrium-pdf-evidence-reader\kg_arena10\bundle\execution\results\case1\input 73 110
+[2026-11-22T14:30:53.710903Z] $ python submission\scripts\ingest.py --input execution\results\case1\input --work execution\results\case1\work  (exit 0)
+ingest: status=ok sources=2 paragraphs=183 warnings=0
+  paper-A: 73 paragraphs  doi=10.1021/acsomega.6c05759  ids=['id']  -> C:\Users\12117\Desktop\bohrium-pdf-evidence-reader\kg_arena10\bundle\execution\results\case1\work\corpus/paper-A.txt
+  paper-B: 110 paragraphs  doi=10.3390/ma19163371  ids=['paragraph_id']  -> C:\Users\12117\Desktop\bohrium-pdf-evidence-reader\kg_arena10\bundle\execution\results\case1\work\corpus/paper-B.txt
+[2026-11-22T14:30:56.721402Z] $ python submission\scripts\run_all.py --input execution\results\case1\input --work execution\results\case1\work --out execution\results\case1\output  (exit 0)
+build_graph: {'nodes': 99, 'edges': 114, 'shared_concepts': 10, 'nodes_by_source': {'paper-A': 57, 'paper-B': 52}, 'edges_by_source': {'paper-A': 59, 'paper-B': 55}, 'rejected': 0, 'conflicts': 5, 'needs_review_edges': 10}
+  q1: ok  nodes=28 edges=24  
+  q2: ok  nodes=21 edges=22  
+  q3: ok  nodes=8 edges=8  
+  q4: ok  nodes=3 edges=2  
+  q5: ok  nodes=12 edges=11  
+  q6: ok  nodes=7 edges=6  
+  q7: no_result  nodes=0 edges=0  no node named or aliased 'X-ray photoelectron spectroscopy' in paper-B
+  q_shared: ok  nodes=25 edges=28  
+  q_results: ok  nodes=57 edges=55  
+  q_uncertain: ok  nodes=23 edges=20  
+export: C:\Users\12117\Desktop\bohrium-pdf-evidence-reader\kg_arena10\bundle\execution\results\case1\output\graph {'graph.png': 'ok', 'queries/q1.png': 'ok', 'queries/q2.png': 'ok', 'queries/q3.png': 'ok', 'queries/q4.png': 'ok', 'queries/q5.png': 'ok', 'queries/q6.png': 'ok', 'queries/q_shared.png': 'ok', 'queries/q_results.png': 'ok', 'queries/q_uncertain.png': 'ok'}
+check_result: ok=True checked=210 hard=0 warnings=[]
+run_all: status=success nodes=99 edges=114 queries_ok=9 problems=[] check_exit=0
+[2026-11-22T14:30:59.454496Z] $ python src\run_tests.py --case execution\results\case1 --out execution\results\tests  (exit 0)
+T1_negative_controls: PASS
+T2_alignment: PASS
+T3_incremental: PASS
+T4_failures: PASS
+T5_real_case: PASS
+[2026-11-22T14:30:59.462471Z] metrics: {"negative_controls_entity_accuracy": 1.0, "negative_controls_relation_accuracy": 1.0, "alignment_precision_skill": 1.0, "alignment_recall_skill": 1.0, "alignment_precision_naive": 0.5, "alignment_recall_naive": 0.75, "alignment_false_merges_naive": ["C1a+C1b", "JS1+JS2", "PSO1+PSO2"], "incremental_node_id_retention": 1.0, "incremental_edge_id_retention": 1.0, "failure_handling_checks_passed": 6, "failure_handling_checks_total": 6, "deterministic_rebuild": true, "case1_status": "success", "case1_nodes": 99, "case1_edges": 114, "case1_cross_paper_concepts": 10, "case1_rejected_items": 0, "case1_needs_review_edges": 10, "case1_conflict_records": 5, "case1_queries_ok": 9, "case1_queries_total": 10, "case1_evidence_items_reverified": 210, "case1_check_ok": true, "case1_evidence_exact_or_normalized_fraction": 1.0, "run_all_exit": 0, "tests_exit": 0}
+[2026-11-22T14:30:59.463339Z] wrote characterization.json
+[2026-11-22T14:30:59.466339Z] wrote arm_manifest.json

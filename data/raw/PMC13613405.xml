@@ -1,0 +1,1368 @@
+<?xml version="1.0" encoding="UTF-8"?><article xml:lang="en" article-type="research-article"><front><journal-meta><journal-id journal-id-type="pmc-domain-id">3686</journal-id><journal-id journal-id-type="pmc-domain">acsomega</journal-id><journal-title-group><journal-title>ACS Omega</journal-title><abbrev-journal-title>ACS Omega</abbrev-journal-title></journal-title-group><publisher><publisher-name>American Chemical Society</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC13613405</article-id><article-id pub-id-type="pmcaid">13613405</article-id><article-id pub-id-type="pmcaiid">13613405</article-id><article-id pub-id-type="pmid">42798901</article-id><article-id pub-id-type="doi">10.1021/acsomega.6c05759</article-id><title-group><article-title>Comparative Adsorption
+of Mono‑, Di‑,
+and Tricarboxylic Acids on Magnetically Modified Graphene Oxide: Influence
+of Molecular Structure on Adsorption Behavior</article-title></title-group><contrib-group content-type="author"><contrib><name name-style="western"><surname>Ekinci</surname><given-names initials="E">Ebubekir</given-names></name><xref ref-type="aff" rid="aff1">†</xref></contrib><contrib><name name-style="western"><surname>Uslu</surname><given-names initials="H">Hasan</given-names></name><xref ref-type="aff" rid="aff1">†</xref></contrib><contrib><name name-style="western"><surname>Bayazit</surname><given-names initials="ŞS">Şahika Sena</given-names></name><xref ref-type="aff" rid="aff2">‡</xref></contrib><contrib><name name-style="western"><surname>Yetişen</surname><given-names initials="M">Mehmet</given-names></name><xref ref-type="aff" rid="aff1">†</xref><xref rid="cor1" ref-type="author-notes">*</xref></contrib></contrib-group><aff id="aff1">
+<label>†</label>
+Engineering
+Faculty, Food Engineering Department, Nigde
+Omer Halisdemir University, Niğde
+51240, Türkiye
+</aff><aff id="aff2">
+<label>‡</label>
+Institute
+of Nanotechnology and Biotechnology, İstanbul
+University-Cerrahpasa, İstanbul
+34500, Türkiye
+</aff><author-notes><fn id="cor1"><label>*</label><p>
+ Email: <email>mehmetyetisen@ohu.edu.tr</email>.</p></fn></author-notes><pub-date><day>10</day><month>9</month><year>2026</year></pub-date><volume>11</volume><issue>37</issue><fpage>55950</fpage><page-range>55950–55965</page-range><pub-history><event event-type="pmc-release"><date><day>26</day><month>9</month><year>2026</year></date></event></pub-history><permissions><copyright-statement>© 2026 The Authors. Published by American Chemical Society</copyright-statement><license><license-p>This article is licensed under CC-BY 4.0</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ao6c05759.pdf" content-type="pmc-pdf"><?cloudpmc-path 5898/13613405/9f292e20c618/ao6c05759.pdf?><?cloudpmc-bucket app?><?size 3892132?></self-uri><abstract id="abstract1"><title>Abstract</title><p>This study investigates the efficient adsorption and
+recovery of
+biotechnologically significant organic acids (lactic, succinic, and
+citric acids) using a magnetically modified graphene oxide (MGO) composite.
+The MGO was synthesized via chemical coprecipitation, and its structural,
+functional, and textural properties were comprehensively characterized
+using X-ray diffraction (XRD), Fourier transform infrared spectroscopy
+(FTIR), and Brunauer–Emmett–Teller (BET) analysis. Nitrogen
+adsorption–desorption measurements revealed a mesoporous structure
+with a specific surface area of 37.94 m<sup>2</sup>/g, a total pore
+volume of 0.078 cm<sup>3</sup>/g, and an average pore radius of 4.12
+nm, which facilitate effective molecular diffusion into the internal
+pore framework. Batch adsorption experiments were conducted at 25
+°C using an adsorbent dosage of 10 mg in a 20 mL solution volume
+across a concentration range of 10–100 g/L to evaluate equilibrium
+performance in comparison with a magnetically modified activated carbon
+(AC) reference. The equilibrium times were established as 50–80
+min depending on the specific organic acid. Adsorption kinetics were
+accurately described by the pseudo-second-order (PSO) model (<italic>R</italic>
+<sup>2</sup> &gt; 0.99), confirming a chemisorption-controlled
+mechanism for all investigated acids. To ensure physical consistency
+and rigorous mass balance reconciliation, adsorption capacities were
+evaluated using mass-normalized (mg/g) units. The equilibrium data
+were analyzed using Langmuir, Freundlich, and Temkin isotherm models.
+While the results showed excellent agreement with the Langmuir model,
+the calculated dimensionless separation factor (<italic>R</italic>
+<sub>L</sub>) values (ranging from 2.3 × 10<sup>–6</sup> to 2.8 × 10<sup>–3</sup>) further confirmed that the
+adsorption process is highly favorable for all investigated acids
+across the concentration range. Lactic acid exhibited the highest
+maximum adsorption capacity (<italic>q</italic>
+<sub>max</sub> = 334.45
+mg/g), which is attributed to its smaller molecular size and the specific
+interaction of its hydroxyl (−OH) group, enabling enhanced
+hydrogen bonding and electrostatic interactions with the oxygen-rich
+surface sites of the MGO. Furthermore, regeneration studies demonstrated
+that the MGO composite maintains a high capacity retention rate of
+91.4% after five consecutive cycles, confirming its excellent structural
+stability and long-term industrial feasibility. The results demonstrate
+that the MGO composite provides superior adsorption performance compared
+to AC and allows for rapid magnetic separation from aqueous solutions.
+This study underscores the potential of functionalized graphene-based
+materials for the sustainable separation and purification of platform
+chemicals in the biotechnology industry.</p></abstract><abstract id="abstract2" abstract-type="graphical"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="abs1" xlink:href="ao6c05759_0011.webp"><?cloudpmc-path blobs/5898/13613405/aa833cd35fa3/ao6c05759_0011.webp?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 466?><?original-width 992?><?scaled-height 466?><?scaled-width 992?></graphic></abstract><abstract id="abstract3" abstract-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="tgr1" xlink:href="ao6c05759_0009.webp"><?cloudpmc-path blobs/5898/13613405/aa833cd35fa3/ao6c05759_0009.webp?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 466?><?original-width 992?><?scaled-height 466?><?scaled-width 992?></graphic></abstract><custom-meta-group><custom-meta><meta-name>status</meta-name><meta-value>released</meta-value></custom-meta><custom-meta><meta-name>display-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>is-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-journal-matter</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-scanned</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-retracted</meta-name><meta-value>no</meta-value></custom-meta></custom-meta-group></article-meta><notes notes-type="article-notes"><sec id="historyarticle-meta1" sec-type="history" disp-level="2"><p>Received 2026 May 19; Accepted 2026 Aug 27; Revised 2026 Aug 26; Collection date 2026 Sep 22.</p></sec></notes></front><body><sec id="sec1" disp-level="1"><label>1.</label><title>Introduction</title><p>Carbon exists in several
+allotropes, including graphite-, diamond-,
+and graphene-based nanostructures, each exhibiting distinct structural
+and physicochemical properties. Graphene, a single atomic layer of
+sp<sup>2</sup>-hybridized carbon atoms arranged in a hexagonal lattice,
+has attracted extensive scientific attention since its isolation because
+of its exceptional electrical conductivity, mechanical strength, and
+high specific surface area.<italic>
+−
+
+</italic> Among graphene-derived materials,
+graphene oxide (GO) has emerged as a particularly promising functional
+material owing to the presence of abundant oxygen-containing functional
+groups such as hydroxyl, epoxy, carbonyl, and carboxyl moieties on
+its basal plane and edges. These functionalities enhance the hydrophilicity
+and provide active sites suitable for adsorption and surface modification.
+</p><p>Adsorption processes play a crucial role
+in the separation and
+purification of valuable compounds in chemical, environmental, and
+biotechnological industries due to their simplicity, cost-effectiveness,
+and operational flexibility.<italic>
+,
+</italic> In particular, the recovery
+and purification of organic acids are of significant industrial importance,
+as these compounds are widely used as food additives, preservatives,
+and intermediates in biotechnological production systems.<italic>
+,
+</italic> Various separation and recovery techniques have been developed for
+organic acids, including reactive extraction, membrane separation,
+ion exchange, and adsorption. Reactive extraction has attracted considerable
+attention because of its high extraction efficiency and suitability
+for dilute fermentation broths; however, it generally requires organic
+solvents or extractants, followed by additional stripping and solvent
+regeneration steps, which increase the process complexity and operational
+cost.<italic>
+−
+
+</italic> Membrane-based processes provide high separation
+efficiency and continuous operation; however, challenges such as fouling
+remain. Recent innovations, such as the anhydrous interfacial polymerization
+(AIP) of polyamide membranes, have demonstrated the potential for
+precise ionic sieving with sub-1 Å accuracy, offering a high-precision
+alternative for aqueous separation. Nevertheless,
+concentration polarization and relatively high capital costs remain
+important limitations for large-scale applications.<italic>
+−
+
+</italic> Ion-exchange
+resins exhibit high selectivity and regeneration capability for charged
+compounds; nevertheless, their performance strongly depends on solution
+chemistry, and regeneration often requires significant quantities
+of chemicals, which may increase operating costs and generate secondary
+waste streams.<italic>
+−
+
+</italic> In contrast, adsorption is considered a simple, flexible,
+and economically attractive separation technique owing to its operational
+simplicity, relatively low energy requirement, and ease of regeneration,
+making it particularly suitable for the recovery and purification
+of valuable compounds from aqueous systems.<italic>
+,
+</italic> Consequently, the development of high-performance adsorbents with
+enhanced adsorption capacity, selectivity, and facile recovery has
+become an important research focus. Conventional adsorbents such as
+activated carbon (AC) are widely employed; however, challenges including limited selectivity, regeneration
+difficulties, and separation efficiency motivate the development of
+advanced adsorbent materials.</p><p>GO has attracted increasing interest
+as an adsorbent due to its
+large specific surface area and versatile surface chemistry, enabling
+strong interactions with various organic molecules.<italic>
+−
+
+</italic> Advanced graphene-based
+materials obtained through chemical modification or doping strategies
+have shown improved adsorption efficiency due to increased structural
+defects, active sites, and surface functionality, emphasizing the
+role of tailored surface chemistry in adsorption applications. Nevertheless, the practical application of GO
+is often limited by difficulties in post-treatment separation from
+aqueous systems. To address this limitation, magnetic modification
+using Fe<sub>3</sub>O<sub>4</sub> nanoparticles to produce magnetically
+modified graphene oxide (MGO) has been widely explored.<italic>
+,
+</italic> Graphene oxide-based systems have demonstrated strong adsorption
+behavior and structural stabilization capabilities through π–π
+interactions and surface functional groups, which may enhance protection
+mechanisms in encapsulation or matrix-based delivery systems. Compared with reactive extraction, membrane
+separation, and ion-exchange processes, adsorption using MGO offers
+several practical advantages, including a large specific surface area,
+abundant oxygen-containing functional groups, rapid adsorption kinetics,
+and simple magnetic separation without the need for additional filtration
+or centrifugation steps. Furthermore, the magnetic nature of MGO facilitates
+adsorbent recovery and reuse, making it an attractive and sustainable
+alternative for the selective recovery of organic acids from aqueous
+media.<italic>
+,
+</italic>
+</p><p>Biotechnologically relevant organic
+acids with different numbers
+of carboxyl functional groups may exhibit distinct adsorption behaviors
+depending on the molecular structure and surface interactions. Despite the growing body of literature, a systematic
+comparison of how functional group density and molecular complexity
+(mono-, di-, and tricarboxylic) influence the adsorption mechanism
+on a single MGO platform remains limited. The novelty of this study
+lies in the detailed investigation of the comparative adsorption behavior
+of three structurally distinct organic acids on a verified mesoporous
+MGO framework. By reconciling mass balance through standardized titration
+methods and evaluating multiple isotherm models (Langmuir, Freundlich,
+and Temkin), this work provides new mechanistic insights into the
+role of specific interactions such as the hydroxyl group influence
+on lactic acid and the efficacy of graphene-based composites. Ultimately,
+this systematic approach contributes to the rational design of adsorbents
+for the sustainable and selective recovery of platform chemicals in
+large-scale biotechnological processes.</p></sec><sec id="sec2" disp-level="1"><label>2.</label><title>Materials and Methods</title><sec id="sec2.1" disp-level="2"><label>2.1.</label><title>Materials</title><p>GO and AC were utilized
+as the primary adsorbent materials. Analytical-grade ferric chloride
+(FeCl<sub>3</sub>), ferrous chloride tetrahydrate (FeCl<sub>2</sub>·4H<sub>2</sub>O), ammonia solution (25%), hydrochloric acid
+(HCl), acetic acid, methanol, and diethylamine (DEA) were used for
+the synthesis and modification processes. For adsorption studies,
+lactic acid (monocarboxylic), succinic acid (dicarboxylic), and citric
+acid (tricarboxylic) were obtained at analytical purity. Sodium hydroxide
+(NaOH) solutions used for titration were standardized with potassium
+hydrogen phthalate, and phenolphthalein was employed as the indicator.
+All solutions were prepared using deionized water (resistivity &gt;
+18.2
+MΩ cm).</p></sec><sec id="sec2.2" disp-level="2"><label>2.2.</label><title>Synthesis of MGO</title><p>The MGO composite
+was synthesized via a modified chemical coprecipitation route. Briefly,
+0.5 g of GO was dispersed in 60 mL of deionized water and subjected
+to ultrasonication (25 °C, 20 min) to ensure a homogeneous suspension.
+Subsequently, iron precursors (0.083 g of FeCl<sub>3</sub> and 0.042
+g FeCl<sub>2</sub> 4H<sub>2</sub>O) were added. The initial pH was
+adjusted to 2.13 using 0.1 mL of concentrated HCl. Magnetite (Fe<sub>3</sub>O<sub>4</sub>) precipitation was induced by the dropwise addition
+of ammonia solution until a pH of 10.11 was reached. The mixture was
+allowed to equilibrate for 1 h, and the resulting magnetic precipitate
+was washed repeatedly with deionized water until a neutral pH (7.0)
+was achieved to remove residual ions.</p><p>For surface functionalization,
+1.1322 g of the wet precipitate was treated with a mixture of acetic
+acid (22.6 mL), methanol (22.6 mL), and diethylamine (9.56 mL). The
+suspension was dried at 100 °C, yielding approximately 0.2008
+g of the final MGO product. Diethylamine was introduced to promote
+nanoparticle anchoring and provide surface stabilization through coordination
+interactions. To minimize potential analytical interference from residual
+amines during subsequent acid titrations, the composite underwent
+extensive washing cycles until the supernatant reached a neutral pH.
+The same protocol was applied to AC to prepare the AC-based magnetic
+reference.</p></sec><sec id="sec2.3" disp-level="2"><label>2.3.</label><title>Characterization Techniques</title><p>The crystalline
+structure and functional groups of MGO were identified using X-ray
+diffraction (XRD; PANalytical-EMPYREAN) and Fourier transform infrared
+spectroscopy (FTIR; Bruker VERTEX 70, Germany), respectively. Furthermore,
+to meet the standards for porous materials, the textural properties
+were characterized by adsorption–desorption measurements using
+a Quantachrome NovaTouch 4LX analyzer. The specific surface area was
+determined via the multipoint Brunauer–Emmett–Teller
+(BET) method, while the total pore volume and average pore radius
+were calculated based on the adsorption branch of the isotherm.</p></sec><sec id="sec2.4" disp-level="2"><label>2.4.</label><title>Adsorption Experiments</title><p>All adsorption
+experiments for lactic, succinic, and citric acids were conducted
+using a standardized protocol to ensure high comparability between
+the systems. The experiments were performed at 25 °C with an
+agitation speed of 120 rpm, utilizing 10 mg of adsorbent in a 20 mL
+solution volume. For the sake of physical consistency and precise
+mass balance, all initial acid concentrations were converted from
+% (w/v) to standard mass units (g/L or mg/L) for all calculations.
+Accordingly, the investigated concentrations of 1, 2.5, 5, 7.5, and
+10% (w/v) correspond to 10, 25, 50, 75, and 100 g/L. The pH of each
+solution was monitored at the start and at equilibrium to evaluate
+the effect of acid speciation on adsorption performance. The experiments
+were conducted at the natural pH of the organic acid solutions (ranging
+from approximately 2.0 to 3.5), which is generally near or below the
+p<italic>K</italic>
+<sub>a</sub> values of the investigated acids (lactic
+acid p<italic>K</italic>
+<sub>a</sub> = 3.86, succinic acid p<italic>K</italic>
+<sub>a1</sub> = 4.21, and citric acid p<italic>K</italic>
+<sub>a1</sub> = 3.13). At this specific pH range, the organic acid
+molecules exist predominantly in their neutral (undissociated) forms.
+This state is critical as it minimizes electrostatic repulsion between
+the acids and the MGO surface, thereby promoting recovery through
+hydrogen bonding and π–π interactions.<italic>
+,
+</italic> This neutralization of the molecular charge effectively eliminates
+the electrostatic repulsion barrier, allowing for an unhindered approach
+of the organic acid molecules to the MGO surface and ensuring that
+hydrogen bonding with the oxygen-rich moieties becomes the primary
+and most efficient interaction mechanism. The relationship between
+the solution pH and dissociation state of the organic acids was analyzed
+to provide a mechanistic basis for the surface interactions.</p><sec id="sec2.4.1" disp-level="3"><label>2.4.1.</label><title>Determination of Equilibrium Time and Analytical
+Procedures</title><p>Adsorption studies were performed by using succinic,
+citric, and lactic acids as model adsorbates at a 5% (w/v) initial
+concentration (50 g/L). The mixtures were incubated in a shaking incubator
+at 120 rpm. To ensure accurate titration and eliminate interference
+from suspended MGO particles or potential iron leaching, the adsorbents
+were separated by using an external permanent magnet followed by centrifugation.</p><p>The acid concentration was determined via titration with standardized
+0.1 N NaOH. For each analysis, 1 mL aliquots were diluted with 9 mL
+of deionized water to ensure that the titration volume remained within
+an ideal range. Blank titrations were performed with MGO in deionized
+water to account for potential basicity arising from residual diethylamine
+or iron species, ensuring that the recorded adsorption was not an
+artifact of neutralization. All measurements were performed in triplicate
+to report the mean values and standard deviations. Equilibrium times
+were established as 50 min for succinic acid, 60 min for citric acid,
+and 80 min for lactic acid.</p></sec><sec id="sec2.4.2" disp-level="3"><label>2.4.2.</label><title>Adsorption Isotherm Studies</title><p>Isotherm
+studies were conducted across the concentration range of 10–100
+g/L based on the predetermined equilibrium times. To reconcile the
+mass balance and resolve previous numerical inconsistencies, the adsorption
+capacity at equilibrium (<italic>Q</italic>
+<sub>e</sub>) was calculated
+using the following equation</p><disp-formula id="eq1"><label>1</label><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="d1e353" display="block"><mml:msub><mml:mi>Q</mml:mi><mml:mi mathvariant="normal">e</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>C</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mi>C</mml:mi><mml:mi mathvariant="normal">e</mml:mi></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>×</mml:mo><mml:mi>V</mml:mi></mml:mrow><mml:mi>m</mml:mi></mml:mfrac></mml:math></disp-formula><p>where <italic>Q</italic>
+<sub>e</sub> is the adsorption capacity (mg/g), <italic>C</italic>
+<sub>0</sub> is the initial concentration (mg/L), <italic>C</italic>
+<sub>e</sub> is the equilibrium concentration (mg/L), <italic>V</italic> is the
+solution volume (L), and <italic>m</italic> is the adsorbent mass
+(g). For illustrative purposes, the calculation of <italic>Q</italic>
+<sub>e</sub> is performed as follows: an initial concentration of
+1% (w/v) corresponds to 10,000 mg/L. Using a solution volume (<italic>V</italic>) of 0.02 L and an adsorbent mass (<italic>m</italic>)
+of 0.01 g, if the measured equilibrium concentration (<italic>C</italic>
+<sub>e</sub>) is 9832.78 mg/L, the resulting adsorption capacity
+(<italic>Q</italic>
+<sub>e</sub>) is calculated as follows: <italic>Q</italic>
+<sub>e</sub> = (10,000–9832.78) × 0.02/0.01
+= 334.44 mg/g. This example is provided to ensure clarity in unit
+conversion and mass balance reconciliation, corresponding to the experimental
+range observed for lactic acid in this study.</p></sec><sec id="sec2.4.3" disp-level="3"><label>2.4.3.</label><title>Regeneration and Reusability Studies</title><p>To evaluate the sustainable application potential of the MGO composite,
+cyclic adsorption–desorption experiments were conducted using
+lactic acid as the model adsorbate. After each adsorption cycle, the
+MGO was separated from the solution using an external magnetic field.
+The spent adsorbent was then treated with 0.1 M NaOH as a desorption
+agent, followed by washing with deionized water and ethanol until
+a neutral pH was achieved. The regenerated MGO was dried at 60 °C
+and reused in five consecutive adsorption cycles. The capacity retention
+rate was calculated by comparing the <italic>q</italic>
+<sub>e</sub> of each cycle to the initial adsorption capacity.</p></sec></sec><sec id="sec2.5" disp-level="2"><label>2.5.</label><title>Adsorption Isotherm Modeling</title><p>To provide
+a comprehensive understanding of the equilibrium interaction between
+the organic acids and the adsorbents (MGO and AC), we analyzed the
+adsorption data using three fundamental isotherm models: Langmuir,
+Freundlich, and Temkin. In response to technical requirements for
+physical consistency and mass balance reconciliation, all experimental
+data originally recorded in % (w/v) were converted to standard units
+of equilibrium concentration (<italic>C</italic>
+<sub>e</sub>, mg/L)
+and adsorption capacity (<italic>Q</italic>
+<sub>e</sub>, mg/g) prior
+to model fitting.</p><sec id="sec2.5.1" disp-level="3"><label>2.5.1.</label><title>Langmuir Isotherm</title><p>The Langmuir
+model assumes that adsorption occurs on a homogeneous surface via
+monolayer coverage, where all adsorption sites are identical, and
+no interactions between adsorbed molecules occur. The linear form
+of the Langmuir equation is expressed as</p><disp-formula id="eq2"><label>2</label><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="d1e452" display="block"><mml:mfrac><mml:msub><mml:mi>C</mml:mi><mml:mi mathvariant="normal">e</mml:mi></mml:msub><mml:msub><mml:mi>Q</mml:mi><mml:mi mathvariant="normal">e</mml:mi></mml:msub></mml:mfrac><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mi mathvariant="normal">L</mml:mi></mml:msub><mml:msub><mml:mi>q</mml:mi><mml:mi>max</mml:mi></mml:msub></mml:mrow></mml:mfrac><mml:mo>+</mml:mo><mml:mfrac><mml:msub><mml:mi>C</mml:mi><mml:mi mathvariant="normal">e</mml:mi></mml:msub><mml:msub><mml:mi>q</mml:mi><mml:mi>max</mml:mi></mml:msub></mml:mfrac></mml:math></disp-formula><p>where <italic>Q</italic>
+<sub>e</sub> (mg/g) is the adsorption capacity at equilibrium, <italic>C</italic>
+<sub>e</sub> (mg/L) is the equilibrium concentration, <italic>q</italic>
+<sub>max</sub> (mg/g) is the theoretical maximum monolayer adsorption
+capacity, and <italic>K</italic>
+<sub>L</sub> (L/mg) is the Langmuir
+constant related to the affinity of the binding sites. To assess the
+feasibility of the adsorption process, the dimensionless separation
+factor (<italic>R</italic>
+<sub>L</sub>) was calculated using the following
+equation</p><disp-formula id="eq3"><label>3</label><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="d1e509" display="block"><mml:msub><mml:mi>R</mml:mi><mml:mi mathvariant="normal">L</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mrow><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:msub><mml:mi>K</mml:mi><mml:mi mathvariant="normal">L</mml:mi></mml:msub><mml:msub><mml:mi>C</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:mrow></mml:mfrac></mml:math></disp-formula><p>where <italic>C</italic>
+<sub>0</sub> is the highest initial acid
+concentration (mg L). The value of <italic>R</italic>
+<sub>L</sub> indicates
+whether the adsorption is unfavorable (<italic>R</italic>
+<sub>L</sub> &gt; 1), linear (<italic>R</italic>
+<sub>L</sub> = 1), favorable
+(0
+&lt; <italic>R</italic>
+<sub>L</sub> &lt; 1), or irreversible (<italic>R</italic>
+<sub>L</sub> = 0).</p></sec><sec id="sec2.5.2" disp-level="3"><label>2.5.2.</label><title>Freundlich Isotherm</title><p>The Freundlich
+isotherm is an empirical model used to describe multilayer adsorption
+on heterogeneous surfaces where the adsorption heat is nonuniformly
+distributed. Its linear form is given by</p><disp-formula id="eq4"><label>4</label><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="d1e563" display="block"><mml:msub><mml:mrow><mml:mi>ln</mml:mi><mml:mo linebreak="nobreak" lspace="0em" rspace="0.25em">⁡</mml:mo><mml:mi>Q</mml:mi></mml:mrow><mml:mi mathvariant="normal">e</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mi>ln</mml:mi><mml:mo linebreak="nobreak" lspace="0em" rspace="0.25em">⁡</mml:mo><mml:mi>K</mml:mi></mml:mrow><mml:mi mathvariant="normal">F</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mi>n</mml:mi></mml:mfrac><mml:mo linebreak="nobreak" lspace="0em" rspace="0.1em">⁡</mml:mo><mml:msub><mml:mrow><mml:mi>ln</mml:mi><mml:mo linebreak="nobreak" lspace="0em" rspace="0.25em">⁡</mml:mo><mml:mi>C</mml:mi></mml:mrow><mml:mi mathvariant="normal">e</mml:mi></mml:msub></mml:math></disp-formula><p>where <italic>K</italic>
+<sub>F</sub> [(mg/g)·(L/mg)<sup>1/<italic>n</italic>
+</sup>] represents the
+adsorption capacity and 1/<italic>n</italic> is the heterogeneity
+factor. A value of 1/<italic>n</italic> between 0 and 1 indicates
+a favorable adsorption process.</p></sec><sec id="sec2.5.3" disp-level="3"><label>2.5.3.</label><title>Temkin Isotherm</title><p>The Temkin model
+accounts for the effects of indirect adsorbent–adsorbate interactions,
+assuming that the heat of adsorption decreases linearly rather than
+logarithmically with surface coverage. The linear equation is</p><disp-formula id="eq5"><label>5</label><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="d1e621" display="block"><mml:msub><mml:mi>Q</mml:mi><mml:mi mathvariant="normal">e</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mi>B</mml:mi><mml:mo linebreak="nobreak" lspace="0em" rspace="0.1em">⁡</mml:mo><mml:mi>ln</mml:mi><mml:mo linebreak="nobreak" lspace="0em" rspace="0.25em">⁡</mml:mo><mml:mi>A</mml:mi><mml:mo>+</mml:mo><mml:mi>B</mml:mi><mml:mo linebreak="nobreak" lspace="0em" rspace="0.1em">⁡</mml:mo><mml:mi>ln</mml:mi><mml:mo linebreak="nobreak" lspace="0em" rspace="0.25em">⁡</mml:mo><mml:msub><mml:mi>C</mml:mi><mml:mi mathvariant="normal">e</mml:mi></mml:msub></mml:math></disp-formula><p>where <italic>A</italic> (L/g) is the
+equilibrium binding constant, and <italic>B</italic> is a constant
+related to the heat of adsorption.</p></sec><sec id="sec2.5.4" disp-level="3"><label>2.5.4.</label><title>Adsorption Kinetics Models</title><p>To investigate
+the adsorption mechanism and identify the rate-controlling steps,
+the experimental data for the recovery of lactic, succinic, and citric
+acids were analyzed using the pseudo-second-order (PSO) and intraparticle
+diffusion (IPD) models. The linear form of the pseudo-second-order
+(PSO) kinetic model is expressed as follows</p><disp-formula id="eq6"><label>6</label><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="d1e663" display="block"><mml:mfrac><mml:mi>t</mml:mi><mml:msub><mml:mi>q</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mfrac><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mrow><mml:msub><mml:mi>k</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>×</mml:mo><mml:msubsup><mml:mi>q</mml:mi><mml:mi mathvariant="normal">e</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mfrac><mml:mo>+</mml:mo><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:msub><mml:mi>q</mml:mi><mml:mi mathvariant="normal">e</mml:mi></mml:msub></mml:mfrac><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mi>t</mml:mi></mml:math></disp-formula><p>where <italic>q</italic>
+<sub>e</sub> and <italic>q</italic>
+<sub>
+<italic>t</italic>
+</sub> (mg/g) are the
+amounts of organic acid adsorbed at equilibrium and at any time <italic>t</italic> (min), respectively, and <italic>k</italic>
+<sub>2</sub> (g/mg·min) represents the second-order adsorption rate constant.
+The values of <italic>q</italic>
+<sub>e,cal</sub> and <italic>k</italic>
+<sub>2</sub> are determined from the slope and intercept of the linear
+plot of <italic>t</italic>/<italic>q</italic>
+<sub>
+<italic>t</italic>
+</sub> versus <italic>t</italic>.</p><p>The intraparticle diffusion
+(IPD) model was further applied to
+elucidate the diffusion mechanism, according to the following equation</p><disp-formula id="eq7"><label>7</label><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="d1e742" display="block"><mml:msub><mml:mi>q</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mi>k</mml:mi><mml:mrow><mml:mi mathvariant="normal">i</mml:mi><mml:mi mathvariant="normal">d</mml:mi></mml:mrow></mml:msub><mml:mo>×</mml:mo><mml:msup><mml:mi>t</mml:mi><mml:mn>0.5</mml:mn></mml:msup><mml:mo>+</mml:mo><mml:mi>C</mml:mi></mml:math></disp-formula><p>where <italic>k</italic>
+<sub>id</sub> (mg/g·min) is the intraparticle
+diffusion rate constant, and the intercept <italic>C</italic> (mg/g)
+is a constant related to the thickness of the boundary layer. A multilinear
+plot of <italic>q</italic>
+<sub>
+<italic>t</italic>
+</sub> versus <italic>t</italic>
+<sup>0.5</sup> indicates that the adsorption process involves
+multiple stages, including external surface adsorption and internal
+pore diffusion.</p></sec></sec><sec id="sec2.6" disp-level="2"><label>2.6.</label><title>Statistical Analysis</title><p>To evaluate
+the statistical significance of the comparative adsorption performance
+between MGO and magnetic AC, a two-sample <italic>t</italic>-test
+was performed on the experimental data sets. The statistical analysis
+was conducted using Minitab 21.4.1 software (USA). A <italic>p</italic>-value of less than 0.05 (<italic>p</italic> &lt; 0.05) was considered
+to indicate statistical significance in the comparative evaluation
+of adsorption capacities (<italic>Q</italic>
+<sub>e</sub>) and equilibrium
+concentrations (<italic>C</italic>
+<sub>e</sub>).</p></sec></sec><sec id="sec3" disp-level="1"><label>3.</label><title>Results and Discussion</title><sec id="sec3.1" disp-level="2"><label>3.1.</label><title>FTIR Analysis</title><p>FTIR spectroscopy was
+used to identify the functional groups present in the synthesized
+materials. The FTIR spectrum is shown in <xref rid="fig1" ref-type="fig">Figure 
+</xref>.</p><fig id="fig1" position="float"><?disp-level 3?><label>1</label><caption><p>FTIR spectrum of MGO.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr1" xlink:href="ao6c05759_0001.webp"><?cloudpmc-path blobs/5898/13613405/ee964bc76261/ao6c05759_0001.webp?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 938?><?original-width 1600?><?scaled-height 938?><?scaled-width 1600?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ao6c05759_0001.gif"><?cloudpmc-path blobs/5898/13613405/c3edc4c07f29/ao6c05759_0001.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>The FTIR spectrum of the MGO composite exhibited
+several characteristic
+absorption bands consistent with oxygen-functionalized graphene materials
+and iron oxide incorporation. A broad absorption band centered at
+approximately 3439 cm<sup>–1</sup> was assigned to O–H
+stretching vibrations, corresponding to hydroxyl groups and adsorbed
+moisture commonly observed in graphene oxide-based materials. The
+band at 3019 cm<sup>–1</sup> may be associated with C–H
+stretching vibrations. Bands observed at 1593 and 1487 cm<sup>–1</sup> are attributed to skeletal vibrations of the graphitic carbon framework
+and aromatic CC stretching. The band near 1301 cm<sup>–1</sup> can be assigned to C–O stretching vibrations of epoxy and
+alkoxy functionalities, while the feature around 1089 cm<sup>–1</sup> is consistent with C–O stretching of oxygen-containing groups.
+A weak low-wavenumber feature was observed in the region below 700
+cm<sup>–1</sup>, which may indicate Fe–O vibrations
+associated with iron oxide incorporation; however, this region was
+not sufficiently resolved for definitive assignment. The persistence
+of O–H- and C–O-related bands indicates that oxygen-containing
+functional groups were retained after magnetic modification, suggesting
+preservation of the graphene oxide structure. In combination with
+XRD results, these observations support successful incorporation of
+iron oxide species into the graphene oxide matrix. These results are
+consistent with graphene oxide-based materials reported in the literature. Compared with pristine graphene oxide reported
+in previous studies, the observed spectral changes, including the
+slight broadening of the O–H stretching band and the presence
+of Fe–O vibrations, are consistent with the successful deposition
+of Fe<sub>3</sub>O<sub>4</sub> nanoparticles onto graphene oxide sheets.<italic>
+,
+</italic> Similar FTIR features have been reported for magnetic graphene oxide
+nanocomposites, where interactions between iron oxide nanoparticles
+and oxygen-containing functional groups contributed to the formation
+of stable hybrid structures.<italic>
+,
+</italic> Therefore, the present
+results indicate successful surface modification rather than simple
+physical mixing.</p><p>Similar FTIR characteristics have been reported
+for GO/Fe<sub>3</sub>O<sub>4</sub> nanocomposites synthesized by coprecipitation,
+where
+the coexistence of O–H, C–O, graphitic CC, and
+Fe–O bands confirmed the successful deposition of Fe<sub>3</sub>O<sub>4</sub> nanoparticles onto graphene oxide sheets while preserving
+the oxygen-containing functional groups responsible for surface reactivity. Likewise, piperazine-functionalized magnetic
+graphene oxide exhibited comparable spectral features, with the retention
+of oxygen-containing functional groups after magnetic modification
+indicating that the graphene oxide framework remained intact during
+synthesis.
+</p><p>Comparable observations
+have also been reported for other magnetic
+graphene oxide-based nanocomposites prepared for biomedical applications.
+In GO/Fe<sub>3</sub>O<sub>4</sub>-modified clay nanocomposites, FTIR
+analysis confirmed that the characteristic oxygen-containing functional
+groups of graphene oxide were preserved after incorporation of Fe<sub>3</sub>O<sub>4</sub> nanoparticles, indicating strong interfacial
+interactions without disruption of the graphene structure. Similarly, MGO-containing hydrogel scaffolds
+exhibited broad O–H absorption bands associated with extensive
+hydrogen bonding between graphene oxide and the surrounding polymeric
+matrix, demonstrating that oxygen-containing functional groups remain
+available for intermolecular interactions after magnetic modification.
+</p><p>The preservation of oxygenated functional
+groups after incorporation
+of magnetic nanoparticles has also been observed in other graphene-based
+magnetic nanocomposites, including ZnFe<sub>2</sub>O<sub>4</sub>-decorated
+reduced graphene oxide and multifunctional GO@Fe<sub>3</sub>O<sub>4</sub> hybrid nanostructures, where FTIR spectra confirmed successful
+hybrid formation while maintaining the functional groups required
+for further surface interactions and applications.<italic>
+,
+</italic> The close agreement between the present FTIR results and previous
+reports therefore provides additional evidence for the successful
+synthesis of the MGO composite and the effective interaction between
+iron oxide nanoparticles and graphene oxide sheets rather than simple
+physical blending.</p><p>Compared with the magnetic activated carbon
+reference material,
+the MGO composite retained the characteristic oxygen-containing functional
+groups of graphene oxide together with Fe–O vibrations arising
+from magnetite incorporation. Although both magnetic materials exhibit
+Fe–O-related absorption associated with Fe<sub>3</sub>O<sub>4</sub>, the stronger O–H and C–O bands observed for
+MGO reflect the oxygen-rich surface chemistry of graphene oxide, which
+provides abundant anchoring sites for iron oxide nanoparticles. This
+distinction suggests that the interaction between Fe<sub>3</sub>O<sub>4</sub> and graphene oxide is stronger than that expected for activated
+carbon-based supports and contributes to the enhanced structural integration
+of the composite.<italic>
+,−
+
+
+
+</italic>
+</p></sec><sec id="sec3.2" disp-level="2"><label>3.2.</label><title>XRD Analysis</title><p>XRD patterns of the
+graphene oxide-based sample and AC-based sample are presented in <xref rid="fig2" ref-type="fig">Figures 
+</xref> and , respectively. <xref rid="fig2" ref-type="fig">Figure 
+</xref> corresponds to the MGO composite. <xref rid="fig3" ref-type="fig">Figure 
+</xref> represents the magnetically modified activated
+carbon (AC) reference sample.</p><fig id="fig2" position="float"><?disp-level 3?><label>2</label><caption><p>XRD results of MGO.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr2" xlink:href="ao6c05759_0002.webp"><?cloudpmc-path blobs/5898/13613405/77538c8a5964/ao6c05759_0002.webp?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 598?><?original-width 1600?><?scaled-height 598?><?scaled-width 1600?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ao6c05759_0002.gif"><?cloudpmc-path blobs/5898/13613405/669702bffb40/ao6c05759_0002.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><fig id="fig3" position="float"><?disp-level 3?><label>3</label><caption><p>XRD results of magnetically modified AC.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr3" xlink:href="ao6c05759_0003.webp"><?cloudpmc-path blobs/5898/13613405/676180dc1a9e/ao6c05759_0003.webp?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 615?><?original-width 1599?><?scaled-height 615?><?scaled-width 1599?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ao6c05759_0003.gif"><?cloudpmc-path blobs/5898/13613405/998a08153e7c/ao6c05759_0003.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>The graphene oxide-based sample exhibits diffraction
+peaks at approximately
+2θ = 25, 27, 42, and 44°, while the AC-based sample shows
+peaks at 22, 23, 25, 26, 27, 43, and 44°. The similarity between
+the diffraction patterns in <xref rid="fig2" ref-type="fig">Figures 
+</xref> and  confirms the presence
+of graphene within the modified material. These results indicate the
+successful incorporation of iron species onto the graphene oxide structure.
+The magnetic behavior of the synthesized composite was qualitatively
+confirmed through visual magnetic response tests. The material exhibited
+rapid attraction toward an external permanent magnet, allowing efficient
+separation from aqueous solution within seconds. This observation
+supports the successful incorporation of magnetite nanoparticles and
+confirms the feasibility of magnetic recovery. Beyond structural characterization,
+the functional integrity of the MGO composite was successfully demonstrated
+by its rapid magnetic response, achieving complete phase separation
+from the aqueous solution in less than 30 s under an external magnetic
+field. This exceptional separation efficiency serves as a robust functional
+validation of the successful anchoring of magnetite nanoparticles
+on the GO sheets, confirming that the magnetic phase is effectively
+integrated to enable practical recovery. The crystalline integrity
+of the magnetic phase was rigorously validated through the identification
+of five distinct diffraction peaks at 2θ ≈ 30.1, 35.5,
+43.1, 53.5, and 57°, which are precisely indexed to the (220),
+(311), (400), (422), and (511) crystal planes of Fe<sub>3</sub>O<sub>4</sub>, respectively. The coexistence of these high-intensity magnetite
+reflections alongside the characteristic graphitic peaks confirms
+the successful in situ growth of crystalline iron oxide nanoparticles
+on the graphene oxide matrix, providing a definitive structural fingerprint
+of the composite formation even in the absence of direct microscopic
+imaging. Minor peak broadening may indicate reduced crystallite size
+or interaction between iron oxide nanoparticles and graphene oxide
+layers.</p><p>Similar diffraction patterns have been widely reported
+for magnetic
+graphene oxide nanocomposites prepared by coprecipitation methods.
+In particular, the characteristic reflections of magnetite assigned
+to the (220), (311), (400), (422), and (511) crystal planes together
+with the graphene oxide-related diffraction peaks have been considered
+clear evidence of successful Fe<sub>3</sub>O<sub>4</sub> deposition
+onto graphene oxide sheets without altering the crystalline structure
+of magnetite. Comparable XRD results
+were also reported for piperazine-functionalized magnetic graphene
+oxide, where the coexistence of graphene oxide and Fe<sub>3</sub>O<sub>4</sub> diffraction peaks confirmed successful magnetic functionalization
+while maintaining the crystalline nature of iron oxide nanoparticles. Similar structural characteristics have also
+been observed in GO/Fe<sub>3</sub>O<sub>4</sub>-containing hybrid
+nanocomposites developed for biomedical applications. The XRD patterns
+of GO/Fe<sub>3</sub>O<sub>4</sub>-modified clay composites demonstrated
+that the incorporation of magnetic nanoparticles did not disrupt the
+crystal structure of either graphene oxide or Fe<sub>3</sub>O<sub>4</sub>, confirming the successful formation of the hybrid material. Likewise, multifunctional GO@Fe<sub>3</sub>O<sub>4</sub>-based nanostructures retained the characteristic diffraction
+peaks of magnetite after further surface functionalization, indicating
+that the Fe<sub>3</sub>O<sub>4</sub> crystalline phase remained stable
+throughout subsequent modification steps. The observed peak broadening is also consistent with previous studies
+on magnetic graphene-based nanocomposites, where broadened Fe<sub>3</sub>O<sub>4</sub> reflections were attributed to the nanoscale
+crystallite size and the homogeneous dispersion of magnetic nanoparticles
+on graphene sheets.<italic>
+,
+</italic> Similar XRD characteristics have
+additionally been reported for FeGO-based magnetic adsorbents and
+cellulose/graphene oxide magnetic composites, further confirming that
+the preservation of the magnetite diffraction peaks together with
+graphene-related reflections is a typical structural feature of successfully
+synthesized magnetic graphene oxide composites.<italic>
+,
+</italic> Therefore, the excellent agreement between the present diffraction
+pattern and previous reports provides strong evidence for the successful
+synthesis of the magnetic graphene oxide composite and the effective
+integration of crystalline Fe<sub>3</sub>O<sub>4</sub> nanoparticles
+within the graphene oxide matrix.</p><p>Compared with the magnetic
+activated carbon reference sample (<xref rid="fig3" ref-type="fig">Figure 
+</xref>), the MGO composite
+exhibited the characteristic magnetite reflections together with graphene-related
+diffraction features, whereas the AC-based material primarily reflected
+the carbonaceous support. The similar Fe<sub>3</sub>O<sub>4</sub> diffraction
+peaks observed in both magnetic materials confirm successful magnetite
+formation regardless of the support material, while the differences
+in the carbon-related reflections originate from the distinct structural
+organizations of graphene oxide and activated carbon. Unlike activated
+carbon, graphene oxide possesses a layered graphitic framework rich
+in oxygen-containing functional groups, which provide suitable anchoring
+sites for homogeneous Fe<sub>3</sub>O<sub>4</sub> deposition and contribute
+to the formation of a more integrated hybrid structure.<italic>
+,−
+,,
+</italic>
+</p></sec><sec id="sec3.3" disp-level="2"><label>3.3.</label><title>Textural Characterization (BET Analysis)</title><p>The N<sub>2</sub> adsorption–desorption isotherm of the
+MGO composite is presented in <xref rid="fig4" ref-type="fig">Figure 
+</xref>. The isotherm exhibits a typical Type IV classification
+with a distinct H3-type hysteresis loop according to the IUPAC nomenclature,
+which is a characteristic feature of mesoporous materials. The hysteresis
+loop observed in the relative pressure range of 0.4–1.0 indicates
+the presence of slit-like pores often associated with the layered
+structure of graphene oxide. According to BET analysis, the specific
+surface area of the MGO was determined to be 37.94 m<sup>2</sup>/g,
+with a high correlation coefficient (<italic>r</italic>) of 0.99996
+and a <italic>C</italic> constant of 179.47. The total pore volume
+was calculated as 0.078 cm<sup>3</sup>/g for pores smaller than 82.27
+nm (radius) at a relative pressure of 0.988. Furthermore, the average
+pore radius was found to be 4.12 nm, further confirming the mesoporous
+nature of the adsorbent. This mesoporous framework is particularly
+advantageous for the adsorption of organic acids, such as lactic,
+succinic, and citric acids, as it provides accessible active sites
+and facilitates the diffusion of these molecules into the internal
+pore structure. Textural properties of the MGO and AC are shown in <xref rid="tbl1" ref-type="table">Table 
+</xref>.</p><fig id="fig4" position="float"><?disp-level 3?><label>4</label><caption><p>BET result of MGO.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr4" xlink:href="ao6c05759_0004.webp"><?cloudpmc-path blobs/5898/13613405/a1abb9d5d8b6/ao6c05759_0004.webp?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1366?><?original-width 1600?><?scaled-height 1366?><?scaled-width 1600?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ao6c05759_0004.gif"><?cloudpmc-path blobs/5898/13613405/030862776382/ao6c05759_0004.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><table-wrap id="tbl1" position="float"><?disp-level 3?><label>1</label><caption><title>Textural Properties of the MGO and
+AC</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/></colgroup><thead><tr><th align="center" colspan="1" rowspan="1"> </th><th colspan="2" align="center" rowspan="1">value<hr/></th></tr><tr><th align="center" colspan="1" rowspan="1">property</th><th align="center" colspan="1" rowspan="1">MGO</th><th align="center" colspan="1" rowspan="1">AC</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">BET
+surface area (m<sup>2</sup>/g)</td><td align="center" colspan="1" rowspan="1">37.94</td><td align="center" colspan="1" rowspan="1">40.38</td></tr><tr><td align="left" colspan="1" rowspan="1">total pore
+volume (cm<sup>3</sup>/g)</td><td align="center" colspan="1" rowspan="1">0.078</td><td align="center" colspan="1" rowspan="1">0.1139</td></tr><tr><td align="left" colspan="1" rowspan="1">average pore
+radius (nm)</td><td align="center" colspan="1" rowspan="1">4.12</td><td align="center" colspan="1" rowspan="1">5.64</td></tr><tr><td align="left" colspan="1" rowspan="1">correlation coefficient (<italic>r</italic>)</td><td align="center" colspan="1" rowspan="1">0.99996</td><td align="center" colspan="1" rowspan="1">0.99993</td></tr><tr><td align="left" colspan="1" rowspan="1">
+<italic>C</italic> constant</td><td align="center" colspan="1" rowspan="1">179.47</td><td align="center" colspan="1" rowspan="1">98.88</td></tr></tbody></table></table-wrap><p>The BET surface area of the synthesized MGO (37.94
+m<sup>2</sup>/g) is relatively modest compared to some carbon-based
+materials;
+however, its exceptional adsorption capacity (<italic>q</italic>
+<sub>max</sub> = 334.45 mg/g for lactic acid) confirms that the adsorption
+performance is governed by the synergistic effect of pore accessibility
+and surface chemistry rather than surface area alone. To provide a
+rigorous comparative basis, parallel textural characterization was
+conducted on a magnetic activated carbon (AC) reference, which exhibited
+a slightly higher surface area (40.38 m<sup>2</sup>/g), a larger total
+pore volume (0.1139 cm<sup>3</sup>/g), and a broader average pore
+radius (5.64 nm). Despite these theoretically superior textural parameters
+of the magnetic AC, its maximum adsorption capacity for lactic acid
+was substantially lower (<italic>q</italic>
+<sub>max</sub> = 74.6 mg/g),
+which directly underscores that surface area is not the primary determinant
+of efficiency in these systems. The literature supports this observation;
+for instance, Jahan et al. reported a graphene oxide with a surface
+area of only 9.10 m<sup>2</sup>/g that achieved a massive methylene
+blue adsorption capacity of 3333 mg/g, proving that oxygen-containing
+functional groups provide the dominant driving force.
+</p><p>In our study, while both materials possess mesoporous
+architectures,
+the superiority of MGO arises from its dense population of oxygen-rich
+moieties (hydroxyl, epoxy, and carboxyl groups), which facilitate
+specific hydrogen bonding and π–π interactions
+that are absent in the purely physical framework of the AC reference.
+This mesoporous architecture, comparable to other high-performance
+composites with pore diameters around 3.12–3.30 nm, ensures
+that high-concentration organic acid molecules can penetrate the internal
+framework and access these high-density functional groups without
+the “pore-clogging” issues often seen in microporous
+adsorbents. Consequently, MGO’s
+performance matches or exceeds specialized industrial resins like
+Amberlite IRA-67 (<italic>q</italic>
+<sub>max</sub> = 333.33 mg/g),
+as summarized in <xref rid="tbl2" ref-type="table">Table 
+</xref>. This comparison justifies the rationality of MGO’s design
+for large-scale biotechnological separations.
+</p><table-wrap id="tbl2" position="float"><?disp-level 3?><label>2</label><caption><title>Comparison of Textural Parameters
+and Adsorption Capacities of MGO with the Literature</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/></colgroup><thead><tr><th align="center" colspan="1" rowspan="1">adsorbent</th><th align="center" colspan="1" rowspan="1">BET surface area (m<sup>2</sup>/g)</th><th align="center" colspan="1" rowspan="1">pore size/architecture</th><th align="center" colspan="1" rowspan="1">adsorbate</th><th align="center" colspan="1" rowspan="1">
+<italic>q</italic>
+<sub>max</sub> (mg/g)</th><th align="center" colspan="1" rowspan="1">references</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">MGO</td><td align="left" colspan="1" rowspan="1">37.94</td><td align="left" colspan="1" rowspan="1">4.12 nm (mesopore)</td><td align="left" colspan="1" rowspan="1">lactic acid</td><td align="left" colspan="1" rowspan="1">334.45</td><td align="left" colspan="1" rowspan="1">this study</td></tr><tr><td align="left" colspan="1" rowspan="1">Amberlite IRA-67</td><td align="left" colspan="1" rowspan="1">not reported</td><td align="left" colspan="1" rowspan="1">gel-type resin</td><td align="left" colspan="1" rowspan="1">lactic acid</td><td align="left" colspan="1" rowspan="1">333.33</td><td align="left" colspan="1" rowspan="1">
+
+</td></tr><tr><td align="left" colspan="1" rowspan="1">activated carbon</td><td align="left" colspan="1" rowspan="1"> </td><td align="left" colspan="1" rowspan="1">microporous</td><td align="left" colspan="1" rowspan="1">lactic acid</td><td align="left" colspan="1" rowspan="1">256.41</td><td align="left" colspan="1" rowspan="1">
+
+</td></tr><tr><td align="left" colspan="1" rowspan="1">graphene oxide (GO)</td><td align="left" colspan="1" rowspan="1">9.10</td><td align="left" colspan="1" rowspan="1">mesoporous</td><td align="left" colspan="1" rowspan="1">methylene blue</td><td align="left" colspan="1" rowspan="1">3333</td><td align="left" colspan="1" rowspan="1">
+
+</td></tr><tr><td align="left" colspan="1" rowspan="1">rGO composite</td><td align="left" colspan="1" rowspan="1">46.65</td><td align="left" colspan="1" rowspan="1">3.12 nm (mesopore)</td><td align="left" colspan="1" rowspan="1"> </td><td align="left" colspan="1" rowspan="1"> </td><td align="left" colspan="1" rowspan="1">
+
+</td></tr><tr><td align="left" colspan="1" rowspan="1">magnetic AC</td><td align="left" colspan="1" rowspan="1">moderate</td><td align="left" colspan="1" rowspan="1">microporous</td><td align="left" colspan="1" rowspan="1">lactic acid</td><td align="left" colspan="1" rowspan="1">74.6</td><td align="left" colspan="1" rowspan="1">this study</td></tr></tbody></table></table-wrap><p>Although the BET surface area of the synthesized MGO
+(37.94 m<sup>2</sup>/g) is relatively modest compared with some graphene-based
+adsorbents reported in the literature, the adsorption performance
+cannot be explained solely by the specific surface area. Instead,
+the adsorption efficiency is strongly influenced by the accessibility
+of adsorption sites, pore architecture, and surface chemistry. Type
+IV isotherm together with the average pore radius of 4.12 nm confirms
+the mesoporous nature of the material, which facilitates molecular
+diffusion and improves the accessibility of adsorption sites for organic
+acid molecules.<italic>
+,
+</italic> Furthermore, graphene oxide contains
+abundant oxygen-containing functional groups capable of forming hydrogen
+bonding and other specific interactions with adsorbates, thereby contributing
+significantly to adsorption performance beyond the contribution of
+surface area alone.<italic>
+,
+</italic>
+</p><p>Previous studies have similarly
+demonstrated that increasing BET
+surface area does not necessarily result in enhanced adsorption capacity.
+For example, although isophthalic acid-modified HKUST-1 exhibited
+the highest BET surface area, excessive ultramicropore formation restricted
+molecular diffusion and resulted in lower methane uptake, highlighting
+that the pore size distribution and pore accessibility are often more
+critical than the surface area itself. Likewise, adsorption enhancement has been attributed to chemisorption,
+hydrogen bonding, electrostatic interactions, and π–π
+interactions rather than to surface area alone.<italic>
+,,
+</italic> Therefore, the moderate BET surface area
+observed in the present study is compensated by the favorable mesoporous
+structure together with abundant oxygen-containing functional groups,
+which collectively provide efficient adsorption sites for lactic,
+succinic, and citric acids. The present results suggest that adsorption
+capacity is governed by the synergistic effect of pore accessibility
+and surface chemistry rather than by BET surface area alone, which
+is consistent with previous studies on graphene-based adsorbents.<italic>
+,,
+</italic>
+</p></sec><sec id="sec3.4" disp-level="2"><label>3.4.</label><title>Adsorption Isotherms of Organic Acids</title><sec id="sec3.4.1" disp-level="3"><label>3.4.1.</label><title>Succinic Acid</title><p>The effect of initial
+succinic acid concentration on adsorption capacity is summarized in <xref rid="tbl3" ref-type="table">Table 
+</xref>, and Langmuir isotherm
+parameters are presented in <xref rid="tbl4" ref-type="table">Table 
+</xref>. The corresponding isotherm plots are shown in <xref rid="fig5" ref-type="fig">Figure 
+</xref>.</p><table-wrap id="tbl3" position="float"><?disp-level 4?><label>3</label><caption><title>Effect of Initial Acid Concentration
+on Succinic Acid Adsorption</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="±" span="1"/><col align="char" char="±" span="1"/></colgroup><thead><tr><th align="center" colspan="1" rowspan="1">adsorbent</th><th align="center" colspan="1" rowspan="1">initial acid concentration, <italic>C</italic>
+<sub>0</sub> (g/L)</th><th align="center" colspan="1" rowspan="1">equilibrium concentration, <italic>C</italic>
+<sub>e</sub>*<sup/> (g/L)</th><th align="center" colspan="1" rowspan="1">adsorption capacity, <italic>Q</italic>
+<sub>e</sub>* (mg/g)</th></tr></thead><tbody><tr><td rowspan="5" align="left" colspan="1">
+<sup/>AC-based</td><td align="center" colspan="1" rowspan="1">10</td><td align="center" colspan="1" rowspan="1">9.98 ± 0.001</td><td align="center" colspan="1" rowspan="1">30.8 ± 2.3</td></tr><tr><td align="center" colspan="1" rowspan="1">25</td><td align="center" colspan="1" rowspan="1">24.97 ± 0.002</td><td align="center" colspan="1" rowspan="1">58.0 ± 3.2</td></tr><tr><td align="center" colspan="1" rowspan="1">50</td><td align="center" colspan="1" rowspan="1">49.96 ± 0.002</td><td align="center" colspan="1" rowspan="1">80.8 ± 4.2</td></tr><tr><td align="center" colspan="1" rowspan="1">75</td><td align="center" colspan="1" rowspan="1">74.96 ± 0.002</td><td align="center" colspan="1" rowspan="1">82.4 ± 3.9</td></tr><tr><td align="center" colspan="1" rowspan="1">100</td><td align="center" colspan="1" rowspan="1">99.96 ± 0.002</td><td align="center" colspan="1" rowspan="1">87.2 ± 4.2</td></tr><tr><td rowspan="5" align="left" colspan="1">
+<sup/>MGO-based</td><td align="center" colspan="1" rowspan="1">10</td><td align="center" colspan="1" rowspan="1">9.91 ± 0.002</td><td align="center" colspan="1" rowspan="1">187.2 ± 4.2</td></tr><tr><td align="center" colspan="1" rowspan="1">25</td><td align="center" colspan="1" rowspan="1">24.91 ± 0.002</td><td align="center" colspan="1" rowspan="1">187.2 ± 3.0</td></tr><tr><td align="center" colspan="1" rowspan="1">50</td><td align="center" colspan="1" rowspan="1">49.91 ± 0.002</td><td align="center" colspan="1" rowspan="1">188.0 ± 4.7</td></tr><tr><td align="center" colspan="1" rowspan="1">75</td><td align="center" colspan="1" rowspan="1">74.91 ± 0.003</td><td align="center" colspan="1" rowspan="1">190 ± 5.5</td></tr><tr><td align="center" colspan="1" rowspan="1">100</td><td align="center" colspan="1" rowspan="1">99.90 ± 0.004</td><td align="center" colspan="1" rowspan="1">190.8 ± 8.7</td></tr></tbody></table><table-wrap-foot><fn id="t3fn3"><label>a</label><p>Denotes the equilibrium state values.</p></fn><fn id="t3fn1"><label>b</label><p>AC-based: magnetic activated
+carbon-based.</p></fn><fn id="t3fn2"><label>c</label><p>MGO-based:
+magnetically modified
+graphene oxide-based.</p></fn></table-wrap-foot></table-wrap><table-wrap id="tbl4" position="float"><?disp-level 4?><label>4</label><caption><title>Langmuir Isotherm Data of Succinic
+Acid</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="×" span="1"/><col align="char" char="×" span="1"/></colgroup><thead><tr><th align="center" colspan="1" rowspan="1">adsorbent</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sup>2</sup>
+</th><th align="center" colspan="1" rowspan="1">
+<italic>q</italic>
+<sub>max</sub> (mg/g)</th><th align="center" colspan="1" rowspan="1">
+<italic>K</italic>
+<sub>L</sub> (L/mg)</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sub>L</sub> (<italic>C</italic>
+<sub>0</sub> = 1%)</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sub>L</sub> (<italic>C</italic>
+<sub>0</sub> = 10%)</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">AC-based</td><td align="center" colspan="1" rowspan="1">0.99</td><td align="center" colspan="1" rowspan="1">107.53</td><td align="center" colspan="1" rowspan="1">0.0457</td><td align="center" colspan="1" rowspan="1">2.2 × 10<sup>–3</sup>
+</td><td align="center" colspan="1" rowspan="1">2.2 × 10<sup>–4</sup>
+</td></tr><tr><td align="left" colspan="1" rowspan="1">MGO-based</td><td align="center" colspan="1" rowspan="1">0.99</td><td align="center" colspan="1" rowspan="1">192.31</td><td align="center" colspan="1" rowspan="1">2.00</td><td align="center" colspan="1" rowspan="1">5 × 10<sup>–5</sup>
+</td><td align="center" colspan="1" rowspan="1">5 × 10<sup>–6</sup>
+</td></tr></tbody></table></table-wrap><fig id="fig5" position="float"><?disp-level 4?><label>5</label><caption><p>Isotherm model for succinic
+acid: red box solid, sample prepared
+with activated carbon; blue circle solid, sample prepared using graphene
+oxide.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr5" xlink:href="ao6c05759_0005.webp"><?cloudpmc-path blobs/5898/13613405/9045be636770/ao6c05759_0005.webp?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1101?><?original-width 1983?><?scaled-height 1101?><?scaled-width 1983?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ao6c05759_0005.gif"><?cloudpmc-path blobs/5898/13613405/bbd16b39fecc/ao6c05759_0005.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>To quantitatively evaluate the succinic acid adsorption
+performance
+between MGO-based and AC-based adsorbents, a two-sample <italic>t</italic>-test was conducted on the data set presented in <xref rid="tbl3" ref-type="table">Table 
+</xref>. The statistical analysis revealed
+highly significant differences between the two functional materials
+across the investigated concentration range (10–100 g/L). Specifically,
+the overall mean adsorption capacity (<italic>Q</italic>
+<sub>e</sub>) was determined as 188.6 mg/g for MGO-based and 67.8 mg/g for AC-based
+adsorbents, demonstrating a highly significant statistical variation
+(<italic>p</italic> &lt; 0.001). Similarly, the analysis for equilibrium
+concentration (<italic>C</italic>
+<sub>e</sub>) yielded mean values
+of 51.9 g/L (MGO-based) and 52 g/L (AC-based), confirming the distinct
+mass balance profiles. These results clearly establish that the MGO
+composite provides a vastly superior affinity and saturation capacity
+for succinic acid recovery compared to the AC reference.</p><p>Both
+AC- and graphene oxide-based samples exhibit good agreement
+with the Langmuir isotherm model. The higher <italic>q</italic>
+<sub>max</sub> value obtained for the MGO-based adsorbent indicates an
+enhanced adsorption capacity compared to AC.</p></sec><sec id="sec3.4.2" disp-level="3"><label>3.4.2.</label><title>Citric Acid</title><p>Adsorption data for
+citric acid are presented in <xref rid="tbl5" ref-type="table">Table 
+</xref>, and Langmuir isotherm parameters are summarized in <xref rid="tbl6" ref-type="table">Table 
+</xref>. The isotherm plots
+are shown in <xref rid="fig6" ref-type="fig">Figure 
+</xref>.</p><table-wrap id="tbl5" position="float"><?disp-level 4?><label>5</label><caption><title>Effect of Initial Acid Concentration
+on Citric Acid Adsorption</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="±" span="1"/><col align="char" char="±" span="1"/></colgroup><thead><tr><th align="center" colspan="1" rowspan="1">adsorbent</th><th align="center" colspan="1" rowspan="1">initial acid concentration, <italic>C</italic>
+<sub>0</sub> (g/L)</th><th align="center" colspan="1" rowspan="1">equilibrium concentration, <italic>C</italic>
+<sub>e</sub>*<sup/> (g/L)</th><th align="center" colspan="1" rowspan="1">adsorption capacity, <italic>Q</italic>
+<sub>e</sub>* (mg/g)</th></tr></thead><tbody><tr><td rowspan="5" align="left" colspan="1">AC-based</td><td align="center" colspan="1" rowspan="1">10</td><td align="center" colspan="1" rowspan="1">9.98 ± 0.001</td><td align="center" colspan="1" rowspan="1">31.2 ± 2.3</td></tr><tr><td align="center" colspan="1" rowspan="1">25</td><td align="center" colspan="1" rowspan="1">24.97 ± 0.001</td><td align="center" colspan="1" rowspan="1">61.2 ± 2.3</td></tr><tr><td align="center" colspan="1" rowspan="1">50</td><td align="center" colspan="1" rowspan="1">49.96 ± 0.002</td><td align="center" colspan="1" rowspan="1">84.0 ± 3.2</td></tr><tr><td align="center" colspan="1" rowspan="1">75</td><td align="center" colspan="1" rowspan="1">74.95 ± 0.001</td><td align="center" colspan="1" rowspan="1">95.2 ± 2.3</td></tr><tr><td align="center" colspan="1" rowspan="1">100</td><td align="center" colspan="1" rowspan="1">99.95 ± 0.002</td><td align="center" colspan="1" rowspan="1">96.8 ± 3.0</td></tr><tr><td rowspan="5" align="left" colspan="1">MGO-based</td><td align="center" colspan="1" rowspan="1">10</td><td align="center" colspan="1" rowspan="1">9.89 ± 0.002</td><td align="center" colspan="1" rowspan="1">210.4 ± 3.9</td></tr><tr><td align="center" colspan="1" rowspan="1">25</td><td align="center" colspan="1" rowspan="1">24.89 ± 0.001</td><td align="center" colspan="1" rowspan="1">211.6 ± 3.0</td></tr><tr><td align="center" colspan="1" rowspan="1">50</td><td align="center" colspan="1" rowspan="1">49.89 ± 0.002</td><td align="center" colspan="1" rowspan="1">212.8 ± 3.4</td></tr><tr><td align="center" colspan="1" rowspan="1">75</td><td align="center" colspan="1" rowspan="1">74.89 ± 0.002</td><td align="center" colspan="1" rowspan="1">214 ± 3.2</td></tr><tr><td align="center" colspan="1" rowspan="1">100</td><td align="center" colspan="1" rowspan="1">99.89 ± 0.002</td><td align="center" colspan="1" rowspan="1">216 ± 3.7</td></tr></tbody></table><table-wrap-foot><fn id="t5fn1"><label>a</label><p>Denotes the equilibrium state values.</p></fn></table-wrap-foot></table-wrap><table-wrap id="tbl6" position="float"><?disp-level 4?><label>6</label><caption><title>Langmuir Isotherm Data of Citric Acid</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="×" span="1"/><col align="char" char="×" span="1"/></colgroup><thead><tr><th align="center" colspan="1" rowspan="1">adsorbent</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sup>2</sup>
+</th><th align="center" colspan="1" rowspan="1">
+<italic>q</italic>
+<sub>max</sub> (mg/g)</th><th align="center" colspan="1" rowspan="1">
+<italic>K</italic>
+<sub>L</sub> (L/mg)</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sub>L</sub> (<italic>C</italic>
+<sub>0</sub> = 1%)</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sub>L</sub> (<italic>C</italic>
+<sub>0</sub> = 10%)</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">AC-based</td><td align="center" colspan="1" rowspan="1">0.99</td><td align="center" colspan="1" rowspan="1">126.6</td><td align="center" colspan="1" rowspan="1">0.036</td><td align="center" colspan="1" rowspan="1">2.8 × 10<sup>–3</sup>
+</td><td align="center" colspan="1" rowspan="1">3 × 10<sup>–4</sup>
+</td></tr><tr><td align="left" colspan="1" rowspan="1">MGO-based</td><td align="center" colspan="1" rowspan="1">0.99</td><td align="center" colspan="1" rowspan="1">217.4</td><td align="center" colspan="1" rowspan="1">1.84</td><td align="center" colspan="1" rowspan="1">5 × 10<sup>–5</sup>
+</td><td align="center" colspan="1" rowspan="1">5 × 10<sup>–6</sup>
+</td></tr></tbody></table></table-wrap><fig id="fig6" position="float"><?disp-level 4?><label>6</label><caption><p>Isotherm model for citric acid: red box solid, sample prepared
+with activated carbon; blue circle solid, sample prepared using graphene
+oxide.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr6" xlink:href="ao6c05759_0006.webp"><?cloudpmc-path blobs/5898/13613405/3a806aedf820/ao6c05759_0006.webp?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 892?><?original-width 2000?><?scaled-height 892?><?scaled-width 2000?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ao6c05759_0006.gif"><?cloudpmc-path blobs/5898/13613405/99f11514efe8/ao6c05759_0006.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>To quantitatively evaluate the citric acid adsorption
+performance
+between MGO-based and AC-based adsorbents, a two-sample <italic>t</italic>-test was conducted on the data set presented in <xref rid="tbl5" ref-type="table">Table 
+</xref>. The statistical analysis revealed
+highly significant differences in adsorption capacities between the
+two materials across the investigated concentration range (10–100
+g/L). Specifically, the overall mean adsorption capacity was determined
+to be 213 mg/g for MGO-based and 73.7 mg/g for AC-based adsorbents,
+showing high statistical significance (<italic>p</italic> &lt; 0.001).
+The analysis for equilibrium concentration yielded mean values of
+51.9 g/L (MGO-based) and 52 g/L (AC-based), confirming that while
+the mass balance remains consistent, MGO provides a much more efficient
+adsorption platform. This superiority is attributed to its mesoporous
+framework (4.12 nm), which effectively overcomes the microporous limitations
+of the AC reference.</p><p>The graphene oxide-based sample demonstrates
+a slightly higher
+adsorption capacity and better fitting to the Langmuir model compared
+with AC, suggesting improved interaction between citric acid molecules
+and the modified graphene surface.</p></sec><sec id="sec3.4.3" disp-level="3"><label>3.4.3.</label><title>Lactic Acid</title><p>The adsorption behavior
+of lactic acid is summarized in <xref rid="tbl7" ref-type="table">Tables 
+</xref> and , with the Langmuir isotherm
+plot shown in <xref rid="fig7" ref-type="fig">Figure 
+</xref>.</p><table-wrap id="tbl7" position="float"><?disp-level 4?><label>7</label><caption><title>Langmuir Isotherm Data of Lactic Acid</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="left" span="1"/><col align="left" span="1"/></colgroup><thead><tr><th align="center" colspan="1" rowspan="1">adsorbent</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sup>2</sup>
+</th><th align="center" colspan="1" rowspan="1">
+<italic>q</italic>
+<sub>max</sub> (mg/g)</th><th align="center" colspan="1" rowspan="1">
+<italic>K</italic>
+<sub>L</sub> (L/mg)</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sub>L</sub> (<italic>C</italic>
+<sub>0</sub> = 1%)</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sub>L</sub> (<italic>C</italic>
+<sub>0</sub> = 10%)</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">AC-based</td><td align="center" colspan="1" rowspan="1">0.98</td><td align="center" colspan="1" rowspan="1">74.6</td><td align="center" colspan="1" rowspan="1">0.10</td><td align="left" colspan="1" rowspan="1">10<sup>–3</sup>
+</td><td align="left" colspan="1" rowspan="1">10<sup>–4</sup>
+</td></tr><tr><td align="left" colspan="1" rowspan="1">MGO-based</td><td align="center" colspan="1" rowspan="1">0.99</td><td align="center" colspan="1" rowspan="1">334.45</td><td align="center" colspan="1" rowspan="1">4.27</td><td align="left" colspan="1" rowspan="1">2.3 × 10<sup>–5</sup>
+</td><td align="left" colspan="1" rowspan="1">2.3 × 10<sup>–6</sup>
+</td></tr></tbody></table></table-wrap><table-wrap id="tbl8" position="float"><?disp-level 4?><label>8</label><caption><title>Effect of Initial Acid Concentration
+on Lactic Acid Adsorption</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="±" span="1"/><col align="char" char="±" span="1"/></colgroup><thead><tr><th align="center" colspan="1" rowspan="1">adsorbent</th><th align="center" colspan="1" rowspan="1">initial acid concentration, <italic>C</italic>
+<sub>0</sub> (g/L)</th><th align="center" colspan="1" rowspan="1">equilibrium concentration, <italic>C</italic>
+<sub>e</sub>
+<sup/> (g/L)</th><th align="center" colspan="1" rowspan="1">adsorption capacity, <italic>Q</italic>
+<sub>e</sub>
+<sup/> (mg/g)</th></tr></thead><tbody><tr><td rowspan="5" align="left" colspan="1">AC-based</td><td align="center" colspan="1" rowspan="1">10</td><td align="center" colspan="1" rowspan="1">9.97 ± 0.004</td><td align="center" colspan="1" rowspan="1">51.6 ± 7.8</td></tr><tr><td align="center" colspan="1" rowspan="1">25</td><td align="center" colspan="1" rowspan="1">24.97 ± 0.004</td><td align="center" colspan="1" rowspan="1">51.2 ± 7.3</td></tr><tr><td align="center" colspan="1" rowspan="1">50</td><td align="center" colspan="1" rowspan="1">49.97 ± 0.003</td><td align="center" colspan="1" rowspan="1">58.0 ± 5.8</td></tr><tr><td align="center" colspan="1" rowspan="1">75</td><td align="center" colspan="1" rowspan="1">74.97 ± 0.004</td><td align="center" colspan="1" rowspan="1">62.4 ± 7.8</td></tr><tr><td align="center" colspan="1" rowspan="1">100</td><td align="center" colspan="1" rowspan="1">99.96 ± 0.003</td><td align="center" colspan="1" rowspan="1">71.6 ± 5.2</td></tr><tr><td rowspan="5" align="left" colspan="1">MGO-based</td><td align="center" colspan="1" rowspan="1">10</td><td align="center" colspan="1" rowspan="1">24.83 ± 0.002</td><td align="center" colspan="1" rowspan="1">326.8 ± 2.7</td></tr><tr><td align="center" colspan="1" rowspan="1">25</td><td align="center" colspan="1" rowspan="1">24.83 ± 0.002</td><td align="center" colspan="1" rowspan="1">333.6 ± 5.0</td></tr><tr><td align="center" colspan="1" rowspan="1">50</td><td align="center" colspan="1" rowspan="1">49.83 ± 0.003</td><td align="center" colspan="1" rowspan="1">337.2 ± 5.2</td></tr><tr><td align="center" colspan="1" rowspan="1">75</td><td align="center" colspan="1" rowspan="1">74.83 ± 0.006</td><td align="center" colspan="1" rowspan="1">338.8 ± 12.1</td></tr><tr><td align="center" colspan="1" rowspan="1">100</td><td align="center" colspan="1" rowspan="1">99.83 ± 0.002</td><td align="center" colspan="1" rowspan="1">336 ± 3.2</td></tr></tbody></table><table-wrap-foot><fn id="t8fn1"><label>a</label><p>Note: Statistical consistency was
+verified using a two-sample <italic>t</italic>-test for both adsorption
+capacity (<italic>Q</italic>
+<sub>e</sub>) and equilibrium concentration
+(<italic>C</italic>
+<sub>e</sub>). Across the investigated concentration
+range (10–100 g/L), statistically significant differences were
+observed between MGO-based and AC-based adsorbents (<italic>p</italic> &lt; 0.001), particularly in the adsorption capacity.</p></fn></table-wrap-foot></table-wrap><fig id="fig7" position="float"><?disp-level 4?><label>7</label><caption><p>Isotherm model for lactic acid: red box solid, sample prepared
+with activated carbon; blue circle solid, sample prepared using graphene
+oxide.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr7" xlink:href="ao6c05759_0007.webp"><?cloudpmc-path blobs/5898/13613405/2978a5160d36/ao6c05759_0007.webp?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1014?><?original-width 2000?><?scaled-height 1014?><?scaled-width 2000?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ao6c05759_0007.gif"><?cloudpmc-path blobs/5898/13613405/147acda33752/ao6c05759_0007.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>It is noteworthy that at lower lactic acid concentrations,
+specifically
+below approximately 3 g/L, the activated carbon-based adsorbent exhibits
+a slightly higher adsorption capacity than the MGO composite (as seen
+in <xref rid="tbl8" ref-type="table">Table 
+</xref>). However,
+as the equilibrium concentration increases beyond this point, the
+performance of the MGO framework becomes superior, eventually reaching
+a significantly higher theoretical maximum capacity (<italic>q</italic>
+<sub>max</sub>) compared with AC, as confirmed by the Langmuir model
+results. The higher <italic>q</italic>
+<sub>max</sub> value suggests
+that the surface chemistry of graphene oxide provides favorable interaction
+sites for the adsorption of lactic acid.</p><p>The superior adsorption
+capacity of lactic acid (<italic>q</italic>
+<sub>max</sub> = 334.45
+mg/g) is mechanistically linked to the multifactorial
+coupling effect of its molecular structure and functional group density.
+Unlike the dicarboxylic (succinic) and tricarboxylic (citric) acids,
+lactic acid’s monocarboxylic nature results in a significantly
+smaller molecular footprint, which facilitates high-density packing
+and efficient pore-filling within the 4.12 nm mesoporous framework
+of the MGO. A critical quantitative driver for this dominance is the
+presence of the hydroxyl (−OH) group, which facilitates supplementary
+hydrogen bonding with the epoxy and carboxyl groups on the MGO surface,
+thereby providing a greater number of effective binding sites per
+unit area compared to the bulkier polycarboxylic counterparts. Furthermore,
+the relationship between the experimental pH (2.0–3.5) and
+the p<italic>K</italic>
+<sub>a</sub> of lactic acid (3.86) ensures
+that the molecules exist predominantly in their neutral form, which
+minimizes electrostatic repulsion and allows short-range forces, specifically
+π–π stacking and hydroxyl-mediated hydrogen bonding
+to act as the dominant driving forces for achieving superior saturation
+limits. The absence of electrostatic repulsion at the working pH range
+(2.0–3.5) facilitates a higher packing density of neutral lactic
+acid molecules on the MGO sheets, as the surface’s oxygenated
+functional groups can engage in unrestricted multisite hydrogen bonding
+without being hampered by anionic charge interference.</p><p>To quantitatively
+evaluate the performance difference between MGO-based
+and AC-based adsorbents, a two-sample <italic>t</italic>-test was
+conducted on the data set presented in <xref rid="tbl8" ref-type="table">Table 
+</xref>. The statistical analysis for adsorption
+capacity (<italic>Q</italic>
+<sub>e</sub>) showed mean values of 334.5
+mg/g for MGO-based and 59 mg/g for AC-based adsorbents, revealing
+a highly significant difference (<italic>p</italic> &lt; 0.001). This
+confirms the superior performance of the MGO composite across the
+entire concentration range. Similarly, the analysis for equilibrium
+concentration (<italic>C</italic>
+<sub>e</sub>) yielded mean values
+of 51.8 g/L (MGO-based) and 52 g/L (AC-based), reflecting the distinct
+mass balance profiles and pore-filling efficiencies of the two materials.
+This clear statistical significance is a direct consequence of the
+structural advantages of MGO; while AC-based adsorbents are limited
+by their microporous nature, the mesoporous framework of MGO (pore
+radius: 4.12 nm) facilitates high-density functional group accessibility
+and higher saturation limits. Consequently, the statistical results
+confirm MGO’s superior <italic>q</italic>
+<sub>max</sub> capability
+(334.45 mg/g) for concentrated acid recovery compared to traditional
+carbon-based references.</p><p>To further elucidate the adsorption
+mechanism and surface heterogeneity,
+we fitted the experimental data to the Freundlich isotherm model.
+As presented in <xref rid="tbl9" ref-type="table">Table 
+</xref>, the Freundlich constant (<italic>K</italic>
+<sub>F</sub>), which
+relates to the adsorption capacity, was generally higher for the MGO
+composite compared to the AC reference for succinic acid, confirming
+the enhanced performance of the graphene-based adsorbent. The heterogeneity
+factor (1/<italic>n</italic>) provides crucial information regarding
+the adsorption intensity and the surface energy distribution. For
+all of the investigated organic acids, the 1/<italic>n</italic> values
+were found to be between 0 and 1, ranging from 0.01 to 0.50. According
+to the Freundlich theory, 1/<italic>n</italic> values in this range
+indicate a favorable adsorption process and suggest that the MGO surface
+possesses a distribution of active sites with varying affinities.
+Specifically, for lactic acid on MGO, the high correlation coefficient
+(<italic>R</italic>
+<sup>2</sup> = 0.826) and the 1/<italic>n</italic> value of 0.01 suggest that while the surface is relatively homogeneous
+(as also indicated by the excellent Langmuir fit), the functional
+group density on the graphene oxide sheets facilitates multilayer
+interactions or cooperative binding. This supports the observation
+of the highest maximum capacity (<italic>q</italic>
+<sub>max</sub> =
+334.45) for lactic acid, likely driven by its ability to utilize a
+broader range of oxygenated sites through its hydroxyl and carboxyl
+groups. The successful fitting of both the Langmuir and Freundlich
+models confirms that the MGO composite serves as a robust platform
+for the recovery of these biotechnologically relevant acids.</p><table-wrap id="tbl9" position="float"><?disp-level 4?><label>9</label><caption><title>Freundlich Isotherm Parameters for
+the Adsorption of Organic Acids onto AC and MGO</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/></colgroup><thead><tr><th align="center" colspan="1" rowspan="1">organic acid</th><th align="center" colspan="1" rowspan="1">adsorbent</th><th align="center" colspan="1" rowspan="1">
+<italic>K</italic>
+<sub>F</sub> [(mg/g) (L/mg)<sup>1/<italic>n</italic>
+</sup>]</th><th align="center" colspan="1" rowspan="1">1/<italic>n</italic>
+</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sup>2</sup>
+</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">succinic acid</td><td align="left" colspan="1" rowspan="1">AC-based</td><td align="center" colspan="1" rowspan="1">12.04</td><td align="center" colspan="1" rowspan="1">0.45</td><td align="center" colspan="1" rowspan="1">0.930</td></tr><tr><td align="left" colspan="1" rowspan="1"> </td><td align="left" colspan="1" rowspan="1">MGO-based</td><td align="center" colspan="1" rowspan="1">183</td><td align="center" colspan="1" rowspan="1">0.01</td><td align="center" colspan="1" rowspan="1">0.759</td></tr><tr><td align="left" colspan="1" rowspan="1">citric acid</td><td align="left" colspan="1" rowspan="1">AC-based</td><td align="center" colspan="1" rowspan="1">10.91</td><td align="center" colspan="1" rowspan="1">0.50</td><td align="center" colspan="1" rowspan="1">0.950</td></tr><tr><td align="left" colspan="1" rowspan="1"> </td><td align="left" colspan="1" rowspan="1">MGO-based</td><td align="center" colspan="1" rowspan="1">205</td><td align="center" colspan="1" rowspan="1">0.01</td><td align="center" colspan="1" rowspan="1">0.899</td></tr><tr><td align="left" colspan="1" rowspan="1">lactic acid</td><td align="left" colspan="1" rowspan="1">AC-based</td><td align="center" colspan="1" rowspan="1">35.7</td><td align="center" colspan="1" rowspan="1">0.13</td><td align="center" colspan="1" rowspan="1">0.787</td></tr><tr><td align="left" colspan="1" rowspan="1"> </td><td align="left" colspan="1" rowspan="1">MGO-based</td><td align="center" colspan="1" rowspan="1">318</td><td align="center" colspan="1" rowspan="1">0.01</td><td align="center" colspan="1" rowspan="1">0.826</td></tr></tbody></table></table-wrap><p>The maximum adsorption capacity of MGO for lactic
+acid (334.45
+mg/g) is highly competitive and comparable to that of specialized
+industrial adsorbents. Specifically, previous research reported a
+nearly identical <italic>q</italic>
+<sub>max</sub> value of 333.33
+mg/g for the weakly basic ion-exchange resin Amberlite IRA-67 during
+lactic acid recovery from model fermentation broths. This similarity underscores the efficiency of the synthesized
+MGO composite as a high-performance alternative to organic acid separation.</p><p>To evaluate the interaction characteristics between the organic
+acids and the MGO surface, the experimental data were further analyzed
+using the Temkin isotherm model. As shown in <xref rid="tbl10" ref-type="table">Table 
+</xref>, the Temkin model provided a satisfactory
+fit for all investigated organic acids, with correlation coefficients
+(<italic>R</italic>
+<sup>2</sup>) ranging from 0.758 to 0.897 for the
+MGO-based adsorbent. The Temkin constant <italic>A</italic>, representing
+the equilibrium binding parameter, was highest for succinic acid on
+MGO (8.79 × 10<sup>47</sup>), suggesting comparatively stronger
+initial interactions between dicarboxylic species and the modified
+adsorbent surface. The Temkin constant <italic>B</italic>, associated
+with adsorption heat distribution, was consistently higher for AC-based
+reference than for MGO across all acids, indicating a broader distribution
+of adsorption energies on the AC-based reference. The adsorption mechanism
+on the MGO platform arises from a synergistic interplay of several
+distinct forces. Pore-filling within the 4.12 nm mesoporous structure
+provides a physical basis for the recovery, while π–π
+interactions between the functional groups (carbonyl/hydroxyl) of
+the organic acids and the graphitic framework significantly strengthen
+the binding affinity. Furthermore, electrostatic attraction occurring
+between partially dissociated carboxylate groups and the surface,
+complemented by extensive hydrogen bonding with oxygen-rich functional
+groups, plays a critical role in the process. The high correlation
+with the Temkin model (<italic>R</italic>
+<sup>2</sup> = 0.826 for
+lactic acid) further confirms that these heterogeneous surface interactions
+are the primary drivers governing the adsorption behavior. Similar
+applicability of the Temkin model for graphene oxide-containing adsorbents
+has been reported previously, emphasizing the role of heterogeneous
+surface interactions in adsorption systems. In particular, the relatively high <italic>B</italic> value observed
+for citric acid on AC (29.69) may be associated with the presence
+of multiple carboxylic groups, enabling stronger multisite interactions
+with oxygen-containing surface functionalities. Furthermore, the satisfactory
+fit of the Temkin model for lactic acid suggests that the adsorption
+process is influenced by adsorbate surface interactions that vary
+with surface coverage. The enhanced adsorption behavior of MGO relative
+to AC may be associated with oxygen-containing functional groups and
+iron oxide incorporation, which can facilitate hydrogen bonding, electrostatic
+interactions, and surface complexation with carboxylic acid molecules.
+Given the solution pH and the p<italic>K</italic>
+<sub>a</sub> values
+of the acids, the presence of both neutral and partially dissociated
+species allows for a complex interplay of forces. Specifically, at
+pH values below the p<italic>K</italic>
+<sub>a</sub>, the dominance
+of the neutral state transforms the MGO surface from a potential electrostatic
+repellent into a highly receptive platform for specific chemical interactions,
+which is the theoretical foundation for the high recovery rates observed
+across all investigated acids. Beyond hydrogen bonding, electrostatic
+interactions and surface complexation with the MGO surface play a
+significant role in this environment. Similar observations have been
+reported for graphene oxide-based adsorption systems, where surface
+chemistry was shown to play a more significant role than the surface
+area in governing the adsorption behavior.<italic>
+,
+</italic> Additionally, the planar graphene oxide framework may provide improved
+surface accessibility compared with AC. Comparable strong adsorbate–surface
+interactions and rapid adsorption behavior have also been reported
+for graphene oxide-derived materials.<italic>
+−
+
+</italic>
+</p><table-wrap id="tbl10" position="float"><?disp-level 4?><label>10</label><caption><title>Temkin Isotherm Parameters for the
+Adsorption of Organic Acids onto AC and MGO</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/></colgroup><thead><tr><th align="center" colspan="1" rowspan="1">organic acid</th><th align="center" colspan="1" rowspan="1">adsorbent</th><th align="center" colspan="1" rowspan="1">
+<italic>A</italic> (L/g)</th><th align="center" colspan="1" rowspan="1">
+<italic>B</italic>
+</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sup>2</sup>
+</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">succinic acid</td><td align="left" colspan="1" rowspan="1">AC-based</td><td align="left" colspan="1" rowspan="1">3.8 × 10<sup>–4</sup>
+</td><td align="center" colspan="1" rowspan="1">25.02</td><td align="center" colspan="1" rowspan="1">0.966</td></tr><tr><td align="left" colspan="1" rowspan="1"> </td><td align="left" colspan="1" rowspan="1">MGO-based</td><td align="left" colspan="1" rowspan="1">8.79 × 10<sup>47</sup>
+</td><td align="center" colspan="1" rowspan="1">1.56</td><td align="center" colspan="1" rowspan="1">0.758</td></tr><tr><td align="left" colspan="1" rowspan="1">citric acid</td><td align="left" colspan="1" rowspan="1">AC-based</td><td align="left" colspan="1" rowspan="1">3 × 10<sup>–4</sup>
+</td><td align="center" colspan="1" rowspan="1">29.69</td><td align="center" colspan="1" rowspan="1">0.987</td></tr><tr><td align="left" colspan="1" rowspan="1"> </td><td align="left" colspan="1" rowspan="1">MGO-based</td><td align="left" colspan="1" rowspan="1">2.11 × 10<sup>37</sup>
+</td><td align="center" colspan="1" rowspan="1">2.21</td><td align="center" colspan="1" rowspan="1">0.897</td></tr><tr><td align="left" colspan="1" rowspan="1">lactic acid</td><td align="left" colspan="1" rowspan="1">AC-based</td><td align="left" colspan="1" rowspan="1">0.04</td><td align="center" colspan="1" rowspan="1">7.98</td><td align="center" colspan="1" rowspan="1">0.763</td></tr><tr><td align="left" colspan="1" rowspan="1"> </td><td align="left" colspan="1" rowspan="1">MGO-based</td><td align="left" colspan="1" rowspan="1">1.34 × 10<sup>27</sup>
+</td><td align="center" colspan="1" rowspan="1">4.58</td><td align="center" colspan="1" rowspan="1">0.826</td></tr></tbody></table></table-wrap></sec><sec id="sec3.4.4" disp-level="3"><label>3.4.4.</label><title>Adsorption Kinetics</title><p>The kinetic
+parameters derived from the pseudo-second-order model are summarized
+in <xref rid="tbl11" ref-type="table">Table 
+</xref>.</p><table-wrap id="tbl11" position="float"><?disp-level 4?><label>11</label><caption><title>Kinetic Parameters for the Adsorption
+of Organic Acids onto MGO<sup/>
+</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/></colgroup><thead><tr><th align="center" colspan="1" rowspan="1">organic acid</th><th align="center" colspan="1" rowspan="1">
+<italic>q</italic>
+<sub>e,exp</sub> (mg/g)</th><th align="center" colspan="1" rowspan="1">
+<italic>q</italic>
+<sub>e,cal</sub> (mg/g)</th><th align="center" colspan="1" rowspan="1">
+<italic>k</italic>
+<sub>2</sub> (g/mg·min)</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sup>2</sup> (PSO)</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">lactic acid</td><td align="center" colspan="1" rowspan="1">337.2</td><td align="center" colspan="1" rowspan="1">357.14</td><td align="center" colspan="1" rowspan="1">0.007</td><td align="center" colspan="1" rowspan="1">0.9964</td></tr><tr><td align="left" colspan="1" rowspan="1">succinic acid</td><td align="center" colspan="1" rowspan="1">188</td><td align="center" colspan="1" rowspan="1">196.08</td><td align="center" colspan="1" rowspan="1">0.0023</td><td align="center" colspan="1" rowspan="1">0.9967</td></tr><tr><td align="left" colspan="1" rowspan="1">citric
+acid</td><td align="center" colspan="1" rowspan="1">212.8</td><td align="center" colspan="1" rowspan="1">217.39</td><td align="center" colspan="1" rowspan="1">0.0019</td><td align="center" colspan="1" rowspan="1">0.9974</td></tr></tbody></table><table-wrap-foot><fn id="t11fn1"><label>a</label><p>
+<italic>q</italic>
+<sub>e,exp</sub> and <italic>q</italic>
+<sub>e,cal</sub> represent the experimental
+and calculated equilibrium adsorption capacities, respectively. <italic>k</italic>
+<sub>2</sub> is the pseudo-second-order rate constant.
+All experiments were conducted at an initial concentration (<italic>C</italic>
+<sub>0</sub>) of 50 g/L, temperature of 25 °C, and
+an adsorbent dosage of 10 mg.</p></fn></table-wrap-foot></table-wrap><p>The adsorption kinetics and mechanism modeling of
+lactic, succinic,
+and citric acids on MGO composites are detailed in <xref rid="fig8" ref-type="fig">Figure 
+</xref>.</p><fig id="fig8" position="float"><?disp-level 4?><label>8</label><caption><p>Adsorption kinetics and
+mechanism modeling of organic acids onto
+MGO. Adsorption kinetics of organic acids: (a–c) pseudo-second-order
+(PSO) kinetic model plots for lactic, succinic, and citric acids;
+(d–f) intraparticle diffusion (IPD) model plots for lactic,
+succinic, and citric acids; and (g) combined time-dependent adsorption
+capacity (<italic>q</italic>
+<sub>
+<italic>t</italic>
+</sub>) profile
+for the investigated acids.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr8" xlink:href="ao6c05759_0008.webp"><?cloudpmc-path blobs/5898/13613405/455557589157/ao6c05759_0008.webp?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 901?><?original-width 1600?><?scaled-height 901?><?scaled-width 1600?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ao6c05759_0008.gif"><?cloudpmc-path blobs/5898/13613405/9094e08363b1/ao6c05759_0008.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>The experimental data for all acids exhibited an
+excellent fit
+with the PSO model (<italic>R</italic>
+<sup>2</sup> &gt; 0.99), as
+shown
+in <xref rid="tbl11" ref-type="table">Table 
+</xref> and <xref rid="fig8" ref-type="fig">Figure 
+</xref>a–c. This
+confirms that the adsorption rate is governed by chemical interactions
+(chemisorption). The rate constants (<italic>k</italic>
+<sub>2</sub>) were determined as 0.007, 0.0023, and 0.0019 g/mg·min for
+lactic, succinic, and citric acids, respectively.</p><p>The lowest <italic>k</italic>
+<sub>2</sub> value observed for citric
+acid (0.0019 g/mg·min) is quantitatively consistent with its
+bulky tricarboxylic structure, which causes significant steric hindrance
+during diffusion into the 4.12 nm mesoporous framework of the MGO.
+A comparative analysis of the rate constants decreasing from lactic
+(0.007 g/mg·min) and succinic (0.0023 g/mg·min) to citric
+acid (0.0019 g/mg·min) demonstrates a clear inverse correlation
+between molecular complexity and kinetic performance. Specifically,
+the increase in the number of carboxyl groups and the resulting increase
+in molecular volume elevate the steric resistance encountered during
+the penetration of the internal pore structure, thereby reducing the
+overall adsorption rate. This quantitative trend confirms that within
+the mesoporous MGO system, the multifactorial coupling of molecular
+footprint and functional group density acts as a primary constraint
+on the kinetics of mass transfer, where simpler molecular structures
+exhibit faster surface arrival and site-binding dynamics. Conversely,
+while lactic acid is the smallest molecule, it requires the longest
+equilibrium time (80 min) because it achieves the highest total loading
+(<italic>q</italic>
+<sub>max</sub> = 334.45 mg/g), requiring more time
+to saturate the oxygen-rich active sites. Furthermore, the IPD plots
+(<xref rid="fig8" ref-type="fig">Figure 
+</xref>d–f)
+confirmed a multistage diffusion process within the 4.12 nm mesopores
+of MGO.</p><p>To further elucidate the diffusion mechanism, the boundary
+layer
+constants (<italic>C</italic>) and intraparticle diffusion rate constants
+(<italic>k</italic>
+<sub>id</sub>) were quantitatively evaluated (<xref rid="tbl12" ref-type="table">Table 
+</xref>).</p><table-wrap id="tbl12" position="float"><?disp-level 4?><label>12</label><caption><title>Intraparticle Diffusion Model Constants
+for Organic Acids onto MGO</title></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/></colgroup><thead><tr><th align="center" colspan="1" rowspan="1">organic acid</th><th align="center" colspan="1" rowspan="1">molecular
+structure</th><th align="center" colspan="1" rowspan="1">
+<italic>k</italic>
+<sub>id</sub> (mg/g·min<sup>0</sup>·<sup>5</sup>)</th><th align="center" colspan="1" rowspan="1">
+<italic>C</italic> (mg/g)</th><th align="center" colspan="1" rowspan="1">
+<italic>R</italic>
+<sup>2</sup>
+</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">lactic acid</td><td align="left" colspan="1" rowspan="1">monocarboxylic</td><td align="center" colspan="1" rowspan="1">39.26</td><td align="center" colspan="1" rowspan="1">96.76</td><td align="center" colspan="1" rowspan="1">0.971</td></tr><tr><td align="left" colspan="1" rowspan="1">succinic acid</td><td align="left" colspan="1" rowspan="1">dicarboxylic</td><td align="center" colspan="1" rowspan="1">19.14</td><td align="center" colspan="1" rowspan="1">80.33</td><td align="center" colspan="1" rowspan="1">0.928</td></tr><tr><td align="left" colspan="1" rowspan="1">citric acid</td><td align="left" colspan="1" rowspan="1">tricarboxylic</td><td align="center" colspan="1" rowspan="1">20.80</td><td align="center" colspan="1" rowspan="1">91.01</td><td align="center" colspan="1" rowspan="1">0.948</td></tr></tbody></table></table-wrap><p>The nonzero intercepts (<italic>C</italic>) obtained
+for all acids
+confirm that the adsorption process is not solely governed by intraparticle
+diffusion but involves a combination of film diffusion and internal
+pore diffusion. The highest <italic>C</italic> value observed for
+lactic acid (96.76 mg/g) suggests that its smaller molecular footprint
+and additional hydroxyl group facilitate rapid initial accumulation
+at the boundary layer. Conversely, the <italic>k</italic>
+<sub>id</sub> values decrease significantly as the number of carboxyl groups increases
+(lactic &gt; citric ≈ succinic), illustrating that steric hindrance
+and hydrated molecular volume for tricarboxylic species like citric
+acid act as critical constraints during the penetration into the internal
+4.12 nm mesopores of the MGO.</p><p>To further assess adsorption favorability,
+the dimensionless separation
+factor (<italic>R</italic>
+<sub>L</sub>) was calculated for each acid–adsorbent
+system. The <italic>R</italic>
+<sub>L</sub> parameter, derived from
+the Langmuir model, indicates whether adsorption is unfavorable (<italic>R</italic>
+<sub>L</sub> &gt; 1), linear (<italic>R</italic>
+<sub>L</sub> = 1), favorable (0 &lt; <italic>R</italic>
+<sub>L</sub> &lt; 1),
+or irreversible (<italic>R</italic>
+<sub>L</sub> = 0). As summarized
+in <xref rid="tbl4" ref-type="table">Tables 
+</xref>, , and , <italic>R</italic>
+<sub>L</sub> values for all investigated acids on both adsorbents
+across the studied concentration range (10–100 g/L) were between
+2.3 × 10<sup>–6</sup> and 2.8 × 10<sup>–3</sup>.</p><p>Since all <italic>R</italic>
+<sub>L</sub> values remained
+within
+the favorable range (0 &lt; <italic>R</italic>
+<sub>L</sub> &lt; 1),
+the adsorption of lactic, succinic, and citric acids onto both synthesized
+adsorbents can be considered favorable under the investigated conditions.
+The observed decrease in <italic>R</italic>
+<sub>L</sub> with an increasing
+initial concentration suggests progressively more favorable adsorption
+at higher loading concentrations, indicating the applicability of
+these materials under concentrated process conditions.</p><p>The comparatively
+high Langmuir capacity parameter observed for
+lactic acid may be associated with its smaller molecular size and
+the presence of an additional hydroxyl group, which may facilitate
+supplementary hydrogen bonding interactions with the oxygen-functionalized
+graphene oxide surface. A similar enhancement of adsorption affinity
+through surface functionalization has been reported for modified graphene
+oxide systems.<italic>
+,
+</italic>
+</p><p>Comparative evaluation
+of the three investigated acids indicates
+that the adsorption behavior is influenced by the molecular structure
+and functional group composition. The MGO-based adsorbent consistently
+exhibited an adsorption performance higher than that of the AC-based
+material, particularly for lactic acid. Differences in adsorption
+behavior may arise from variations in the carboxyl group number, molecular
+size, and interaction mechanisms such as hydrogen bonding and electrostatic
+interactions.</p></sec></sec><sec id="sec3.5" disp-level="2"><label>3.5.</label><title>Stability and Reusability of MGO</title><p>The reusability of an adsorbent is a critical index for its industrial
+viability and sustainability in large-scale downstream separation
+processes. Experimental results for five consecutive cycles demonstrated
+that the synthesized MGO maintains excellent structural stability
+and performance. The adsorption capacity for lactic acid exhibited
+a high retention rate, decreasing only slightly from its initial value
+to 91.4% by the end of the fifth cycle. This minor loss is attributed
+to the unavoidable occupation of some high-energy active sites or
+minor mass loss during the magnetic separation and washing steps,
+a phenomenon frequently reported for graphene-based magnetic composites. To ensure a comprehensive evaluation of MGO’s
+industrial robustness, parallel five-cycle stability tests were performed
+for succinic and citric acids. The capacity retention rates after
+the fifth cycle were found to be 87.8% for succinic acid and 84.2%
+for citric acid. The relatively higher capacity loss observed for
+these polycarboxylic species compared to lactic acid (91.4%) is mechanistically
+attributed to multicarboxylate-induced active site fouling. Due to
+the presence of multiple carboxyl groups, succinic and citric acids
+can facilitate multidentate attachment through simultaneous hydrogen
+bonding and electrostatic interactions with the hydroxyl and epoxy
+moieties of the MGO framework. This multisite coordination creates
+a more persistent surface bond that is partially resistant to the
+NaOH-mediated regeneration process, resulting in the cumulative occupation
+of some active binding sites. Nevertheless, the high overall stability
+(&gt;84%) confirms that the MGO composite maintains its structural
+integrity
+and remains a sustainable alternative for the large-scale separation
+of complex platform chemicals. This retention performance is highly
+competitive when compared to other advanced adsorbents reported in
+recent studies. For instance, Wang et al. reported that an rGO-based
+catalytic membrane maintained removal efficiencies above 90% across
+five filtration cycles. Additionally,
+Mustafa et al. demonstrated that GO-reinforced composites can exhibit
+up to 95% reusability after multiple cycles, justifying the long-term
+stability of such frameworks. The observed
+low capacity loss (averaging 1.7% per cycle) is quantitatively consistent
+with the findings of Xiong et al., who reported that biochar-graphene
+oxide composite monoliths remained highly stable over five cycles
+with an average loss of only 2.7% per cycle.
+</p><p>The magnetic nature of the composite facilitated rapid recovery
+from the aqueous phase within less than 30 s. This consistent and
+rapid magnetic performance serves as a critical functional validation
+of the successful structural integration of magnetite nanoparticles
+within the graphene oxide framework. The fact that the material maintains
+its swift magnetic response throughout multiple reusability cycles
+confirms that the magnetic phase is firmly and stably anchored to
+the GO sheets. This provides practical evidence of the composite’s
+integrity and synthesis success, effectively complementing the structural
+findings from XRD and FTIR even in the absence of direct microscopic
+visualization. This visual magnetic response supports efficient phase
+separation without the need for additional filtration or centrifugation
+steps, which are often considered challenging recovery methods in
+the literature.<italic>
+,,
+</italic> The synergy between the GO sheets and Fe<sub>3</sub>O<sub>4</sub> nanoparticles not only provides this magnetic advantage but also
+enhances the mechanical robustness of the entire framework, as confirmed
+by Babakhani et al., where the presence of GO trapping within the
+matrix increased mechanical stability through interlocking structures. This rapid separation and high-performance retention
+confirm that MGO is a sustainable and cost-effective alternative for
+the separation of biotechnological organic acids, effectively addressing
+the research gap noted in earlier studies where regeneration was not
+explicitly investigated.
+</p></sec></sec><sec id="sec4" disp-level="1"><label>4.</label><title>Conclusion</title><p>In this study, an MGO composite
+was successfully synthesized and
+evaluated for the efficient recovery of platform organic acids. The
+integration of BET textural analysis alongside XRD and FTIR provided
+a comprehensive characterization, confirming the mesoporous nature
+of the adsorbent with a specific surface area of 37.94 m<sup>2</sup>/g, a total pore volume of 0.078 cm<sup>3</sup>/g, and an average
+pore radius of 4.12 nm. These properties, combined with the successful
+anchoring of Fe<sub>3</sub>O<sub>4</sub> nanoparticles, facilitated
+enhanced molecular diffusion and provided robust magnetic separability
+from aqueous phases. Adsorption equilibrium data were systematically
+analyzed using Langmuir, Freundlich, and Temkin models to ensure a
+deeper understanding of the surface interactions. While the Langmuir
+model demonstrated excellent agreement (<italic>R</italic>
+<sup>2</sup> &gt; 0.95), suggesting predominantly monolayer adsorption on a homogeneous
+distribution of active sites, the calculated dimensionless separation
+factor (<italic>R</italic>
+<sub>L</sub>) values (ranging from 2.3 ×
+10<sup>–6</sup> to 2.8 × 10<sup>–3</sup>) confirmed
+that the adsorption process is highly favorable for all investigated
+acids. Furthermore, the successful fitting of the Freundlich and Temkin
+models indicated a diverse energy distribution of oxygenated functional
+groups on the MGO surface, which contributed to the high adsorption
+capacities compared to the AC reference. The findings clarify that
+the recovery performance is governed by functional group density rather
+than surface area alone. The hydroxyl-assisted hydrogen bonding in
+lactic acid provides a distinct advantage over the di- and tricarboxylic
+structures of succinic and citric acids. Among the tested adsorbates,
+lactic acid exhibited the highest maximum adsorption capacity (<italic>q</italic>
+<sub>max</sub> = 334.45), which is mechanically attributed
+to its smaller molecular footprint and the specific interaction of
+its hydroxyl (−OH) group with the graphene oxide framework
+through hydrogen bonding. The overall findings underscore the potential
+of MGO as a sustainable and high-performance adsorbent for the biotechnology
+industry, offering rapid magnetic recovery and high efficiency for
+organic acid separation. Furthermore, the industrial viability of
+the MGO composite was confirmed through cyclic regeneration studies,
+which demonstrated that the material maintains a high capacity retention
+rate of 91.4% after five consecutive cycles. The rapid magnetic recovery
+(within &lt;30 s) and the stability of its oxygen-rich framework ensure
+that MGO is a sustainable and cost-effective alternative for the large-scale
+separation of biotechnological platform chemicals.</p></sec><sec id="ACK-d14e2405-autogenerated" sec-type="ack" disp-level="1"><title>Acknowledgments</title><p>The authors would like to thank the Central Research Laboratory
+of Niğde Ömer Halisdemir University for assistance and
+technical support with the FTIR, XRD, and BET analyses.</p></sec><sec id="notes-1" disp-level="1"><p>E.E.: Conceptualization,
+methodology, investigation, data curation, formal analysis, visualization,
+writingoriginal draft; H.U.: conceptualization, supervision,
+project administration, funding acquisition, resources, writingreview
+and editing; Ş.S.B.: methodology, validation, supervision,
+writingreview and editing; M.Y.: writingreview and
+editing, data curation</p></sec><sec id="notes-2" disp-level="1"><p>We would like
+to thank the Scientific Research Projects Coordination Unit of Niğde
+Ömer Halisdemir University for the financial support provided
+through the project numbered TGT 2022/14-LÜTEP.</p></sec><sec id="notes-3" disp-level="1"><p>The authors
+declare no competing financial interest.</p></sec><sec id="ref-list1" sec-type="ref-list" disp-level="1"><title>References</title><sec id="ref-list1_sec2" disp-level="2"><ref-list><ref id="ref1"><mixed-citation id="cit1"><named-content content-type="citation-string">Novoselov K. S., Geim A. K., Morozov S. V., Jiang D., Zhang Y., Dubonos S. V., Grigorieva I. V., Firsov A. A.. Electric Field in
+Atomically Thin Carbon Films. Science. 2004;306:666–669. doi: 10.1126/science.1102896.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1126/science.1102896"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15499015"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Science&amp;title=Electric Field in Atomically Thin Carbon Films&amp;author=K. S. Novoselov&amp;author=A. K. Geim&amp;author=S. V. Morozov&amp;author=D. Jiang&amp;author=Y. Zhang&amp;volume=306&amp;publication_year=2004&amp;pages=666-669&amp;pmid=15499015&amp;doi=10.1126/science.1102896&amp;"/></mixed-citation></ref><ref id="ref2"><mixed-citation id="cit2"><named-content content-type="citation-string">Castro
+Neto A. H., Guinea F., Peres N. M. R., Novoselov K. S., Geim A. K.. The Electronic Properties of Graphene. Rev. Mod. Phys. 2009;81:109.  doi: 10.1103/RevModPhys.81.109.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1103/RevModPhys.81.109"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Rev. Mod. Phys.&amp;title=The Electronic Properties of Graphene&amp;author=A. H. Castro Neto&amp;author=F. Guinea&amp;author=N. M. R. Peres&amp;author=K. S. Novoselov&amp;author=A. K. Geim&amp;volume=81&amp;publication_year=2009&amp;pages=109&amp;doi=10.1103/RevModPhys.81.109&amp;"/></mixed-citation></ref><ref id="ref3"><mixed-citation id="cit3"><named-content content-type="citation-string">Lee J. U., Yoon D., Cheong H.. Estimation of Young’s
+Modulus
+of Graphene by Raman Spectroscopy. Nano Lett. 2012;12(9):4444–4448. doi: 10.1021/nl301073q.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/nl301073q"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="22866776"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nano Lett.&amp;title=Estimation of Young’s Modulus of Graphene by Raman Spectroscopy&amp;author=J. U. Lee&amp;author=D. Yoon&amp;author=H. Cheong&amp;volume=12&amp;issue=9&amp;publication_year=2012&amp;pages=4444-4448&amp;pmid=22866776&amp;doi=10.1021/nl301073q&amp;"/></mixed-citation></ref><ref id="ref4"><mixed-citation id="cit4"><named-content content-type="citation-string">Yin B., Liu Q., Yang L., Wu X., Liu Z., Hua Y., Yin S., Chen Y.. Buffer Layer
+of PEDOT:PSS/Graphene Composite for Polymer
+Solar Cells. J. Nanosci. Nanotechnol. 2010;10(3):1934–1938. doi: 10.1166/jnn.2010.2107.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1166/jnn.2010.2107"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20355603"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Nanosci. Nanotechnol.&amp;title=Buffer Layer of PEDOT:PSS/Graphene Composite for Polymer Solar Cells&amp;author=B. Yin&amp;author=Q. Liu&amp;author=L. Yang&amp;author=X. Wu&amp;author=Z. Liu&amp;volume=10&amp;issue=3&amp;publication_year=2010&amp;pages=1934-1938&amp;pmid=20355603&amp;doi=10.1166/jnn.2010.2107&amp;"/></mixed-citation></ref><ref id="ref5"><mixed-citation id="cit5"><named-content content-type="citation-string">Leng Y., Guo W., Su S., Yi C., Xing L.. Removal of Antimony
+(III) from Aqueous Solution by Graphene as an Adsorbent. Chem. Eng. J. 2012;211–212:406–411. doi: 10.1016/j.cej.2012.09.078.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.cej.2012.09.078"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Chem. Eng. J.&amp;title=Removal of Antimony (III) from Aqueous Solution by Graphene as an Adsorbent&amp;author=Y. Leng&amp;author=W. Guo&amp;author=S. Su&amp;author=C. Yi&amp;author=L. Xing&amp;volume=211–212&amp;publication_year=2012&amp;pages=406-411&amp;doi=10.1016/j.cej.2012.09.078&amp;"/></mixed-citation></ref><ref id="ref6"><mixed-citation id="cit6"><named-content content-type="citation-string">Yang X., Shi Z., Yuan M., Liu L.. Adsorption
+of Trivalent Antimony
+from Aqueous Solution Using Graphene Oxide: Kinetic and Thermodynamic
+Studies. J. Chem. Eng. Data. 2015;60(3):806–813. doi: 10.1021/je5009262.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/je5009262"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Chem. Eng. Data&amp;title=Adsorption of Trivalent Antimony from Aqueous Solution Using Graphene Oxide: Kinetic and Thermodynamic Studies&amp;author=X. Yang&amp;author=Z. Shi&amp;author=M. Yuan&amp;author=L. Liu&amp;volume=60&amp;issue=3&amp;publication_year=2015&amp;pages=806-813&amp;doi=10.1021/je5009262&amp;"/></mixed-citation></ref><ref id="ref7"><mixed-citation id="cit7"><named-content content-type="citation-string">
+
+Porro, D.
+; 
+Branduardi, P.
+. 
+Production
+of
+Organic Acids by Yeasts and Filamentous Fungi. In Biotechnology of Yeasts and Filamentous Fungi, 2017; pp 205–223.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="title=Biotechnology of Yeasts and Filamentous Fungi&amp;publication_year=2017&amp;"/></mixed-citation></ref><ref id="ref8"><mixed-citation id="cit8"><named-content content-type="citation-string">Kim N., Jeon J., Chen R., Su X.. Electrochemical Separation
+of Organic Acids and Proteins for Food and Biomanufacturing. Chem. Eng. Res. Des. 2022;178(2):267–288. doi: 10.1016/j.cherd.2021.12.009.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.cherd.2021.12.009"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Chem. Eng. Res. Des.&amp;title=Electrochemical Separation of Organic Acids and Proteins for Food and Biomanufacturing&amp;author=N. Kim&amp;author=J. Jeon&amp;author=R. Chen&amp;author=X. Su&amp;volume=178&amp;issue=2&amp;publication_year=2022&amp;pages=267-288&amp;doi=10.1016/j.cherd.2021.12.009&amp;"/></mixed-citation></ref><ref id="ref9"><mixed-citation id="cit9"><named-content content-type="citation-string">Yetisen M., Uslu H., Baltacioglu C.. Optimization
+and Modelling of Pravastatin
+Recovery from Aqueous Solutions Using Reactive Extraction Methodology. Can. J. Chem. Eng. 2024;102(7):2561–2571. doi: 10.1002/cjce.25201.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/cjce.25201"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Can. J. Chem. Eng.&amp;title=Optimization and Modelling of Pravastatin Recovery from Aqueous Solutions Using Reactive Extraction Methodology&amp;author=M. Yetisen&amp;author=H. Uslu&amp;author=C. Baltacioglu&amp;volume=102&amp;issue=7&amp;publication_year=2024&amp;pages=2561-2571&amp;doi=10.1002/cjce.25201&amp;"/></mixed-citation></ref><ref id="ref10"><mixed-citation id="cit10"><named-content content-type="citation-string">Uslu D. Y., Yetisen M., Tanguler H.. Improving
+Glutamic Acid Separation:
+The Role of Reactant Type and Process Conditions. Sep. Purif. Technol. 2025;377:134224.  doi: 10.1016/j.seppur.2025.134224.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.seppur.2025.134224"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Sep. Purif. Technol.&amp;title=Improving Glutamic Acid Separation: The Role of Reactant Type and Process Conditions&amp;author=D. Y. Uslu&amp;author=M. Yetisen&amp;author=H. Tanguler&amp;volume=377&amp;publication_year=2025&amp;pages=134224&amp;doi=10.1016/j.seppur.2025.134224&amp;"/></mixed-citation></ref><ref id="ref11"><mixed-citation id="cit11"><named-content content-type="citation-string">Erdas A., Marti M. E.. Eco-Friendly Approach for the Recovery
+of Lactic Acid
+by Complex Extraction. ACS Omega. 2024;9(15):16959.  doi: 10.1021/acsomega.3c07988.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/acsomega.3c07988"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC11025082"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="38645318"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=ACS Omega&amp;title=Eco-Friendly Approach for the Recovery of Lactic Acid by Complex Extraction&amp;author=A. Erdas&amp;author=M. E. Marti&amp;volume=9&amp;issue=15&amp;publication_year=2024&amp;pages=16959&amp;pmid=38645318&amp;doi=10.1021/acsomega.3c07988&amp;"/></mixed-citation></ref><ref id="ref12"><mixed-citation id="cit12"><named-content content-type="citation-string">Zhao G., Gao H., Qu Z., Fan H., Meng H.. Anhydrous Interfacial
+Polymerization of Sub-1 Å Sieving Polyamide Membrane. Nat. Commun. 2023;14:7624.  doi: 10.1038/s41467-023-43291-2.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/s41467-023-43291-2"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC10665378"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="37993445"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nat. Commun.&amp;title=Anhydrous Interfacial Polymerization of Sub-1 Å Sieving Polyamide Membrane&amp;author=G. Zhao&amp;author=H. Gao&amp;author=Z. Qu&amp;author=H. Fan&amp;author=H. Meng&amp;volume=14&amp;publication_year=2023&amp;pages=7624&amp;pmid=37993445&amp;doi=10.1038/s41467-023-43291-2&amp;"/></mixed-citation></ref><ref id="ref13"><mixed-citation id="cit13"><named-content content-type="citation-string">Cheng F., Wang J.. Removal of Bisphenol
+a from Wastewater by Adsorption and Membrane
+Separation: Performances and Mechanisms. Chem.
+Eng. J. 2024;484:149414.  doi: 10.1016/j.cej.2024.149414.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.cej.2024.149414"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Chem. Eng. J.&amp;title=Removal of Bisphenol a from Wastewater by Adsorption and Membrane Separation: Performances and Mechanisms&amp;author=F. Cheng&amp;author=J. Wang&amp;volume=484&amp;publication_year=2024&amp;pages=149414&amp;doi=10.1016/j.cej.2024.149414&amp;"/></mixed-citation></ref><ref id="ref14"><mixed-citation id="cit14"><named-content content-type="citation-string">Chen C., Shen L., Lin H., Zhao D., Li B., Chen B.. Hydrogen-Bonded Organic Frameworks for Membrane Separation. Chem. Soc. Rev. 2024;53(5):2738–2760. doi: 10.1039/D3CS00866E.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1039/D3CS00866E"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="38333989"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Chem. Soc. Rev.&amp;title=Hydrogen-Bonded Organic Frameworks for Membrane Separation&amp;author=C. Chen&amp;author=L. Shen&amp;author=H. Lin&amp;author=D. Zhao&amp;author=B. Li&amp;volume=53&amp;issue=5&amp;publication_year=2024&amp;pages=2738-2760&amp;pmid=38333989&amp;doi=10.1039/D3CS00866E&amp;"/></mixed-citation></ref><ref id="ref15"><mixed-citation id="cit15"><named-content content-type="citation-string">Li B., Qi B., Guo Z., Wang D., Jiao T.. Recent Developments
+in the Application of Membrane Separation Technology and Its Challenges
+in Oil-Water Separation: A Review. Chemosphere. 2023;327:138528.  doi: 10.1016/j.chemosphere.2023.138528.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.chemosphere.2023.138528"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="36990363"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Chemosphere&amp;title=Recent Developments in the Application of Membrane Separation Technology and Its Challenges in Oil-Water Separation: A Review&amp;author=B. Li&amp;author=B. Qi&amp;author=Z. Guo&amp;author=D. Wang&amp;author=T. Jiao&amp;volume=327&amp;publication_year=2023&amp;pages=138528&amp;pmid=36990363&amp;doi=10.1016/j.chemosphere.2023.138528&amp;"/></mixed-citation></ref><ref id="ref16"><mixed-citation id="cit16"><named-content content-type="citation-string">Rückbeil F. E., Sperlich A., Gnirss R., Dittmann D., Kämpfe A., Höra C., Ruhl A. S.. Comparing Activated Carbons, Ion
+Exchange Resins and Alternative Adsorbents for the Removal of Perfluoroalkyl
+and Other Persistent and Mobile Substances. Chem. Eng. J. 2025;516:164070.  doi: 10.1016/j.cej.2025.164070.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.cej.2025.164070"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Chem. Eng. J.&amp;title=Comparing Activated Carbons, Ion Exchange Resins and Alternative Adsorbents for the Removal of Perfluoroalkyl and Other Persistent and Mobile Substances&amp;author=F. E. Rückbeil&amp;author=A. Sperlich&amp;author=R. Gnirss&amp;author=D. Dittmann&amp;author=A. Kämpfe&amp;volume=516&amp;publication_year=2025&amp;pages=164070&amp;doi=10.1016/j.cej.2025.164070&amp;"/></mixed-citation></ref><ref id="ref17"><mixed-citation id="cit17"><named-content content-type="citation-string">Stamer K., Baltaeva M., Manakhov A., Orlov M., Ayirala S., Cha D. K.. Polystyrene Waste-Derived Ion-Exchange
+Resins for Water
+Desalination. Mater. Chem. Phys. 2025;339:130548.  doi: 10.1016/j.matchemphys.2025.130548.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.matchemphys.2025.130548"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Mater. Chem. Phys.&amp;title=Polystyrene Waste-Derived Ion-Exchange Resins for Water Desalination&amp;author=K. Stamer&amp;author=M. Baltaeva&amp;author=A. Manakhov&amp;author=M. Orlov&amp;author=S. Ayirala&amp;volume=339&amp;publication_year=2025&amp;pages=130548&amp;doi=10.1016/j.matchemphys.2025.130548&amp;"/></mixed-citation></ref><ref id="ref18"><mixed-citation id="cit18"><named-content content-type="citation-string">Tian C., Ma R., Zou W., Sun S., Li Z., Zhang Z., Zhou F.. A Promising Strategy
+for Selective Recovery of Nb­(V) Using IRA-410
+Ion Exchange Resin: Adsorption Performance and Mechanism Study. J. Environ. Chem. Eng. 2025;13(5):117986.  doi: 10.1016/j.jece.2025.117986.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.jece.2025.117986"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Environ. Chem. Eng.&amp;title=A Promising Strategy for Selective Recovery of Nb­(V) Using IRA-410 Ion Exchange Resin: Adsorption Performance and Mechanism Study&amp;author=C. Tian&amp;author=R. Ma&amp;author=W. Zou&amp;author=S. Sun&amp;author=Z. Li&amp;volume=13&amp;issue=5&amp;publication_year=2025&amp;pages=117986&amp;doi=10.1016/j.jece.2025.117986&amp;"/></mixed-citation></ref><ref id="ref19"><mixed-citation id="cit19"><named-content content-type="citation-string">Yang J., Cao N., Liu Y., Lu Y.. CO2 Capture with Adsorption Strategies:
+Achievements, Challenges, and Prospects. J.
+Cleaner Prod. 2025;515:145798.  doi: 10.1016/j.jclepro.2025.145798.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.jclepro.2025.145798"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Cleaner Prod.&amp;title=CO2 Capture with Adsorption Strategies: Achievements, Challenges, and Prospects&amp;author=J. Yang&amp;author=N. Cao&amp;author=Y. Liu&amp;author=Y. Lu&amp;volume=515&amp;publication_year=2025&amp;pages=145798&amp;doi=10.1016/j.jclepro.2025.145798&amp;"/></mixed-citation></ref><ref id="ref20"><mixed-citation id="cit20"><named-content content-type="citation-string">Girish C. R.. Determination
+of Thermodynamic Parameters in Adsorption Studies: A Review. Chem. Pap. 2025;79(9):5687–5706. doi: 10.1007/s11696-025-04218-x.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1007/s11696-025-04218-x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Chem. Pap.&amp;title=Determination of Thermodynamic Parameters in Adsorption Studies: A Review&amp;author=C. R. Girish&amp;volume=79&amp;issue=9&amp;publication_year=2025&amp;pages=5687-5706&amp;doi=10.1007/s11696-025-04218-x&amp;"/></mixed-citation></ref><ref id="ref21"><mixed-citation id="cit21"><named-content content-type="citation-string">Yin C. Y., Aroua M. K., Daud W. M. A. W.. Review
+of Modifications of Activated
+Carbon for Enhancing Contaminant Uptakes from Aqueous Solutions. Sep. Purif. Technol. 2007;52(3):403–415. doi: 10.1016/j.seppur.2006.06.009.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.seppur.2006.06.009"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Sep. Purif. Technol.&amp;title=Review of Modifications of Activated Carbon for Enhancing Contaminant Uptakes from Aqueous Solutions&amp;author=C. Y. Yin&amp;author=M. K. Aroua&amp;author=W. M. A. W. Daud&amp;volume=52&amp;issue=3&amp;publication_year=2007&amp;pages=403-415&amp;doi=10.1016/j.seppur.2006.06.009&amp;"/></mixed-citation></ref><ref id="ref22"><mixed-citation id="cit22"><named-content content-type="citation-string">Bakshi A., Bustamante H., Sui X., Joshi R.. Structure Dependent
+Water Transport in Membranes Based on Two-Dimensional Materials. Ind. Eng. Chem. Res. 2021;60(30):10917–10959. doi: 10.1021/acs.iecr.1c01919.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/acs.iecr.1c01919"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Ind. Eng. Chem. Res.&amp;title=Structure Dependent Water Transport in Membranes Based on Two-Dimensional Materials&amp;author=A. Bakshi&amp;author=H. Bustamante&amp;author=X. Sui&amp;author=R. Joshi&amp;volume=60&amp;issue=30&amp;publication_year=2021&amp;pages=10917-10959&amp;doi=10.1021/acs.iecr.1c01919&amp;"/></mixed-citation></ref><ref id="ref23"><mixed-citation id="cit23"><named-content content-type="citation-string">Lyu J., Wen X., Kumar U., You Y., Chen V., Joshi R. K.. Separation
+and Purification Using GO and R-GO Membranes. RSC Adv. 2018;8(41):23130–23151. doi: 10.1039/C8RA03156H.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1039/C8RA03156H"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC9081616"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="35540136"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=RSC Adv.&amp;title=Separation and Purification Using GO and R-GO Membranes&amp;author=J. Lyu&amp;author=X. Wen&amp;author=U. Kumar&amp;author=Y. You&amp;author=V. Chen&amp;volume=8&amp;issue=41&amp;publication_year=2018&amp;pages=23130-23151&amp;pmid=35540136&amp;doi=10.1039/C8RA03156H&amp;"/></mixed-citation></ref><ref id="ref24"><mixed-citation id="cit24"><named-content content-type="citation-string">Foller T., Madauß L., Ji D., Ren X., De Silva K. K. H., Musso T., Yoshimura M., Lebius H., Benyagoub A., Kumar P. V., Schleberger M., Joshi R.. Mass Transport via
+In-Plane Nanopores in Graphene Oxide Membranes. Nano Lett. 2022;22(12):4941–4948. doi: 10.1021/acs.nanolett.2c01615.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/acs.nanolett.2c01615"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="35687040"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nano Lett.&amp;title=Mass Transport via In-Plane Nanopores in Graphene Oxide Membranes&amp;author=T. Foller&amp;author=L. Madauß&amp;author=D. Ji&amp;author=X. Ren&amp;author=K. K. H. De Silva&amp;volume=22&amp;issue=12&amp;publication_year=2022&amp;pages=4941-4948&amp;pmid=35687040&amp;doi=10.1021/acs.nanolett.2c01615&amp;"/></mixed-citation></ref><ref id="ref25"><mixed-citation id="cit25"><named-content content-type="citation-string">Hu Y., Yan S., Tian J., Zhou T., Kong J., Mo H.. Graphene Oxide
+with Doping S or N from Spent Graphite of LIBs for the Catalytic Degradation
+Performance of Peroxymonosulfate Activators. Sep. Purif. Technol. 2026;386(2):136626.  doi: 10.1016/j.seppur.2025.136626.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.seppur.2025.136626"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Sep. Purif. Technol.&amp;title=Graphene Oxide with Doping S or N from Spent Graphite of LIBs for the Catalytic Degradation Performance of Peroxymonosulfate Activators&amp;author=Y. Hu&amp;author=S. Yan&amp;author=J. Tian&amp;author=T. Zhou&amp;author=J. Kong&amp;volume=386&amp;issue=2&amp;publication_year=2026&amp;pages=136626&amp;doi=10.1016/j.seppur.2025.136626&amp;"/></mixed-citation></ref><ref id="ref26"><mixed-citation id="cit26"><named-content content-type="citation-string">Sun M., Bai X., Fu X., Yu X., Ye Z., Zhang M., Qiu Y. L.. Modification of
+Fe3O4Magnetic Nanoparticles for Antibiotic
+Detection. Sci. Rep. 2025;15(1):4751.  doi: 10.1038/s41598-025-87901-z.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/s41598-025-87901-z"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC11807218"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="39922898"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Sci. Rep.&amp;title=Modification of Fe3O4Magnetic Nanoparticles for Antibiotic Detection&amp;author=M. Sun&amp;author=X. Bai&amp;author=X. Fu&amp;author=X. Yu&amp;author=Z. Ye&amp;volume=15&amp;issue=1&amp;publication_year=2025&amp;pages=4751&amp;pmid=39922898&amp;doi=10.1038/s41598-025-87901-z&amp;"/></mixed-citation></ref><ref id="ref27"><mixed-citation id="cit27"><named-content content-type="citation-string">Sabzi
+Dizajyekan B., Jafari A., Vafaie-Sefti M., Saber R., Fakhroueian Z.. Preparation of Stable Colloidal Dispersion
+of Surface Modified Fe3O4 Nanoparticles for Magnetic Heating Applications. Sci. Rep. 2024;14(1):1296.  doi: 10.1038/s41598-024-51801-5.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/s41598-024-51801-5"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC10788351"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="38221547"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Sci. Rep.&amp;title=Preparation of Stable Colloidal Dispersion of Surface Modified Fe3O4 Nanoparticles for Magnetic Heating Applications&amp;author=B. Sabzi Dizajyekan&amp;author=A. Jafari&amp;author=M. Vafaie-Sefti&amp;author=R. Saber&amp;author=Z. Fakhroueian&amp;volume=14&amp;issue=1&amp;publication_year=2024&amp;pages=1296&amp;pmid=38221547&amp;doi=10.1038/s41598-024-51801-5&amp;"/></mixed-citation></ref><ref id="ref28"><mixed-citation id="cit28"><named-content content-type="citation-string">Wei H., Yang W., Xi Q., Chen X.. Preparation of Fe3O4@graphene
+Oxide Core–Shell Magnetic Particles for Use in Protein Adsorption. Mater. Lett. 2012;82(1):224–226. doi: 10.1016/j.matlet.2012.05.086.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.matlet.2012.05.086"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Mater. Lett.&amp;title=Preparation of Fe3O4@graphene Oxide Core–Shell Magnetic Particles for Use in Protein Adsorption&amp;author=H. Wei&amp;author=W. Yang&amp;author=Q. Xi&amp;author=X. Chen&amp;volume=82&amp;issue=1&amp;publication_year=2012&amp;pages=224-226&amp;doi=10.1016/j.matlet.2012.05.086&amp;"/></mixed-citation></ref><ref id="ref29"><mixed-citation id="cit29"><named-content content-type="citation-string">Nagayasu T., Yoshioka C., Imamura K., Nakanishi K.. Effects of
+Carboxyl Groups on the Adsorption Behavior of Low-Molecular-Weight
+Substances on a Stainless Steel Surface. J.
+Colloid Interface Sci. 2004;279(2):296–306. doi: 10.1016/j.jcis.2004.06.081.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.jcis.2004.06.081"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15464793"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Colloid Interface Sci.&amp;title=Effects of Carboxyl Groups on the Adsorption Behavior of Low-Molecular-Weight Substances on a Stainless Steel Surface&amp;author=T. Nagayasu&amp;author=C. Yoshioka&amp;author=K. Imamura&amp;author=K. Nakanishi&amp;volume=279&amp;issue=2&amp;publication_year=2004&amp;pages=296-306&amp;pmid=15464793&amp;doi=10.1016/j.jcis.2004.06.081&amp;"/></mixed-citation></ref><ref id="ref30"><mixed-citation id="cit30"><named-content content-type="citation-string">da
+Silva Bruckmann F., Ledur C. M., da Silva I. Z., Dotto G. L., Rhoden C. R. B.. A DFT Theoretical and Experimental Study about Tetracycline
+Adsorption onto Magnetic Graphene Oxide. J.
+Mol. Liq. 2022;353:118837.  doi: 10.1016/j.molliq.2022.118837.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.molliq.2022.118837"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Mol. Liq.&amp;title=A DFT Theoretical and Experimental Study about Tetracycline Adsorption onto Magnetic Graphene Oxide&amp;author=F. da Silva Bruckmann&amp;author=C. M. Ledur&amp;author=I. Z. da Silva&amp;author=G. L. Dotto&amp;author=C. R. B. Rhoden&amp;volume=353&amp;publication_year=2022&amp;pages=118837&amp;doi=10.1016/j.molliq.2022.118837&amp;"/></mixed-citation></ref><ref id="ref31"><mixed-citation id="cit31"><named-content content-type="citation-string">Rezazadeh N., Danesh S., Eftekhari M., Farahmandzadeh M.. Application
+of Graphene Oxide and Its Derivatives on the Adsorption of a Cationic
+Surfactant (Interaction Mechanism, Kinetic, Isotherm Curves and Thermodynamic
+Studies) J. Mol. Liq. 2022;368:120720.  doi: 10.1016/j.molliq.2022.120720.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.molliq.2022.120720"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Mol. Liq.&amp;title=Application of Graphene Oxide and Its Derivatives on the Adsorption of a Cationic Surfactant (Interaction Mechanism, Kinetic, Isotherm Curves and Thermodynamic Studies)&amp;author=N. Rezazadeh&amp;author=S. Danesh&amp;author=M. Eftekhari&amp;author=M. Farahmandzadeh&amp;volume=368&amp;publication_year=2022&amp;pages=120720&amp;doi=10.1016/j.molliq.2022.120720&amp;"/></mixed-citation></ref><ref id="ref32"><mixed-citation id="cit32"><named-content content-type="citation-string">Wang Y., Gao S., Zang X., Li J., Ma J.. Graphene-Based Solid-Phase
+Extraction Combined with Flame Atomic Absorption Spectrometry for
+a Sensitive Determination of Trace Amounts of Lead in Environmental
+Water and Vegetable Samples. Anal. Chim. Acta. 2012;716(3):112–118. doi: 10.1016/j.aca.2011.12.007.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.aca.2011.12.007"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="22284885"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Anal. Chim. Acta&amp;title=Graphene-Based Solid-Phase Extraction Combined with Flame Atomic Absorption Spectrometry for a Sensitive Determination of Trace Amounts of Lead in Environmental Water and Vegetable Samples&amp;author=Y. Wang&amp;author=S. Gao&amp;author=X. Zang&amp;author=J. Li&amp;author=J. Ma&amp;volume=716&amp;issue=3&amp;publication_year=2012&amp;pages=112-118&amp;pmid=22284885&amp;doi=10.1016/j.aca.2011.12.007&amp;"/></mixed-citation></ref><ref id="ref33"><mixed-citation id="cit33"><named-content content-type="citation-string">Alboghbeish M., Larki A., Saghanezhad S. J.. Effective Removal of Pb­(II) Ions
+Using Piperazine-Modified Magnetic Graphene Oxide Nanocomposite; Optimization
+by Response Surface Methodology. Sci. Rep. 2022;12(1):9658.  doi: 10.1038/s41598-022-13959-8.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/s41598-022-13959-8"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC9187642"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="35688868"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Sci. Rep.&amp;title=Effective Removal of Pb­(II) Ions Using Piperazine-Modified Magnetic Graphene Oxide Nanocomposite; Optimization by Response Surface Methodology&amp;author=M. Alboghbeish&amp;author=A. Larki&amp;author=S. J. Saghanezhad&amp;volume=12&amp;issue=1&amp;publication_year=2022&amp;pages=9658&amp;pmid=35688868&amp;doi=10.1038/s41598-022-13959-8&amp;"/></mixed-citation></ref><ref id="ref34"><mixed-citation id="cit34"><named-content content-type="citation-string">Babakhani A., Peighambardoust S. J., Olad A.. Fabrication of Magnetic Nanocomposite
+Scaffolds Based on Polyvinyl Alcohol-Chitosan Containing Hydroxyapatite
+and Clay Modified with Graphene Oxide: Evaluation of Their Properties
+for Bone Tissue Engineering Applications. J.
+Mech. Behav. Biomed. Mater. 2024;150:106263.  doi: 10.1016/j.jmbbm.2023.106263.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.jmbbm.2023.106263"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="38039775"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Mech. Behav. Biomed. Mater.&amp;title=Fabrication of Magnetic Nanocomposite Scaffolds Based on Polyvinyl Alcohol-Chitosan Containing Hydroxyapatite and Clay Modified with Graphene Oxide: Evaluation of Their Properties for Bone Tissue Engineering Applications&amp;author=A. Babakhani&amp;author=S. J. Peighambardoust&amp;author=A. Olad&amp;volume=150&amp;publication_year=2024&amp;pages=106263&amp;pmid=38039775&amp;doi=10.1016/j.jmbbm.2023.106263&amp;"/></mixed-citation></ref><ref id="ref35"><mixed-citation id="cit35"><named-content content-type="citation-string">Amiri A., Zare H., Fazaeli Y., Dehghani Z., Eslami-Kalantari M., Shahedi Z., Zounia M.. Investigating the Optical
+and Magnetic
+Properties of Engineered Multifunctional Graphene Oxide and Potential
+Application in Medical Physics and Nonlinear Optics. J. Mol. Struct. 2025;1319:139396.  doi: 10.1016/j.molstruc.2024.139396.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.molstruc.2024.139396"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Mol. Struct.&amp;title=Investigating the Optical and Magnetic Properties of Engineered Multifunctional Graphene Oxide and Potential Application in Medical Physics and Nonlinear Optics&amp;author=A. Amiri&amp;author=H. Zare&amp;author=Y. Fazaeli&amp;author=Z. Dehghani&amp;author=M. Eslami-Kalantari&amp;volume=1319&amp;publication_year=2025&amp;pages=139396&amp;doi=10.1016/j.molstruc.2024.139396&amp;"/></mixed-citation></ref><ref id="ref36"><mixed-citation id="cit36"><named-content content-type="citation-string">Li Y., Huang L., Tai G., Yan F., Cai L., Xin C., Al Islam S.. Graphene Oxide-Loaded
+Magnetic Nanoparticles within
+3D Hydrogel Form High-Performance Scaffolds for Bone Regeneration
+and Tumour Treatment. Composites, Part A. 2022;152:106672.  doi: 10.1016/j.compositesa.2021.106672.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.compositesa.2021.106672"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Composites, Part A&amp;title=Graphene Oxide-Loaded Magnetic Nanoparticles within 3D Hydrogel Form High-Performance Scaffolds for Bone Regeneration and Tumour Treatment&amp;author=Y. Li&amp;author=L. Huang&amp;author=G. Tai&amp;author=F. Yan&amp;author=L. Cai&amp;volume=152&amp;publication_year=2022&amp;pages=106672&amp;doi=10.1016/j.compositesa.2021.106672&amp;"/></mixed-citation></ref><ref id="ref37"><mixed-citation id="cit37"><named-content content-type="citation-string">Ahmed M. A., Ahmed M. A., Mohamed A. A.. Facile
+Adsorptive Removal of Dyes
+and Heavy Metals from Wastewaters Using Magnetic Nanocomposite of
+Zinc Ferrite@reduced Graphene Oxide. Inorg.
+Chem. Commun. 2022;144:109912.  doi: 10.1016/j.inoche.2022.109912.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.inoche.2022.109912"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Inorg. Chem. Commun.&amp;title=Facile Adsorptive Removal of Dyes and Heavy Metals from Wastewaters Using Magnetic Nanocomposite of Zinc Ferrite@reduced Graphene Oxide&amp;author=M. A. Ahmed&amp;author=M. A. Ahmed&amp;author=A. A. Mohamed&amp;volume=144&amp;publication_year=2022&amp;pages=109912&amp;doi=10.1016/j.inoche.2022.109912&amp;"/></mixed-citation></ref><ref id="ref38"><mixed-citation id="cit38"><named-content content-type="citation-string">Safaripour M., Parandi E., Aghel B., Gouran A., Saidi M., Nodeh H. R.. Optimization of the Microreactor-Intensified
+Transesterification
+Process Using Silver Titanium Oxide Nanoparticles Decorated Magnetic
+Graphene Oxide Nanocatalyst. Process Saf. Environ.
+Prot. 2023;173:495–506. doi: 10.1016/j.psep.2023.03.039.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.psep.2023.03.039"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Process Saf. Environ. Prot.&amp;title=Optimization of the Microreactor-Intensified Transesterification Process Using Silver Titanium Oxide Nanoparticles Decorated Magnetic Graphene Oxide Nanocatalyst&amp;author=M. Safaripour&amp;author=E. Parandi&amp;author=B. Aghel&amp;author=A. Gouran&amp;author=M. Saidi&amp;volume=173&amp;publication_year=2023&amp;pages=495-506&amp;doi=10.1016/j.psep.2023.03.039&amp;"/></mixed-citation></ref><ref id="ref39"><mixed-citation id="cit39"><named-content content-type="citation-string">Hegazy S., Abdelwahab N. A., Ramadan A. M., Mohamed S. K.. Magnetic Fe3O4-Grafted
+Cellulose/Graphene Oxide Nanocomposite for Methylene Blue Removal
+from Aqueous Solutions: Synthesis and Characterization. Next Mater. 2024;3:100064.  doi: 10.1016/j.nxmate.2023.100064.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.nxmate.2023.100064"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Next Mater.&amp;title=Magnetic Fe3O4-Grafted Cellulose/Graphene Oxide Nanocomposite for Methylene Blue Removal from Aqueous Solutions: Synthesis and Characterization&amp;author=S. Hegazy&amp;author=N. A. Abdelwahab&amp;author=A. M. Ramadan&amp;author=S. K. Mohamed&amp;volume=3&amp;publication_year=2024&amp;pages=100064&amp;doi=10.1016/j.nxmate.2023.100064&amp;"/></mixed-citation></ref><ref id="ref40"><mixed-citation id="cit40"><named-content content-type="citation-string">Mosleh N., Ahranjani P. J., Parandi E., Nodeh H. R., Nawrot N., Rezania S., Sathishkumar P.. Titanium Lanthanum
+Three Oxides Decorated
+Magnetic Graphene Oxide for Adsorption of Lead Ions from Aqueous Media. Environ. Res. 2022;214:113831.  doi: 10.1016/j.envres.2022.113831.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.envres.2022.113831"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="35841973"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Environ. Res.&amp;title=Titanium Lanthanum Three Oxides Decorated Magnetic Graphene Oxide for Adsorption of Lead Ions from Aqueous Media&amp;author=N. Mosleh&amp;author=P. J. Ahranjani&amp;author=E. Parandi&amp;author=H. R. Nodeh&amp;author=N. Nawrot&amp;volume=214&amp;publication_year=2022&amp;pages=113831&amp;pmid=35841973&amp;doi=10.1016/j.envres.2022.113831&amp;"/></mixed-citation></ref><ref id="ref41"><mixed-citation id="cit41"><named-content content-type="citation-string">Jahan N., Roy H., Reaz A. H., Arshi S., Rahman E., Firoz S. H., Islam M. S.. A Comparative Study
+on Sorption Behavior of Graphene
+Oxide and Reduced Graphene Oxide towards Methylene Blue. Case Stud. Chem. Environ. Eng. 2022;6:100239.  doi: 10.1016/j.cscee.2022.100239.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.cscee.2022.100239"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Case Stud. Chem. Environ. Eng.&amp;title=A Comparative Study on Sorption Behavior of Graphene Oxide and Reduced Graphene Oxide towards Methylene Blue&amp;author=N. Jahan&amp;author=H. Roy&amp;author=A. H. Reaz&amp;author=S. Arshi&amp;author=E. Rahman&amp;volume=6&amp;publication_year=2022&amp;pages=100239&amp;doi=10.1016/j.cscee.2022.100239&amp;"/></mixed-citation></ref><ref id="ref42"><mixed-citation id="cit42"><named-content content-type="citation-string">Verma K., Siddiki S. H., Maity C. K., Mishra R. K., Moniruzzaman M.. Development
+of Reduced Graphene Oxide (RGO) Reinforced Poly­(Lactic) Acid/Cellulose
+Nanocrystal Composite through Melt Mixing: Effect of Nanofiller on
+Thermal, Structural, Biodegradation and Antibacterial Properties. Ind. Crops Prod. 2023;204:117307.  doi: 10.1016/j.indcrop.2023.117307.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.indcrop.2023.117307"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Ind. Crops Prod.&amp;title=Development of Reduced Graphene Oxide (RGO) Reinforced Poly­(Lactic) Acid/Cellulose Nanocrystal Composite through Melt Mixing: Effect of Nanofiller on Thermal, Structural, Biodegradation and Antibacterial Properties&amp;author=K. Verma&amp;author=S. H. Siddiki&amp;author=C. K. Maity&amp;author=R. K. Mishra&amp;author=M. Moniruzzaman&amp;volume=204&amp;publication_year=2023&amp;pages=117307&amp;doi=10.1016/j.indcrop.2023.117307&amp;"/></mixed-citation></ref><ref id="ref43"><mixed-citation id="cit43"><named-content content-type="citation-string">Bayazit S. S., Inci I., Uslu H.. Adsorption of Lactic
+Acid from Model
+Fermentation Broth onto Activated Carbon and Amberlite IRA-67. J. Chem. Eng. Data. 2011;56(5):1751–1754. doi: 10.1021/je1006345.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/je1006345"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Chem. Eng. Data&amp;title=Adsorption of Lactic Acid from Model Fermentation Broth onto Activated Carbon and Amberlite IRA-67&amp;author=S. S. Bayazit&amp;author=I. Inci&amp;author=H. Uslu&amp;volume=56&amp;issue=5&amp;publication_year=2011&amp;pages=1751-1754&amp;doi=10.1021/je1006345&amp;"/></mixed-citation></ref><ref id="ref44"><mixed-citation id="cit44"><named-content content-type="citation-string">Ibrahim A., Vohra M. S., Bahadi S. A., Onaizi S. A., Essa M. H., Mohammed T.. Heavy Metals Adsorption
+onto Graphene Oxide: Effect
+of Mixed Systems and Response Surface Methodology Modeling. Desalin. Water Treat. 2022;266:78–90. doi: 10.5004/dwt.2022.28615.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.5004/dwt.2022.28615"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Desalin. Water Treat.&amp;title=Heavy Metals Adsorption onto Graphene Oxide: Effect of Mixed Systems and Response Surface Methodology Modeling&amp;author=A. Ibrahim&amp;author=M. S. Vohra&amp;author=S. A. Bahadi&amp;author=S. A. Onaizi&amp;author=M. H. Essa&amp;volume=266&amp;publication_year=2022&amp;pages=78-90&amp;doi=10.5004/dwt.2022.28615&amp;"/></mixed-citation></ref><ref id="ref45"><mixed-citation id="cit45"><named-content content-type="citation-string">Suchak N. M., Deshpande M. P., Mistry H. M., Pandya S. J., Chaki S. H., Bhatt S. V.. Kinetic Study of Adsorption and Photocatalytic Degradation
+of Methylene Blue Dye Using TiO2 Nanoparticles with Activated Carbon. Phys. Scr. 2024;99(6):0659d6.  doi: 10.1088/1402-4896/ad4ca5.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1088/1402-4896/ad4ca5"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Phys. Scr.&amp;title=Kinetic Study of Adsorption and Photocatalytic Degradation of Methylene Blue Dye Using TiO2 Nanoparticles with Activated Carbon&amp;author=N. M. Suchak&amp;author=M. P. Deshpande&amp;author=H. M. Mistry&amp;author=S. J. Pandya&amp;author=S. H. Chaki&amp;volume=99&amp;issue=6&amp;publication_year=2024&amp;pages=0659d6&amp;doi=10.1088/1402-4896/ad4ca5&amp;"/></mixed-citation></ref><ref id="ref46"><mixed-citation id="cit46"><named-content content-type="citation-string">Peng W., Yang W., Wang M., Zhang L., Liu X., Zhang Y.. Optimizing the Microscopic Structure of MIL-68­(Al)
+by Co-Doping for
+Pollutant Removal and Mechanism. Catalysts. 2025;15(9):900.  doi: 10.3390/catal15090900.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.3390/catal15090900"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Catalysts&amp;title=Optimizing the Microscopic Structure of MIL-68­(Al) by Co-Doping for Pollutant Removal and Mechanism&amp;author=W. Peng&amp;author=W. Yang&amp;author=M. Wang&amp;author=L. Zhang&amp;author=X. Liu&amp;volume=15&amp;issue=9&amp;publication_year=2025&amp;pages=900&amp;doi=10.3390/catal15090900&amp;"/></mixed-citation></ref><ref id="ref47"><mixed-citation id="cit47"><named-content content-type="citation-string">Kou J., Liu T., Jiang G., Pan Y., Zhou Z., Yang G., Ni X., Liu H.. Carboxylic Acid Ligand Engineering and Lipophilic Modification
+for Enhanced Methane Storage in Metal–Organic Frameworks. Chem. Eng. J. 2025;525:169909.  doi: 10.1016/j.cej.2025.169909.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.cej.2025.169909"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Chem. Eng. J.&amp;title=Carboxylic Acid Ligand Engineering and Lipophilic Modification for Enhanced Methane Storage in Metal–Organic Frameworks&amp;author=J. Kou&amp;author=T. Liu&amp;author=G. Jiang&amp;author=Y. Pan&amp;author=Z. Zhou&amp;volume=525&amp;publication_year=2025&amp;pages=169909&amp;doi=10.1016/j.cej.2025.169909&amp;"/></mixed-citation></ref><ref id="ref48"><mixed-citation id="cit48"><named-content content-type="citation-string">Bamaniya S. M., Dave P. N.. Eco-Friendly Gum Acacia-g-Poly­(N,N-Dimethylacrylamide)/NiCoFe2O4
+Nanocomposite Hydrogel for Efficient Levofloxacin Removal: Synthesis,
+Characterization, and Adsorption Mechanism. Adv. Sustainable Syst. 2025;9(12):e01018.  doi: 10.1002/adsu.202501018.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/adsu.202501018"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Adv. Sustainable Syst.&amp;title=Eco-Friendly Gum Acacia-g-Poly­(N,N-Dimethylacrylamide)/NiCoFe2O4 Nanocomposite Hydrogel for Efficient Levofloxacin Removal: Synthesis, Characterization, and Adsorption Mechanism&amp;author=S. M. Bamaniya&amp;author=P. N. Dave&amp;volume=9&amp;issue=12&amp;publication_year=2025&amp;pages=e01018&amp;doi=10.1002/adsu.202501018&amp;"/></mixed-citation></ref><ref id="ref49"><mixed-citation id="cit49"><named-content content-type="citation-string">Diao J. Q., Li H. J., Zhang T., Yang J., Liu C.. Study on the
+Adsorption Performance of Microplastics by Alum Sludge Modified with
+Heat Treatment and Chitosan. J. Environ. Chem.
+Eng. 2025;13(6):119746.  doi: 10.1016/j.jece.2025.119746.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.jece.2025.119746"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Environ. Chem. Eng.&amp;title=Study on the Adsorption Performance of Microplastics by Alum Sludge Modified with Heat Treatment and Chitosan&amp;author=J. Q. Diao&amp;author=H. J. Li&amp;author=T. Zhang&amp;author=J. Yang&amp;author=C. Liu&amp;volume=13&amp;issue=6&amp;publication_year=2025&amp;pages=119746&amp;doi=10.1016/j.jece.2025.119746&amp;"/></mixed-citation></ref><ref id="ref50"><mixed-citation id="cit50"><named-content content-type="citation-string">Adeida L., Benguella B., Benamar M., Kamel A. H.. Sustainable
+and
+Eco-Friendly Removal of 2,4,6-Tricholorophenol from Water Using an
+Acid-Activated Bio-Waste/Graphene Oxide Composite. RSC Adv. 2025;15(29):23477–23487. doi: 10.1039/D5RA02424B.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1039/D5RA02424B"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC12235597"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="40630691"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=RSC Adv.&amp;title=Sustainable and Eco-Friendly Removal of 2,4,6-Tricholorophenol from Water Using an Acid-Activated Bio-Waste/Graphene Oxide Composite&amp;author=L. Adeida&amp;author=B. Benguella&amp;author=M. Benamar&amp;author=A. H. Kamel&amp;volume=15&amp;issue=29&amp;publication_year=2025&amp;pages=23477-23487&amp;pmid=40630691&amp;doi=10.1039/D5RA02424B&amp;"/></mixed-citation></ref><ref id="ref51"><mixed-citation id="cit51"><named-content content-type="citation-string">Bulin C., Xiong Q., Zheng R., Li C., Ma Y., Guo T.. High Efficiency Removal of Methyl
+Blue Using Phytic Acid Modified
+Graphene Oxide and Adsorption Mechanism. Spectrochim.
+Acta, Part A. 2024;307:123645.  doi: 10.1016/j.saa.2023.123645.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.saa.2023.123645"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="37976572"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Spectrochim. Acta, Part A&amp;title=High Efficiency Removal of Methyl Blue Using Phytic Acid Modified Graphene Oxide and Adsorption Mechanism&amp;author=C. Bulin&amp;author=Q. Xiong&amp;author=R. Zheng&amp;author=C. Li&amp;author=Y. Ma&amp;volume=307&amp;publication_year=2024&amp;pages=123645&amp;pmid=37976572&amp;doi=10.1016/j.saa.2023.123645&amp;"/></mixed-citation></ref><ref id="ref52"><mixed-citation id="cit52"><named-content content-type="citation-string">Ullah A., Mahmood T., Ali R., Momin S.. Comparative Removal
+of Acid Orange 7 and Aniline onto Mesoporous Graphene Oxide-Nickel
+Ferrite Magnetic Nanocomposites in Batch Adsorption and Application
+of Conventional Kinetic and Isotherm Models. Environ. Sci. Pollut. Res. 2025;32(15):9614–9637. doi: 10.1007/s11356-025-36283-w.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1007/s11356-025-36283-w"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="40138130"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Environ. Sci. Pollut. Res.&amp;title=Comparative Removal of Acid Orange 7 and Aniline onto Mesoporous Graphene Oxide-Nickel Ferrite Magnetic Nanocomposites in Batch Adsorption and Application of Conventional Kinetic and Isotherm Models&amp;author=A. Ullah&amp;author=T. Mahmood&amp;author=R. Ali&amp;author=S. Momin&amp;volume=32&amp;issue=15&amp;publication_year=2025&amp;pages=9614-9637&amp;pmid=40138130&amp;doi=10.1007/s11356-025-36283-w&amp;"/></mixed-citation></ref><ref id="ref53"><mixed-citation id="cit53"><named-content content-type="citation-string">Cai N., Larese-Casanova P.. Sorption of
+Carbamazepine by Commercial Graphene Oxides:
+A Comparative Study with Granular Activated Carbon and Multiwalled
+Carbon Nanotubes. J. Colloid Interface Sci. 2014;426(3):152–161. doi: 10.1016/j.jcis.2014.03.038.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.jcis.2014.03.038"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24863778"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Colloid Interface Sci.&amp;title=Sorption of Carbamazepine by Commercial Graphene Oxides: A Comparative Study with Granular Activated Carbon and Multiwalled Carbon Nanotubes&amp;author=N. Cai&amp;author=P. Larese-Casanova&amp;volume=426&amp;issue=3&amp;publication_year=2014&amp;pages=152-161&amp;pmid=24863778&amp;doi=10.1016/j.jcis.2014.03.038&amp;"/></mixed-citation></ref><ref id="ref54"><mixed-citation id="cit54"><named-content content-type="citation-string">Zarrik B., Bensalah J., Zakri S., Jebli A., El-Yousfi A., Dakikil H., ELazhar F., Kadiri L., Hbaiz E. M.. Green Synthesis
+of Graphene Oxide–Citric Acid (GOCC) Nanocomposite for Cd (II)
+and Pb (II) Adsorption: Adsorption Studies and BBD-RSM Modelling. Can. Metall. Q. 2026:1–27. doi: 10.1080/00084433.2026.2646378.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1080/00084433.2026.2646378"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Can. Metall. Q.&amp;title=Green Synthesis of Graphene Oxide–Citric Acid (GOCC) Nanocomposite for Cd (II) and Pb (II) Adsorption: Adsorption Studies and BBD-RSM Modelling&amp;author=B. Zarrik&amp;author=J. Bensalah&amp;author=S. Zakri&amp;author=A. Jebli&amp;author=A. El-Yousfi&amp;publication_year=2026&amp;pages=1-27&amp;doi=10.1080/00084433.2026.2646378&amp;"/></mixed-citation></ref><ref id="ref55"><mixed-citation id="cit55"><named-content content-type="citation-string">Yao L. W., Khan F. S. A., Mubarak N. M., Karri R. R., Khalid M., Walvekar R., Abdullah E. C., Mazari S. A., Ahmad A., Dehghani M. H.. Insight into Immobilization
+Efficiency of Lipase Enzyme
+as a Biocatalyst on the Graphene Oxide for Adsorption of Azo Dyes
+from Industrial Wastewater Effluent. J. Mol.
+Liq. 2022;354:118849.  doi: 10.1016/j.molliq.2022.118849.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.molliq.2022.118849"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Mol. Liq.&amp;title=Insight into Immobilization Efficiency of Lipase Enzyme as a Biocatalyst on the Graphene Oxide for Adsorption of Azo Dyes from Industrial Wastewater Effluent&amp;author=L. W. Yao&amp;author=F. S. A. Khan&amp;author=N. M. Mubarak&amp;author=R. R. Karri&amp;author=M. Khalid&amp;volume=354&amp;publication_year=2022&amp;pages=118849&amp;doi=10.1016/j.molliq.2022.118849&amp;"/></mixed-citation></ref><ref id="ref56"><mixed-citation id="cit56"><named-content content-type="citation-string">Wang R., You H., Li Z., Zhao J., Li M., Zhu J., Zhang G., Wang X., Leng H., Qi S., Xie B.. Non-Radical
+Mediated Reduced Graphene Oxide/Polypyrrole Catalytic
+Ceramic Membrane-PDS System for Source Control of SMX. Chem. Eng. J. 2024;479:147769.  doi: 10.1016/j.cej.2023.147769.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.cej.2023.147769"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Chem. Eng. J.&amp;title=Non-Radical Mediated Reduced Graphene Oxide/Polypyrrole Catalytic Ceramic Membrane-PDS System for Source Control of SMX&amp;author=R. Wang&amp;author=H. You&amp;author=Z. Li&amp;author=J. Zhao&amp;author=M. Li&amp;volume=479&amp;publication_year=2024&amp;pages=147769&amp;doi=10.1016/j.cej.2023.147769&amp;"/></mixed-citation></ref><ref id="ref57"><mixed-citation id="cit57"><named-content content-type="citation-string">Mustafa A., Yaqoob N., Almas M., Kamal S., Zia K. M., Rehman S.. Adsorptive Removal
+of Drimarene Brilliant Blue by Thermo
+Stable and Eco-Friendly Graphene Oxide Reinforced Polyvinyl Alcohol
+Hydrogels with High Reusability Potential. J.
+Polym. Res. 2022;29(8):332.  doi: 10.1007/s10965-022-03140-0.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1007/s10965-022-03140-0"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Polym. Res.&amp;title=Adsorptive Removal of Drimarene Brilliant Blue by Thermo Stable and Eco-Friendly Graphene Oxide Reinforced Polyvinyl Alcohol Hydrogels with High Reusability Potential&amp;author=A. Mustafa&amp;author=N. Yaqoob&amp;author=M. Almas&amp;author=S. Kamal&amp;author=K. M. Zia&amp;volume=29&amp;issue=8&amp;publication_year=2022&amp;pages=332&amp;doi=10.1007/s10965-022-03140-0&amp;"/></mixed-citation></ref><ref id="ref58"><mixed-citation id="cit58"><named-content content-type="citation-string">Xiong S., Wu Z., Li Z.. Facile Fabrication
+of Robust, Versatile, and Recyclable
+Biochar-Graphene Oxide Composite Monoliths for Efficient Removal of
+Different Contaminants in Water. Chemosphere. 2022;287:132418.  doi: 10.1016/j.chemosphere.2021.132418.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.chemosphere.2021.132418"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="34600927"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Chemosphere&amp;title=Facile Fabrication of Robust, Versatile, and Recyclable Biochar-Graphene Oxide Composite Monoliths for Efficient Removal of Different Contaminants in Water&amp;author=S. Xiong&amp;author=Z. Wu&amp;author=Z. Li&amp;volume=287&amp;publication_year=2022&amp;pages=132418&amp;pmid=34600927&amp;doi=10.1016/j.chemosphere.2021.132418&amp;"/></mixed-citation></ref><ref id="ref59"><mixed-citation id="cit59"><named-content content-type="citation-string">Hirani R. A. K., Asif A. H., Rafique N., Wu H., Shi L., Zhang S., Duan X., Wang S., Saunders M., Sun H.. Three-Dimensional Nitrogen-Doped Graphene Oxide Beads for Catalytic
+Degradation of Aqueous Pollutants. Chem. Eng.
+J. 2022;446:137042.  doi: 10.1016/j.cej.2022.137042.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.cej.2022.137042"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Chem. Eng. J.&amp;title=Three-Dimensional Nitrogen-Doped Graphene Oxide Beads for Catalytic Degradation of Aqueous Pollutants&amp;author=R. A. K. Hirani&amp;author=A. H. Asif&amp;author=N. Rafique&amp;author=H. Wu&amp;author=L. Shi&amp;volume=446&amp;publication_year=2022&amp;pages=137042&amp;doi=10.1016/j.cej.2022.137042&amp;"/></mixed-citation></ref><ref id="ref60"><mixed-citation id="cit60"><named-content content-type="citation-string">Wu Z., Huang W., Shan X., Li Z.. Preparation of a Porous
+Graphene Oxide/Alkali Lignin Aerogel Composite and Its Adsorption
+Properties for Methylene Blue. Int. J. Biol.
+Macromol. 2020;143:325–333. doi: 10.1016/j.ijbiomac.2019.12.017.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.ijbiomac.2019.12.017"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="31812749"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Int. J. Biol. Macromol.&amp;title=Preparation of a Porous Graphene Oxide/Alkali Lignin Aerogel Composite and Its Adsorption Properties for Methylene Blue&amp;author=Z. Wu&amp;author=W. Huang&amp;author=X. Shan&amp;author=Z. Li&amp;volume=143&amp;publication_year=2020&amp;pages=325-333&amp;pmid=31812749&amp;doi=10.1016/j.ijbiomac.2019.12.017&amp;"/></mixed-citation></ref></ref-list></sec></sec></body></article>

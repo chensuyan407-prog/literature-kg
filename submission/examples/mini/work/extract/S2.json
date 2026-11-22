@@ -1,0 +1,178 @@
+{
+ "source_id": "S2",
+ "entities": [
+  {
+   "key": "PSO",
+   "name": "pseudo-second-order model",
+   "type": "Method",
+   "aliases": [
+    "PSO"
+   ],
+   "mentions": [
+    {
+     "paragraph_id": "b1",
+     "quote": "Kinetics were fitted with the pseudo-second-order (PSO) model"
+    }
+   ]
+  },
+  {
+   "key": "XRD",
+   "name": "X-Ray Diffraction",
+   "type": "Method",
+   "aliases": [
+    "XRD"
+   ],
+   "mentions": [
+    {
+     "paragraph_id": "b1",
+     "quote": "X-Ray Diffraction (XRD) confirmed the phase."
+    }
+   ]
+  },
+  {
+   "key": "GO",
+   "name": "graphene oxide",
+   "type": "Material",
+   "aliases": [
+    "GO"
+   ],
+   "mentions": [
+    {
+     "paragraph_id": "b1",
+     "quote": "the GO used here was graphene oxide from a supplier"
+    }
+   ]
+  },
+  {
+   "key": "rGO",
+   "name": "reduced graphene oxide",
+   "type": "Material",
+   "aliases": [
+    "rGO"
+   ],
+   "mentions": [
+    {
+     "paragraph_id": "b3",
+     "quote": "We compare with reduced graphene oxide (rGO)."
+    }
+   ]
+  },
+  {
+   "key": "C1",
+   "name": "Composite C1",
+   "type": "Sample",
+   "attributes": {
+    "description": "iron-doped carbon"
+   },
+   "mentions": [
+    {
+     "paragraph_id": "b2",
+     "quote": "Composite C1 denotes our iron-doped carbon."
+    }
+   ]
+  },
+  {
+   "key": "MB",
+   "name": "methylene blue",
+   "type": "Material",
+   "mentions": [
+    {
+     "paragraph_id": "b3",
+     "quote": "Composite C1 adsorbed 45 mg/g of methylene blue"
+    }
+   ]
+  },
+  {
+   "key": "L",
+   "name": "Langmuir isotherms",
+   "type": "Method",
+   "mentions": [
+    {
+     "paragraph_id": "b2",
+     "quote": "Isotherms were described by Langmuir isotherms."
+    }
+   ]
+  },
+  {
+   "key": "q",
+   "name": "C1 capacity 45 mg/g (methylene blue)",
+   "type": "Measurement",
+   "attributes": {
+    "value": "45",
+    "unit": "mg/g"
+   },
+   "mentions": [
+    {
+     "paragraph_id": "b3",
+     "quote": "Composite C1 adsorbed 45 mg/g of methylene blue"
+    }
+   ]
+  },
+  {
+   "key": "pores",
+   "name": "smaller pores explain capacity (S2)",
+   "type": "Conclusion",
+   "mentions": [
+    {
+     "paragraph_id": "b3",
+     "quote": "which may reflect its smaller pores"
+    }
+   ]
+  },
+  {
+   "key": "JS",
+   "name": "J. Smith",
+   "type": "Researcher",
+   "attribution": "author",
+   "mentions": [
+    {
+     "paragraph_id": "b2",
+     "quote": "J. Smith analysed the data."
+    }
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "C1",
+   "predicate": "HAS_RESULT",
+   "object": "q",
+   "conditions": {
+    "adsorbate": "methylene blue"
+   },
+   "paragraph_id": "b3",
+   "quote": "Composite C1 adsorbed 45 mg/g of methylene blue",
+   "strength": "direct"
+  },
+  {
+   "subject": "C1",
+   "predicate": "TESTED_ON",
+   "object": "MB",
+   "paragraph_id": "b3",
+   "quote": "Composite C1 adsorbed 45 mg/g of methylene blue",
+   "strength": "direct"
+  },
+  {
+   "subject": "C1",
+   "predicate": "CHARACTERIZED_BY",
+   "object": "XRD",
+   "paragraph_id": "b1",
+   "quote": "X-Ray Diffraction (XRD) confirmed the phase.",
+   "strength": "indirect"
+  },
+  {
+   "subject": "q",
+   "predicate": "SUPPORTS",
+   "object": "pores",
+   "paragraph_id": "b3",
+   "quote": "Composite C1 adsorbed 45 mg/g of methylene blue, which may reflect its smaller pores.",
+   "strength": "direct"
+  }
+ ],
+ "not_reported": [
+  {
+   "item": "temperature of the S2 adsorption test",
+   "note": "not stated in the material"
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+[
+ {
+  "source_id": "paper-A",
+  "doi": "10.1021/acsomega.6c05759",
+  "title": "Comparative Adsorption of Mono‑, Di‑, and Tricarboxylic Acids on Magnetically Modified Graphene Oxide: Influence of Molecular Structure on Adsorption Behavior",
+  "authors": [
+   "Ebubekir Ekinci",
+   "Hasan Uslu",
+   "Şahika Sena Bayazit",
+   "Mehmet Yetişen"
+  ],
+  "license": "CC-BY-4.0",
+  "sha256": "4bc6d39e623a580fe9e1a0ba1b3da1a719da65cf511b2182858908501409b525",
+  "role": "primary",
+  "files": [
+   "primary-material.json"
+  ],
+  "manifest_record": {
+   "source_id": "paper-A",
+   "role": "primary",
+   "doi": "10.1021/acsomega.6c05759",
+   "title": "Comparative Adsorption of Mono‑, Di‑, and Tricarboxylic Acids on Magnetically Modified Graphene Oxide: Influence of Molecular Structure on Adsorption Behavior",
+   "authors": [
+    "Ebubekir Ekinci",
+    "Hasan Uslu",
+    "Şahika Sena Bayazit",
+    "Mehmet Yetişen"
+   ],
+   "license": "CC-BY-4.0",
+   "source_sha256": "4bc6d39e623a580fe9e1a0ba1b3da1a719da65cf511b2182858908501409b525",
+   "file": "primary-material.json"
+  },
+  "paragraph_count": 73,
+  "location_kind": [
+   "id"
+  ]
+ },
+ {
+  "source_id": "paper-B",
+  "doi": "10.3390/ma19163371",
+  "title": "Structural, Thermal, and Phenol Adsorption Properties of a Humic Acid/Reduced Graphene Oxide Composite",
+  "authors": [
+   "Alma Khassenovna Zhakina",
+   "Oxana Vasilievna Arnt",
+   "Yevgeniy Petrovich Vassilets",
+   "Almat Maulenuly Zhakin",
+   "Zainulla Muldakhmetov"
+  ],
+  "license": "CC-BY-4.0",
+  "sha256": "9d3e64cc65a754352d60b7ad6c3cb7d1bc50554697b9242bf6c4f49e7cf96fe3",
+  "role": "secondary",
+  "files": [
+   "secondary-material.json",
+   "secondary-publisher.xml"
+  ],
+  "manifest_record": {
+   "source_id": "paper-B",
+   "role": "secondary",
+   "doi": "10.3390/ma19163371",
+   "title": "Structural, Thermal, and Phenol Adsorption Properties of a Humic Acid/Reduced Graphene Oxide Composite",
+   "authors": [
+    "Alma Khassenovna Zhakina",
+    "Oxana Vasilievna Arnt",
+    "Yevgeniy Petrovich Vassilets",
+    "Almat Maulenuly Zhakin",
+    "Zainulla Muldakhmetov"
+   ],
+   "license": "CC-BY-4.0",
+   "source_sha256": "9d3e64cc65a754352d60b7ad6c3cb7d1bc50554697b9242bf6c4f49e7cf96fe3",
+   "file": "secondary-material.json",
+   "publisher_xml": "secondary-publisher.xml"
+  },
+  "paragraph_count": 110,
+  "location_kind": [
+   "paragraph_id"
+  ]
+ }
+]

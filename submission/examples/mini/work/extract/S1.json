@@ -1,0 +1,149 @@
+{
+ "source_id": "S1",
+ "entities": [
+  {
+   "key": "PSO",
+   "name": "particle swarm optimization",
+   "type": "Method",
+   "aliases": [
+    "PSO"
+   ],
+   "mentions": [
+    {
+     "paragraph_id": "a1",
+     "quote": "particle swarm optimization (PSO)"
+    }
+   ]
+  },
+  {
+   "key": "XRD",
+   "name": "X-ray diffraction",
+   "type": "Method",
+   "aliases": [
+    "XRD"
+   ],
+   "mentions": [
+    {
+     "paragraph_id": "a1",
+     "quote": "characterise samples by X-ray diffraction (XRD)"
+    }
+   ]
+  },
+  {
+   "key": "GO",
+   "name": "Graphene Oxide",
+   "type": "Material",
+   "mentions": [
+    {
+     "paragraph_id": "a1",
+     "quote": "Graphene Oxide sheets were purchased."
+    }
+   ]
+  },
+  {
+   "key": "C1",
+   "name": "Composite C1",
+   "type": "Sample",
+   "mentions": [
+    {
+     "paragraph_id": "a2",
+     "quote": "Composite C1 was prepared from graphene oxide and chitosan."
+    }
+   ]
+  },
+  {
+   "key": "MB",
+   "name": "methylene blue",
+   "type": "Material",
+   "mentions": [
+    {
+     "paragraph_id": "a3",
+     "quote": "120 mg/g for methylene blue at 25 °C"
+    }
+   ]
+  },
+  {
+   "key": "L",
+   "name": "Langmuir isotherm",
+   "type": "Method",
+   "mentions": [
+    {
+     "paragraph_id": "a2",
+     "quote": "Equilibrium data followed the Langmuir isotherm."
+    }
+   ]
+  },
+  {
+   "key": "q",
+   "name": "C1 capacity 120 mg/g (methylene blue, 25 °C)",
+   "type": "Measurement",
+   "attributes": {
+    "value": "120",
+    "unit": "mg/g"
+   },
+   "mentions": [
+    {
+     "paragraph_id": "a3",
+     "quote": "Composite C1 reached 120 mg/g for methylene blue at 25 °C."
+    }
+   ]
+  },
+  {
+   "key": "JS",
+   "name": "J. Smith",
+   "type": "Researcher",
+   "attribution": "author",
+   "mentions": [
+    {
+     "paragraph_id": "a2",
+     "quote": "J. Smith performed the measurements."
+    }
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "C1",
+   "predicate": "PREPARED_FROM",
+   "object": "GO",
+   "paragraph_id": "a2",
+   "quote": "Composite C1 was prepared from graphene oxide and chitosan.",
+   "strength": "direct"
+  },
+  {
+   "subject": "C1",
+   "predicate": "HAS_RESULT",
+   "object": "q",
+   "conditions": {
+    "adsorbate": "methylene blue",
+    "T": "25 °C"
+   },
+   "paragraph_id": "a3",
+   "quote": "Composite C1 reached 120 mg/g for methylene blue at 25 °C.",
+   "strength": "direct"
+  },
+  {
+   "subject": "C1",
+   "predicate": "TESTED_ON",
+   "object": "MB",
+   "paragraph_id": "a3",
+   "quote": "Composite C1 reached 120 mg/g for methylene blue at 25 °C.",
+   "strength": "direct"
+  },
+  {
+   "subject": "L",
+   "predicate": "FITS",
+   "object": "C1",
+   "paragraph_id": "a2",
+   "quote": "Equilibrium data followed the Langmuir isotherm.",
+   "strength": "indirect",
+   "note": "subject sample implied by paragraph"
+  }
+ ],
+ "not_reported": [
+  {
+   "item": "reduced graphene oxide performance",
+   "note": "explicitly not tested (a3)"
+  }
+ ]
+}
