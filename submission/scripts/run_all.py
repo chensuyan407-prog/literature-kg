@@ -11,8 +11,10 @@ Always writes /app/output/result.json, even when an earlier step fails (status p
 """
 import argparse
 import datetime
+import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -35,10 +37,97 @@ def step(cmd, log):
 SYN = {  # contract key pattern -> our field
     r"^(graph|knowledge_graph|kg)$": "graph", r"node": "nodes", r"(edge|relation|triple)": "edges", r"(entit)": "nodes",
     r"(quer)": "queries", r"(align|merge|dedup|canonical|alias)": "alignment", r"(conflict|non_merge|not_merged|distinct)": "conflicts",
-    r"(uncertain|limitation|unknown|undecid)": "uncertainty", r"(source|provenance|corpus|paper)": "sources",
-    r"(evidence|citation)": "evidence_index", r"(status|state)": "status", r"(change|increment|update)": "change_log",
-    r"(not_reported|missing|unreported)": "not_reported", r"(export|file|artifact)": "artifacts", r"(stat|summary|count)": "stats",
+    r"(uncertain|limitation|unknown|undecid)": "uncertainty", r"(verification_notes|review_notes|notes)": "uncertainty",
+    r"(source|provenance|corpus|paper)": "sources", r"(evidence|citation)": "evidence_index", r"(status|state)": "status",
+    r"(change|increment|update)": "change_log", r"(not_reported|missing|unreported)": "not_reported",
+    r"(export|file|artifact)": "artifacts", r"(stat|summary|count)": "stats",
 }
+
+
+def contract_schema(contract):
+    """Normalize flat dict, JSON Schema (properties/required), deliverables, or list contract into {field: spec}."""
+    if isinstance(contract, list):
+        out = {}
+        for c in contract:
+            nm = c if isinstance(c, str) else (c.get("name") or c.get("field") if isinstance(c, dict) else None)
+            if nm:
+                out[nm] = c if isinstance(c, dict) else None
+        return out
+    if not isinstance(contract, dict):
+        return {}
+    src = contract.get("deliverables") if isinstance(contract.get("deliverables"), dict) and len(contract) == 1 else contract
+    if "properties" in src or ("required" in src and isinstance(src.get("required"), list)):
+        fields = {}
+        if isinstance(src.get("properties"), dict):
+            fields.update(src["properties"])
+        if isinstance(src.get("required"), list):
+            for nm in src["required"]:
+                if isinstance(nm, str) and nm not in fields:
+                    fields[nm] = None
+        if isinstance(src.get("deliverables"), dict):
+            for nm, spec in src["deliverables"].items():
+                if isinstance(nm, str) and nm not in fields:
+                    fields[nm] = spec
+        return fields
+    return src
+
+
+def _want_type(spec):
+    if isinstance(spec, dict) and isinstance(spec.get("type"), str):
+        spec = spec["type"]
+    s = json.dumps(spec, ensure_ascii=False).lower() if not isinstance(spec, str) else spec.lower()
+    if isinstance(spec, list) or re.search(r"\blist\b|array|\[\]|列表|数组", s):
+        return "list"
+    if isinstance(spec, dict) or re.search(r"\bobject\b|\bdict\b|\bmap\b|对象|字典", s):
+        return "object"
+    if re.search(r"\bstring\b|\bstr\b|\btext\b|字符串|文本", s):
+        return "string"
+    if re.search(r"\binteger\b|\bint\b|整数", s):
+        return "integer"
+    if re.search(r"number|float|数值|数字", s):
+        return "number"
+    if re.search(r"bool", s):
+        return "boolean"
+    return None
+
+
+def _coerce_val(val, want):
+    if want is None or val is None:
+        return val
+    if want == "string":
+        if isinstance(val, str):
+            return val
+        if isinstance(val, list) and all(isinstance(x, str) for x in val):
+            return "\n".join(val)
+        return json.dumps(val, ensure_ascii=False)
+    if want == "integer":
+        if isinstance(val, bool):
+            return int(val)
+        if isinstance(val, (int, float)):
+            return int(val)
+        if isinstance(val, dict):
+            return int(val.get("nodes") if isinstance(val.get("nodes"), (int, float)) else (val.get("total") if isinstance(val.get("total"), (int, float)) else len(val)))
+        return len(val) if isinstance(val, (list, str)) else 0
+    if want == "number":
+        if isinstance(val, (int, float)) and not isinstance(val, bool):
+            return val
+        if isinstance(val, dict):
+            return float(val.get("nodes") if isinstance(val.get("nodes"), (int, float)) else len(val))
+        return float(len(val)) if isinstance(val, (list, str)) else 0.0
+    if want == "boolean":
+        return bool(val)
+    if want == "list":
+        if isinstance(val, list):
+            return val
+        if isinstance(val, dict):
+            lists = [x for v in val.values() if isinstance(v, list) for x in v]
+            return lists if lists else [{"key": k, "value": v} for k, v in val.items()]
+        return [val]
+    if want == "object":
+        if isinstance(val, dict):
+            return val
+        return {"items": val} if isinstance(val, list) else {"value": val}
+    return val
 
 
 def main():
@@ -60,9 +149,10 @@ def main():
                  "--queries", os.path.join(qdir, "query_results.json")], log) if rc_b == 0 else 9
     g = read_json(gpath, {}) or {}
     queries = read_json(os.path.join(qdir, "query_results.json"), []) or []
-    if queries:
+    qmd = os.path.join(qdir, "query_results.md")
+    if queries and os.path.exists(qmd):
         import shutil
-        shutil.copy(os.path.join(qdir, "query_results.md"), os.path.join(a.out, "queries.md"))
+        shutil.copy(qmd, os.path.join(a.out, "queries.md"))
     ing = read_json(os.path.join(a.work, "corpus", "ingest_report.json"), {}) or {}
     case_path = os.path.join(a.input, "case.json") if os.path.isdir(a.input) else a.input
     case = read_json(case_path, {}) or {}
@@ -116,27 +206,44 @@ def main():
         "stats": g.get("stats", {}),
         "run": {"steps": [{k: v for k, v in s.items() if k != "stdout_tail"} for s in log], "seconds": round(time.time() - t0, 2)},
     }
-    contract = case.get("output_contract") or case.get("output_fields") or {}
-    keys = list(contract) if isinstance(contract, dict) else [c if isinstance(c, str) else c.get("name") for c in contract if c]
+    contract = case.get("output_contract") or case.get("output_fields") or case.get("schema") or case.get("deliverables") or {}
+    schema = contract_schema(contract)
     mapping = {}
-    for k in keys:
-        if not k or k in result:
+    for k, spec in schema.items():
+        if not k:
+            continue
+        want = _want_type(spec)
+        if k in result and result[k] is not None:
+            result[k] = _coerce_val(result[k], want)
             mapping[k] = k
             continue
         if k in fill:
-            result[k] = fill[k]
+            result[k] = _coerce_val(fill[k], want)
             mapping[k] = "contract_fill.json"
             continue
         hit = next((f for pat, f in SYN.items() if re.search(pat, k.lower())), None)
         if hit and hit in result:
-            result[k] = result[hit]
+            result[k] = _coerce_val(result[hit], want)
             mapping[k] = hit
         else:
             result[k] = None
             mapping[k] = None
             result["uncertainty"].append(f"output_contract field '{k}' could not be filled from the graph; left null (fill via work/contract_fill.json)")
     for k, v in fill.items():
-        result.setdefault(k, v)
+        result.setdefault(k, _coerce_val(v, _want_type(schema.get(k))) if k in schema else v)
+    delivs = case.get("deliverables")
+    if isinstance(delivs, list):
+        for d in delivs:
+            nm = d if isinstance(d, str) else (d.get("path") or d.get("name") if isinstance(d, dict) else None)
+            if nm and nm.endswith(".md") and ".." not in nm:
+                out_md = os.path.join(a.out, os.path.basename(nm))
+                if not os.path.exists(out_md):
+                    if os.path.exists(qmd):
+                        shutil.copy(qmd, out_md)
+                    else:
+                        with open(out_md, "w", encoding="utf-8") as mf:
+                            mf.write(f"# Literature KG Summary ({result['case_id']})\n\nStatus: {status}\nNodes: {len(result['nodes'])}, Edges: {len(result['edges'])}\n")
+    result["artifacts"] = sorted(os.path.relpath(os.path.join(r, f), a.out).replace("\\", "/") for r, _, fs in os.walk(a.out) for f in fs if f != "result.json")
     result["output_contract_mapping"] = mapping
     write_json(os.path.join(a.out, "result.json"), result)
     rc_c = step([os.path.join(HERE, "check_result.py"), "--result", os.path.join(a.out, "result.json"), "--work", a.work], [])

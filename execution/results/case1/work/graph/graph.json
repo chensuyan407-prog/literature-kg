@@ -1,6 +1,6 @@
 {
  "schema": "literature-kg/0.1",
- "tool_version": "0.1.0",
+ "tool_version": "0.1.1",
  "sources": [
   {
    "source_id": "paper-A",
@@ -21,7 +21,8 @@
    "paragraph_count": 73,
    "location_kind": [
     "id"
-   ]
+   ],
+   "corpus_file": "paper-A.txt"
   },
   {
    "source_id": "paper-B",
@@ -44,7 +45,8 @@
    "paragraph_count": 110,
    "location_kind": [
     "paragraph_id"
-   ]
+   ],
+   "corpus_file": "paper-B.txt"
   }
  ],
  "nodes": [

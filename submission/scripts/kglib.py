@@ -8,7 +8,7 @@ import os
 import re
 import unicodedata
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 
 # ---------------------------------------------------------------- schema ---
 # Concept types may be shared across papers (one node, provenance from each).

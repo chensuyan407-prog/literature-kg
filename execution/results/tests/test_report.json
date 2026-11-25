@@ -206,8 +206,8 @@
    "pass": true
   },
   "deterministic_rebuild": {
-   "sha256_run1": "027400c1f36bffae",
-   "sha256_run2": "027400c1f36bffae",
+   "sha256_run1": "ebc5ecd00dd87897",
+   "sha256_run2": "ebc5ecd00dd87897",
    "pass": true
   },
   "broken_extraction_file": {
@@ -216,6 +216,15 @@
     "paper-B.json: invalid JSON (Expecting property name enclosed in double quotes: line 1 column 2 (char 1)); file skipped",
     "no extraction file for source paper-B (graph is partial for this paper)"
    ],
+   "pass": true
+  },
+  "doi_and_schema_contract": {
+   "ingest_exit": 0,
+   "corpus_file": "10.1038_s41586.txt",
+   "run_exit": 0,
+   "has_summary": true,
+   "count_is_int": true,
+   "has_deliverable": true,
    "pass": true
   },
   "pass": true

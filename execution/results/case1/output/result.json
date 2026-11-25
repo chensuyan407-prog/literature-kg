@@ -6,7 +6,7 @@
  ],
  "skill": {
   "name": "literature-kg",
-  "version": "0.1.0"
+  "version": "0.1.1"
  },
  "inputs": {
   "files": [
@@ -5670,6 +5670,13 @@
      ]
     },
     {
+     "edge": "R:47f2658b4f",
+     "why": [
+      "needs_review",
+      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
      "edge": "R:f4c2774b5a",
      "why": [
       "needs_review",
@@ -5681,13 +5688,6 @@
      "why": [
       "needs_review",
       "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:47f2658b4f",
-     "why": [
-      "needs_review",
-      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
      ]
     }
    ],
@@ -6922,7 +6922,7 @@
    ],
    "uncertain": [
     {
-     "edge": "R:387b947927",
+     "edge": "R:44944ed1b0",
      "why": [
       "hedged"
      ]
@@ -6934,19 +6934,13 @@
      ]
     },
     {
-     "edge": "R:44944ed1b0",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:e745caf967",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
      "edge": "R:34b3eca17d",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:6ca7e73ccf",
      "why": [
       "hedged"
      ]
@@ -6958,7 +6952,13 @@
      ]
     },
     {
-     "edge": "R:6ca7e73ccf",
+     "edge": "R:e745caf967",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:387b947927",
      "why": [
       "hedged"
      ]
@@ -7140,14 +7140,14 @@
    ],
    "uncertain": [
     {
-     "edge": "R:d864fd647c",
+     "edge": "R:4e1ef8e791",
      "why": [
       "needs_review",
       "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
      ]
     },
     {
-     "edge": "R:4e1ef8e791",
+     "edge": "R:d864fd647c",
      "why": [
       "needs_review",
       "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
@@ -7870,13 +7870,7 @@
    ],
    "uncertain": [
     {
-     "edge": "R:e745caf967",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:b113e63e89",
+     "edge": "R:387b947927",
      "why": [
       "hedged"
      ]
@@ -7888,25 +7882,31 @@
      ]
     },
     {
-     "edge": "R:6ca7e73ccf",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:387b947927",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
      "edge": "R:665966f364",
      "why": [
       "hedged"
      ]
     },
     {
+     "edge": "R:e745caf967",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
      "edge": "R:44944ed1b0",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:6ca7e73ccf",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:b113e63e89",
      "why": [
       "hedged"
      ]
@@ -10455,9 +10455,21 @@
    ],
    "uncertain": [
     {
+     "edge": "R:387b947927",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
      "edge": "R:f533c77089",
      "why": [
       "indirect"
+     ]
+    },
+    {
+     "edge": "R:665966f364",
+     "why": [
+      "hedged"
      ]
     },
     {
@@ -10468,7 +10480,20 @@
      ]
     },
     {
+     "edge": "R:44944ed1b0",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
      "edge": "R:40dcb0566e",
+     "why": [
+      "needs_review",
+      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:47f2658b4f",
      "why": [
       "needs_review",
       "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
@@ -10482,35 +10507,10 @@
      ]
     },
     {
-     "edge": "R:387b947927",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:665966f364",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:44944ed1b0",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
      "edge": "R:b3fdf59987",
      "why": [
       "needs_review",
       "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:47f2658b4f",
-     "why": [
-      "needs_review",
-      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
      ]
     }
    ],
@@ -11077,111 +11077,13 @@
    ],
    "uncertain": [
     {
-     "edge": "R:05577cb609",
-     "why": [
-      "needs_review",
-      "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:f533c77089",
-     "why": [
-      "indirect"
-     ]
-    },
-    {
-     "edge": "R:387b947927",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:665966f364",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
      "edge": "R:44944ed1b0",
      "why": [
       "hedged"
      ]
     },
     {
-     "edge": "R:e745caf967",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:b113e63e89",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:b3fdf59987",
-     "why": [
-      "needs_review",
-      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:b3b6109d60",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:2cfa5e2574",
-     "why": [
-      "needs_review",
-      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:4e1ef8e791",
-     "why": [
-      "needs_review",
-      "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:47f2658b4f",
-     "why": [
-      "needs_review",
-      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:d864fd647c",
-     "why": [
-      "needs_review",
-      "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
      "edge": "R:40dcb0566e",
-     "why": [
-      "needs_review",
-      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:7dbf743e4e",
-     "why": [
-      "needs_review",
-      "object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:34b3eca17d",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:f4c2774b5a",
      "why": [
       "needs_review",
       "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
@@ -11194,10 +11096,108 @@
      ]
     },
     {
+     "edge": "R:47f2658b4f",
+     "why": [
+      "needs_review",
+      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
      "edge": "R:b2e05b45a0",
      "why": [
       "needs_review",
       "object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:f533c77089",
+     "why": [
+      "indirect"
+     ]
+    },
+    {
+     "edge": "R:f4c2774b5a",
+     "why": [
+      "needs_review",
+      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:05577cb609",
+     "why": [
+      "needs_review",
+      "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:b3b6109d60",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:d864fd647c",
+     "why": [
+      "needs_review",
+      "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:665966f364",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:4e1ef8e791",
+     "why": [
+      "needs_review",
+      "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:34b3eca17d",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:b3fdf59987",
+     "why": [
+      "needs_review",
+      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:b113e63e89",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:2cfa5e2574",
+     "why": [
+      "needs_review",
+      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:e745caf967",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:7dbf743e4e",
+     "why": [
+      "needs_review",
+      "object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:387b947927",
+     "why": [
+      "hedged"
      ]
     }
    ],
@@ -12484,7 +12484,7 @@
  "change_log": [
   {
    "action": "build",
-   "at": "2026-11-22T14:30:56+00:00",
+   "at": "2026-11-25T10:36:46+00:00",
    "previous_graph": null
   }
  ],
@@ -12539,25 +12539,25 @@
  "run": {
   "steps": [
    {
-    "cmd": "build_graph.py --work C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\bundle\\execution\\results\\case1\\work",
+    "cmd": "build_graph.py --work C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\github_repo\\execution\\results\\case1\\work",
     "exit": 0,
-    "seconds": 0.23,
+    "seconds": 0.13,
     "stderr_tail": ""
    },
    {
-    "cmd": "query_graph.py --graph C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\bundle\\execution\\results\\case1\\work\\graph\\graph.json --out C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\bundle\\execution\\results\\case1\\work\\graph\\queries --spec C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\bundle\\execution\\results\\case1\\work\\queries.json",
+    "cmd": "query_graph.py --graph C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\github_repo\\execution\\results\\case1\\work\\graph\\graph.json --out C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\github_repo\\execution\\results\\case1\\work\\graph\\queries --spec C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\github_repo\\execution\\results\\case1\\work\\queries.json",
     "exit": 0,
-    "seconds": 0.11,
+    "seconds": 0.07,
     "stderr_tail": ""
    },
    {
-    "cmd": "export_graph.py --graph C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\bundle\\execution\\results\\case1\\work\\graph\\graph.json --out C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\bundle\\execution\\results\\case1\\output\\graph --queries C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\bundle\\execution\\results\\case1\\work\\graph\\queries\\query_results.json",
+    "cmd": "export_graph.py --graph C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\github_repo\\execution\\results\\case1\\work\\graph\\graph.json --out C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\github_repo\\execution\\results\\case1\\output\\graph --queries C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\github_repo\\execution\\results\\case1\\work\\graph\\queries\\query_results.json",
     "exit": 0,
-    "seconds": 2.45,
+    "seconds": 1.73,
     "stderr_tail": ""
    }
   ],
-  "seconds": 2.8
+  "seconds": 1.94
  },
  "output_contract_mapping": {
   "case_id": "case_id",

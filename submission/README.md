@@ -1,4 +1,4 @@
-# literature-kg v0.1.0 — methods, limits, maintenance
+# literature-kg v0.1.1 — methods, limits, maintenance
 
 Skill for the Bohrium challenge “阅读15｜文献知识图谱构建” (`product-arena-10-760d1a0b`).
 Entry point for agents: [`SKILL.md`](SKILL.md). Runnable example: [`examples/minimal_example.md`](examples/minimal_example.md).

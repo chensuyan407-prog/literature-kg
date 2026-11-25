@@ -63,8 +63,8 @@
   {
    "target": "failure handling checks",
    "metric": "absolute_error",
-   "actual_value": 6,
-   "reference_value": 6,
+   "actual_value": 7,
+   "reference_value": 7,
    "score": 1.0,
    "explanation": "empty input, missing secondary text, XML-only fallback, empty queries, determinism, broken extraction JSON",
    "evidence_artifact": "metrics",

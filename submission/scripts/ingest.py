@@ -434,8 +434,10 @@ def main():
         s["location_kind"] = sorted({p.get("id_field") for p in ps})
         if not ps:
             warnings.append(f"source {s['source_id']} listed in manifest but no paragraphs found (material missing?)")
-        report_sources.append({k: s[k] for k in ("source_id", "doi", "paragraph_count", "location_kind")})
-        with open(os.path.join(cdir, f"{s['source_id']}.txt"), "w", encoding="utf-8") as f:
+        safe_sid = re.sub(r'[\\/:*?"<>|]+', "_", str(s["source_id"]))
+        s["corpus_file"] = f"{safe_sid}.txt"
+        report_sources.append({k: s[k] for k in ("source_id", "doi", "paragraph_count", "location_kind", "corpus_file")})
+        with open(os.path.join(cdir, s["corpus_file"]), "w", encoding="utf-8") as f:
             f.write(f"# {s['source_id']} | doi={s.get('doi')} | {s.get('title')}\n# authors: {'; '.join(s.get('authors') or [])}\n\n")
             for p in ps:
                 f.write(f"[{p['paragraph_id']}] ({p['section'][:60]}) {p['text']}\n\n")
@@ -458,7 +460,7 @@ def main():
     write_json(os.path.join(cdir, "ingest_report.json"), report)
     print(f"ingest: status={status} sources={len(sources)} paragraphs={len(paras)} warnings={len(warnings)}")
     for s in report_sources:
-        print(f"  {s['source_id']}: {s['paragraph_count']} paragraphs  doi={s['doi']}  ids={s['location_kind']}  -> {cdir}/{s['source_id']}.txt")
+        print(f"  {s['source_id']}: {s['paragraph_count']} paragraphs  doi={s['doi']}  ids={s['location_kind']}  -> {cdir}/{s.get('corpus_file', s['source_id'] + '.txt')}")
     for w in warnings:
         print("  WARN", w)
     return 0 if status != "failed" else 2

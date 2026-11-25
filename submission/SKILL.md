@@ -13,11 +13,18 @@ Nothing enters the graph without a quote that is found in the cited paragraph.
 
 Scripts are in `scripts/` next to this file (installed: `/skills/weekly-skill/scripts`). Python ≥3.9,
 standard library only; matplotlib optional (PNG previews), PyMuPDF optional (PDF input).
-Below, `K=/skills/weekly-skill/scripts`, `W=/app/work`, `O=/app/output`.
+First locate Python and scripts (supports containers with `python3` only or alternate mount paths):
+```bash
+PY=$(command -v python3 || command -v python)
+for d in /skills/weekly-skill /app/submission /app/skills "${SKILL_DIR:-}" "$(pwd)"; do
+  [ -f "$d/scripts/run_all.py" ] && K="$d/scripts" && break
+done
+W=/app/work O=/app/output
+```
 
-## Workflow (≈10–20 tool calls; save a partial result early)
+## Workflow (≤ 64 requests / 900 s total; ≈10–20 tool calls; save a partial result early)
 
-1. **Ingest** — `python $K/ingest.py --input /input --work $W`
+1. **Ingest** — `$PY $K/ingest.py --input /input --work $W`
    Prints sources (manifest DOI/authors/license/hash), paragraph counts and warnings. Also read
    `/input/task.md` and `/input/case.json` (note `case_id` and `output_contract`).
    Paper text for reading: `$W/corpus/<source_id>.txt`, one line per paragraph: `[paragraph_id] (section) text`.
@@ -40,9 +47,9 @@ Below, `K=/skills/weekly-skill/scripts`, `W=/app/work`, `O=/app/output`.
    ops: `find NAME` · `neighbors NAME` · `path A B` · `type TYPE` · `predicate P1,P2` · `shared` · `uncertain` · `evidence ID`.
    `shared`, `type Measurement` and `uncertain` are added automatically. A query with no result is
    reported as `no_result` with the reason — keep it, it is a valid answer ("not reported").
-6. **Build + query + export + result** — `python $K/run_all.py --input /input --work $W --out $O`
+6. **Build + query + export + result** — `$PY $K/run_all.py --input /input --work $W --out $O`
    It prints `REJECTED ...` lines (quote not found, unknown key, predicate/type violation) and
-   `needs_review` flags. Fix rejected items (use `python $K/find_text.py --work $W --source S "phrase"`
+   `needs_review` flags. Fix rejected items (use `$PY $K/find_text.py --work $W --source S "phrase"`
    to copy the exact sentence) and rerun. Two fix rounds are enough; leave the rest rejected — they
    are listed in result.json, which is honest.
 7. Optional: `$W/contract_fill.json` = values for output_contract fields that are not graph data

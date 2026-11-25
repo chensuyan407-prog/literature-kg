@@ -275,6 +275,51 @@ def t4_failures(case_dir, tmp):
     rc, o = run("build_graph.py", "--work", w)
     gg = jload(os.path.join(w, "graph", "graph.json"))
     res["broken_extraction_file"] = {"exit": rc, "warnings": gg["warnings"], "pass": rc == 0 and any("invalid JSON" in x for x in gg["warnings"])}
+    # (g) DOI source_id sanitization + JSON Schema / deliverables contract
+    t4g_inp = os.path.join(tmp, "t4g", "input")
+    t4g_work = os.path.join(tmp, "t4g", "work")
+    t4g_out = os.path.join(tmp, "t4g", "output")
+    os.makedirs(t4g_inp, exist_ok=True)
+    jdump(os.path.join(t4g_inp, "case.json"), {
+        "schema": {
+            "properties": {
+                "summary": {"type": "string"},
+                "count": {"type": "integer"},
+                "uncertainty": {"type": "string"},
+            },
+            "required": ["summary", "count", "uncertainty"],
+        },
+        "deliverables": ["summary_graph.md"],
+        "queries": [],
+    })
+    jdump(os.path.join(t4g_inp, "material.json"), {
+        "sources": [{"source_id": "10.1038/s41586"}],
+        "paragraphs": [{"source_id": "10.1038/s41586", "paragraph_id": "p1", "text": "Lactic acid inhibits E. coli."}],
+    })
+    rc_i, _ = run("ingest.py", "--input", t4g_inp, "--work", t4g_work)
+    rep_g = jload(os.path.join(t4g_work, "corpus", "ingest_report.json"))
+    corpus_file = rep_g["sources"][0].get("corpus_file")
+    os.makedirs(os.path.join(t4g_work, "extract"), exist_ok=True)
+    jdump(os.path.join(t4g_work, "extract", "10.1038_s41586.json"), {
+        "source_id": "10.1038/s41586",
+        "entities": [{"name": "lactic acid", "type": "compound"}],
+        "relations": [],
+    })
+    rc_r, _ = run("run_all.py", "--input", t4g_inp, "--work", t4g_work, "--out", t4g_out)
+    res_g = jload(os.path.join(t4g_out, "result.json"))
+    res["doi_and_schema_contract"] = {
+        "ingest_exit": rc_i,
+        "corpus_file": corpus_file,
+        "run_exit": rc_r,
+        "has_summary": isinstance(res_g.get("summary"), str),
+        "count_is_int": isinstance(res_g.get("count"), int) and not isinstance(res_g.get("count"), bool),
+        "has_deliverable": os.path.exists(os.path.join(t4g_out, "summary_graph.md")),
+        "pass": (rc_i == 0 and corpus_file == "10.1038_s41586.txt"
+                 and os.path.exists(os.path.join(t4g_work, "corpus", "10.1038_s41586.txt"))
+                 and rc_r == 0 and isinstance(res_g.get("summary"), str)
+                 and isinstance(res_g.get("count"), int) and not isinstance(res_g.get("count"), bool)
+                 and "uncertainty" in res_g and os.path.exists(os.path.join(t4g_out, "summary_graph.md"))),
+    }
     res["pass"] = all(v["pass"] for v in res.values() if isinstance(v, dict))
     return res
 

@@ -33,7 +33,8 @@
   "paragraph_count": 73,
   "location_kind": [
    "id"
-  ]
+  ],
+  "corpus_file": "paper-A.txt"
  },
  {
   "source_id": "paper-B",
@@ -73,6 +74,7 @@
   "paragraph_count": 110,
   "location_kind": [
    "paragraph_id"
-  ]
+  ],
+  "corpus_file": "paper-B.txt"
  }
 ]

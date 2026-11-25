@@ -1,4 +1,4 @@
-# 阅读15｜文献知识图谱构建 — literature-kg (v0.1.0)
+# 阅读15｜文献知识图谱构建 — literature-kg (v0.1.1)
 
 The deliverable is the **Skill** in [`submission/`](submission/) (`SKILL.md`, `scripts/`, `schema/`, `examples/`).
 At evaluation time it is installed as `/skills/weekly-skill` and run on the platform's three fixed cases. This

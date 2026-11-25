@@ -1,6 +1,6 @@
 {
  "status": "ok",
- "input_root": "C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\bundle\\execution\\results\\case1\\input",
+ "input_root": "C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\github_repo\\execution\\results\\case1\\input",
  "case_id": "local-go-adsorption-kg",
  "files": [
   {
@@ -44,7 +44,8 @@
    "paragraph_count": 73,
    "location_kind": [
     "id"
-   ]
+   ],
+   "corpus_file": "paper-A.txt"
   },
   {
    "source_id": "paper-B",
@@ -52,7 +53,8 @@
    "paragraph_count": 110,
    "location_kind": [
     "paragraph_id"
-   ]
+   ],
+   "corpus_file": "paper-B.txt"
   }
  ],
  "paragraphs_total": 183,

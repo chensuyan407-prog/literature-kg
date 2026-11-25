@@ -17,8 +17,8 @@
  "execution": {
   "log_path": "execution/run.log",
   "exit_code": 0,
-  "ran_at": "2026-11-22T14:30:53.088522Z",
-  "wall_time_s": 6.37,
+  "ran_at": "2026-11-25T10:36:43.897517Z",
+  "wall_time_s": 5.08,
   "ran_by": "agent",
   "artifacts": [
    {
@@ -26,28 +26,28 @@
     "path": "execution/results/metrics.json",
     "type": "metric",
     "format": "json",
-    "checksum_sha256": "2f368118dc534a23192d96b8242cccef815fdf435dc4c85bc9b6f28a063c7e5d"
+    "checksum_sha256": "5748d24084f9bcc9d14e0309248ec5e0252f8832b59714cdd0c84539acddb316"
    },
    {
     "id": "test_report",
     "path": "execution/results/tests/test_report.json",
     "type": "data",
     "format": "json",
-    "checksum_sha256": "45e742da7b8e51d177996d001d56762cc9dd0a6acb5eea4f138b30ee72bd632e"
+    "checksum_sha256": "63e5a066cfc79bfb3dfab75184475150790114df1071fedc36074733370baccd"
    },
    {
     "id": "case1_result",
     "path": "execution/results/case1/output/result.json",
     "type": "data",
     "format": "json",
-    "checksum_sha256": "796545017e9b4a5537cfb1a6446a0fcf61c013814a55790252a81e79dd77b9ca"
+    "checksum_sha256": "493e8c9183066394aeb2dfd5ea14eec65f1e0cb54b1a85427de53e27f532ba96"
    },
    {
     "id": "case1_graph",
     "path": "execution/results/case1/output/graph/graph.json",
     "type": "data",
     "format": "json",
-    "checksum_sha256": "11b39a48b621f639b06272cb90a278437c4a58270ed8f6231d0a4c8f8c8831a8"
+    "checksum_sha256": "57f5d1c189137377bc466eb0731411ea8899aaaf42b3c61a202e87772d4c33a2"
    },
    {
     "id": "case1_graphml",
@@ -68,7 +68,7 @@
     "path": "execution/results/case1/output/queries.md",
     "type": "data",
     "format": "other",
-    "checksum_sha256": "724581312d21e21b805006af85d3d0481535e4211ad3b413dcef6dafddfee84e"
+    "checksum_sha256": "237049da93432c5b14e0e5ea3762313e90e2bc67324a0a81963a5f567cbdec5b"
    },
    {
     "id": "case1_overview_png",
