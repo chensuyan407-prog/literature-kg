@@ -18,6 +18,7 @@ Alignment: within a paper, entities sharing a name/alias key are one node. Acros
 import argparse
 import glob
 import os
+import re
 import sys
 from collections import defaultdict
 
@@ -57,6 +58,121 @@ def norm_type(t):
     if t in ENTITY_TYPES:
         return t
     return TYPE_ALIASES.get(str(t or "").strip().lower())
+
+
+GENERIC_KEYS = {name_key(x) for x in "model method approach technique analysis experiment sample material system process data result " \
+                "performance study measurement condition parameter value composite solution".split()}
+
+
+def expansion_clash(k, a0, b0):
+    """True when the shared key is an abbreviation and both entities carry clearly different full names."""
+    if not any(is_abbrev(n) and name_key(n) == k for n in [a0["name"]] + a0["aliases"]):
+        return False
+    fa = [n for n in [a0["name"]] + a0["aliases"] if not is_abbrev(n) and k not in name_key(n)]
+    fb = [n for n in [b0["name"]] + b0["aliases"] if not is_abbrev(n) and k not in name_key(n)]
+    if not fa or not fb:
+        return False
+    return all(name_key(x) != name_key(y) and distinct_jaccard(x, y) < 0.34 for x in fa for y in fb)
+
+
+PRED_ALIASES = {"USE": "USES", "USED": "USES", "UTILIZES": "USES", "EMPLOYS": "USES", "STUDY": "STUDIES", "INVESTIGATES": "STUDIES",
+                "OUTPERFORM": "OUTPERFORMS", "BETTER_THAN": "OUTPERFORMS", "SUPERIOR_TO": "OUTPERFORMS",
+                "COMPARED_TO": "COMPARED_WITH", "COMPARES_WITH": "COMPARED_WITH", "COMPARE": "COMPARED_WITH", "VS": "COMPARED_WITH",
+                "CHARACTERISED_BY": "CHARACTERIZED_BY", "CHARACTERIZES": "CHARACTERIZED_BY", "ANALYZED_BY": "CHARACTERIZED_BY",
+                "HAS_MEASUREMENT": "HAS_RESULT", "RESULT": "HAS_RESULT", "HAS_VALUE": "HAS_RESULT", "MEASURES": "MEASURED_BY",
+                "SUPPORT": "SUPPORTS", "CONTRADICT": "CONTRADICTS", "CONFLICTS_WITH": "CONTRADICTS", "CONCLUDE": "CONCLUDES",
+                "MADE_FROM": "PREPARED_FROM", "SYNTHESIZED_FROM": "PREPARED_FROM", "DERIVED_FROM": "PREPARED_FROM",
+                "TESTED_WITH": "TESTED_ON", "EVALUATED_ON": "TESTED_ON", "IS_A": "INSTANCE_OF", "TYPE_OF": "INSTANCE_OF",
+                "CAUSED_BY": "ATTRIBUTED_TO", "EXPLAINED_BY": "ATTRIBUTED_TO", "INVOLVE": "INVOLVES", "APPLIES_TO": "APPLIED_TO",
+                "FIT": "FITS", "FITTED_BY": "FITS", "UNDER": "UNDER_CONDITION", "CONDITION": "UNDER_CONDITION", "COMPONENT_OF": "PART_OF"}
+
+
+def norm_pred(p):
+    p = re.sub(r"[\s\-/]+", "_", str(p or "").strip()).upper()
+    return PRED_ALIASES.get(p, p)
+
+
+def safe_id(x):
+    return re.sub(r"[^a-z0-9]+", "", str(x or "").lower())
+
+
+def resolve_source(ex, fname, sources):
+    """Map the source_id written by the agent (exact / case / DOI / DOI with '/'->'_' in file name / role word) to a corpus id."""
+    ids = [s["source_id"] for s in sources]
+    stem = re.sub(r"\.part\d+$", "", os.path.basename(fname)[:-5], flags=re.I)
+    for cand in [ex.get("source_id"), ex.get("doi"), stem]:
+        if not cand:
+            continue
+        c = str(cand).strip()
+        if c in ids:
+            return c
+        cs = safe_id(re.sub(r"^(https?://(dx\.)?doi\.org/|doi:)", "", c, flags=re.I))
+        for s in sources:
+            if cs and (cs == safe_id(s["source_id"]) or (s.get("doi") and cs == safe_id(s["doi"]))):
+                return s["source_id"]
+        low = c.lower()
+        for i, s in enumerate(sources):
+            if low == str(s.get("role") or "").lower() or (low in ("primary", "paper1", "1") and i == 0) or (low in ("secondary", "paper2", "2") and i == 1):
+                return s["source_id"]
+    if len(ids) == 1:
+        return ids[0]
+    return None
+
+
+def _evlist(x):
+    """mentions / evidence in any of the shapes agents write: list of dicts, one dict, [pid, quote] pairs."""
+    if not x:
+        return []
+    if isinstance(x, dict):
+        x = [x]
+    out = []
+    for m in x:
+        if isinstance(m, dict):
+            q = m.get("quote") or m.get("text") or m.get("span") or m.get("evidence") or ""
+            if isinstance(q, list):
+                q = q[0] if q else ""
+            out.append({"paragraph_id": str(m.get("paragraph_id") or m.get("pid") or m.get("para_id") or m.get("paragraph") or m.get("location") or ""), "quote": str(q)})
+        elif isinstance(m, (list, tuple)) and len(m) >= 2:
+            out.append({"paragraph_id": str(m[0]), "quote": str(m[1])})
+    return out
+
+
+def normalize_extraction(ex, notes):
+    """Tolerate common field-name slips so the agent does not lose a request to a rename."""
+    ents, rels = ex.get("entities") or ex.get("nodes") or [], ex.get("relations") or ex.get("edges") or []
+    for e in ents if isinstance(ents, list) else []:
+        if not isinstance(e, dict):
+            continue
+        if "name" not in e and (e.get("label") or e.get("text")):
+            e["name"] = e.get("label") or e.get("text")
+        if isinstance(e.get("aliases"), str):
+            e["aliases"] = [a.strip() for a in re.split(r"[;|]", e["aliases"]) if a.strip()]
+        mv = e.get("mentions") or e.get("evidence")
+        if not mv and (e.get("paragraph_id") or e.get("quote")):
+            mv = [{"paragraph_id": e.get("paragraph_id"), "quote": e.get("quote")}]
+        e["mentions"] = _evlist(mv)
+    for r in rels if isinstance(rels, list) else []:
+        if not isinstance(r, dict):
+            continue
+        for want, alts in (("subject", ("source", "head", "from", "subj")), ("object", ("target", "tail", "to", "obj")), ("predicate", ("relation", "type", "rel", "label"))):
+            if not r.get(want):
+                for k in alts:
+                    if r.get(k):
+                        r[want] = r[k]
+                        notes.append(f"relation field '{k}' read as '{want}'")
+                        break
+        if r.get("evidence"):
+            r["evidence"] = _evlist(r["evidence"])
+        elif isinstance(r.get("quote"), list):
+            r["quote"] = r["quote"][0] if r["quote"] else ""
+        p0 = str(r.get("predicate", ""))
+        r["predicate"] = norm_pred(p0)
+        if r["predicate"] != p0:
+            notes.append(f"predicate {p0!r} normalised to {r['predicate']!r}")
+    return {"source_id": ex.get("source_id"), "doi": ex.get("doi"), "entities": [e for e in ents if isinstance(e, dict)] if isinstance(ents, list) else [],
+            "relations": [r for r in rels if isinstance(r, dict)] if isinstance(rels, list) else [],
+            "not_reported": ex.get("not_reported") or []}
+
 
 
 def check_quote(src, pid, quote, para_index, xml_index):
@@ -110,10 +226,16 @@ def main():
         if not isinstance(ex, dict):
             warnings.append(f"{os.path.basename(f)}: top level must be an object; file skipped")
             continue
-        src = ex.get("source_id") or os.path.basename(f).split(".")[0]
-        if src not in src_ids:
-            warnings.append(f"{os.path.basename(f)}: source_id '{src}' not in corpus sources {src_ids}; skipped")
+        fixes = []
+        ex = normalize_extraction(ex, fixes)
+        src = resolve_source(ex, f, sources)
+        if src is None:
+            warnings.append(f"{os.path.basename(f)}: source_id '{ex.get('source_id')}' not in corpus sources {src_ids}; skipped")
             continue
+        if src != ex.get("source_id"):
+            fixes.append(f"source_id {ex.get('source_id')!r} resolved to corpus id {src!r}")
+        for fx in sorted(set(fixes)):
+            warnings.append(f"{os.path.basename(f)}: auto-fix: {fx}")
         if src in extractions:  # several part files per paper (paper-A.json, paper-A.part2.json, ...)
             for k in ("entities", "relations", "not_reported"):
                 extractions[src].setdefault(k, []).extend(ex.get(k) or [])
@@ -148,6 +270,23 @@ def main():
                 evs.append(ev)
                 if ev["match"] in ("exact", "normalized", "approx"):
                     ev_ok.append(ev)
+            if not ev_ok:  # borrow a verified relation quote of the same paper whose paragraph names this entity
+                handles = {str(e.get("key") or name), name} | set(e.get("aliases") or [])
+                for r in ex.get("relations", []):
+                    if str(r.get("subject")) not in handles and str(r.get("object")) not in handles:
+                        continue
+                    for it in r.get("evidence") or [{"paragraph_id": r.get("paragraph_id"), "quote": r.get("quote")}]:
+                        pid, q = str(it.get("paragraph_id") or ""), it.get("quote") or ""
+                        chk = check_quote(src, pid, q, para_index, xml_index)
+                        text = para_index.get((src, pid), {}).get("text", "")
+                        if chk["status"] in ("exact", "normalized", "approx") and len(q) >= a.min_quote and mentioned([name] + list(e.get("aliases") or []), text):
+                            ev_ok.append({"source_id": src, "paragraph_id": pid, "quote": q, "match": chk["status"], "match_score": chk["score"],
+                                          "section": chk.get("section", ""), "name_in_paragraph": True, "derived_from": "relation_quote"})
+                            break
+                    if ev_ok:
+                        flags.append({"kind": "entity", "source_id": src, "name": name, "flag": "mention_borrowed_from_relation",
+                                      "detail": "no valid mention quote; evidence taken from a verified relation quote that names it"})
+                        break
             if not ev_ok:
                 rejected.append({"kind": "entity", "source_id": src, "name": name, "type": typ, "evidence": evs,
                                  "reason": "no mention quote found in the cited paragraph"})
@@ -192,6 +331,11 @@ def main():
                 conflicts.append({"kind": "same_name_different_type", "scope": "within_paper", "source_id": src, "key": k,
                                   "items": [(a0["name"], a0["type"]), (b0["name"], b0["type"])], "decision": "kept_separate"})
                 continue
+            if expansion_clash(k, a0, b0):
+                conflicts.append({"kind": "abbreviation_homonym", "scope": "within_paper", "source_id": src, "abbreviation": k,
+                                  "expansions": {"a": a0["name"], "b": b0["name"]}, "decision": "not_merged",
+                                  "reason": "same abbreviation used for two different full names in one paper"})
+                continue
             if uf.find(uids[0]) != uf.find(u):
                 uf.union(uids[0], u)
                 merge_log.append({"scope": "within_paper", "source_id": src, "merged": [a0["name"], b0["name"]], "type": a0["type"],
@@ -221,6 +365,10 @@ def main():
             conflicts.append({"kind": "same_label_different_object", "scope": "cross_paper", "type": typ, "key": k, "names": names,
                               "sources": sorted(srcs), "decision": "not_merged",
                               "reason": f"{typ} is paper-specific (sample / result / dataset instance); equal labels do not make the same object"})
+            continue
+        if k in GENERIC_KEYS:
+            conflicts.append({"kind": "generic_term_not_merged", "scope": "cross_paper", "type": typ, "key": k, "names": names, "sources": sorted(srcs),
+                              "decision": "not_merged", "reason": "generic word only (e.g. 'adsorption', 'model'); too unspecific to assert one shared object"})
             continue
         if typ == "Researcher":
             conflicts.append({"kind": "possible_same_person", "scope": "cross_paper", "key": k, "names": names, "sources": sorted(srcs),
@@ -334,6 +482,9 @@ def main():
             change_log.append({"action": "node_missing_in_rebuild", "id": nid, "note": "present in previous graph, not rebuilt; kept in previous file, check extraction"})
 
     # --------------------------------------------------------------- edges ---
+    key_norm = {}  # case / hyphen / plural tolerant fallback for relation subject/object handles
+    for (src_k, k_k), uid_k in key_of.items():
+        key_norm.setdefault((src_k, name_key(k_k)), uid_k)
     edges = {}
     for s in sources:
         for j, au in enumerate(s.get("authors") or []):
@@ -345,7 +496,8 @@ def main():
     for src, ex in extractions.items():
         for i, r in enumerate(ex.get("relations", [])):
             subj, pred, obj = str(r.get("subject", "")), str(r.get("predicate", "")).upper(), str(r.get("object", ""))
-            us, uo = key_of.get((src, subj)), key_of.get((src, obj))
+            us = key_of.get((src, subj)) or key_norm.get((src, name_key(subj)))
+            uo = key_of.get((src, obj)) or key_norm.get((src, name_key(obj)))
             base = {"kind": "relation", "source_id": src, "item": r}
             if subj == "paper":
                 us = f"{src}#paper"
@@ -419,6 +571,21 @@ def main():
             conflicts.append({"kind": "polarity_conflict", "triple": t, "edges": [e["id"] for e in es],
                               "sources": sorted({e["source_id"] for e in es}), "decision": "both_kept",
                               "reason": "papers/paragraphs disagree; not resolved into one conclusion"})
+    # same concept measured in different papers: values are listed side by side, never pooled into one result
+    node_by_id = {n["id"]: n for n in nodes}
+    per_metric = defaultdict(list)
+    for e in edges.values():
+        if e["predicate"] == "MEASURED_BY" and node_by_id.get(e["target"], {}).get("scope") == "concept":
+            m = node_by_id.get(e["source"], {})
+            per_metric[e["target"]].append({"measurement": e["source"], "label": m.get("label"), "source_id": e["source_id"],
+                                            "value": (m.get("attributes", {}).get(e["source_id"]) or {}).get("value"),
+                                            "unit": (m.get("attributes", {}).get(e["source_id"]) or {}).get("unit"),
+                                            "paragraph_id": e["evidence"][0]["paragraph_id"] if e["evidence"] else None})
+    for tgt, items in sorted(per_metric.items()):
+        if len({i["source_id"] for i in items}) > 1:
+            conflicts.append({"kind": "cross_paper_values_not_combined", "scope": "cross_paper", "about": tgt, "values": items[:12],
+                              "sources": sorted({i["source_id"] for i in items}), "decision": "both_kept_not_combined",
+                              "reason": "same metric reported by different papers on different samples/conditions; compare only with each paper's conditions"})
     if prev:
         old = {e["id"] for e in prev.get("edges", [])}
         change_log += [{"action": "edge_added", "id": k} for k in edges if k not in old]

@@ -17,8 +17,8 @@
  "execution": {
   "log_path": "execution/run.log",
   "exit_code": 0,
-  "ran_at": "2026-11-25T10:36:43.897517Z",
-  "wall_time_s": 5.08,
+  "ran_at": "2026-11-26T15:36:04.848058Z",
+  "wall_time_s": 5.46,
   "ran_by": "agent",
   "artifacts": [
    {
@@ -26,28 +26,28 @@
     "path": "execution/results/metrics.json",
     "type": "metric",
     "format": "json",
-    "checksum_sha256": "5748d24084f9bcc9d14e0309248ec5e0252f8832b59714cdd0c84539acddb316"
+    "checksum_sha256": "6750b2ae55d4407f0fb6990876ed34c1fb654d4d95a5307febcd9eec8492d681"
    },
    {
     "id": "test_report",
     "path": "execution/results/tests/test_report.json",
     "type": "data",
     "format": "json",
-    "checksum_sha256": "63e5a066cfc79bfb3dfab75184475150790114df1071fedc36074733370baccd"
+    "checksum_sha256": "2fa08bfcf7c062c14a7dec127291d4cec8cdde05945e95ee22986e0ce8ca9e70"
    },
    {
     "id": "case1_result",
     "path": "execution/results/case1/output/result.json",
     "type": "data",
     "format": "json",
-    "checksum_sha256": "493e8c9183066394aeb2dfd5ea14eec65f1e0cb54b1a85427de53e27f532ba96"
+    "checksum_sha256": "0e807a59fe31db1394bc3b84f781d6625aafbecdac5bba5ee05782ac85c3d11c"
    },
    {
     "id": "case1_graph",
     "path": "execution/results/case1/output/graph/graph.json",
     "type": "data",
     "format": "json",
-    "checksum_sha256": "57f5d1c189137377bc466eb0731411ea8899aaaf42b3c61a202e87772d4c33a2"
+    "checksum_sha256": "a799b97004a93c6aa370aaa060cb8c2e43c6537661310a2a801f850fbf804748"
    },
    {
     "id": "case1_graphml",
@@ -68,7 +68,7 @@
     "path": "execution/results/case1/output/queries.md",
     "type": "data",
     "format": "other",
-    "checksum_sha256": "237049da93432c5b14e0e5ea3762313e90e2bc67324a0a81963a5f567cbdec5b"
+    "checksum_sha256": "8d4c8fbf4eb00a39c29efae2b01390cf67fd74fdefe14f47f29ab9a7ca7feba2"
    },
    {
     "id": "case1_overview_png",
@@ -89,7 +89,7 @@
     "path": "execution/results/case1/output/graph/graph.html",
     "type": "data",
     "format": "other",
-    "checksum_sha256": "59d0eb7cdb183de42be62cccc23c08a6fd59b0187d92a9d754a710654ae3d3c5"
+    "checksum_sha256": "79aa03037c758a36aa199e208898fd415e4b9c468af633d327a743f8bac97d5d"
    }
   ]
  },

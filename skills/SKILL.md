@@ -16,7 +16,7 @@ standard library only; matplotlib optional (PNG previews), PyMuPDF optional (PDF
 First locate Python and scripts (supports containers with `python3` only or alternate mount paths):
 ```bash
 PY=$(command -v python3 || command -v python)
-for d in /skills/weekly-skill /app/submission /app/skills "${SKILL_DIR:-}" "$(pwd)"; do
+for d in /skills/weekly-skill /app/submission /app/skills /app/skills/* "${SKILL_DIR:-}" "$(pwd)"; do
   [ -f "$d/scripts/run_all.py" ] && K="$d/scripts" && break
 done
 W=/app/work O=/app/output
@@ -24,15 +24,25 @@ W=/app/work O=/app/output
 
 ## Workflow (≤ 64 requests / 900 s total; ≈10–20 tool calls; save a partial result early)
 
-1. **Ingest** — `$PY $K/ingest.py --input /input --work $W`
+1. **Ingest** — `"$PY" "$K/ingest.py" --input /input --work $W`
    Prints sources (manifest DOI/authors/license/hash), paragraph counts and warnings. Also read
    `/input/task.md` and `/input/case.json` (note `case_id` and `output_contract`).
-   Paper text for reading: `$W/corpus/<source_id>.txt`, one line per paragraph: `[paragraph_id] (section) text`.
+   Paper text for reading: check `$W/corpus/ingest_report.json` → `sources[].corpus_file` (typically `$W/corpus/<safe_source_id>.txt`, where `/` in DOIs is replaced by `_`), one line per paragraph: `[paragraph_id] (section) text`.
    Hints (abbreviation definitions, frequent terms): `$W/corpus/candidates.json`.
    The root DOI/title/authors of case.json belong to the FIRST (primary) paper only.
+   **Input kinds** (check `ingest_report.json` → `sources[].location_kind`, `warnings`, `partial_reasons`):
+   organiser JSON/JATS ids (`p-0012`, `sec2-p3`) are used as given and are **not pages**; a raw PDF is read
+   from its text layer (PyMuPDF → pdftotext → pypdf, two-column reading order, running headers/page numbers
+   and the reference list dropped) into ids `p<page>-para<n>` (`location_kind: pdf_text_layer`, real PDF
+   page); `.md`/`.txt` give `selfmade-mdNNN`. Several PDFs without a manifest = one source per file (file stem).
+   Ingest `status=partial` (scanned page, unreadable PDF, manifest paper without text) ⇒ your result is partial:
+   name the pages/papers in `notes.json` and never fill them from memory.
 2. **Read each paper** (read the .txt in chunks if long). Focus on what the task asks.
-3. **Write one extraction file per paper**: `$W/extract/<source_id>.json` (schema below). If it is
-   long, split into `<source_id>.part2.json` etc. (same `source_id`; keys may refer across parts).
+3. **Write one extraction file per paper**: `$W/extract/<source_id>.json` (schema below). If the id
+   contains `/` (a DOI), name the file with `_` (`10.1371_journal.x.json`) and keep the real id inside;
+   the builder also accepts the DOI, a case/punctuation variant or `primary`/`secondary` and logs the fix.
+   If it is long, split into `<source_id>.part2.json` etc. (same `source_id`; keys may refer across parts).
+   Budget: ≈15–40 entities and ≈15–40 relations per paper is enough; write the task's core objects first.
    Write the primary paper first, then immediately run step 6 once → an honest partial result exists.
 4. **Cross-paper decisions** (optional file `$W/extract/alignment_overrides.json`):
    `{"merge": [["name in A", "name in B", "reason"]], "split": [["name", "name", "reason"]],
@@ -47,9 +57,9 @@ W=/app/work O=/app/output
    ops: `find NAME` · `neighbors NAME` · `path A B` · `type TYPE` · `predicate P1,P2` · `shared` · `uncertain` · `evidence ID`.
    `shared`, `type Measurement` and `uncertain` are added automatically. A query with no result is
    reported as `no_result` with the reason — keep it, it is a valid answer ("not reported").
-6. **Build + query + export + result** — `$PY $K/run_all.py --input /input --work $W --out $O`
+6. **Build + query + export + result** — `"$PY" "$K/run_all.py" --input /input --work $W --out $O`
    It prints `REJECTED ...` lines (quote not found, unknown key, predicate/type violation) and
-   `needs_review` flags. Fix rejected items (use `$PY $K/find_text.py --work $W --source S "phrase"`
+   `needs_review` flags. Fix rejected items (use `"$PY" "$K/find_text.py" --work $W --source S "phrase"`
    to copy the exact sentence) and rerun. Two fix rounds are enough; leave the rest rejected — they
    are listed in result.json, which is honest.
 7. Optional: `$W/contract_fill.json` = values for output_contract fields that are not graph data
@@ -57,24 +67,30 @@ W=/app/work O=/app/output
 8. Final message: status, counts, where the files are, the queries' answers in 3–6 lines, open issues.
 
 Incremental update (new paper later): ingest again with the new material, add its extraction file,
-then `run_all.py ... --previous <old>/graph/graph.json` → old node IDs are kept; `change_log` lists
+then `"$PY" "$K/run_all.py" --input /input --work $W --out $O --previous <old>/graph/graph.json` → old node IDs are kept; `change_log` lists
 `node_added`, `node_extended` (existing concept gets a new paper), `edge_added`, `node_missing_in_rebuild`.
 
 ## Extraction file schema (`$W/extract/<source_id>.json`)
 
+Minimal file (every field you need; everything else is optional):
 ```json
-{"source_id": "<exactly as printed by ingest>",
+{"source_id": "paper-A",
  "entities": [
-  {"key": "MGO", "name": "magnetically modified graphene oxide composite", "type": "Sample",
-   "aliases": ["MGO", "MGO composite"], "attributes": {}, "definition": null, "attribution": "author",
-   "mentions": [{"paragraph_id": "p-0001", "quote": "using a magnetically modified graphene oxide (MGO) composite"}]}],
+  {"key": "MGO", "name": "magnetically modified graphene oxide composite", "type": "Sample", "aliases": ["MGO"],
+   "mentions": [{"paragraph_id": "p-0001", "quote": "using a magnetically modified graphene oxide (MGO) composite"}]},
+  {"key": "qmax", "name": "qmax for lactic acid", "type": "Measurement", "attributes": {"value": "334.45", "unit": "mg/g"},
+   "mentions": [{"paragraph_id": "p-0055", "quote": "The maximum adsorption capacity of MGO for lactic acid (334.45 mg/g)"}]}],
  "relations": [
-  {"subject": "MGO", "predicate": "HAS_RESULT", "object": "m_qmax_LA",
-   "conditions": {"adsorbate": "lactic acid", "T": "25 °C"},
-   "paragraph_id": "p-0055", "quote": "The maximum adsorption capacity of MGO for lactic acid (334.45 mg/g)",
-   "strength": "direct", "attribution": "author", "polarity": "positive", "note": null}],
+  {"subject": "MGO", "predicate": "HAS_RESULT", "object": "qmax", "conditions": {"T": "25 °C"},
+   "paragraph_id": "p-0055", "quote": "The maximum adsorption capacity of MGO for lactic acid (334.45 mg/g)", "strength": "direct"}],
  "not_reported": [{"item": "BET surface area of the composite", "note": "not measured (p-0104)"}]}
 ```
+Optional: entity `definition`, `attribution` (`author`|`cited`); relation `evidence: [{paragraph_id, quote}, ...]`,
+`attribution`, `polarity` (`positive`|`negative`), `note`. Tolerated slips (auto-fixed and logged as `auto-fix`
+warnings, not rejected): `label`→name, `head/tail/relation`→subject/object/predicate, lower-case or spaced
+predicates and common synonyms (`used`→USES, `compared to`→COMPARED_WITH), aliases as `"A; B"`, one mention
+object instead of a list, case/hyphen variants of keys. An entity without a valid mention borrows a verified
+quote of one of its own relations (flag `mention_borrowed_from_relation`); otherwise it is rejected.
 
 - `key`: your local handle; relations refer to keys (names/aliases also work). Use `"paper"` as
   subject for the paper itself (STUDIES / CONCLUDES).
@@ -115,6 +131,12 @@ Co-occurrence in a paragraph is not a relation. Direction matters: "A outperform
 - Across papers: only concept types merge, only on an equal normalised **full name** (abbreviation
   alone never merges). The merged node keeps per-paper evidence; edges stay per paper, so conditions,
   samples and values are never combined into one conclusion.
+- Never merged across papers on a generic word alone (`model`, `method`, `sample`, `composite`… →
+  `generic_term_not_merged`); one abbreviation with two different expansions inside one paper is kept apart.
+- Same concept Metric measured in two papers → `cross_paper_values_not_combined` lists both values with their
+  own source/paragraph; answer such queries per paper, with each paper's conditions.
+- Chinese/English synonyms or spelling variants merge only if you list them as `aliases` of the concept (or an
+  override `merge` with a reason); write the reason from the text, not from general knowledge.
 - Recorded, not merged: `abbreviation_homonym` (same abbreviation, different expansions),
   `same_label_different_object` (instances with equal labels), `possible_same_person`,
   `similar_name_review` (e.g. graphene oxide vs reduced graphene oxide), `same_name_different_type`,
@@ -136,13 +158,18 @@ graph.svg/png, `queries/<id>.svg|png`. `queries.md` — readable query results. 
 |-|-|
 | case.json / manifest missing | ingest warns; sources are derived from files; state it in notes.json |
 | a manifest paper has no text | ingest status `partial`; result status `partial`; do not invent its content |
-| only publisher XML / Markdown / PDF | XML `<p>` (ids or generated `xml-pNNN`), Markdown blocks (`selfmade-mdNNN`), PDF blocks (`pdfpageN-bM`, real page numbers) are used; generated IDs are labelled as such |
-| encrypted / scanned PDF | ingest warning; report the paper as unreadable, no OCR guesses |
+| only publisher XML / Markdown / PDF | XML `<p>` (ids or generated `xml-pNNN`), Markdown/txt blocks (`selfmade-mdNNN`), PDF text layer (`p<page>-para<n>`, real page numbers) are used; generated IDs are labelled as such |
+| PDF + organiser JSON for the same paper | organiser paragraphs are used; the PDF copy goes to `pdf_paragraphs.jsonl` only (no duplicate nodes) |
+| encrypted / scanned PDF or pages | ingest `partial` + page list; result `partial`; report those pages/paper as unreadable, no OCR guesses |
+| only some papers / sections readable | build what is readable, `status: partial`; `notes.json` `uncertainty` names what is missing and why |
 | quote not found | item rejected with reason; fix the quote or leave it rejected |
 | same name, different object | keep separate; add a `conflicts` entry if it matters for the task |
 | papers disagree | both edges kept, `conflicts` entry with both quotes; never pick a winner unless a paper does |
 | query finds nothing | `no_result` + reason in result.json; say "not reported in the material" |
 | script crash | result.json is still written by run_all.py with status `failed`/`partial` and the step logs |
+
+`notes.json` example: `{"uncertainty": ["paper-B p3-para4: Table 2 values not in text layer; not used"],
+"not_reported": ["paper-A: sample size not reported"]}` — one line per gap, with source and location.
 
 Never: cite page numbers that do not exist, merge two papers' samples/values, copy the primary DOI to the
 secondary paper, present table values that are not in the paragraph text, or claim success when status is partial.

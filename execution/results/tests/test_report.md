@@ -225,8 +225,8 @@
   "pass": true
  },
  "deterministic_rebuild": {
-  "sha256_run1": "ebc5ecd00dd87897",
-  "sha256_run2": "ebc5ecd00dd87897",
+  "sha256_run1": "c2a97eeab4620e32",
+  "sha256_run2": "c2a97eeab4620e32",
   "pass": true
  },
  "broken_extraction_file": {
@@ -268,7 +268,7 @@
    "paper-B": 55
   },
   "rejected": 0,
-  "conflicts": 5,
+  "conflicts": 6,
   "needs_review_edges": 10
  },
  "queries": {

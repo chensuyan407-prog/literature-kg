@@ -32,6 +32,8 @@ def main():
                 hard.append(f"{kind[:-1]} {it.get('id')} has no evidence")
             for ev in evs:
                 if ev.get("match") == "metadata":
+                    if ev.get("source_id") not in srcs:
+                        hard.append(f"{it.get('id')}: unknown metadata source_id {ev.get('source_id')}")
                     continue
                 n_checked += 1
                 if ev.get("source_id") not in srcs:
@@ -40,8 +42,12 @@ def main():
                 t = paras.get((ev["source_id"], ev["paragraph_id"]))
                 if t is None:
                     hard.append(f"{it.get('id')}: paragraph {ev['source_id']}:{ev['paragraph_id']} not in corpus")
-                elif quote_match(ev.get("quote", ""), t)[0] == "absent":
-                    hard.append(f"{it.get('id')}: quote not found in {ev['source_id']}:{ev['paragraph_id']}")
+                else:
+                    qm = quote_match(ev.get("quote", ""), t)[0]
+                    if qm == "absent":
+                        hard.append(f"{it.get('id')}: quote not found in {ev['source_id']}:{ev['paragraph_id']}")
+                    elif qm == "approx":
+                        soft.append(f"{it.get('id')}: approx quote match in {ev['source_id']}:{ev['paragraph_id']} (needs review)")
             if kind == "edges" and it.get("source_id") not in srcs:
                 hard.append(f"edge {it.get('id')} source_id {it.get('source_id')} unknown")
     dois = [s.get("doi") for s in srcs.values()]

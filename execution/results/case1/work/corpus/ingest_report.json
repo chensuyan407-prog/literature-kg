@@ -59,5 +59,7 @@
  ],
  "paragraphs_total": 183,
  "duplicate_text_conflicts": [],
- "warnings": []
+ "warnings": [],
+ "partial_reasons": [],
+ "location_note": "pdf_text_layer ids p<page>-para<n>: real PDF page + reading-order block made by ingest; organiser ids (JATS/JSON) are not pages"
 }

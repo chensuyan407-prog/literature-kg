@@ -6631,6 +6631,35 @@
    "token_jaccard": 0.67,
    "decision": "not_merged",
    "reason": "similar but not equal names; may be broader/narrower or different objects (e.g. GO vs reduced GO)"
+  },
+  {
+   "kind": "cross_paper_values_not_combined",
+   "scope": "cross_paper",
+   "about": "C:Metric:maximum-adsorption-capacity",
+   "values": [
+    {
+     "measurement": "paper-A:Measurement:mgo-qmax-for-lactic-acid-334-45-mg-g",
+     "label": "MGO qmax for lactic acid 334.45 mg/g",
+     "source_id": "paper-A",
+     "value": "334.45",
+     "unit": "mg/g",
+     "paragraph_id": "p-0001"
+    },
+    {
+     "measurement": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
+     "label": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
+     "source_id": "paper-B",
+     "value": "7.10 / 6.02 / 4.65",
+     "unit": "mg/g",
+     "paragraph_id": "p-0094"
+    }
+   ],
+   "sources": [
+    "paper-A",
+    "paper-B"
+   ],
+   "decision": "both_kept_not_combined",
+   "reason": "same metric reported by different papers on different samples/conditions; compare only with each paper's conditions"
   }
  ],
  "flags": [
@@ -6767,7 +6796,7 @@
    "paper-B": 55
   },
   "rejected": 0,
-  "conflicts": 5,
+  "conflicts": 6,
   "needs_review_edges": 10
  }
 }

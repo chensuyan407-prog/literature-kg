@@ -30,7 +30,7 @@ supporting quotes and the uncertain parts.
   else from the manifest file mapping, else from `primary`/`secondary` in the file name. Per-paper files win over the
   summary index (`material.json`); text differences between them are reported. Publisher XML `<p>` elements are used
   only when a paper has no JSON text (otherwise kept to cross-check quotes: `publisher_xml_check`). Markdown/PDF are
-  fallbacks with clearly generated IDs (`selfmade-mdNNN`, `pdfpageN-bM`).
+  fallbacks with clearly generated IDs (`selfmade-mdNNN`, `p<page>-para<n>` from the PDF text layer, real page numbers).
 - **Quote verification**: exact → normalised (NFKC, unified dashes/quotes, case, whitespace) → squashed
   (letters/digits only, tolerates linearised sub/superscripts like `R 2`/`R2`) → approximate (≥90 % of tokens and a
   contiguous run of ≥6 tokens). Anything else is rejected with the reason. `check_result.py` repeats the check on

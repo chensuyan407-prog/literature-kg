@@ -147,17 +147,25 @@ def main():
     rc_q = step([os.path.join(HERE, "query_graph.py"), "--graph", gpath, "--out", qdir] + (["--spec", spec] if os.path.exists(spec) else []), log) if rc_b == 0 else 9
     rc_e = step([os.path.join(HERE, "export_graph.py"), "--graph", gpath, "--out", os.path.join(a.out, "graph"),
                  "--queries", os.path.join(qdir, "query_results.json")], log) if rc_b == 0 else 9
-    g = read_json(gpath, {}) or {}
-    queries = read_json(os.path.join(qdir, "query_results.json"), []) or []
+    g = (read_json(gpath, {}) or {}) if rc_b == 0 else {}
+    queries = (read_json(os.path.join(qdir, "query_results.json"), []) or []) if (rc_b == 0 and rc_q == 0) else []
     qmd = os.path.join(qdir, "query_results.md")
     if queries and os.path.exists(qmd):
         import shutil
         shutil.copy(qmd, os.path.join(a.out, "queries.md"))
     ing = read_json(os.path.join(a.work, "corpus", "ingest_report.json"), {}) or {}
     case_path = os.path.join(a.input, "case.json") if os.path.isdir(a.input) else a.input
-    case = read_json(case_path, {}) or {}
-    notes = read_json(os.path.join(a.work, "notes.json"), {}) or {}
-    fill = read_json(os.path.join(a.work, "contract_fill.json"), {}) or {}
+    raw_case = read_json(case_path, {})
+    case = raw_case if isinstance(raw_case, dict) else {}
+    try:
+        notes = read_json(os.path.join(a.work, "notes.json"), {}) or {}
+    except Exception as e:  # noqa: BLE001
+        notes = {"uncertainty": [f"invalid notes.json ignored: {e}"]}
+    try:
+        fill = read_json(os.path.join(a.work, "contract_fill.json"), {}) or {}
+    except Exception as e:  # noqa: BLE001
+        fill = {}
+        notes.setdefault("uncertainty", []).append(f"invalid contract_fill.json ignored: {e}")
 
     srcs = g.get("sources", [])
     extracted = {e["source_id"] for e in g.get("edges", []) if e["predicate"] != "AUTHOR_OF"}
@@ -170,16 +178,22 @@ def main():
     ok_q = [q for q in queries if q["status"] == "ok"]
     if len(ok_q) < 3:
         problems.append(f"only {len(ok_q)} queries returned results (need >=3)")
+    problems += [f"input: {r}" for r in ing.get("partial_reasons", [])]
     status = "failed" if rc_b != 0 or not g.get("nodes") else ("partial" if problems or ing.get("status") != "ok" else "success")
     uncertainty = list(notes.get("uncertainty", []))
     uncertainty += [f"{c['kind']}: {c.get('names') or c.get('abbreviation') or c.get('key')} — {c.get('reason', '')}" for c in g.get("conflicts", [])]
     uncertainty += [f"edge {e['id']} ({e['source_id']}): {'; '.join(e['flags'])}" for e in g.get("edges", []) if e.get("flags")]
-    uncertainty += ["Locations are organiser paragraph IDs (JATS), not PDF page numbers.",
-                    "Inline formulas / sub- and superscripts are linearised in the material; values were matched as written."]
+    kinds = {k for s in ing.get("sources", []) for k in (s.get("location_kind") or [])}
+    if kinds - {"pdf_text_layer"}:
+        uncertainty.append("Locations with organiser paragraph IDs (JATS/JSON) or generated block IDs are not PDF page numbers.")
+    if "pdf_text_layer" in kinds:
+        uncertainty.append("PDF locations p<page>-para<n>: real PDF page + reading-order block from the text layer (no OCR); tables/figures/equations may be incomplete.")
+    uncertainty.append("Inline formulas / sub- and superscripts are linearised in the material; values were matched as written.")
     evidence_index = [{"item": e["id"], "kind": "edge", "source_id": ev["source_id"], "paragraph_id": ev["paragraph_id"], "quote": ev["quote"], "match": ev.get("match")}
                       for e in g.get("edges", []) for ev in e["evidence"][:1]]
+    cid = case["case_id"] if ("case_id" in case and case["case_id"] is not None) else (case["id"] if ("id" in case and case["id"] is not None) else (ing.get("case_id") if ing.get("case_id") is not None else os.path.basename(os.path.abspath(a.input))))
     result = {
-        "case_id": case.get("case_id") or case.get("id") or ing.get("case_id") or os.path.basename(os.path.abspath(a.input)),
+        "case_id": cid,
         "status": status,
         "status_detail": problems or ["all steps completed"],
         "skill": {"name": "literature-kg", "version": VERSION},
@@ -208,16 +222,19 @@ def main():
     }
     contract = case.get("output_contract") or case.get("output_fields") or case.get("schema") or case.get("deliverables") or {}
     schema = contract_schema(contract)
+    req_fields = set(contract.get("required", [])) if isinstance(contract, dict) and isinstance(contract.get("required"), list) else set()
+    CORE_FIELDS = {"case_id", "status", "nodes", "edges", "sources", "queries"}
     mapping = {}
     for k, spec in schema.items():
         if not k:
             continue
         want = _want_type(spec)
         if k in result and result[k] is not None:
-            result[k] = _coerce_val(result[k], want)
+            if k not in CORE_FIELDS:
+                result[k] = _coerce_val(result[k], want)
             mapping[k] = k
             continue
-        if k in fill:
+        if k in fill and k not in CORE_FIELDS:
             result[k] = _coerce_val(fill[k], want)
             mapping[k] = "contract_fill.json"
             continue
@@ -229,8 +246,11 @@ def main():
             result[k] = None
             mapping[k] = None
             result["uncertainty"].append(f"output_contract field '{k}' could not be filled from the graph; left null (fill via work/contract_fill.json)")
+            if k in req_fields:
+                problems.append(f"required output_contract field '{k}' is null")
     for k, v in fill.items():
-        result.setdefault(k, _coerce_val(v, _want_type(schema.get(k))) if k in schema else v)
+        if k not in CORE_FIELDS:
+            result.setdefault(k, _coerce_val(v, _want_type(schema.get(k))) if k in schema else v)
     delivs = case.get("deliverables")
     if isinstance(delivs, list):
         for d in delivs:
@@ -247,6 +267,17 @@ def main():
     result["output_contract_mapping"] = mapping
     write_json(os.path.join(a.out, "result.json"), result)
     rc_c = step([os.path.join(HERE, "check_result.py"), "--result", os.path.join(a.out, "result.json"), "--work", a.work], [])
+    if rc_c != 0:
+        problems.append(f"check_result hard check failed (exit {rc_c})")
+        status = "failed"
+        result["status"] = status
+        result["status_detail"] = problems
+        write_json(os.path.join(a.out, "result.json"), result)
+    elif problems and result["status"] == "success":
+        status = "partial"
+        result["status"] = status
+        result["status_detail"] = problems
+        write_json(os.path.join(a.out, "result.json"), result)
     print(f"run_all: status={status} nodes={len(result['nodes'])} edges={len(result['edges'])} queries_ok={len(ok_q)} problems={problems} check_exit={rc_c}")
     return 0 if status != "failed" else 2
 
