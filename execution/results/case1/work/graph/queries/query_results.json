@@ -1265,28 +1265,7 @@
   ],
   "uncertain": [
    {
-    "edge": "R:2cfa5e2574",
-    "why": [
-     "needs_review",
-     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
     "edge": "R:f4c2774b5a",
-    "why": [
-     "needs_review",
-     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:47f2658b4f",
-    "why": [
-     "needs_review",
-     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:40dcb0566e",
     "why": [
      "needs_review",
      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
@@ -1297,6 +1276,27 @@
     "why": [
      "needs_review",
      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:47f2658b4f",
+    "why": [
+     "needs_review",
+     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:2cfa5e2574",
+    "why": [
+     "needs_review",
+     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:40dcb0566e",
+    "why": [
+     "needs_review",
+     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
     ]
    }
   ]
@@ -2053,6 +2053,32 @@
     ]
    },
    {
+    "id": "R:430f6ca25c",
+    "subject": "magnetically modified graphene oxide composite",
+    "predicate": "OUTPERFORMS",
+    "object": "magnetically modified activated carbon reference",
+    "subject_id": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "object_id": "paper-A:Sample:magnetically-modified-activated-carbon-r",
+    "source_id": "paper-A",
+    "conditions": {
+     "adsorbate": "lactic acid",
+     "criterion": "qmax (Langmuir)"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0040",
+      "quote": "its maximum adsorption capacity for lactic acid was substantially lower (q max = 74.6 mg/g)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
     "id": "R:767c404946",
     "subject": "magnetically modified graphene oxide composite",
     "predicate": "OUTPERFORMS",
@@ -2075,32 +2101,6 @@
       "source_id": "paper-A",
       "paragraph_id": "p-0045",
       "quote": "These results clearly establish that the MGO composite provides a vastly superior affinity and saturation capacity for succinic acid recovery compared to the AC reference.",
-      "match": "exact"
-     }
-    ]
-   },
-   {
-    "id": "R:430f6ca25c",
-    "subject": "magnetically modified graphene oxide composite",
-    "predicate": "OUTPERFORMS",
-    "object": "magnetically modified activated carbon reference",
-    "subject_id": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
-    "object_id": "paper-A:Sample:magnetically-modified-activated-carbon-r",
-    "source_id": "paper-A",
-    "conditions": {
-     "adsorbate": "lactic acid",
-     "criterion": "qmax (Langmuir)"
-    },
-    "strength": "direct",
-    "attribution": "author",
-    "polarity": "positive",
-    "needs_review": false,
-    "flags": [],
-    "evidence": [
-     {
-      "source_id": "paper-A",
-      "paragraph_id": "p-0040",
-      "quote": "its maximum adsorption capacity for lactic acid was substantially lower (q max = 74.6 mg/g)",
       "match": "exact"
      }
     ]
@@ -3518,25 +3518,13 @@
   ],
   "uncertain": [
    {
-    "edge": "R:6ca7e73ccf",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:387b947927",
+    "edge": "R:665966f364",
     "why": [
      "hedged"
     ]
    },
    {
     "edge": "R:b3b6109d60",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:34b3eca17d",
     "why": [
      "hedged"
     ]
@@ -3554,7 +3542,19 @@
     ]
    },
    {
-    "edge": "R:665966f364",
+    "edge": "R:387b947927",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:34b3eca17d",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:6ca7e73ccf",
     "why": [
      "hedged"
     ]
@@ -3887,14 +3887,14 @@
   ],
   "uncertain": [
    {
-    "edge": "R:d864fd647c",
+    "edge": "R:4e1ef8e791",
     "why": [
      "needs_review",
      "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
     ]
    },
    {
-    "edge": "R:4e1ef8e791",
+    "edge": "R:d864fd647c",
     "why": [
      "needs_review",
      "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
@@ -6525,13 +6525,7 @@
     ]
    },
    {
-    "edge": "R:b113e63e89",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:387b947927",
+    "edge": "R:665966f364",
     "why": [
      "hedged"
     ]
@@ -6543,7 +6537,13 @@
     ]
    },
    {
-    "edge": "R:665966f364",
+    "edge": "R:b113e63e89",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:387b947927",
     "why": [
      "hedged"
     ]
@@ -9198,27 +9198,7 @@
   ],
   "uncertain": [
    {
-    "edge": "R:2cfa5e2574",
-    "why": [
-     "needs_review",
-     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:f533c77089",
-    "why": [
-     "indirect"
-    ]
-   },
-   {
     "edge": "R:f4c2774b5a",
-    "why": [
-     "needs_review",
-     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:47f2658b4f",
     "why": [
      "needs_review",
      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
@@ -9231,16 +9211,15 @@
     ]
    },
    {
-    "edge": "R:40dcb0566e",
+    "edge": "R:665966f364",
     "why": [
-     "needs_review",
-     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     "hedged"
     ]
    },
    {
-    "edge": "R:387b947927",
+    "edge": "R:f533c77089",
     "why": [
-     "hedged"
+     "indirect"
     ]
    },
    {
@@ -9251,9 +9230,30 @@
     ]
    },
    {
-    "edge": "R:665966f364",
+    "edge": "R:387b947927",
     "why": [
      "hedged"
+    ]
+   },
+   {
+    "edge": "R:47f2658b4f",
+    "why": [
+     "needs_review",
+     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:2cfa5e2574",
+    "why": [
+     "needs_review",
+     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:40dcb0566e",
+    "why": [
+     "needs_review",
+     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
     ]
    }
   ]
@@ -10473,7 +10473,19 @@
   ],
   "uncertain": [
    {
-    "edge": "R:6ca7e73ccf",
+    "edge": "R:665966f364",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:f533c77089",
+    "why": [
+     "indirect"
+    ]
+   },
+   {
+    "edge": "R:b3b6109d60",
     "why": [
      "hedged"
     ]
@@ -10485,9 +10497,17 @@
     ]
    },
    {
-    "edge": "R:387b947927",
+    "edge": "R:f4c2774b5a",
     "why": [
-     "hedged"
+     "needs_review",
+     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:7dbf743e4e",
+    "why": [
+     "needs_review",
+     "object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
     ]
    },
    {
@@ -10505,49 +10525,16 @@
     ]
    },
    {
-    "edge": "R:34b3eca17d",
+    "edge": "R:387b947927",
     "why": [
      "hedged"
     ]
    },
    {
-    "edge": "R:e745caf967",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:2cfa5e2574",
-    "why": [
-     "needs_review",
-     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:d864fd647c",
-    "why": [
-     "needs_review",
-     "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:7dbf743e4e",
+    "edge": "R:b2e05b45a0",
     "why": [
      "needs_review",
      "object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:f533c77089",
-    "why": [
-     "indirect"
-    ]
-   },
-   {
-    "edge": "R:f4c2774b5a",
-    "why": [
-     "needs_review",
-     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
     ]
    },
    {
@@ -10558,14 +10545,7 @@
     ]
    },
    {
-    "edge": "R:47f2658b4f",
-    "why": [
-     "needs_review",
-     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:b3b6109d60",
+    "edge": "R:e745caf967",
     "why": [
      "hedged"
     ]
@@ -10577,6 +10557,33 @@
     ]
    },
    {
+    "edge": "R:47f2658b4f",
+    "why": [
+     "needs_review",
+     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:2cfa5e2574",
+    "why": [
+     "needs_review",
+     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:34b3eca17d",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:d864fd647c",
+    "why": [
+     "needs_review",
+     "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
     "edge": "R:40dcb0566e",
     "why": [
      "needs_review",
@@ -10584,14 +10591,7 @@
     ]
    },
    {
-    "edge": "R:b2e05b45a0",
-    "why": [
-     "needs_review",
-     "object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:665966f364",
+    "edge": "R:6ca7e73ccf",
     "why": [
      "hedged"
     ]

@@ -5,74 +5,51 @@ description: Build an evidence-bound knowledge graph from one or more scientific
 
 # literature-kg — 文献知识图谱构建 (evidence-bound)
 
-You (the agent) read the papers and decide what the entities and relations are. The scripts do
-everything that must be exact: flatten the material into paragraphs with their organiser IDs,
-verify every quote against the cited paragraph, enforce the relation schema, align aliases
-within and across papers under fixed rules, keep stable IDs, run queries, export, and self-check.
-Nothing enters the graph without a quote that is found in the cited paragraph.
+You read the papers and extract entities, relations, cross-paper decisions, and queries. The scripts
+flatten inputs into paragraphs with organiser IDs, verify every quote against its cited paragraph,
+enforce the relation schema, align aliases under fixed rules, run queries, export, and self-check.
+Nothing enters the graph without a verbatim quote found in the cited paragraph.
 
-Scripts are in `scripts/` next to this file (installed: `/skills/weekly-skill/scripts`). Python ≥3.9,
-standard library only; matplotlib optional (PNG previews), PyMuPDF optional (PDF input).
-First locate Python and scripts (supports containers with `python3` only or alternate mount paths):
+## 1. Main Pipeline Command (auto-detects `python3` and `/skills/weekly-skill`)
+
 ```bash
 PY=$(command -v python3 || command -v python)
 for d in /skills/weekly-skill /app/submission /app/skills /app/skills/* "${SKILL_DIR:-}" "$(pwd)"; do
   [ -f "$d/scripts/run_all.py" ] && K="$d/scripts" && break
 done
 W=/app/work O=/app/output
+
+# Step A: Ingest inputs -> read /input/task.md, /input/case.json, and $W/corpus/<safe_source_id>.txt
+"$PY" "$K/ingest.py" --input /input --work "$W"
+
+# Step B: After writing $W/extract/<source_id>.json and $W/queries.json, run full pipeline:
+"$PY" "$K/run_all.py" --input /input --work "$W" --out "$O"
+# Incremental update: add --previous <old>/graph/graph.json to preserve node IDs and log change_log.
+# Quote lookup helper: "$PY" "$K/find_text.py" --work "$W" --source <source_id> "<phrase>"
 ```
 
-## Workflow (≤ 64 requests / 900 s total; ≈10–20 tool calls; save a partial result early)
+## 2. Workflow (≤ 64 requests / 900 s; save partial result early)
 
-1. **Ingest** — `"$PY" "$K/ingest.py" --input /input --work $W`
-   Prints sources (manifest DOI/authors/license/hash), paragraph counts and warnings. Also read
-   `/input/task.md` and `/input/case.json` (note `case_id` and `output_contract`).
-   Paper text for reading: check `$W/corpus/ingest_report.json` → `sources[].corpus_file` (typically `$W/corpus/<safe_source_id>.txt`, where `/` in DOIs is replaced by `_`), one line per paragraph: `[paragraph_id] (section) text`.
-   Hints (abbreviation definitions, frequent terms): `$W/corpus/candidates.json`.
-   The root DOI/title/authors of case.json belong to the FIRST (primary) paper only.
-   **Input kinds** (check `ingest_report.json` → `sources[].location_kind`, `warnings`, `partial_reasons`):
-   organiser JSON/JATS ids (`p-0012`, `sec2-p3`) are used as given and are **not pages**; a raw PDF is read
-   from its text layer (PyMuPDF → pdftotext → pypdf, two-column reading order, running headers/page numbers
-   and the reference list dropped) into ids `p<page>-para<n>` (`location_kind: pdf_text_layer`, real PDF
-   page); `.md`/`.txt` give `selfmade-mdNNN`. Several PDFs without a manifest = one source per file (file stem).
-   Ingest `status=partial` (scanned page, unreadable PDF, manifest paper without text) ⇒ your result is partial:
-   name the pages/papers in `notes.json` and never fill them from memory.
-2. **Read each paper** (read the .txt in chunks if long). Focus on what the task asks.
-3. **Write one extraction file per paper**: `$W/extract/<source_id>.json` (schema below). If the id
-   contains `/` (a DOI), name the file with `_` (`10.1371_journal.x.json`) and keep the real id inside;
-   the builder also accepts the DOI, a case/punctuation variant or `primary`/`secondary` and logs the fix.
-   If it is long, split into `<source_id>.part2.json` etc. (same `source_id`; keys may refer across parts).
-   Budget: ≈15–40 entities and ≈15–40 relations per paper is enough; write the task's core objects first.
-   Write the primary paper first, then immediately run step 6 once → an honest partial result exists.
-4. **Cross-paper decisions** (optional file `$W/extract/alignment_overrides.json`):
-   `{"merge": [["name in A", "name in B", "reason"]], "split": [["name", "name", "reason"]],
-     "conflicts": [{"kind": "interpretation_conflict", "about": [...], "reason": "...",
-                    "evidence": [{"source_id","paragraph_id","quote"}, {...}]}]}`
-   Use `conflicts` when two papers (or two paragraphs of one paper) disagree; each needs ≥2 verified quotes.
-   Never write an edge whose subject comes from one paper and object from another.
-5. **Queries** — `$W/queries.json`: at least 3 real questions from task.md, e.g.
-   `[{"id":"q1","question":"...","op":"predicate","args":["HAS_RESULT,TESTED_ON"]},
-     {"id":"q2","question":"...","op":"neighbors","args":["<name or alias>"],"depth":2,"predicate":null,"source":null},
-     {"id":"q3","question":"...","op":"path","args":["<A>","<B>"]}]`
+1. **Ingest**: Run Step A. Check `$W/corpus/ingest_report.json` (`sources[].corpus_file`, `location_kind`,
+   `warnings`). Organiser JSON/JATS IDs (`p-0012`) are **not PDF pages**. PDF text layers give
+   `p<page>-para<n>` (real pages); `.md`/`.txt` give `selfmade-mdNNN`. Root DOI/title/authors in
+   `case.json` belong to the **primary** paper only.
+2. **Extract**: Read each `$W/corpus/<safe_source_id>.txt` (`[paragraph_id] (section) text`). Write
+   `$W/extract/<source_id>.json` (replace `/` in DOIs with `_` in filename; split long papers as
+   `.part2.json`). Target ≈15–40 entities and ≈15–40 relations per paper. Write primary paper first
+   and run Step B once for an early honest partial result.
+3. **Cross-paper & Conflicts** (optional `$W/extract/alignment_overrides.json`):
+   `{"merge": [["A","B","reason"]], "split": [["A","B","reason"]], "conflicts": [{"kind":"interpretation_conflict","about":[...],"reason":"...","evidence":[{"source_id","paragraph_id","quote"},...]}]}`.
+   Never write an edge whose subject and object come from different papers.
+4. **Queries** (`$W/queries.json`, ≥ 3 real questions from `task.md`):
    ops: `find NAME` · `neighbors NAME` · `path A B` · `type TYPE` · `predicate P1,P2` · `shared` · `uncertain` · `evidence ID`.
-   `shared`, `type Measurement` and `uncertain` are added automatically. A query with no result is
-   reported as `no_result` with the reason — keep it, it is a valid answer ("not reported").
-6. **Build + query + export + result** — `"$PY" "$K/run_all.py" --input /input --work $W --out $O`
-   It prints `REJECTED ...` lines (quote not found, unknown key, predicate/type violation) and
-   `needs_review` flags. Fix rejected items (use `"$PY" "$K/find_text.py" --work $W --source S "phrase"`
-   to copy the exact sentence) and rerun. Two fix rounds are enough; leave the rest rejected — they
-   are listed in result.json, which is honest.
-7. Optional: `$W/contract_fill.json` = values for output_contract fields that are not graph data
-   (e.g. a textual answer); `$W/notes.json` = `{"uncertainty": [...], "not_reported": [...]}`. Rerun step 6.
-8. Final message: status, counts, where the files are, the queries' answers in 3–6 lines, open issues.
+   (`shared`, `type Measurement`, `uncertain` are also added automatically).
+5. **Run & Fix**: Run Step B. Fix `REJECTED` items using `find_text.py` (max 2 rounds; leave remaining
+   rejected items honestly listed in `result.json`). Optional: `$W/contract_fill.json` for non-graph
+   `output_contract` fields; `$W/notes.json` (`{"uncertainty":[...],"not_reported":[...]}`).
 
-Incremental update (new paper later): ingest again with the new material, add its extraction file,
-then `"$PY" "$K/run_all.py" --input /input --work $W --out $O --previous <old>/graph/graph.json` → old node IDs are kept; `change_log` lists
-`node_added`, `node_extended` (existing concept gets a new paper), `edge_added`, `node_missing_in_rebuild`.
+## 3. Minimal Positive Example (`$W/extract/paper-A.json`)
 
-## Extraction file schema (`$W/extract/<source_id>.json`)
-
-Minimal file (every field you need; everything else is optional):
 ```json
 {"source_id": "paper-A",
  "entities": [
@@ -83,93 +60,27 @@ Minimal file (every field you need; everything else is optional):
  "relations": [
   {"subject": "MGO", "predicate": "HAS_RESULT", "object": "qmax", "conditions": {"T": "25 °C"},
    "paragraph_id": "p-0055", "quote": "The maximum adsorption capacity of MGO for lactic acid (334.45 mg/g)", "strength": "direct"}],
- "not_reported": [{"item": "BET surface area of the composite", "note": "not measured (p-0104)"}]}
+ "not_reported": [{"item": "BET surface area", "note": "not measured (p-0104)"}]}
 ```
-Optional: entity `definition`, `attribution` (`author`|`cited`); relation `evidence: [{paragraph_id, quote}, ...]`,
-`attribution`, `polarity` (`positive`|`negative`), `note`. Tolerated slips (auto-fixed and logged as `auto-fix`
-warnings, not rejected): `label`→name, `head/tail/relation`→subject/object/predicate, lower-case or spaced
-predicates and common synonyms (`used`→USES, `compared to`→COMPARED_WITH), aliases as `"A; B"`, one mention
-object instead of a list, case/hyphen variants of keys. An entity without a valid mention borrows a verified
-quote of one of its own relations (flag `mention_borrowed_from_relation`); otherwise it is rejected.
 
-- `key`: your local handle; relations refer to keys (names/aliases also work). Use `"paper"` as
-  subject for the paper itself (STUDIES / CONCLUDES).
-- `quote`: copied **verbatim** from that paragraph line (12–300 characters, one contiguous span; do
-  not join sentences, do not fix typos or formula linearisation like `R 2`, `m2/g`, `10–6`).
-  Several evidence items: `"evidence": [{"paragraph_id","quote"}, ...]` instead of paragraph_id/quote.
-- `paragraph_id` is the organiser's ID printed in brackets; it is not a PDF page — never call it a page.
-- Only entities that are **named in the paper**. Do not add textbook concepts the paper does not mention.
-- Measurements: one node per reported value (or small set of values reported together) with
-  `attributes: {"value": "334.45", "unit": "mg/g"}`; the value digits must appear in a quote. Put
-  experimental conditions in `conditions` or a `Condition` node — never drop them.
-- `strength`: `direct` (stated as a result by the authors), `indirect` (inferred from the paragraph,
-  e.g. implied subject), `hedged` (may/suggest/likely/probably), `cited` (claim of other work).
-  `attribution`: `author` or `cited` (statement supported by a reference like [12] or "X et al. reported").
-  The builder downgrades `direct` → `hedged` when the quote contains hedging words and flags citation cues.
+## 4. 图谱构建与取证 Checklist (Core Constraints)
 
-**Entity types** — concept (may be shared across papers): `Material, Method, Task, Metric, Instrument,
-Mechanism, Researcher`; instance (always paper-scoped): `Sample, Measurement, Conclusion, Dataset,
-Model, Condition, Paper`. A specific synthesised sample / trained model / dataset split / reported value
-is an instance even if its label equals one in the other paper. Authors come from the manifest
-automatically (`Researcher -AUTHOR_OF-> Paper`); do not re-extract them.
-
-**Predicates** (subject → object types are enforced; violations are rejected):
-`STUDIES` (Paper/Method/Sample/Model→Task/Material) · `USES` (…→Method/Material/Dataset/Instrument/Model/Metric) ·
-`PREPARED_FROM` (Sample/Material→Material/Sample) · `INSTANCE_OF` (Sample/Model/Dataset→Material/Method/Dataset) ·
-`CHARACTERIZED_BY` (Sample/Material/Model→Method/Instrument) · `TESTED_ON` (Sample/Material/Method/Model→Material/Sample/Dataset/Task) ·
-`HAS_RESULT` (Sample/Material/Method/Model/Paper→Measurement) · `MEASURED_BY` (Measurement→Metric/Method/Instrument) ·
-`UNDER_CONDITION` (Measurement/Conclusion/Sample→Condition) · `FITS` (Method/Model→Measurement/Sample) ·
-`OUTPERFORMS` / `COMPARED_WITH` (same-kind objects; put the criterion and range in `conditions`) ·
-`SUPPORTS` / `CONTRADICTS` (Measurement/Conclusion/Method/Sample→Conclusion) · `ATTRIBUTED_TO` (Measurement/Conclusion/Sample→Mechanism/Conclusion/Material/Metric) ·
-`INVOLVES` (Sample/Material/Method/Conclusion→Mechanism) · `CONCLUDES` (Paper→Conclusion) · `PART_OF` · `APPLIED_TO`.
-Co-occurrence in a paragraph is not a relation. Direction matters: "A outperforms B" → `A OUTPERFORMS B`.
-
-## Alignment rules (applied by build_graph.py, recorded in `merge_log` / `conflicts`)
-
-- Within a paper: entities sharing a normalised name/alias (case, hyphen, space, plural, Greek-letter
-  insensitive) and the same type become one node.
-- Across papers: only concept types merge, only on an equal normalised **full name** (abbreviation
-  alone never merges). The merged node keeps per-paper evidence; edges stay per paper, so conditions,
-  samples and values are never combined into one conclusion.
-- Never merged across papers on a generic word alone (`model`, `method`, `sample`, `composite`… →
-  `generic_term_not_merged`); one abbreviation with two different expansions inside one paper is kept apart.
-- Same concept Metric measured in two papers → `cross_paper_values_not_combined` lists both values with their
-  own source/paragraph; answer such queries per paper, with each paper's conditions.
-- Chinese/English synonyms or spelling variants merge only if you list them as `aliases` of the concept (or an
-  override `merge` with a reason); write the reason from the text, not from general knowledge.
-- Recorded, not merged: `abbreviation_homonym` (same abbreviation, different expansions),
-  `same_label_different_object` (instances with equal labels), `possible_same_person`,
-  `similar_name_review` (e.g. graphene oxide vs reduced graphene oxide), `same_name_different_type`,
-  plus your declared `conflicts`.
-
-## Outputs (`/app/output`)
-
-`result.json` — `case_id`, `status` (success | partial | failed) + `status_detail`, `sources`, `nodes`, `edges`
-(each with evidence: source_id, paragraph_id, quote, match), `queries` (results with evidence and
-uncertain items), `alignment` (merges, not_merged, rules), `conflicts`, `rejected`, `not_reported`,
-`uncertainty`, `evidence_index`, `change_log`, `artifacts`, `run`, and every `output_contract` field
-(mapped from the graph, or from contract_fill.json; unmapped fields are null and listed in uncertainty).
-`graph/` — graph.json, nodes.csv, edges.csv, evidence.csv, graph.graphml, graph.mmd, graph.dot, graph.html,
-graph.svg/png, `queries/<id>.svg|png`. `queries.md` — readable query results. `check_report.json` — independent re-check.
-
-## Failure handling
-
-| Situation | What happens / what to do |
-|-|-|
-| case.json / manifest missing | ingest warns; sources are derived from files; state it in notes.json |
-| a manifest paper has no text | ingest status `partial`; result status `partial`; do not invent its content |
-| only publisher XML / Markdown / PDF | XML `<p>` (ids or generated `xml-pNNN`), Markdown/txt blocks (`selfmade-mdNNN`), PDF text layer (`p<page>-para<n>`, real page numbers) are used; generated IDs are labelled as such |
-| PDF + organiser JSON for the same paper | organiser paragraphs are used; the PDF copy goes to `pdf_paragraphs.jsonl` only (no duplicate nodes) |
-| encrypted / scanned PDF or pages | ingest `partial` + page list; result `partial`; report those pages/paper as unreadable, no OCR guesses |
-| only some papers / sections readable | build what is readable, `status: partial`; `notes.json` `uncertainty` names what is missing and why |
-| quote not found | item rejected with reason; fix the quote or leave it rejected |
-| same name, different object | keep separate; add a `conflicts` entry if it matters for the task |
-| papers disagree | both edges kept, `conflicts` entry with both quotes; never pick a winner unless a paper does |
-| query finds nothing | `no_result` + reason in result.json; say "not reported in the material" |
-| script crash | result.json is still written by run_all.py with status `failed`/`partial` and the step logs |
-
-`notes.json` example: `{"uncertainty": ["paper-B p3-para4: Table 2 values not in text layer; not used"],
-"not_reported": ["paper-A: sample size not reported"]}` — one line per gap, with source and location.
-
-Never: cite page numbers that do not exist, merge two papers' samples/values, copy the primary DOI to the
-secondary paper, present table values that are not in the paragraph text, or claim success when status is partial.
+- **Verbatim Evidence**: Every node/edge needs `source_id` + `paragraph_id` + contiguous `quote` (12–300 chars,
+  copied verbatim; keep linearised formulas like `R 2`, `m2/g`). Never invent PDF page numbers.
+- **Entity Types**:
+  - Concept (cross-paper mergeable on equal normalised **full name**): `Material, Method, Task, Metric, Instrument, Mechanism, Researcher`.
+  - Instance (paper-scoped, never merged across papers): `Sample, Measurement, Conclusion, Dataset, Model, Condition, Paper`.
+  - Authors come from manifest automatically (`Researcher -AUTHOR_OF-> Paper`). Only extract entities named in the paper.
+- **Predicates (type-enforced)**: `STUDIES`, `USES`, `PREPARED_FROM`, `INSTANCE_OF`, `CHARACTERIZED_BY`,
+  `TESTED_ON`, `HAS_RESULT`, `MEASURED_BY`, `UNDER_CONDITION`, `FITS`, `OUTPERFORMS`, `COMPARED_WITH`,
+  `SUPPORTS`, `CONTRADICTS`, `ATTRIBUTED_TO`, `INVOLVES`, `CONCLUDES`, `PART_OF`, `APPLIED_TO`.
+  Co-occurrence ≠ relation; preserve direction (`A OUTPERFORMS B`) and `conditions`.
+- **Strength & Attribution**: `strength` ∈ `direct | indirect | hedged | cited`; `attribution` ∈ `author | cited`.
+  Uncertain/hedged candidate relations are **retained with uncertainty flags**, never silently dropped.
+- **Cross-paper Alignment**: Abbreviation alone never merges; generic words (`model`, `sample`) never merge
+  (`generic_term_not_merged`); same metric in two papers keeps per-paper values (`cross_paper_values_not_combined`).
+  Record `abbreviation_homonym`, `same_label_different_object`, `similar_name_review`, and `conflicts`.
+- **Outputs & Failure Handling**: `result.json` aligns `case_id`, `status` (`success|partial|failed`),
+  `output_contract` fields, inline `evidence`, `queries`, `alignment`, `conflicts`, `rejected`, `not_reported`,
+  `uncertainty`. If `ingest` is `partial` (missing text, scanned/encrypted PDF), never fabricate content;
+  mark `status: partial` and explain in `notes.json`.
