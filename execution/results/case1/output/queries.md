@@ -32,11 +32,11 @@
 | humic acid/reduced graphene oxide composite | TESTED_ON | phenol | paper-B | p-0028 | direct |  | “Phenol adsorption was evaluated as a preliminary functional test of the synthesized HA-rGO composite.” |
 
 Uncertain:
-- R:f4c2774b5a: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
-- R:b3fdf59987: needs_review, subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
 - R:47f2658b4f: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
 - R:2cfa5e2574: needs_review, subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
 - R:40dcb0566e: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:b3fdf59987: needs_review, subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:f4c2774b5a: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
 
 ### q2: Which isotherm / kinetic models fit each paper's data, and which model won under which sample?
 
@@ -53,8 +53,8 @@ Uncertain:
 | Temkin isotherm model | FITS | lactic acid on MGO R2 = 0.826 (reported for both Freundlich p-0054 and Temkin p-0056) | paper-A | p-0056 | direct |  | “The high correlation with the Temkin model (R 2 = 0.826 for lactic acid)” |
 | pseudo-second-order kinetic model | FITS | PSO fit R2 > 0.99 for all acids | paper-A | p-0059 | direct |  | “The experimental data for all acids exhibited an excellent fit with the PSO model (R 2 > 0.99)” |
 | magnetically modified activated carbon reference | OUTPERFORMS | magnetically modified graphene oxide composite | paper-A | p-0051 | direct | adsorbate=lactic acid; range=below approximately 3 g/L; criterion=adsorption capacity | “specifically below approximately 3 g/L, the activated carbon-based adsorbent exhibits a slightly higher adsorption capacity than the MGO composite” |
-| magnetically modified graphene oxide composite | OUTPERFORMS | magnetically modified activated carbon reference | paper-A | p-0040 | direct | adsorbate=lactic acid; criterion=qmax (Langmuir) | “its maximum adsorption capacity for lactic acid was substantially lower (q max = 74.6 mg/g)” |
 | magnetically modified graphene oxide composite | OUTPERFORMS | magnetically modified activated carbon reference | paper-A | p-0045 | direct | adsorbate=succinic acid; criterion=mean Qe; range=10–100 g/L | “These results clearly establish that the MGO composite provides a vastly superior affinity and saturation capacity for succinic acid recovery compared to the AC” |
+| magnetically modified graphene oxide composite | OUTPERFORMS | magnetically modified activated carbon reference | paper-A | p-0040 | direct | adsorbate=lactic acid; criterion=qmax (Langmuir) | “its maximum adsorption capacity for lactic acid was substantially lower (q max = 74.6 mg/g)” |
 | Langmuir isotherm model | COMPARED_WITH | Freundlich isotherm model | paper-B | p-0093 | direct | sample=rGO; criterion=R2; adsorbate=phenol | “neither model can be considered unambiguously predominant for rGO within the investigated concentration range” |
 | pseudo-first-order kinetic model | COMPARED_WITH | pseudo-second-order kinetic model | paper-B | p-0100 | direct | sample=rGO; criterion=R2 | “whereas both models provided a comparable fit for rGO” |
 | reduced graphene oxide | COMPARED_WITH | graphene oxide | paper-B | p-0034 | direct |  | “These results indicate substantial removal of oxygen-containing groups compared with graphene oxide” |
@@ -121,13 +121,13 @@ Uncertain:
 | HA–rGO composite forms mainly through non-covalent interactions (paper B) | INVOLVES | π–π interactions | paper-B | p-0087 | hedged |  | “including π–π stacking of aromatic structures and hydrogen bonding between the functional groups of the components” |
 
 Uncertain:
-- R:665966f364: hedged
-- R:b3b6109d60: hedged
 - R:44944ed1b0: hedged
-- R:e745caf967: hedged
 - R:387b947927: hedged
-- R:34b3eca17d: hedged
+- R:665966f364: hedged
+- R:e745caf967: hedged
 - R:6ca7e73ccf: hedged
+- R:b3b6109d60: hedged
+- R:34b3eca17d: hedged
 
 ### q6: Does any paper report BET surface area of the HA-rGO composite?
 
@@ -197,13 +197,13 @@ Not merged across papers:
 - cross_paper_values_not_combined: None — same metric reported by different papers on different samples/conditions; compare only with each paper's conditions
 
 Uncertain:
-- R:e745caf967: hedged
-- R:44944ed1b0: hedged
-- R:6ca7e73ccf: hedged
-- R:665966f364: hedged
-- R:b3b6109d60: hedged
-- R:b113e63e89: hedged
 - R:387b947927: hedged
+- R:e745caf967: hedged
+- R:6ca7e73ccf: hedged
+- R:b3b6109d60: hedged
+- R:44944ed1b0: hedged
+- R:b113e63e89: hedged
+- R:665966f364: hedged
 
 ### q_results: Which reported results (Measurement) exist per paper, with conditions and evidence?
 
@@ -268,15 +268,15 @@ Uncertain:
 | Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g | UNDER_CONDITION | static batch, 25 °C, phenol 0.5–15 mg/dm3, 0.1 g per 100 mL | paper-B | p-0028 | direct |  | “The experiments were performed under static batch conditions at 25 °C using freshly prepared aqueous phenol solutions with initial concentrations ranging from 0” |
 
 Uncertain:
-- R:f4c2774b5a: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
-- R:44944ed1b0: hedged
-- R:665966f364: hedged
-- R:f533c77089: indirect
-- R:b3fdf59987: needs_review, subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
 - R:387b947927: hedged
 - R:47f2658b4f: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
 - R:2cfa5e2574: needs_review, subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:f533c77089: indirect
 - R:40dcb0566e: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:44944ed1b0: hedged
+- R:b3fdf59987: needs_review, subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:f4c2774b5a: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:665966f364: hedged
 
 ### q_uncertain: Which relations are hedged, cited, flagged, rejected or in conflict?
 
@@ -306,22 +306,22 @@ Uncertain:
 | humic acid/reduced graphene oxide composite | USES | ultrasonic treatment | paper-B | p-0015 | direct ⚠ |  | “The composite was synthesized by ultrasonic treatment in an aqueous medium.” |
 
 Uncertain:
-- R:665966f364: hedged
-- R:f533c77089: indirect
-- R:b3b6109d60: hedged
-- R:b113e63e89: hedged
-- R:f4c2774b5a: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
-- R:7dbf743e4e: needs_review, object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
-- R:05577cb609: needs_review, subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
-- R:b3fdf59987: needs_review, subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
-- R:387b947927: hedged
-- R:b2e05b45a0: needs_review, object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
-- R:4e1ef8e791: needs_review, subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
-- R:e745caf967: hedged
 - R:44944ed1b0: hedged
+- R:387b947927: hedged
+- R:e745caf967: hedged
 - R:47f2658b4f: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
-- R:2cfa5e2574: needs_review, subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
-- R:34b3eca17d: hedged
-- R:d864fd647c: needs_review, subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
-- R:40dcb0566e: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:7dbf743e4e: needs_review, object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
 - R:6ca7e73ccf: hedged
+- R:05577cb609: needs_review, subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:b2e05b45a0: needs_review, object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:2cfa5e2574: needs_review, subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:b3b6109d60: hedged
+- R:b3fdf59987: needs_review, subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:34b3eca17d: hedged
+- R:f533c77089: indirect
+- R:f4c2774b5a: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:b113e63e89: hedged
+- R:665966f364: hedged
+- R:4e1ef8e791: needs_review, subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:40dcb0566e: needs_review, subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review
+- R:d864fd647c: needs_review, subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review

@@ -17,8 +17,8 @@
  "execution": {
   "log_path": "execution/run.log",
   "exit_code": 0,
-  "ran_at": "2026-11-27T15:25:38.322531Z",
-  "wall_time_s": 8.48,
+  "ran_at": "2026-11-28T08:11:08.372655Z",
+  "wall_time_s": 9.08,
   "ran_by": "agent",
   "artifacts": [
    {
@@ -40,7 +40,7 @@
     "path": "execution/results/case1/output/result.json",
     "type": "data",
     "format": "json",
-    "checksum_sha256": "29927c1af91a848038d653609323bc506462e837079e72d77b5db75f181cfc3e"
+    "checksum_sha256": "60c959abaf3c2672dabf66d40862046ca6734957d663a7c222c37ab633d8c284"
    },
    {
     "id": "case1_graph",
@@ -68,7 +68,7 @@
     "path": "execution/results/case1/output/queries.md",
     "type": "data",
     "format": "other",
-    "checksum_sha256": "b2a816ab66ab3c66aef9b6cec19531f95514532823453b27c30bd839bae86da7"
+    "checksum_sha256": "9d31a7cadd71f5d5c59342f584a9fe4d27f185019358c759252abc9a16ea8e5e"
    },
    {
     "id": "case1_overview_png",
