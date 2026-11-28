@@ -467,30 +467,6 @@
     ]
    },
    {
-    "id": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
-    "type": "Measurement",
-    "label": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
-    "aliases": [],
-    "scope": "paper",
-    "sources": [
-     "paper-B"
-    ],
-    "attributes": {
-     "paper-B": {
-      "value": "5.00 → 5.47",
-      "unit": "mmol/g"
-     }
-    },
-    "evidence": [
-     {
-      "source_id": "paper-B",
-      "paragraph_id": "p-0001",
-      "quote": "the total content of carboxyl and phenolic hydroxyl groups increased from 5.00 to 5.47 mmol/g",
-      "match": "exact"
-     }
-    ]
-   },
-   {
     "id": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
     "type": "Measurement",
     "label": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
@@ -648,6 +624,30 @@
       "source_id": "paper-B",
       "paragraph_id": "p-0099",
       "quote": "The pseudo-first-order model exhibited a marginally higher R2 value of 0.9973 compared with 0.9968 for the pseudo-second-order model.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+    "type": "Measurement",
+    "label": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "5.00 → 5.47",
+      "unit": "mmol/g"
+     }
+    },
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0001",
+      "quote": "the total content of carboxyl and phenolic hydroxyl groups increased from 5.00 to 5.47 mmol/g",
       "match": "exact"
      }
     ]
@@ -1167,12 +1167,12 @@
     ]
    },
    {
-    "id": "R:c3615510ca",
+    "id": "R:5ec18c0e84",
     "subject": "humic acid/reduced graphene oxide composite",
     "predicate": "HAS_RESULT",
     "object": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
     "subject_id": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
-    "object_id": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+    "object_id": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
     "source_id": "paper-B",
     "conditions": {},
     "strength": "direct",
@@ -1265,7 +1265,14 @@
   ],
   "uncertain": [
    {
-    "edge": "R:47f2658b4f",
+    "edge": "R:b3fdf59987",
+    "why": [
+     "needs_review",
+     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:f4c2774b5a",
     "why": [
      "needs_review",
      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
@@ -1286,14 +1293,7 @@
     ]
    },
    {
-    "edge": "R:b3fdf59987",
-    "why": [
-     "needs_review",
-     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:f4c2774b5a",
+    "edge": "R:47f2658b4f",
     "why": [
      "needs_review",
      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
@@ -3046,7 +3046,26 @@
     ]
    },
    {
-    "id": "C:Mechanism:interactions",
+    "id": "C:Mechanism:non-covalent-interactions",
+    "type": "Mechanism",
+    "label": "non-covalent interactions",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0081",
+      "quote": "This suggests that composite formation occurs mainly through non-covalent interactions between the components.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Mechanism:pipi-interactions",
     "type": "Mechanism",
     "label": "π–π interactions",
     "aliases": [
@@ -3070,25 +3089,6 @@
       "source_id": "paper-B",
       "paragraph_id": "p-0082",
       "quote": "One of the most probable interaction types is π–π stacking between the aromatic fragments of humic acid",
-      "match": "exact"
-     }
-    ]
-   },
-   {
-    "id": "C:Mechanism:non-covalent-interactions",
-    "type": "Mechanism",
-    "label": "non-covalent interactions",
-    "aliases": [],
-    "scope": "concept",
-    "sources": [
-     "paper-B"
-    ],
-    "attributes": {},
-    "evidence": [
-     {
-      "source_id": "paper-B",
-      "paragraph_id": "p-0081",
-      "quote": "This suggests that composite formation occurs mainly through non-covalent interactions between the components.",
       "match": "exact"
      }
     ]
@@ -3198,7 +3198,7 @@
     ]
    },
    {
-    "id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
+    "id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
     "type": "Conclusion",
     "label": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
     "aliases": [],
@@ -3355,12 +3355,12 @@
     ]
    },
    {
-    "id": "R:94f2af36f0",
+    "id": "R:4469eea123",
     "subject": "magnetically modified graphene oxide composite",
     "predicate": "INVOLVES",
     "object": "π–π interactions",
     "subject_id": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
-    "object_id": "C:Mechanism:interactions",
+    "object_id": "C:Mechanism:pipi-interactions",
     "source_id": "paper-A",
     "conditions": {},
     "strength": "direct",
@@ -3401,12 +3401,12 @@
     ]
    },
    {
-    "id": "R:44944ed1b0",
+    "id": "R:4fc67016ad",
     "subject": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
     "predicate": "ATTRIBUTED_TO",
     "object": "π–π interactions",
     "subject_id": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
-    "object_id": "C:Mechanism:interactions",
+    "object_id": "C:Mechanism:pipi-interactions",
     "source_id": "paper-B",
     "conditions": {},
     "strength": "hedged",
@@ -3424,12 +3424,12 @@
     ]
    },
    {
-    "id": "R:6ca7e73ccf",
+    "id": "R:3fab2701d7",
     "subject": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
     "predicate": "INVOLVES",
     "object": "π–π interactions",
-    "subject_id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
-    "object_id": "C:Mechanism:interactions",
+    "subject_id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
+    "object_id": "C:Mechanism:pipi-interactions",
     "source_id": "paper-B",
     "conditions": {},
     "strength": "hedged",
@@ -3493,12 +3493,12 @@
     ]
    },
    {
-    "id": "R:b3b6109d60",
+    "id": "R:6ef1c181b6",
     "subject": "HA–rGO composite forms mainly through non-covalent interactions (paper B)",
     "predicate": "INVOLVES",
     "object": "π–π interactions",
     "subject_id": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
-    "object_id": "C:Mechanism:interactions",
+    "object_id": "C:Mechanism:pipi-interactions",
     "source_id": "paper-B",
     "conditions": {},
     "strength": "hedged",
@@ -3518,13 +3518,25 @@
   ],
   "uncertain": [
    {
-    "edge": "R:44944ed1b0",
+    "edge": "R:e745caf967",
     "why": [
      "hedged"
     ]
    },
    {
-    "edge": "R:387b947927",
+    "edge": "R:6ef1c181b6",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:3fab2701d7",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:4fc67016ad",
     "why": [
      "hedged"
     ]
@@ -3536,25 +3548,13 @@
     ]
    },
    {
-    "edge": "R:e745caf967",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:6ca7e73ccf",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:b3b6109d60",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
     "edge": "R:34b3eca17d",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:387b947927",
     "why": [
      "hedged"
     ]
@@ -3887,14 +3887,14 @@
   ],
   "uncertain": [
    {
-    "edge": "R:4e1ef8e791",
+    "edge": "R:d864fd647c",
     "why": [
      "needs_review",
      "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
     ]
    },
    {
-    "edge": "R:d864fd647c",
+    "edge": "R:4e1ef8e791",
     "why": [
      "needs_review",
      "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
@@ -4890,7 +4890,7 @@
    },
    {
     "concept": "π–π interactions",
-    "id": "C:Mechanism:interactions",
+    "id": "C:Mechanism:pipi-interactions",
     "type": "Mechanism",
     "sources": [
      "paper-A",
@@ -4899,12 +4899,12 @@
     "edges_by_paper": {
      "paper-A": [
       {
-       "id": "R:94f2af36f0",
+       "id": "R:4469eea123",
        "subject": "magnetically modified graphene oxide composite",
        "predicate": "INVOLVES",
        "object": "π–π interactions",
        "subject_id": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
-       "object_id": "C:Mechanism:interactions",
+       "object_id": "C:Mechanism:pipi-interactions",
        "source_id": "paper-A",
        "conditions": {},
        "strength": "direct",
@@ -4924,12 +4924,12 @@
      ],
      "paper-B": [
       {
-       "id": "R:b3b6109d60",
+       "id": "R:6ef1c181b6",
        "subject": "HA–rGO composite forms mainly through non-covalent interactions (paper B)",
        "predicate": "INVOLVES",
        "object": "π–π interactions",
        "subject_id": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
-       "object_id": "C:Mechanism:interactions",
+       "object_id": "C:Mechanism:pipi-interactions",
        "source_id": "paper-B",
        "conditions": {},
        "strength": "hedged",
@@ -4947,12 +4947,12 @@
        ]
       },
       {
-       "id": "R:44944ed1b0",
+       "id": "R:4fc67016ad",
        "subject": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
        "predicate": "ATTRIBUTED_TO",
        "object": "π–π interactions",
        "subject_id": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
-       "object_id": "C:Mechanism:interactions",
+       "object_id": "C:Mechanism:pipi-interactions",
        "source_id": "paper-B",
        "conditions": {},
        "strength": "hedged",
@@ -4970,12 +4970,12 @@
        ]
       },
       {
-       "id": "R:6ca7e73ccf",
+       "id": "R:3fab2701d7",
        "subject": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
        "predicate": "INVOLVES",
        "object": "π–π interactions",
-       "subject_id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
-       "object_id": "C:Mechanism:interactions",
+       "subject_id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
+       "object_id": "C:Mechanism:pipi-interactions",
        "source_id": "paper-B",
        "conditions": {},
        "strength": "hedged",
@@ -5294,7 +5294,7 @@
     ]
    },
    {
-    "id": "C:Mechanism:interactions",
+    "id": "C:Mechanism:pipi-interactions",
     "type": "Mechanism",
     "label": "π–π interactions",
     "aliases": [
@@ -5673,7 +5673,7 @@
     ]
    },
    {
-    "id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
+    "id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
     "type": "Conclusion",
     "label": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
     "aliases": [],
@@ -6000,12 +6000,12 @@
     ]
    },
    {
-    "id": "R:94f2af36f0",
+    "id": "R:4469eea123",
     "subject": "magnetically modified graphene oxide composite",
     "predicate": "INVOLVES",
     "object": "π–π interactions",
     "subject_id": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
-    "object_id": "C:Mechanism:interactions",
+    "object_id": "C:Mechanism:pipi-interactions",
     "source_id": "paper-A",
     "conditions": {},
     "strength": "direct",
@@ -6115,12 +6115,12 @@
     ]
    },
    {
-    "id": "R:44944ed1b0",
+    "id": "R:4fc67016ad",
     "subject": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
     "predicate": "ATTRIBUTED_TO",
     "object": "π–π interactions",
     "subject_id": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
-    "object_id": "C:Mechanism:interactions",
+    "object_id": "C:Mechanism:pipi-interactions",
     "source_id": "paper-B",
     "conditions": {},
     "strength": "hedged",
@@ -6308,12 +6308,12 @@
     ]
    },
    {
-    "id": "R:6ca7e73ccf",
+    "id": "R:3fab2701d7",
     "subject": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
     "predicate": "INVOLVES",
     "object": "π–π interactions",
-    "subject_id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
-    "object_id": "C:Mechanism:interactions",
+    "subject_id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
+    "object_id": "C:Mechanism:pipi-interactions",
     "source_id": "paper-B",
     "conditions": {},
     "strength": "hedged",
@@ -6354,12 +6354,12 @@
     ]
    },
    {
-    "id": "R:b3b6109d60",
+    "id": "R:6ef1c181b6",
     "subject": "HA–rGO composite forms mainly through non-covalent interactions (paper B)",
     "predicate": "INVOLVES",
     "object": "π–π interactions",
     "subject_id": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
-    "object_id": "C:Mechanism:interactions",
+    "object_id": "C:Mechanism:pipi-interactions",
     "source_id": "paper-B",
     "conditions": {},
     "strength": "hedged",
@@ -6507,31 +6507,19 @@
   ],
   "uncertain": [
    {
+    "edge": "R:6ef1c181b6",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:665966f364",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
     "edge": "R:387b947927",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:e745caf967",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:6ca7e73ccf",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:b3b6109d60",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:44944ed1b0",
     "why": [
      "hedged"
     ]
@@ -6543,7 +6531,19 @@
     ]
    },
    {
-    "edge": "R:665966f364",
+    "edge": "R:e745caf967",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:3fab2701d7",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:4fc67016ad",
     "why": [
      "hedged"
     ]
@@ -6590,7 +6590,7 @@
     ]
    },
    {
-    "id": "C:Mechanism:interactions",
+    "id": "C:Mechanism:pipi-interactions",
     "type": "Mechanism",
     "label": "π–π interactions",
     "aliases": [
@@ -7611,30 +7611,6 @@
     ]
    },
    {
-    "id": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
-    "type": "Measurement",
-    "label": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
-    "aliases": [],
-    "scope": "paper",
-    "sources": [
-     "paper-B"
-    ],
-    "attributes": {
-     "paper-B": {
-      "value": "5.00 → 5.47",
-      "unit": "mmol/g"
-     }
-    },
-    "evidence": [
-     {
-      "source_id": "paper-B",
-      "paragraph_id": "p-0001",
-      "quote": "the total content of carboxyl and phenolic hydroxyl groups increased from 5.00 to 5.47 mmol/g",
-      "match": "exact"
-     }
-    ]
-   },
-   {
     "id": "paper-B:Measurement:ha-isotherm-fit-freundlich-r2-0-9092-vs",
     "type": "Measurement",
     "label": "HA isotherm fit: Freundlich R2 0.9092 vs Langmuir 0.8502",
@@ -7864,6 +7840,30 @@
       "source_id": "paper-B",
       "paragraph_id": "p-0099",
       "quote": "The pseudo-first-order model exhibited a marginally higher R2 value of 0.9973 compared with 0.9968 for the pseudo-second-order model.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+    "type": "Measurement",
+    "label": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "5.00 → 5.47",
+      "unit": "mmol/g"
+     }
+    },
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0001",
+      "quote": "the total content of carboxyl and phenolic hydroxyl groups increased from 5.00 to 5.47 mmol/g",
       "match": "exact"
      }
     ]
@@ -8659,12 +8659,12 @@
     ]
    },
    {
-    "id": "R:44944ed1b0",
+    "id": "R:4fc67016ad",
     "subject": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
     "predicate": "ATTRIBUTED_TO",
     "object": "π–π interactions",
     "subject_id": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
-    "object_id": "C:Mechanism:interactions",
+    "object_id": "C:Mechanism:pipi-interactions",
     "source_id": "paper-B",
     "conditions": {},
     "strength": "hedged",
@@ -8891,12 +8891,12 @@
     ]
    },
    {
-    "id": "R:c3615510ca",
+    "id": "R:5ec18c0e84",
     "subject": "humic acid/reduced graphene oxide composite",
     "predicate": "HAS_RESULT",
     "object": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
     "subject_id": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
-    "object_id": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+    "object_id": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
     "source_id": "paper-B",
     "conditions": {},
     "strength": "direct",
@@ -9079,11 +9079,11 @@
     ]
    },
    {
-    "id": "R:7bb75c0227",
+    "id": "R:d02dc77849",
     "subject": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
     "predicate": "MEASURED_BY",
     "object": "functional-group titrimetric analysis",
-    "subject_id": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+    "subject_id": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
     "object_id": "C:Method:functional-group-titrimetric-analysis",
     "source_id": "paper-B",
     "conditions": {},
@@ -9198,45 +9198,6 @@
   ],
   "uncertain": [
    {
-    "edge": "R:387b947927",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:47f2658b4f",
-    "why": [
-     "needs_review",
-     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:2cfa5e2574",
-    "why": [
-     "needs_review",
-     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:f533c77089",
-    "why": [
-     "indirect"
-    ]
-   },
-   {
-    "edge": "R:40dcb0566e",
-    "why": [
-     "needs_review",
-     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:44944ed1b0",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
     "edge": "R:b3fdf59987",
     "why": [
      "needs_review",
@@ -9252,6 +9213,45 @@
    },
    {
     "edge": "R:665966f364",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:387b947927",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:2cfa5e2574",
+    "why": [
+     "needs_review",
+     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:40dcb0566e",
+    "why": [
+     "needs_review",
+     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:47f2658b4f",
+    "why": [
+     "needs_review",
+     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:f533c77089",
+    "why": [
+     "indirect"
+    ]
+   },
+   {
+    "edge": "R:4fc67016ad",
     "why": [
      "hedged"
     ]
@@ -9476,7 +9476,26 @@
     ]
    },
    {
-    "id": "C:Mechanism:interactions",
+    "id": "C:Mechanism:non-covalent-interactions",
+    "type": "Mechanism",
+    "label": "non-covalent interactions",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0081",
+      "quote": "This suggests that composite formation occurs mainly through non-covalent interactions between the components.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Mechanism:pipi-interactions",
     "type": "Mechanism",
     "label": "π–π interactions",
     "aliases": [
@@ -9500,25 +9519,6 @@
       "source_id": "paper-B",
       "paragraph_id": "p-0082",
       "quote": "One of the most probable interaction types is π–π stacking between the aromatic fragments of humic acid",
-      "match": "exact"
-     }
-    ]
-   },
-   {
-    "id": "C:Mechanism:non-covalent-interactions",
-    "type": "Mechanism",
-    "label": "non-covalent interactions",
-    "aliases": [],
-    "scope": "concept",
-    "sources": [
-     "paper-B"
-    ],
-    "attributes": {},
-    "evidence": [
-     {
-      "source_id": "paper-B",
-      "paragraph_id": "p-0081",
-      "quote": "This suggests that composite formation occurs mainly through non-covalent interactions between the components.",
       "match": "exact"
      }
     ]
@@ -9807,7 +9807,7 @@
     ]
    },
    {
-    "id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
+    "id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
     "type": "Conclusion",
     "label": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
     "aliases": [],
@@ -10152,12 +10152,12 @@
     ]
    },
    {
-    "id": "R:44944ed1b0",
+    "id": "R:4fc67016ad",
     "subject": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
     "predicate": "ATTRIBUTED_TO",
     "object": "π–π interactions",
     "subject_id": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
-    "object_id": "C:Mechanism:interactions",
+    "object_id": "C:Mechanism:pipi-interactions",
     "source_id": "paper-B",
     "conditions": {},
     "strength": "hedged",
@@ -10275,12 +10275,12 @@
     ]
    },
    {
-    "id": "R:6ca7e73ccf",
+    "id": "R:3fab2701d7",
     "subject": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
     "predicate": "INVOLVES",
     "object": "π–π interactions",
-    "subject_id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
-    "object_id": "C:Mechanism:interactions",
+    "subject_id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
+    "object_id": "C:Mechanism:pipi-interactions",
     "source_id": "paper-B",
     "conditions": {},
     "strength": "hedged",
@@ -10344,12 +10344,12 @@
     ]
    },
    {
-    "id": "R:b3b6109d60",
+    "id": "R:6ef1c181b6",
     "subject": "HA–rGO composite forms mainly through non-covalent interactions (paper B)",
     "predicate": "INVOLVES",
     "object": "π–π interactions",
     "subject_id": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
-    "object_id": "C:Mechanism:interactions",
+    "object_id": "C:Mechanism:pipi-interactions",
     "source_id": "paper-B",
     "conditions": {},
     "strength": "hedged",
@@ -10473,19 +10473,27 @@
   ],
   "uncertain": [
    {
-    "edge": "R:44944ed1b0",
+    "edge": "R:b3fdf59987",
+    "why": [
+     "needs_review",
+     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:6ef1c181b6",
     "why": [
      "hedged"
     ]
    },
    {
-    "edge": "R:387b947927",
+    "edge": "R:f4c2774b5a",
     "why": [
-     "hedged"
+     "needs_review",
+     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
     ]
    },
    {
-    "edge": "R:e745caf967",
+    "edge": "R:665966f364",
     "why": [
      "hedged"
     ]
@@ -10498,16 +10506,47 @@
     ]
    },
    {
-    "edge": "R:7dbf743e4e",
+    "edge": "R:34b3eca17d",
     "why": [
-     "needs_review",
-     "object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     "hedged"
     ]
    },
    {
-    "edge": "R:6ca7e73ccf",
+    "edge": "R:387b947927",
     "why": [
      "hedged"
+    ]
+   },
+   {
+    "edge": "R:f533c77089",
+    "why": [
+     "indirect"
+    ]
+   },
+   {
+    "edge": "R:e745caf967",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:b113e63e89",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
+    "edge": "R:2cfa5e2574",
+    "why": [
+     "needs_review",
+     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ]
+   },
+   {
+    "edge": "R:d864fd647c",
+    "why": [
+     "needs_review",
+     "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
     ]
    },
    {
@@ -10525,54 +10564,10 @@
     ]
    },
    {
-    "edge": "R:2cfa5e2574",
+    "edge": "R:7dbf743e4e",
     "why": [
      "needs_review",
-     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:b3b6109d60",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:b3fdf59987",
-    "why": [
-     "needs_review",
-     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:34b3eca17d",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:f533c77089",
-    "why": [
-     "indirect"
-    ]
-   },
-   {
-    "edge": "R:f4c2774b5a",
-    "why": [
-     "needs_review",
-     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-    ]
-   },
-   {
-    "edge": "R:b113e63e89",
-    "why": [
-     "hedged"
-    ]
-   },
-   {
-    "edge": "R:665966f364",
-    "why": [
-     "hedged"
+     "object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
     ]
    },
    {
@@ -10583,6 +10578,12 @@
     ]
    },
    {
+    "edge": "R:3fab2701d7",
+    "why": [
+     "hedged"
+    ]
+   },
+   {
     "edge": "R:40dcb0566e",
     "why": [
      "needs_review",
@@ -10590,10 +10591,9 @@
     ]
    },
    {
-    "edge": "R:d864fd647c",
+    "edge": "R:4fc67016ad",
     "why": [
-     "needs_review",
-     "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     "hedged"
     ]
    }
   ]

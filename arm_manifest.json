@@ -17,8 +17,8 @@
  "execution": {
   "log_path": "execution/run.log",
   "exit_code": 0,
-  "ran_at": "2026-11-28T08:11:08.372655Z",
-  "wall_time_s": 9.08,
+  "ran_at": "2026-11-28T15:14:20.134736Z",
+  "wall_time_s": 6.27,
   "ran_by": "agent",
   "artifacts": [
    {
@@ -33,42 +33,42 @@
     "path": "execution/results/tests/test_report.json",
     "type": "data",
     "format": "json",
-    "checksum_sha256": "2fa08bfcf7c062c14a7dec127291d4cec8cdde05945e95ee22986e0ce8ca9e70"
+    "checksum_sha256": "c651dec5e2e00f145219f8029d396addb1f7fe3c6ced6bba48a5dc8a105f4d3e"
    },
    {
     "id": "case1_result",
     "path": "execution/results/case1/output/result.json",
     "type": "data",
     "format": "json",
-    "checksum_sha256": "60c959abaf3c2672dabf66d40862046ca6734957d663a7c222c37ab633d8c284"
+    "checksum_sha256": "8a4784de71fda4227a505797537d0dcc762eb678f12e8d3e9a8e8487abce4b59"
    },
    {
     "id": "case1_graph",
     "path": "execution/results/case1/output/graph/graph.json",
     "type": "data",
     "format": "json",
-    "checksum_sha256": "a799b97004a93c6aa370aaa060cb8c2e43c6537661310a2a801f850fbf804748"
+    "checksum_sha256": "db229fc7a4b954da6ddb983dc399d7ef647c36ad36e3a9f8f2371a7e049f3396"
    },
    {
     "id": "case1_graphml",
     "path": "execution/results/case1/output/graph/graph.graphml",
     "type": "data",
     "format": "other",
-    "checksum_sha256": "737392dd8ebbdea7f0457569f47559178c408aaed49e667adbb51b0fbee0cb19"
+    "checksum_sha256": "5b60c71127d717bf8ee1361ae61c69534c863348d72f003de53fd19e1dc05339"
    },
    {
     "id": "case1_edges_csv",
     "path": "execution/results/case1/output/graph/edges.csv",
     "type": "table",
     "format": "csv",
-    "checksum_sha256": "002164febecc2255346f0b8fe27fad135483a3b088ac3a1bdb17e5ec13e03b15"
+    "checksum_sha256": "62cf4d69c294c922222c1c28aa602f1634ed23f9ccdb7e7690433de7d8378d90"
    },
    {
     "id": "case1_queries",
     "path": "execution/results/case1/output/queries.md",
     "type": "data",
     "format": "other",
-    "checksum_sha256": "9d31a7cadd71f5d5c59342f584a9fe4d27f185019358c759252abc9a16ea8e5e"
+    "checksum_sha256": "b71d33091c4f3f6d870aed02c3844b3b6065a5dfe2fa42cf44804432a102cab9"
    },
    {
     "id": "case1_overview_png",
@@ -89,7 +89,7 @@
     "path": "execution/results/case1/output/graph/graph.html",
     "type": "data",
     "format": "other",
-    "checksum_sha256": "79aa03037c758a36aa199e208898fd415e4b9c468af633d327a743f8bac97d5d"
+    "checksum_sha256": "244e27ccf2b92cbc48770686bcb60ca016fdccea6cb87b5f2bdd10a9f583f56e"
    }
   ]
  },

@@ -1,6 +1,7 @@
 {
  "case_id": "local-go-adsorption-kg",
  "status": "success",
+ "status_reason": "all steps completed",
  "status_detail": [
   "all steps completed"
  ],
@@ -109,7 +110,4973 @@
    "rejected": 0,
    "conflicts": 6,
    "needs_review_edges": 10
-  }
+  },
+  "nodes": [
+   {
+    "id": "paper-A:Researcher:ebubekir-ekinci",
+    "type": "Researcher",
+    "label": "Ebubekir Ekinci",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "author_position": 1
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Ebubekir Ekinci",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Researcher:hasan-uslu",
+    "type": "Researcher",
+    "label": "Hasan Uslu",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "author_position": 2
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Hasan Uslu",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Researcher:sahika-sena-bayazit",
+    "type": "Researcher",
+    "label": "Şahika Sena Bayazit",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "author_position": 3
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Şahika Sena Bayazit",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Researcher:mehmet-yetisen",
+    "type": "Researcher",
+    "label": "Mehmet Yetişen",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "author_position": 4
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Mehmet Yetişen",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "type": "Sample",
+    "label": "magnetically modified graphene oxide composite",
+    "aliases": [
+     "MGO",
+     "MGO composite"
+    ],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0001",
+      "quote": "using a magnetically modified graphene oxide (MGO) composite",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Sample:magnetically-modified-activated-carbon-r",
+    "type": "Sample",
+    "label": "magnetically modified activated carbon reference",
+    "aliases": [
+     "AC reference",
+     "AC-based magnetic reference",
+     "magnetic AC"
+    ],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0001",
+      "quote": "in comparison with a magnetically modified activated carbon (AC) reference",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0008",
+      "quote": "The same protocol was applied to AC to prepare the AC-based magnetic reference.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:chemical-coprecipitation",
+    "type": "Method",
+    "label": "chemical coprecipitation",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0007",
+      "quote": "The MGO composite was synthesized via a modified chemical coprecipitation route.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:x-ray-diffraction",
+    "type": "Method",
+    "label": "X-ray diffraction",
+    "aliases": [
+     "XRD"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0009",
+      "quote": "X-ray diffraction (XRD; PANalytical-EMPYREAN)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:fourier-transform-infrared-spectroscopy",
+    "type": "Method",
+    "label": "Fourier transform infrared spectroscopy",
+    "aliases": [
+     "FTIR",
+     "FTIR spectroscopy"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A",
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0009",
+      "quote": "Fourier transform infrared spectroscopy (FTIR; Bruker VERTEX 70, Germany)",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0021",
+      "quote": "The functional groups in the samples were identified by Fourier transform infrared (FTIR) spectroscopy.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:brunaueremmettteller-method",
+    "type": "Method",
+    "label": "Brunauer–Emmett–Teller method",
+    "aliases": [
+     "BET",
+     "BET analysis"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0009",
+      "quote": "The specific surface area was determined via the multipoint Brunauer–Emmett–Teller (BET) method",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:acidbase-titration-with-naoh",
+    "type": "Method",
+    "label": "acid–base titration with NaOH",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0012",
+      "quote": "The acid concentration was determined via titration with standardized 0.1 N NaOH.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:two-sample-t-test",
+    "type": "Method",
+    "label": "two-sample t-test",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0028",
+      "quote": "a two-sample t-test was performed on the experimental data sets",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:langmuir-isotherm-model",
+    "type": "Method",
+    "label": "Langmuir isotherm model",
+    "aliases": [
+     "Langmuir",
+     "Langmuir model"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A",
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {
+     "paper-A": "homogeneous surface, monolayer coverage (p-0017)"
+    },
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0017",
+      "quote": "The Langmuir model assumes that adsorption occurs on a homogeneous surface via monolayer coverage",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0029",
+      "quote": "The equilibrium adsorption data were analyzed using the Langmuir and Freundlich isotherm models.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:freundlich-isotherm-model",
+    "type": "Method",
+    "label": "Freundlich isotherm model",
+    "aliases": [
+     "Freundlich",
+     "Freundlich isotherm",
+     "Freundlich model"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A",
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0020",
+      "quote": "The Freundlich isotherm is an empirical model used to describe multilayer adsorption on heterogeneous surfaces",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0029",
+      "quote": "The equilibrium adsorption data were analyzed using the Langmuir and Freundlich isotherm models.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:temkin-isotherm-model",
+    "type": "Method",
+    "label": "Temkin isotherm model",
+    "aliases": [
+     "Temkin",
+     "Temkin model"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0022",
+      "quote": "The Temkin model accounts for the effects of indirect adsorbent–adsorbate interactions",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:pseudo-second-order-kinetic-model",
+    "type": "Method",
+    "label": "pseudo-second-order kinetic model",
+    "aliases": [
+     "PSO",
+     "PSO model",
+     "pseudo-second-order model"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A",
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0024",
+      "quote": "The linear form of the pseudo-second-order (PSO) kinetic model is expressed as follows",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0031",
+      "quote": "The kinetic data were analyzed using the pseudo-first-order and pseudo-second-order models.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Material:graphene-oxide",
+    "type": "Material",
+    "label": "graphene oxide",
+    "aliases": [
+     "GO"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A",
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0006",
+      "quote": "GO and AC were utilized as the primary adsorbent materials.",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0002",
+      "quote": "graphene oxide (GO) has emerged as a particularly promising functional material",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0034",
+      "quote": "These results indicate substantial removal of oxygen-containing groups compared with graphene oxide",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:intraparticle-diffusion-model",
+    "type": "Method",
+    "label": "intraparticle diffusion model",
+    "aliases": [
+     "IPD",
+     "IPD model"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0026",
+      "quote": "The intraparticle diffusion (IPD) model was further applied to elucidate the diffusion mechanism",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Task:recovery-of-organic-acids-from-aqueous-s",
+    "type": "Task",
+    "label": "recovery of organic acids from aqueous solution",
+    "aliases": [
+     "organic acid recovery"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0001",
+      "quote": "This study investigates the efficient adsorption and recovery of biotechnologically significant organic acids",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Metric:maximum-adsorption-capacity",
+    "type": "Metric",
+    "label": "maximum adsorption capacity",
+    "aliases": [
+     "maximum monolayer adsorption capacity",
+     "q max",
+     "qm",
+     "qmax"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A",
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0018",
+      "quote": "q max (mg/g) is the theoretical maximum monolayer adsorption capacity",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0029",
+      "quote": "where qm is the maximum monolayer adsorption capacity (mg/g)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Metric:equilibrium-adsorption-capacity",
+    "type": "Metric",
+    "label": "equilibrium adsorption capacity",
+    "aliases": [
+     "Q e",
+     "adsorption capacity at equilibrium",
+     "adsorption capacity qe",
+     "qe"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A",
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0013",
+      "quote": "the adsorption capacity at equilibrium (Q e) was calculated using the following equation",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0028",
+      "quote": "The adsorption capacity qe (mg/g) and removal efficiency J (%) were calculated using the following equations",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Metric:specific-surface-area",
+    "type": "Metric",
+    "label": "specific surface area",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0009",
+      "quote": "The specific surface area was determined via the multipoint Brunauer–Emmett–Teller (BET) method",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Metric:dimensionless-separation-factor",
+    "type": "Metric",
+    "label": "dimensionless separation factor",
+    "aliases": [
+     "R L"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0018",
+      "quote": "the dimensionless separation factor (R L) was calculated using the following equation",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Metric:pseudo-second-order-rate-constant",
+    "type": "Metric",
+    "label": "pseudo-second-order rate constant",
+    "aliases": [
+     "k 2"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0025",
+      "quote": "k 2 (g/mg·min) represents the second-order adsorption rate constant",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Metric:capacity-retention-rate",
+    "type": "Metric",
+    "label": "capacity retention rate",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0015",
+      "quote": "The capacity retention rate was calculated by comparing the q e of each cycle to the initial adsorption capacity.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Mechanism:hydrogen-bonding",
+    "type": "Mechanism",
+    "label": "hydrogen bonding",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-A",
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0010",
+      "quote": "promoting recovery through hydrogen bonding and π–π interactions",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0005",
+      "quote": "including hydrogen bonding and π–π interactions between aromatic fragments",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Mechanism:pipi-interactions",
+    "type": "Mechanism",
+    "label": "π–π interactions",
+    "aliases": [
+     "π–π interaction",
+     "π–π stacking"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A",
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0010",
+      "quote": "promoting recovery through hydrogen bonding and π–π interactions",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0082",
+      "quote": "One of the most probable interaction types is π–π stacking between the aromatic fragments of humic acid",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Material:activated-carbon",
+    "type": "Material",
+    "label": "activated carbon",
+    "aliases": [
+     "AC"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0003",
+      "quote": "Conventional adsorbents such as activated carbon (AC) are widely employed",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Mechanism:chemisorption",
+    "type": "Mechanism",
+    "label": "chemisorption",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0059",
+      "quote": "This confirms that the adsorption rate is governed by chemical interactions (chemisorption).",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Mechanism:steric-hindrance",
+    "type": "Mechanism",
+    "label": "steric hindrance",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0060",
+      "quote": "which causes significant steric hindrance during diffusion into the 4.12 nm mesoporous framework",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Condition:batch-adsorption-at-25-c-10-mg-adsorbent",
+    "type": "Condition",
+    "label": "batch adsorption at 25 °C, 10 mg adsorbent in 20 mL, 10–100 g/L, natural pH ~2.0–3.5",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "temperature": "25 °C",
+      "adsorbent_mass": "10 mg",
+      "volume": "20 mL",
+      "concentration_range": "10–100 g/L",
+      "pH": "approximately 2.0 to 3.5",
+      "agitation": "120 rpm"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0010",
+      "quote": "The experiments were performed at 25 °C with an agitation speed of 120 rpm, utilizing 10 mg of adsorbent in a 20 mL solution volume.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:mgo-specific-surface-area-37-94-m2-g",
+    "type": "Measurement",
+    "label": "MGO specific surface area 37.94 m2/g",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "37.94",
+      "unit": "m2/g"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0039",
+      "quote": "the specific surface area of the MGO was determined to be 37.94 m2/g",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:magnetic-ac-specific-surface-area-40-38",
+    "type": "Measurement",
+    "label": "magnetic AC specific surface area 40.38 m2/g",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "40.38",
+      "unit": "m2/g"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0040",
+      "quote": "which exhibited a slightly higher surface area (40.38 m2/g)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:mgo-average-pore-radius-4-12-nm",
+    "type": "Measurement",
+    "label": "MGO average pore radius 4.12 nm",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "4.12",
+      "unit": "nm"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0039",
+      "quote": "the average pore radius was found to be 4.12 nm",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:mgo-qmax-for-lactic-acid-334-45-mg-g",
+    "type": "Measurement",
+    "label": "MGO qmax for lactic acid 334.45 mg/g",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "334.45",
+      "unit": "mg/g",
+      "model": "Langmuir"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0001",
+      "quote": "Lactic acid exhibited the highest maximum adsorption capacity (q max = 334.45 mg/g)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:magnetic-ac-qmax-for-lactic-acid-74-6-mg",
+    "type": "Measurement",
+    "label": "magnetic AC qmax for lactic acid 74.6 mg/g",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "74.6",
+      "unit": "mg/g"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0040",
+      "quote": "its maximum adsorption capacity for lactic acid was substantially lower (q max = 74.6 mg/g)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:mean-qe-succinic-acid-mgo-188-6-vs-ac-67",
+    "type": "Measurement",
+    "label": "mean Qe succinic acid: MGO 188.6 vs AC 67.8 mg/g",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "188.6 / 67.8",
+      "unit": "mg/g",
+      "p": "< 0.001"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0045",
+      "quote": "the overall mean adsorption capacity (Q e) was determined as 188.6 mg/g for MGO-based and 67.8 mg/g for AC-based adsorbents",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:mean-qe-citric-acid-mgo-213-vs-ac-73-7-m",
+    "type": "Measurement",
+    "label": "mean Qe citric acid: MGO 213 vs AC 73.7 mg/g",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "213 / 73.7",
+      "unit": "mg/g",
+      "p": "< 0.001"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0048",
+      "quote": "the overall mean adsorption capacity was determined to be 213 mg/g for MGO-based and 73.7 mg/g for AC-based adsorbents",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Material:magnetite",
+    "type": "Material",
+    "label": "magnetite",
+    "aliases": [
+     "Fe3O4"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0007",
+      "quote": "Magnetite (Fe3O4) precipitation was induced by the dropwise addition of ammonia solution",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:pso-k2-lactic-0-007-succinic-0-0023-citr",
+    "type": "Measurement",
+    "label": "PSO k2 lactic 0.007, succinic 0.0023, citric 0.0019 g/mg·min",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "0.007 / 0.0023 / 0.0019",
+      "unit": "g/mg·min"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0059",
+      "quote": "The rate constants (k 2) were determined as 0.007, 0.0023, and 0.0019 g/mg·min for lactic, succinic, and citric acids, respectively.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:pso-fit-r2-0-99-for-all-acids",
+    "type": "Measurement",
+    "label": "PSO fit R2 > 0.99 for all acids",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "> 0.99",
+      "statistic": "R2"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0059",
+      "quote": "The experimental data for all acids exhibited an excellent fit with the PSO model (R 2 > 0.99)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:rl-between-2-3-106-and-2-8-103",
+    "type": "Measurement",
+    "label": "RL between 2.3 × 10–6 and 2.8 × 10–3",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "2.3 × 10–6 to 2.8 × 10–3"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0063",
+      "quote": "were between 2.3 × 10–6 and 2.8 × 10–3",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:capacity-retention-after-5-cycles-lactic",
+    "type": "Measurement",
+    "label": "capacity retention after 5 cycles: lactic 91.4%, succinic 87.8%, citric 84.2%",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "91.4 / 87.8 / 84.2",
+      "unit": "%"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0067",
+      "quote": "The capacity retention rates after the fifth cycle were found to be 87.8% for succinic acid and 84.2% for citric acid.",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0067",
+      "quote": "decreasing only slightly from its initial value to 91.4% by the end of the fifth cycle",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:temkin-r2-0-7580-897-on-mgo",
+    "type": "Measurement",
+    "label": "Temkin R2 0.758–0.897 on MGO",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "0.758–0.897",
+      "statistic": "R2"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0056",
+      "quote": "with correlation coefficients (R 2) ranging from 0.758 to 0.897 for the MGO-based adsorbent",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:lactic-acid-on-mgo-r2-0-826-reported-for",
+    "type": "Measurement",
+    "label": "lactic acid on MGO R2 = 0.826 (reported for both Freundlich p-0054 and Temkin p-0056)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "value": "0.826",
+      "statistic": "R2"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0054",
+      "quote": "the high correlation coefficient (R 2 = 0.826) and the 1/n value of 0.01",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0056",
+      "quote": "The high correlation with the Temkin model (R 2 = 0.826 for lactic acid)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Measurement:below-3-g-l-lactic-acid-ac-adsorbs-sligh",
+    "type": "Measurement",
+    "label": "below ~3 g/L lactic acid, AC adsorbs slightly more than MGO",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0051",
+      "quote": "the activated carbon-based adsorbent exhibits a slightly higher adsorption capacity than the MGO composite",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Conclusion:pso-fit-confirms-chemisorption-controlle",
+    "type": "Conclusion",
+    "label": "PSO fit confirms chemisorption-controlled adsorption (paper A)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0001",
+      "quote": "confirming a chemisorption-controlled mechanism for all investigated acids",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Conclusion:adsorption-governed-by-surface-chemistry",
+    "type": "Conclusion",
+    "label": "adsorption governed by surface chemistry/pore accessibility rather than surface area alone (paper A)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0040",
+      "quote": "which directly underscores that surface area is not the primary determinant of efficiency in these systems",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Conclusion:mgo-outperforms-magnetic-ac-across-the-e",
+    "type": "Conclusion",
+    "label": "MGO outperforms magnetic AC across the entire concentration range (paper A)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0053",
+      "quote": "This confirms the superior performance of the MGO composite across the entire concentration range.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Material:diethylamine",
+    "type": "Material",
+    "label": "diethylamine",
+    "aliases": [
+     "DEA"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0008",
+      "quote": "Diethylamine was introduced to promote nanoparticle anchoring",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Conclusion:k2-decreases-with-molecular-complexity-d",
+    "type": "Conclusion",
+    "label": "k2 decreases with molecular complexity due to steric hindrance (paper A)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0060",
+      "quote": "demonstrates a clear inverse correlation between molecular complexity and kinetic performance",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Conclusion:langmuir-agreement-suggests-predominantl",
+    "type": "Conclusion",
+    "label": "Langmuir agreement suggests predominantly monolayer adsorption on homogeneous sites (paper A)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0069",
+      "quote": "suggesting predominantly monolayer adsorption on a homogeneous distribution of active sites",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Material:lactic-acid",
+    "type": "Material",
+    "label": "lactic acid",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "class": "monocarboxylic"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0006",
+      "quote": "lactic acid (monocarboxylic), succinic acid (dicarboxylic), and citric acid (tricarboxylic)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Material:succinic-acid",
+    "type": "Material",
+    "label": "succinic acid",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "class": "dicarboxylic"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0006",
+      "quote": "succinic acid (dicarboxylic)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Material:citric-acid",
+    "type": "Material",
+    "label": "citric acid",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "class": "tricarboxylic"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0006",
+      "quote": "citric acid (tricarboxylic)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Material:sodium-hydroxide",
+    "type": "Material",
+    "label": "sodium hydroxide",
+    "aliases": [
+     "NaOH"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-A",
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0015",
+      "quote": "The spent adsorbent was then treated with 0.1 M NaOH as a desorption agent",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0016",
+      "quote": "the pH of the medium was adjusted to 9 by adding sodium hydroxide solution",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-A:Paper",
+    "type": "Paper",
+    "label": "Comparative Adsorption of Mono‑, Di‑, and Tricarboxylic Acids on Magnetically Modified Graphene Oxide: Influence of Molecular Structure on Adsorption Behavior",
+    "aliases": [
+     "10.1021/acsomega.6c05759"
+    ],
+    "scope": "paper",
+    "sources": [
+     "paper-A"
+    ],
+    "attributes": {
+     "paper-A": {
+      "doi": "10.1021/acsomega.6c05759",
+      "license": "CC-BY-4.0",
+      "sha256": "4bc6d39e623a580fe9e1a0ba1b3da1a719da65cf511b2182858908501409b525"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "corpus-manifest",
+      "quote": "doi=10.1021/acsomega.6c05759",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Researcher:alma-khassenovna-zhakina",
+    "type": "Researcher",
+    "label": "Alma Khassenovna Zhakina",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "author_position": 1
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Alma Khassenovna Zhakina",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Researcher:oxana-vasilievna-arnt",
+    "type": "Researcher",
+    "label": "Oxana Vasilievna Arnt",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "author_position": 2
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Oxana Vasilievna Arnt",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Researcher:yevgeniy-petrovich-vassilets",
+    "type": "Researcher",
+    "label": "Yevgeniy Petrovich Vassilets",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "author_position": 3
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Yevgeniy Petrovich Vassilets",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Researcher:almat-maulenuly-zhakin",
+    "type": "Researcher",
+    "label": "Almat Maulenuly Zhakin",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "author_position": 4
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Almat Maulenuly Zhakin",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Researcher:zainulla-muldakhmetov",
+    "type": "Researcher",
+    "label": "Zainulla Muldakhmetov",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "author_position": 5
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Zainulla Muldakhmetov",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "type": "Sample",
+    "label": "humic acid/reduced graphene oxide composite",
+    "aliases": [
+     "HA-rGO",
+     "HA-rGO composite",
+     "HA–rGO"
+    ],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "HA:rGO mass ratio": "80:20"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0001",
+      "quote": "A composite based on humic acid (HA) and reduced graphene oxide (rGO) was synthesized",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Sample:initial-humic-acid-sample-shubarkol-coal",
+    "type": "Sample",
+    "label": "initial humic acid sample (Shubarkol coal)",
+    "aliases": [
+     "initial HA",
+     "initial humic acid"
+    ],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0012",
+      "quote": "Humic acid, isolated from oxidized coal from the Shubarkol deposit (Karaganda, Kazakhstan)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:thermogravimetric-analysis",
+    "type": "Method",
+    "label": "thermogravimetric analysis",
+    "aliases": [
+     "TG/DTA",
+     "TGA"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0023",
+      "quote": "examined by simultaneous thermogravimetric and differential thermal analysis using an STA 6000 instrument",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:scanning-electron-microscopy",
+    "type": "Method",
+    "label": "scanning electron microscopy",
+    "aliases": [
+     "SEM"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0025",
+      "quote": "Surface morphology was studied by scanning electron microscopy using a MIRA 3 microscope",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:energy-dispersive-x-ray-spectroscopy",
+    "type": "Method",
+    "label": "energy-dispersive X-ray spectroscopy",
+    "aliases": [
+     "EDS"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0027",
+      "quote": "energy-dispersive X-ray spectroscopy (EDS) (TESCAN, Brno, Czech Republic)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:functional-group-titrimetric-analysis",
+    "type": "Method",
+    "label": "functional-group titrimetric analysis",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0020",
+      "quote": "The content of oxygen-containing functional groups was determined by selective chemical binding followed by titrimetric analysis.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:pseudo-first-order-kinetic-model",
+    "type": "Method",
+    "label": "pseudo-first-order kinetic model",
+    "aliases": [
+     "pseudo-first-order model"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0031",
+      "quote": "The kinetic data were analyzed using the pseudo-first-order and pseudo-second-order models.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Task:phenol-adsorption-from-aqueous-solution",
+    "type": "Task",
+    "label": "phenol adsorption from aqueous solution (preliminary functional test)",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0028",
+      "quote": "Phenol adsorption was evaluated as a preliminary functional test of the synthesized HA-rGO composite.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Sample:rgo-sample-sigma-aldrich",
+    "type": "Sample",
+    "label": "rGO sample (Sigma-Aldrich)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0013",
+      "quote": "Reduced graphene oxide from Sigma-Aldrich (St. Louis, MO, USA) was used as the modifying component.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Metric:atomic-oxygen-to-carbon-ratio",
+    "type": "Metric",
+    "label": "atomic oxygen-to-carbon ratio",
+    "aliases": [
+     "O/C"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0019",
+      "quote": "the atomic oxygen-to-carbon ratio (O/C) was calculated from elemental-analysis data",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Metric:residual-mass-at-1000-c",
+    "type": "Metric",
+    "label": "residual mass at 1000 °C",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0058",
+      "quote": "The most pronounced differences between the samples are observed in the residual mass at 1000 °C.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Mechanism:non-covalent-interactions",
+    "type": "Mechanism",
+    "label": "non-covalent interactions",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0081",
+      "quote": "This suggests that composite formation occurs mainly through non-covalent interactions between the components.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Condition:static-batch-25-c-phenol-0-515-mg-dm3-0",
+    "type": "Condition",
+    "label": "static batch, 25 °C, phenol 0.5–15 mg/dm3, 0.1 g per 100 mL",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "temperature": "25 °C",
+      "phenol_range": "0.5–15 mg/dm3",
+      "dose": "0.1 g per 100 mL"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0028",
+      "quote": "The experiments were performed under static batch conditions at 25 °C using freshly prepared aqueous phenol solutions with initial concentrations ranging from 0.5 to 15 mg/dm3.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Condition:kinetics-at-initial-phenol-7-5-mg-dm3",
+    "type": "Condition",
+    "label": "kinetics at initial phenol 7.5 mg/dm3",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "C0": "7.5 mg/dm3"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0031",
+      "quote": "Kinetic experiments were performed at an initial phenol concentration of 7.5 mg/dm3.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:carbon-content-ha-47-34-ha-rgo-55-61-wt",
+    "type": "Measurement",
+    "label": "carbon content HA 47.34 → HA-rGO 55.61 wt.%",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "47.34 → 55.61",
+      "unit": "wt.%"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0001",
+      "quote": "The incorporation of rGO increased the carbon content from 47.34 to 55.61 wt.%",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Material:humic-acid",
+    "type": "Material",
+    "label": "humic acid",
+    "aliases": [
+     "HA",
+     "humic acids"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0002",
+      "quote": "Humic acids (HA) are natural high-molecular-weight organic compounds",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:oxygen-content-ha-48-31-ha-rgo-40-79-wt",
+    "type": "Measurement",
+    "label": "oxygen content HA 48.31 → HA-rGO 40.79 wt.%",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "48.31 → 40.79",
+      "unit": "wt.%"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0001",
+      "quote": "decreased the oxygen content from 48.31 to 40.79 wt.%",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+    "type": "Measurement",
+    "label": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "5.00 → 5.47",
+      "unit": "mmol/g"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0001",
+      "quote": "the total content of carboxyl and phenolic hydroxyl groups increased from 5.00 to 5.47 mmol/g",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m",
+    "type": "Measurement",
+    "label": "O/C ratio: HA 0.77, rGO 0.36, HA-rGO 0.73 (mechanical mixture expected ~0.66)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "0.77 / 0.36 / 0.73 / 0.66 (calc.)"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0036",
+      "quote": "The calculated atomic O/C ratio for the initial humic acid is 0.77",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0037",
+      "quote": "For the HA-rGO composite, the O/C ratio decreases to 0.73.",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0036",
+      "quote": "this value is expectedly lower (0.36)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:residual-mass-at-1000-c-ha-59-21-ha-rgo",
+    "type": "Measurement",
+    "label": "residual mass at 1000 °C: HA 59.21%, HA-rGO 70.03%, rGO 84.23%",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "59.21 / 70.03 / 84.23",
+      "unit": "%"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0058",
+      "quote": "The residual mass of the initial humic acid is 59.21%, whereas that of the HA-rGO composite increases to 70.03%.",
+      "match": "exact"
+     },
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0058",
+      "quote": "whose residual mass reaches 84.23%",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
+    "type": "Measurement",
+    "label": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "7.10 / 6.02 / 4.65",
+      "unit": "mg/g",
+      "model": "Langmuir"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0094",
+      "quote": "The maximum adsorption capacity calculated according to the Langmuir model was 7.10 mg/g for HA–rGO, compared with 6.02 mg/g for rGO and 4.65 mg/g for HA.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:hargo-isotherm-fit-langmuir-r2-0-9804-vs",
+    "type": "Measurement",
+    "label": "HA–rGO isotherm fit: Langmuir R2 0.9804 vs Freundlich 0.9515",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "0.9804 / 0.9515",
+      "statistic": "R2"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0094",
+      "quote": "phenol adsorption on the HA–rGO composite was better described by the Langmuir model, with R2 = 0.9804, whereas the Freundlich model gave R2 = 0.9515",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:ha-isotherm-fit-freundlich-r2-0-9092-vs",
+    "type": "Measurement",
+    "label": "HA isotherm fit: Freundlich R2 0.9092 vs Langmuir 0.8502",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "0.9092 / 0.8502",
+      "statistic": "R2"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0092",
+      "quote": "The adsorption of phenol on HA was better described by the Freundlich model, for which the coefficient of determination was R2 = 0.9092, compared with R2 = 0.8502 for the Langmuir model.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:rgo-isotherm-fit-langmuir-r2-0-9266-vs-f",
+    "type": "Measurement",
+    "label": "rGO isotherm fit: Langmuir R2 0.9266 vs Freundlich 0.9299 (no clear winner)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "0.9266 / 0.9299",
+      "statistic": "R2"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0093",
+      "quote": "with R2 values of 0.9266 and 0.9299, respectively",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:hargo-kinetics-pso-r2-0-9939-vs-pfo-0-97",
+    "type": "Measurement",
+    "label": "HA–rGO kinetics: PSO R2 0.9939 vs PFO 0.9727",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "0.9939 / 0.9727",
+      "statistic": "R2"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0098",
+      "quote": "The pseudo-second-order model also showed better agreement for the HA–rGO composite, with an R2 value of 0.9939 compared with 0.9727 for the pseudo-first-order model.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Measurement:rgo-kinetics-pfo-r2-0-9973-vs-pso-0-9968",
+    "type": "Measurement",
+    "label": "rGO kinetics: PFO R2 0.9973 vs PSO 0.9968",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "value": "0.9973 / 0.9968",
+      "statistic": "R2"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0099",
+      "quote": "The pseudo-first-order model exhibited a marginally higher R2 value of 0.9973 compared with 0.9968 for the pseudo-second-order model.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Material:reduced-graphene-oxide",
+    "type": "Material",
+    "label": "reduced graphene oxide",
+    "aliases": [
+     "rGO"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0004",
+      "quote": "reduced graphene oxide (rGO) is of particular interest because of its high degree of aromatization",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
+    "type": "Conclusion",
+    "label": "HA–rGO composite forms mainly through non-covalent interactions (paper B)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0087",
+      "quote": "formation of the HA-rGO composite occurs mainly through a set of non-covalent interactions",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Conclusion:rgo-incorporation-improves-thermal-stabi",
+    "type": "Conclusion",
+    "label": "rGO incorporation improves thermal stability of humic acid (paper B)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0061",
+      "quote": "the incorporation of reduced graphene oxide substantially improves the thermal stability of humic acid",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Conclusion:pso-pfo-fits-are-empirical-and-do-not-es",
+    "type": "Conclusion",
+    "label": "PSO/PFO fits are empirical and do not establish the chemical nature of adsorption (paper B)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0100",
+      "quote": "do not, by themselves, establish the chemical nature of adsorption or identify a unique rate-controlling mechanism",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Conclusion:langmuir-fit-is-a-mathematical-descripti",
+    "type": "Conclusion",
+    "label": "Langmuir fit is a mathematical description, not proof of homogeneous monolayer adsorption (paper B)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0095",
+      "quote": "the model fit should be regarded primarily as a mathematical description of the equilibrium data and not as direct proof of a strictly homogeneous monolayer adsorption mechanism",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
+    "type": "Conclusion",
+    "label": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0104",
+      "quote": "Hydrogen bonding and π–π interactions are therefore considered plausible contributions rather than directly demonstrated elementary mechanisms.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Conclusion:results-are-a-preliminary-demonstration",
+    "type": "Conclusion",
+    "label": "results are a preliminary demonstration, not evidence of superiority over existing adsorbents (paper B)",
+    "aliases": [],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0103",
+      "quote": "the present results should be regarded as a preliminary demonstration of enhanced phenol interaction rather than evidence of superiority over existing adsorbents",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Material:phenol",
+    "type": "Material",
+    "label": "phenol",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0010",
+      "quote": "its adsorption behavior toward phenol as a model aromatic pollutant",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:ultrasonic-treatment",
+    "type": "Method",
+    "label": "ultrasonic treatment",
+    "aliases": [
+     "ultrasound-assisted synthesis"
+    ],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0015",
+      "quote": "The composite was synthesized by ultrasonic treatment in an aqueous medium.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "C:Method:elemental-analysis",
+    "type": "Method",
+    "label": "elemental analysis",
+    "aliases": [],
+    "scope": "concept",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {},
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0018",
+      "quote": "The elemental composition of the samples was determined using an Elementar Unicube elemental analyzer",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "paper-B:Paper",
+    "type": "Paper",
+    "label": "Structural, Thermal, and Phenol Adsorption Properties of a Humic Acid/Reduced Graphene Oxide Composite",
+    "aliases": [
+     "10.3390/ma19163371"
+    ],
+    "scope": "paper",
+    "sources": [
+     "paper-B"
+    ],
+    "attributes": {
+     "paper-B": {
+      "doi": "10.3390/ma19163371",
+      "license": "CC-BY-4.0",
+      "sha256": "9d3e64cc65a754352d60b7ad6c3cb7d1bc50554697b9242bf6c4f49e7cf96fe3"
+     }
+    },
+    "definitions": {},
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "corpus-manifest",
+      "quote": "doi=10.3390/ma19163371",
+      "match": "metadata"
+     }
+    ]
+   }
+  ],
+  "edges": [
+   {
+    "id": "R:c615684295",
+    "source": "paper-A:Researcher:ebubekir-ekinci",
+    "predicate": "AUTHOR_OF",
+    "target": "paper-A:Paper",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "metadata",
+    "polarity": "positive",
+    "needs_review": null,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Ebubekir Ekinci",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "R:651b84bb71",
+    "source": "paper-A:Researcher:hasan-uslu",
+    "predicate": "AUTHOR_OF",
+    "target": "paper-A:Paper",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "metadata",
+    "polarity": "positive",
+    "needs_review": null,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Hasan Uslu",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "R:fc8338a370",
+    "source": "paper-A:Researcher:sahika-sena-bayazit",
+    "predicate": "AUTHOR_OF",
+    "target": "paper-A:Paper",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "metadata",
+    "polarity": "positive",
+    "needs_review": null,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Şahika Sena Bayazit",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "R:92488b76ab",
+    "source": "paper-A:Researcher:mehmet-yetisen",
+    "predicate": "AUTHOR_OF",
+    "target": "paper-A:Paper",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "metadata",
+    "polarity": "positive",
+    "needs_review": null,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Mehmet Yetişen",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "R:0bb864d6f5",
+    "source": "paper-B:Researcher:alma-khassenovna-zhakina",
+    "predicate": "AUTHOR_OF",
+    "target": "paper-B:Paper",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "metadata",
+    "polarity": "positive",
+    "needs_review": null,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Alma Khassenovna Zhakina",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "R:2fb60bf061",
+    "source": "paper-B:Researcher:oxana-vasilievna-arnt",
+    "predicate": "AUTHOR_OF",
+    "target": "paper-B:Paper",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "metadata",
+    "polarity": "positive",
+    "needs_review": null,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Oxana Vasilievna Arnt",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "R:18c7e15f48",
+    "source": "paper-B:Researcher:yevgeniy-petrovich-vassilets",
+    "predicate": "AUTHOR_OF",
+    "target": "paper-B:Paper",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "metadata",
+    "polarity": "positive",
+    "needs_review": null,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Yevgeniy Petrovich Vassilets",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "R:a3d1b796c2",
+    "source": "paper-B:Researcher:almat-maulenuly-zhakin",
+    "predicate": "AUTHOR_OF",
+    "target": "paper-B:Paper",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "metadata",
+    "polarity": "positive",
+    "needs_review": null,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Almat Maulenuly Zhakin",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "R:fb4480be8a",
+    "source": "paper-B:Researcher:zainulla-muldakhmetov",
+    "predicate": "AUTHOR_OF",
+    "target": "paper-B:Paper",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "metadata",
+    "polarity": "positive",
+    "needs_review": null,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "corpus-manifest",
+      "quote": "Zainulla Muldakhmetov",
+      "match": "metadata"
+     }
+    ]
+   },
+   {
+    "id": "R:e77c72cd63",
+    "source": "paper-A:Paper",
+    "predicate": "STUDIES",
+    "target": "C:Task:recovery-of-organic-acids-from-aqueous-s",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0001",
+      "quote": "This study investigates the efficient adsorption and recovery of biotechnologically significant organic acids",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:63a570417f",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "PREPARED_FROM",
+    "target": "C:Material:graphene-oxide",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0007",
+      "quote": "Briefly, 0.5 g of GO was dispersed in 60 mL of deionized water",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:678d9f4408",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "PREPARED_FROM",
+    "target": "C:Material:magnetite",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0004",
+      "quote": "magnetic modification using Fe3O4 nanoparticles to produce magnetically modified graphene oxide (MGO)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:dca1c581b1",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "PREPARED_FROM",
+    "target": "C:Material:diethylamine",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0008",
+      "quote": "the wet precipitate was treated with a mixture of acetic acid (22.6 mL), methanol (22.6 mL), and diethylamine (9.56 mL)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:354e0123f8",
+    "source": "paper-A:Sample:magnetically-modified-activated-carbon-r",
+    "predicate": "PREPARED_FROM",
+    "target": "C:Material:activated-carbon",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0008",
+      "quote": "The same protocol was applied to AC to prepare the AC-based magnetic reference.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:40bf8d48a6",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "USES",
+    "target": "C:Method:chemical-coprecipitation",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0007",
+      "quote": "The MGO composite was synthesized via a modified chemical coprecipitation route.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:9e3864d7fc",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "CHARACTERIZED_BY",
+    "target": "C:Method:x-ray-diffraction",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0009",
+      "quote": "The crystalline structure and functional groups of MGO were identified using X-ray diffraction",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:099eca213f",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "CHARACTERIZED_BY",
+    "target": "C:Method:fourier-transform-infrared-spectroscopy",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0009",
+      "quote": "Fourier transform infrared spectroscopy (FTIR; Bruker VERTEX 70, Germany), respectively",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:a93d96d75b",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "CHARACTERIZED_BY",
+    "target": "C:Method:brunaueremmettteller-method",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0001",
+      "quote": "Brunauer–Emmett–Teller (BET) analysis",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:055f28f960",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "TESTED_ON",
+    "target": "C:Material:lactic-acid",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0010",
+      "quote": "All adsorption experiments for lactic, succinic, and citric acids were conducted using a standardized protocol",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:2ab6235da3",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "TESTED_ON",
+    "target": "C:Material:succinic-acid",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0010",
+      "quote": "All adsorption experiments for lactic, succinic, and citric acids were conducted using a standardized protocol",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:946ec678d8",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "TESTED_ON",
+    "target": "C:Material:citric-acid",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0010",
+      "quote": "All adsorption experiments for lactic, succinic, and citric acids were conducted using a standardized protocol",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:9e21786776",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "HAS_RESULT",
+    "target": "paper-A:Measurement:mgo-specific-surface-area-37-94-m2-g",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0039",
+      "quote": "the specific surface area of the MGO was determined to be 37.94 m2/g",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:c2528ab39d",
+    "source": "paper-A:Measurement:mgo-specific-surface-area-37-94-m2-g",
+    "predicate": "MEASURED_BY",
+    "target": "C:Method:brunaueremmettteller-method",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0039",
+      "quote": "According to BET analysis, the specific surface area of the MGO was determined to be 37.94 m2/g",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:8eff3a8d6d",
+    "source": "paper-A:Measurement:mgo-specific-surface-area-37-94-m2-g",
+    "predicate": "MEASURED_BY",
+    "target": "C:Metric:specific-surface-area",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0039",
+      "quote": "the specific surface area of the MGO was determined to be 37.94 m2/g",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:ff9d0623c5",
+    "source": "paper-A:Sample:magnetically-modified-activated-carbon-r",
+    "predicate": "HAS_RESULT",
+    "target": "paper-A:Measurement:magnetic-ac-specific-surface-area-40-38",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0040",
+      "quote": "parallel textural characterization was conducted on a magnetic activated carbon (AC) reference, which exhibited a slightly higher surface area (40.38 m2/g)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:ade13a0d77",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "HAS_RESULT",
+    "target": "paper-A:Measurement:mgo-average-pore-radius-4-12-nm",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0039",
+      "quote": "the average pore radius was found to be 4.12 nm",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:84caa7e3dc",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "HAS_RESULT",
+    "target": "paper-A:Measurement:mgo-qmax-for-lactic-acid-334-45-mg-g",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0055",
+      "quote": "The maximum adsorption capacity of MGO for lactic acid (334.45 mg/g) is highly competitive",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:bbcf1f2a31",
+    "source": "paper-A:Measurement:mgo-qmax-for-lactic-acid-334-45-mg-g",
+    "predicate": "MEASURED_BY",
+    "target": "C:Metric:maximum-adsorption-capacity",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0001",
+      "quote": "Lactic acid exhibited the highest maximum adsorption capacity (q max = 334.45 mg/g)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:0c004f6d90",
+    "source": "paper-A:Measurement:mgo-qmax-for-lactic-acid-334-45-mg-g",
+    "predicate": "UNDER_CONDITION",
+    "target": "paper-A:Condition:batch-adsorption-at-25-c-10-mg-adsorbent",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0010",
+      "quote": "The experiments were performed at 25 °C with an agitation speed of 120 rpm, utilizing 10 mg of adsorbent in a 20 mL solution volume.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:6b4e0aa54a",
+    "source": "paper-A:Sample:magnetically-modified-activated-carbon-r",
+    "predicate": "HAS_RESULT",
+    "target": "paper-A:Measurement:magnetic-ac-qmax-for-lactic-acid-74-6-mg",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0040",
+      "quote": "its maximum adsorption capacity for lactic acid was substantially lower (q max = 74.6 mg/g)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:2448e5d304",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "HAS_RESULT",
+    "target": "paper-A:Measurement:mean-qe-succinic-acid-mgo-188-6-vs-ac-67",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0045",
+      "quote": "the overall mean adsorption capacity (Q e) was determined as 188.6 mg/g for MGO-based and 67.8 mg/g for AC-based adsorbents",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:059ba82e69",
+    "source": "paper-A:Measurement:mean-qe-succinic-acid-mgo-188-6-vs-ac-67",
+    "predicate": "MEASURED_BY",
+    "target": "C:Method:two-sample-t-test",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0045",
+      "quote": "a two-sample t-test was conducted on the data set presented in Table",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:a734792f57",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "HAS_RESULT",
+    "target": "paper-A:Measurement:mean-qe-citric-acid-mgo-213-vs-ac-73-7-m",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0048",
+      "quote": "the overall mean adsorption capacity was determined to be 213 mg/g for MGO-based and 73.7 mg/g for AC-based adsorbents",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:767c404946",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "OUTPERFORMS",
+    "target": "paper-A:Sample:magnetically-modified-activated-carbon-r",
+    "source_id": "paper-A",
+    "conditions": {
+     "adsorbate": "succinic acid",
+     "criterion": "mean Qe",
+     "range": "10–100 g/L"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0045",
+      "quote": "These results clearly establish that the MGO composite provides a vastly superior affinity and saturation capacity for succinic acid recovery compared to the AC reference.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:430f6ca25c",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "OUTPERFORMS",
+    "target": "paper-A:Sample:magnetically-modified-activated-carbon-r",
+    "source_id": "paper-A",
+    "conditions": {
+     "adsorbate": "lactic acid",
+     "criterion": "qmax (Langmuir)"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0040",
+      "quote": "its maximum adsorption capacity for lactic acid was substantially lower (q max = 74.6 mg/g)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:c7a068a0e3",
+    "source": "paper-A:Sample:magnetically-modified-activated-carbon-r",
+    "predicate": "OUTPERFORMS",
+    "target": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "source_id": "paper-A",
+    "conditions": {
+     "adsorbate": "lactic acid",
+     "range": "below approximately 3 g/L",
+     "criterion": "adsorption capacity"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0051",
+      "quote": "specifically below approximately 3 g/L, the activated carbon-based adsorbent exhibits a slightly higher adsorption capacity than the MGO composite",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:4920adda60",
+    "source": "paper-A:Measurement:below-3-g-l-lactic-acid-ac-adsorbs-sligh",
+    "predicate": "CONTRADICTS",
+    "target": "paper-A:Conclusion:mgo-outperforms-magnetic-ac-across-the-e",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": "within-paper tension: p-0053 says 'across the entire concentration range'",
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0051",
+      "quote": "the activated carbon-based adsorbent exhibits a slightly higher adsorption capacity than the MGO composite",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:0959aec3c4",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "HAS_RESULT",
+    "target": "paper-A:Measurement:below-3-g-l-lactic-acid-ac-adsorbs-sligh",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0051",
+      "quote": "the activated carbon-based adsorbent exhibits a slightly higher adsorption capacity than the MGO composite",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:ea38705f6c",
+    "source": "C:Method:pseudo-second-order-kinetic-model",
+    "predicate": "FITS",
+    "target": "paper-A:Measurement:pso-fit-r2-0-99-for-all-acids",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0059",
+      "quote": "The experimental data for all acids exhibited an excellent fit with the PSO model (R 2 > 0.99)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:f4c2774b5a",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "HAS_RESULT",
+    "target": "paper-A:Measurement:pso-fit-r2-0-99-for-all-acids",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": true,
+    "flags": [
+     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0059",
+      "quote": "The experimental data for all acids exhibited an excellent fit with the PSO model (R 2 > 0.99)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:cf02fa110f",
+    "source": "paper-A:Measurement:pso-fit-r2-0-99-for-all-acids",
+    "predicate": "SUPPORTS",
+    "target": "paper-A:Conclusion:pso-fit-confirms-chemisorption-controlle",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0059",
+      "quote": "This confirms that the adsorption rate is governed by chemical interactions (chemisorption).",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:c0ff76634b",
+    "source": "paper-A:Conclusion:pso-fit-confirms-chemisorption-controlle",
+    "predicate": "INVOLVES",
+    "target": "C:Mechanism:chemisorption",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0001",
+      "quote": "confirming a chemisorption-controlled mechanism for all investigated acids",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:40dcb0566e",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "HAS_RESULT",
+    "target": "paper-A:Measurement:pso-k2-lactic-0-007-succinic-0-0023-citr",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": true,
+    "flags": [
+     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0059",
+      "quote": "The rate constants (k 2) were determined as 0.007, 0.0023, and 0.0019 g/mg·min",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:7bd20ae92a",
+    "source": "paper-A:Measurement:pso-k2-lactic-0-007-succinic-0-0023-citr",
+    "predicate": "MEASURED_BY",
+    "target": "C:Metric:pseudo-second-order-rate-constant",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0059",
+      "quote": "The rate constants (k 2) were determined as 0.007, 0.0023, and 0.0019 g/mg·min",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:ee53d5a025",
+    "source": "paper-A:Measurement:pso-k2-lactic-0-007-succinic-0-0023-citr",
+    "predicate": "SUPPORTS",
+    "target": "paper-A:Conclusion:k2-decreases-with-molecular-complexity-d",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0060",
+      "quote": "A comparative analysis of the rate constants decreasing from lactic (0.007 g/mg·min) and succinic (0.0023 g/mg·min) to citric acid (0.0019 g/mg·min)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:1a9ac04a6a",
+    "source": "paper-A:Conclusion:k2-decreases-with-molecular-complexity-d",
+    "predicate": "INVOLVES",
+    "target": "C:Mechanism:steric-hindrance",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0060",
+      "quote": "which causes significant steric hindrance during diffusion into the 4.12 nm mesoporous framework of the MGO",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:64b56e7276",
+    "source": "C:Method:langmuir-isotherm-model",
+    "predicate": "FITS",
+    "target": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "source_id": "paper-A",
+    "conditions": {
+     "adsorbates": "succinic, citric, lactic acid"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0046",
+      "quote": "Both AC- and graphene oxide-based samples exhibit good agreement with the Langmuir isotherm model.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:bc20df6309",
+    "source": "C:Method:langmuir-isotherm-model",
+    "predicate": "FITS",
+    "target": "paper-A:Sample:magnetically-modified-activated-carbon-r",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0046",
+      "quote": "Both AC- and graphene oxide-based samples exhibit good agreement with the Langmuir isotherm model.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:9233d01c87",
+    "source": "C:Method:temkin-isotherm-model",
+    "predicate": "FITS",
+    "target": "paper-A:Measurement:temkin-r2-0-7580-897-on-mgo",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0056",
+      "quote": "the Temkin model provided a satisfactory fit for all investigated organic acids",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:240330ce00",
+    "source": "C:Method:freundlich-isotherm-model",
+    "predicate": "FITS",
+    "target": "paper-A:Measurement:lactic-acid-on-mgo-r2-0-826-reported-for",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": "same R2 0.826 also attributed to Temkin in p-0056",
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0054",
+      "quote": "Specifically, for lactic acid on MGO, the high correlation coefficient (R 2 = 0.826)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:478254844c",
+    "source": "C:Method:temkin-isotherm-model",
+    "predicate": "FITS",
+    "target": "paper-A:Measurement:lactic-acid-on-mgo-r2-0-826-reported-for",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": "same R2 0.826 also attributed to Freundlich in p-0054",
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0056",
+      "quote": "The high correlation with the Temkin model (R 2 = 0.826 for lactic acid)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:ae05f8f9da",
+    "source": "paper-A:Measurement:rl-between-2-3-106-and-2-8-103",
+    "predicate": "MEASURED_BY",
+    "target": "C:Metric:dimensionless-separation-factor",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0063",
+      "quote": "the dimensionless separation factor (R L) was calculated for each acid–adsorbent system",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:47f2658b4f",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "HAS_RESULT",
+    "target": "paper-A:Measurement:rl-between-2-3-106-and-2-8-103",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": true,
+    "flags": [
+     "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0063",
+      "quote": "R L values for all investigated acids on both adsorbents across the studied concentration range (10–100 g/L) were between 2.3 × 10–6 and 2.8 × 10–3",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:a978919823",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "HAS_RESULT",
+    "target": "paper-A:Measurement:capacity-retention-after-5-cycles-lactic",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0067",
+      "quote": "The capacity retention rates after the fifth cycle were found to be 87.8% for succinic acid and 84.2% for citric acid.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:e570e0b686",
+    "source": "paper-A:Measurement:capacity-retention-after-5-cycles-lactic",
+    "predicate": "MEASURED_BY",
+    "target": "C:Metric:capacity-retention-rate",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0015",
+      "quote": "The capacity retention rate was calculated by comparing the q e of each cycle to the initial adsorption capacity.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:665966f364",
+    "source": "paper-A:Measurement:mgo-qmax-for-lactic-acid-334-45-mg-g",
+    "predicate": "ATTRIBUTED_TO",
+    "target": "C:Mechanism:hydrogen-bonding",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "hedged",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0065",
+      "quote": "which may facilitate supplementary hydrogen bonding interactions with the oxygen-functionalized graphene oxide surface",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:44b16954f5",
+    "source": "paper-A:Measurement:mgo-qmax-for-lactic-acid-334-45-mg-g",
+    "predicate": "SUPPORTS",
+    "target": "paper-A:Conclusion:adsorption-governed-by-surface-chemistry",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0040",
+      "quote": "its exceptional adsorption capacity (q max = 334.45 mg/g for lactic acid) confirms that the adsorption performance is governed by the synergistic effect of pore accessibility and surface chemistry rather than surface area alone",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:e14fb1b98d",
+    "source": "paper-A:Measurement:magnetic-ac-qmax-for-lactic-acid-74-6-mg",
+    "predicate": "SUPPORTS",
+    "target": "paper-A:Conclusion:adsorption-governed-by-surface-chemistry",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0040",
+      "quote": "which directly underscores that surface area is not the primary determinant of efficiency in these systems",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:b113e63e89",
+    "source": "C:Method:langmuir-isotherm-model",
+    "predicate": "SUPPORTS",
+    "target": "paper-A:Conclusion:langmuir-agreement-suggests-predominantl",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "hedged",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0069",
+      "quote": "While the Langmuir model demonstrated excellent agreement (R 2 > 0.95), suggesting predominantly monolayer adsorption on a homogeneous distribution of active sites",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:4469eea123",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "INVOLVES",
+    "target": "C:Mechanism:pipi-interactions",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0041",
+      "quote": "which facilitate specific hydrogen bonding and π–π interactions that are absent in the purely physical framework of the AC reference",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:f6b5a17c10",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "INVOLVES",
+    "target": "C:Mechanism:hydrogen-bonding",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0041",
+      "quote": "which facilitate specific hydrogen bonding and π–π interactions that are absent in the purely physical framework of the AC reference",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:dbac516b91",
+    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
+    "predicate": "COMPARED_WITH",
+    "target": "C:Material:activated-carbon",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0038",
+      "quote": "Unlike activated carbon, graphene oxide possesses a layered graphitic framework rich in oxygen-containing functional groups",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:2fe738ca1d",
+    "source": "C:Material:lactic-acid",
+    "predicate": "COMPARED_WITH",
+    "target": "C:Material:citric-acid",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0060",
+      "quote": "The lowest k 2 value observed for citric acid (0.0019 g/mg·min) is quantitatively consistent with its bulky tricarboxylic structure",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:f533c77089",
+    "source": "paper-A:Measurement:capacity-retention-after-5-cycles-lactic",
+    "predicate": "UNDER_CONDITION",
+    "target": "paper-A:Condition:batch-adsorption-at-25-c-10-mg-adsorbent",
+    "source_id": "paper-A",
+    "conditions": {},
+    "strength": "indirect",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": "regeneration used NaOH desorption; adsorption step conditions assumed same protocol",
+    "evidence": [
+     {
+      "source_id": "paper-A",
+      "paragraph_id": "p-0015",
+      "quote": "The spent adsorbent was then treated with 0.1 M NaOH as a desorption agent",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:b2bd17500c",
+    "source": "paper-B:Paper",
+    "predicate": "STUDIES",
+    "target": "C:Task:phenol-adsorption-from-aqueous-solution",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0010",
+      "quote": "as well as to preliminarily evaluate its adsorption behavior toward phenol as a model aromatic pollutant",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:7d46f5ce75",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "PREPARED_FROM",
+    "target": "paper-B:Sample:initial-humic-acid-sample-shubarkol-coal",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0016",
+      "quote": "The HA:rGO mass ratio was 80:20.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:b2e05b45a0",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "PREPARED_FROM",
+    "target": "paper-B:Sample:rgo-sample-sigma-aldrich",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": true,
+    "flags": [
+     "object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0016",
+      "quote": "After stabilization of the system, reduced graphene oxide was introduced into the suspension.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:ce819ae3e6",
+    "source": "paper-B:Sample:initial-humic-acid-sample-shubarkol-coal",
+    "predicate": "INSTANCE_OF",
+    "target": "C:Material:humic-acid",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0012",
+      "quote": "Humic acid, isolated from oxidized coal from the Shubarkol deposit",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:434f81c1c2",
+    "source": "paper-B:Sample:rgo-sample-sigma-aldrich",
+    "predicate": "INSTANCE_OF",
+    "target": "C:Material:reduced-graphene-oxide",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0013",
+      "quote": "Reduced graphene oxide from Sigma-Aldrich (St. Louis, MO, USA) was used as the modifying component.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:05577cb609",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "USES",
+    "target": "C:Method:ultrasonic-treatment",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": true,
+    "flags": [
+     "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0015",
+      "quote": "The composite was synthesized by ultrasonic treatment in an aqueous medium.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:da17652332",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "PREPARED_FROM",
+    "target": "C:Material:sodium-hydroxide",
+    "source_id": "paper-B",
+    "conditions": {
+     "pH": "9"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0016",
+      "quote": "the pH of the medium was adjusted to 9 by adding sodium hydroxide solution",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:d864fd647c",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "CHARACTERIZED_BY",
+    "target": "C:Method:elemental-analysis",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": true,
+    "flags": [
+     "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0018",
+      "quote": "The elemental composition of the samples was determined using an Elementar Unicube elemental analyzer",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:2570df7e0b",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "CHARACTERIZED_BY",
+    "target": "C:Method:fourier-transform-infrared-spectroscopy",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0042",
+      "quote": "FTIR spectroscopy was used to study the functional composition of the initial humic acid, reduced graphene oxide, and synthesized HA-rGO composite.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:717daa1dab",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "CHARACTERIZED_BY",
+    "target": "C:Method:thermogravimetric-analysis",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0052",
+      "quote": "The thermal stability of the initial humic acid, reduced graphene oxide, and HA-rGO composite was investigated by thermogravimetric analysis",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:6f1bd19312",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "CHARACTERIZED_BY",
+    "target": "C:Method:scanning-electron-microscopy",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0062",
+      "quote": "The morphological features of the initial humic acid, reduced graphene oxide, and HA-rGO composite were studied by scanning electron microscopy.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:c1c6a7e8f4",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "CHARACTERIZED_BY",
+    "target": "C:Method:energy-dispersive-x-ray-spectroscopy",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0070",
+      "quote": "energy-dispersive X-ray spectroscopy with elemental mapping was performed",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:4e1ef8e791",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "CHARACTERIZED_BY",
+    "target": "C:Method:functional-group-titrimetric-analysis",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": true,
+    "flags": [
+     "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0020",
+      "quote": "The content of oxygen-containing functional groups was determined by selective chemical binding followed by titrimetric analysis.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:55a4fca013",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "HAS_RESULT",
+    "target": "paper-B:Measurement:carbon-content-ha-47-34-ha-rgo-55-61-wt",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0035",
+      "quote": "The carbon content increases to 55.61 wt.%, whereas the oxygen content decreases to 40.79 wt.%.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:2422d31bad",
+    "source": "paper-B:Measurement:carbon-content-ha-47-34-ha-rgo-55-61-wt",
+    "predicate": "MEASURED_BY",
+    "target": "C:Method:elemental-analysis",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0018",
+      "quote": "The contents of carbon, hydrogen, and oxygen were calculated according to the standard procedures provided by the instrument software.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:72db0db2f6",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "HAS_RESULT",
+    "target": "paper-B:Measurement:oxygen-content-ha-48-31-ha-rgo-40-79-wt",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0035",
+      "quote": "The carbon content increases to 55.61 wt.%, whereas the oxygen content decreases to 40.79 wt.%.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:5ec18c0e84",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "HAS_RESULT",
+    "target": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0038",
+      "quote": "the HA-rGO composite shows an increase in Σ(COOH + OH) to 5.47 mmol/g compared with the initial humic acid (5.00 mmol/g)",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:d02dc77849",
+    "source": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+    "predicate": "MEASURED_BY",
+    "target": "C:Method:functional-group-titrimetric-analysis",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0020",
+      "quote": "the total content of carboxyl and phenolic hydroxyl groups was determined by treating the samples with barium hydroxide solution",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:10d8b47ec4",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "HAS_RESULT",
+    "target": "paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0037",
+      "quote": "For the HA-rGO composite, the O/C ratio decreases to 0.73.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:7a50df097f",
+    "source": "paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m",
+    "predicate": "MEASURED_BY",
+    "target": "C:Metric:atomic-oxygen-to-carbon-ratio",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0036",
+      "quote": "The calculated atomic O/C ratio for the initial humic acid is 0.77",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:b3509e8b17",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "HAS_RESULT",
+    "target": "paper-B:Measurement:residual-mass-at-1000-c-ha-59-21-ha-rgo",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0058",
+      "quote": "The residual mass of the initial humic acid is 59.21%, whereas that of the HA-rGO composite increases to 70.03%.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:a2666fac04",
+    "source": "paper-B:Measurement:residual-mass-at-1000-c-ha-59-21-ha-rgo",
+    "predicate": "MEASURED_BY",
+    "target": "C:Method:thermogravimetric-analysis",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0061",
+      "quote": "an increase in residual mass at 1000 °C from 59.21 to 70.03%",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:f7cc3341c6",
+    "source": "paper-B:Measurement:residual-mass-at-1000-c-ha-59-21-ha-rgo",
+    "predicate": "MEASURED_BY",
+    "target": "C:Metric:residual-mass-at-1000-c",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0058",
+      "quote": "The residual mass of the initial humic acid is 59.21%",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:21f9429969",
+    "source": "paper-B:Measurement:residual-mass-at-1000-c-ha-59-21-ha-rgo",
+    "predicate": "SUPPORTS",
+    "target": "paper-B:Conclusion:rgo-incorporation-improves-thermal-stabi",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0061",
+      "quote": "as confirmed by lower mass losses at the main decomposition stages and an increase in residual mass at 1000 °C from 59.21 to 70.03%",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:a298178a6f",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "TESTED_ON",
+    "target": "C:Material:phenol",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0028",
+      "quote": "Phenol adsorption was evaluated as a preliminary functional test of the synthesized HA-rGO composite.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:b237c7e16a",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "HAS_RESULT",
+    "target": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0094",
+      "quote": "The maximum adsorption capacity calculated according to the Langmuir model was 7.10 mg/g for HA–rGO",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:23edaff13b",
+    "source": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
+    "predicate": "MEASURED_BY",
+    "target": "C:Metric:maximum-adsorption-capacity",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0094",
+      "quote": "The maximum adsorption capacity calculated according to the Langmuir model was 7.10 mg/g for HA–rGO",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:e40c01f0f8",
+    "source": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
+    "predicate": "UNDER_CONDITION",
+    "target": "paper-B:Condition:static-batch-25-c-phenol-0-515-mg-dm3-0",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0028",
+      "quote": "The experiments were performed under static batch conditions at 25 °C using freshly prepared aqueous phenol solutions with initial concentrations ranging from 0.5 to 15 mg/dm3.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:aa2d423e03",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "OUTPERFORMS",
+    "target": "paper-B:Sample:initial-humic-acid-sample-shubarkol-coal",
+    "source_id": "paper-B",
+    "conditions": {
+     "adsorbate": "phenol",
+     "criterion": "adsorption capacity",
+     "range": "0.5–15 mg/dm3"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0089",
+      "quote": "the HA-rGO composite exhibited a higher adsorption capacity toward phenol than the initial humic acid and rGO",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:7dbf743e4e",
+    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
+    "predicate": "OUTPERFORMS",
+    "target": "paper-B:Sample:rgo-sample-sigma-aldrich",
+    "source_id": "paper-B",
+    "conditions": {
+     "adsorbate": "phenol",
+     "criterion": "adsorption capacity",
+     "range": "0.5–15 mg/dm3"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": true,
+    "flags": [
+     "object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0089",
+      "quote": "the HA-rGO composite exhibited a higher adsorption capacity toward phenol than the initial humic acid and rGO",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:baf9270632",
+    "source": "C:Method:langmuir-isotherm-model",
+    "predicate": "FITS",
+    "target": "paper-B:Measurement:hargo-isotherm-fit-langmuir-r2-0-9804-vs",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0094",
+      "quote": "phenol adsorption on the HA–rGO composite was better described by the Langmuir model, with R2 = 0.9804",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:2cb5c11409",
+    "source": "C:Method:langmuir-isotherm-model",
+    "predicate": "OUTPERFORMS",
+    "target": "C:Method:freundlich-isotherm-model",
+    "source_id": "paper-B",
+    "conditions": {
+     "sample": "HA–rGO composite",
+     "criterion": "R2",
+     "adsorbate": "phenol"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0094",
+      "quote": "phenol adsorption on the HA–rGO composite was better described by the Langmuir model, with R2 = 0.9804, whereas the Freundlich model gave R2 = 0.9515",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:4082be4336",
+    "source": "C:Method:freundlich-isotherm-model",
+    "predicate": "OUTPERFORMS",
+    "target": "C:Method:langmuir-isotherm-model",
+    "source_id": "paper-B",
+    "conditions": {
+     "sample": "initial humic acid",
+     "criterion": "R2",
+     "adsorbate": "phenol"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0092",
+      "quote": "The adsorption of phenol on HA was better described by the Freundlich model",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:22295aa5d1",
+    "source": "C:Method:freundlich-isotherm-model",
+    "predicate": "FITS",
+    "target": "paper-B:Measurement:ha-isotherm-fit-freundlich-r2-0-9092-vs",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0092",
+      "quote": "for which the coefficient of determination was R2 = 0.9092, compared with R2 = 0.8502 for the Langmuir model",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:73b58d054f",
+    "source": "C:Method:langmuir-isotherm-model",
+    "predicate": "COMPARED_WITH",
+    "target": "C:Method:freundlich-isotherm-model",
+    "source_id": "paper-B",
+    "conditions": {
+     "sample": "rGO",
+     "criterion": "R2",
+     "adsorbate": "phenol"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0093",
+      "quote": "neither model can be considered unambiguously predominant for rGO within the investigated concentration range",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:b3fdf59987",
+    "source": "paper-B:Sample:rgo-sample-sigma-aldrich",
+    "predicate": "HAS_RESULT",
+    "target": "paper-B:Measurement:rgo-isotherm-fit-langmuir-r2-0-9266-vs-f",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": true,
+    "flags": [
+     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0093",
+      "quote": "For rGO, the Langmuir and Freundlich models showed comparable agreement with the experimental data",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:bcdd4a6376",
+    "source": "C:Method:pseudo-second-order-kinetic-model",
+    "predicate": "FITS",
+    "target": "paper-B:Measurement:hargo-kinetics-pso-r2-0-9939-vs-pfo-0-97",
+    "source_id": "paper-B",
+    "conditions": {
+     "C0": "7.5 mg/dm3"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0098",
+      "quote": "The pseudo-second-order model also showed better agreement for the HA–rGO composite",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:c8aa7dc20a",
+    "source": "C:Method:pseudo-second-order-kinetic-model",
+    "predicate": "OUTPERFORMS",
+    "target": "C:Method:pseudo-first-order-kinetic-model",
+    "source_id": "paper-B",
+    "conditions": {
+     "sample": "HA–rGO composite and HA",
+     "criterion": "R2"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0100",
+      "quote": "the kinetic data for HA and HA–rGO were better described by the pseudo-second-order model",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:0bc53907b0",
+    "source": "C:Method:pseudo-first-order-kinetic-model",
+    "predicate": "COMPARED_WITH",
+    "target": "C:Method:pseudo-second-order-kinetic-model",
+    "source_id": "paper-B",
+    "conditions": {
+     "sample": "rGO",
+     "criterion": "R2"
+    },
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0100",
+      "quote": "whereas both models provided a comparable fit for rGO",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:2cfa5e2574",
+    "source": "paper-B:Sample:rgo-sample-sigma-aldrich",
+    "predicate": "HAS_RESULT",
+    "target": "paper-B:Measurement:rgo-kinetics-pfo-r2-0-9973-vs-pso-0-9968",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": true,
+    "flags": [
+     "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+    ],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0099",
+      "quote": "The pseudo-first-order model exhibited a marginally higher R2 value of 0.9973 compared with 0.9968 for the pseudo-second-order model.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:4f584d488e",
+    "source": "paper-B:Measurement:hargo-kinetics-pso-r2-0-9939-vs-pfo-0-97",
+    "predicate": "UNDER_CONDITION",
+    "target": "paper-B:Condition:kinetics-at-initial-phenol-7-5-mg-dm3",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0031",
+      "quote": "Kinetic experiments were performed at an initial phenol concentration of 7.5 mg/dm3.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:e4b8301c5e",
+    "source": "paper-B:Measurement:hargo-kinetics-pso-r2-0-9939-vs-pfo-0-97",
+    "predicate": "CONTRADICTS",
+    "target": "paper-B:Conclusion:pso-pfo-fits-are-empirical-and-do-not-es",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "negative",
+    "needs_review": false,
+    "flags": [],
+    "note": "kept as qualification: PSO fit given, but not taken as mechanism evidence",
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0100",
+      "quote": "These models should be regarded as empirical descriptions of the adsorption-rate data",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:34b3eca17d",
+    "source": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
+    "predicate": "INVOLVES",
+    "target": "C:Mechanism:non-covalent-interactions",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "hedged",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0081",
+      "quote": "This suggests that composite formation occurs mainly through non-covalent interactions between the components.",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:6ef1c181b6",
+    "source": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
+    "predicate": "INVOLVES",
+    "target": "C:Mechanism:pipi-interactions",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "hedged",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0087",
+      "quote": "including π–π stacking of aromatic structures and hydrogen bonding between the functional groups of the components",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:e745caf967",
+    "source": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
+    "predicate": "INVOLVES",
+    "target": "C:Mechanism:hydrogen-bonding",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "hedged",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0087",
+      "quote": "including π–π stacking of aromatic structures and hydrogen bonding between the functional groups of the components",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:387b947927",
+    "source": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
+    "predicate": "ATTRIBUTED_TO",
+    "target": "C:Mechanism:hydrogen-bonding",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "hedged",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0090",
+      "quote": "Carboxyl, phenolic, and hydroxyl groups present in humic acid may participate in hydrogen bonding with phenol molecules",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:4fc67016ad",
+    "source": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
+    "predicate": "ATTRIBUTED_TO",
+    "target": "C:Mechanism:pipi-interactions",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "hedged",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0090",
+      "quote": "the graphene-like aromatic domains of rGO may promote π–π interactions with the aromatic ring of phenol",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:3fab2701d7",
+    "source": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
+    "predicate": "INVOLVES",
+    "target": "C:Mechanism:pipi-interactions",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "hedged",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0104",
+      "quote": "Hydrogen bonding and π–π interactions are therefore considered plausible contributions",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:19e8333da3",
+    "source": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
+    "predicate": "SUPPORTS",
+    "target": "paper-B:Conclusion:results-are-a-preliminary-demonstration",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [
+     "citation cue in quote; check the claim is the authors' own, not a cited one"
+    ],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0103",
+      "quote": "The adsorption capacity of HA–rGO is lower than the values reported for some highly porous graphene-based adsorbents [49].",
+      "match": "exact"
+     }
+    ]
+   },
+   {
+    "id": "R:313959db79",
+    "source": "C:Material:reduced-graphene-oxide",
+    "predicate": "COMPARED_WITH",
+    "target": "C:Material:graphene-oxide",
+    "source_id": "paper-B",
+    "conditions": {},
+    "strength": "direct",
+    "attribution": "author",
+    "polarity": "positive",
+    "needs_review": false,
+    "flags": [],
+    "note": null,
+    "evidence": [
+     {
+      "source_id": "paper-B",
+      "paragraph_id": "p-0034",
+      "quote": "These results indicate substantial removal of oxygen-containing groups compared with graphene oxide",
+      "match": "exact"
+     }
+    ]
+   }
+  ]
  },
  "nodes": [
   {
@@ -769,7 +5736,7 @@
    ]
   },
   {
-   "id": "C:Mechanism:interactions",
+   "id": "C:Mechanism:pipi-interactions",
    "type": "Mechanism",
    "label": "π–π interactions",
    "aliases": [
@@ -2027,7 +6994,7 @@
    ]
   },
   {
-   "id": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+   "id": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
    "type": "Measurement",
    "label": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
    "aliases": [],
@@ -2372,7 +7339,7 @@
    ]
   },
   {
-   "id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
+   "id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
    "type": "Conclusion",
    "label": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
    "aliases": [],
@@ -3821,10 +8788,10 @@
    ]
   },
   {
-   "id": "R:94f2af36f0",
+   "id": "R:4469eea123",
    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
    "predicate": "INVOLVES",
-   "target": "C:Mechanism:interactions",
+   "target": "C:Mechanism:pipi-interactions",
    "source_id": "paper-A",
    "conditions": {},
    "strength": "direct",
@@ -4293,10 +9260,10 @@
    ]
   },
   {
-   "id": "R:c3615510ca",
+   "id": "R:5ec18c0e84",
    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
    "predicate": "HAS_RESULT",
-   "target": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+   "target": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
    "source_id": "paper-B",
    "conditions": {},
    "strength": "direct",
@@ -4315,8 +9282,8 @@
    ]
   },
   {
-   "id": "R:7bb75c0227",
-   "source": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+   "id": "R:d02dc77849",
+   "source": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
    "predicate": "MEASURED_BY",
    "target": "C:Method:functional-group-titrimetric-analysis",
    "source_id": "paper-B",
@@ -4921,10 +9888,10 @@
    ]
   },
   {
-   "id": "R:b3b6109d60",
+   "id": "R:6ef1c181b6",
    "source": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
    "predicate": "INVOLVES",
-   "target": "C:Mechanism:interactions",
+   "target": "C:Mechanism:pipi-interactions",
    "source_id": "paper-B",
    "conditions": {},
    "strength": "hedged",
@@ -4987,10 +9954,10 @@
    ]
   },
   {
-   "id": "R:44944ed1b0",
+   "id": "R:4fc67016ad",
    "source": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
    "predicate": "ATTRIBUTED_TO",
-   "target": "C:Mechanism:interactions",
+   "target": "C:Mechanism:pipi-interactions",
    "source_id": "paper-B",
    "conditions": {},
    "strength": "hedged",
@@ -5009,10 +9976,10 @@
    ]
   },
   {
-   "id": "R:6ca7e73ccf",
-   "source": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
+   "id": "R:3fab2701d7",
+   "source": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
    "predicate": "INVOLVES",
-   "target": "C:Mechanism:interactions",
+   "target": "C:Mechanism:pipi-interactions",
    "source_id": "paper-B",
    "conditions": {},
    "strength": "hedged",
@@ -5558,12 +10525,12 @@
      ]
     },
     {
-     "id": "R:c3615510ca",
+     "id": "R:5ec18c0e84",
      "subject": "humic acid/reduced graphene oxide composite",
      "predicate": "HAS_RESULT",
      "object": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
      "subject_id": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
-     "object_id": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+     "object_id": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
      "source_id": "paper-B",
      "conditions": {},
      "strength": "direct",
@@ -5656,7 +10623,14 @@
    ],
    "uncertain": [
     {
-     "edge": "R:47f2658b4f",
+     "edge": "R:b3fdf59987",
+     "why": [
+      "needs_review",
+      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:f4c2774b5a",
      "why": [
       "needs_review",
       "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
@@ -5677,14 +10651,7 @@
      ]
     },
     {
-     "edge": "R:b3fdf59987",
-     "why": [
-      "needs_review",
-      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:f4c2774b5a",
+     "edge": "R:47f2658b4f",
      "why": [
       "needs_review",
       "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
@@ -5714,13 +10681,13 @@
     "paper-A:Sample:magnetically-modified-activated-carbon-r",
     "paper-A:Sample:magnetically-modified-graphene-oxide-com",
     "paper-B:Measurement:carbon-content-ha-47-34-ha-rgo-55-61-wt",
-    "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
     "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
     "paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m",
     "paper-B:Measurement:oxygen-content-ha-48-31-ha-rgo-40-79-wt",
     "paper-B:Measurement:residual-mass-at-1000-c-ha-59-21-ha-rgo",
     "paper-B:Measurement:rgo-isotherm-fit-langmuir-r2-0-9266-vs-f",
     "paper-B:Measurement:rgo-kinetics-pfo-r2-0-9973-vs-pso-0-9968",
+    "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
     "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
     "paper-B:Sample:rgo-sample-sigma-aldrich"
    ]
@@ -6759,12 +11726,12 @@
      ]
     },
     {
-     "id": "R:94f2af36f0",
+     "id": "R:4469eea123",
      "subject": "magnetically modified graphene oxide composite",
      "predicate": "INVOLVES",
      "object": "π–π interactions",
      "subject_id": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
-     "object_id": "C:Mechanism:interactions",
+     "object_id": "C:Mechanism:pipi-interactions",
      "source_id": "paper-A",
      "conditions": {},
      "strength": "direct",
@@ -6805,12 +11772,12 @@
      ]
     },
     {
-     "id": "R:44944ed1b0",
+     "id": "R:4fc67016ad",
      "subject": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
      "predicate": "ATTRIBUTED_TO",
      "object": "π–π interactions",
      "subject_id": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
-     "object_id": "C:Mechanism:interactions",
+     "object_id": "C:Mechanism:pipi-interactions",
      "source_id": "paper-B",
      "conditions": {},
      "strength": "hedged",
@@ -6828,12 +11795,12 @@
      ]
     },
     {
-     "id": "R:6ca7e73ccf",
+     "id": "R:3fab2701d7",
      "subject": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
      "predicate": "INVOLVES",
      "object": "π–π interactions",
-     "subject_id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
-     "object_id": "C:Mechanism:interactions",
+     "subject_id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
+     "object_id": "C:Mechanism:pipi-interactions",
      "source_id": "paper-B",
      "conditions": {},
      "strength": "hedged",
@@ -6897,12 +11864,12 @@
      ]
     },
     {
-     "id": "R:b3b6109d60",
+     "id": "R:6ef1c181b6",
      "subject": "HA–rGO composite forms mainly through non-covalent interactions (paper B)",
      "predicate": "INVOLVES",
      "object": "π–π interactions",
      "subject_id": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
-     "object_id": "C:Mechanism:interactions",
+     "object_id": "C:Mechanism:pipi-interactions",
      "source_id": "paper-B",
      "conditions": {},
      "strength": "hedged",
@@ -6922,13 +11889,25 @@
    ],
    "uncertain": [
     {
-     "edge": "R:44944ed1b0",
+     "edge": "R:e745caf967",
      "why": [
       "hedged"
      ]
     },
     {
-     "edge": "R:387b947927",
+     "edge": "R:6ef1c181b6",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:3fab2701d7",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:4fc67016ad",
      "why": [
       "hedged"
      ]
@@ -6940,25 +11919,13 @@
      ]
     },
     {
-     "edge": "R:e745caf967",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:6ca7e73ccf",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:b3b6109d60",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
      "edge": "R:34b3eca17d",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:387b947927",
      "why": [
       "hedged"
      ]
@@ -6970,14 +11937,14 @@
    "nodes": [
     "C:Mechanism:chemisorption",
     "C:Mechanism:hydrogen-bonding",
-    "C:Mechanism:interactions",
     "C:Mechanism:non-covalent-interactions",
+    "C:Mechanism:pipi-interactions",
     "C:Mechanism:steric-hindrance",
     "paper-A:Conclusion:k2-decreases-with-molecular-complexity-d",
     "paper-A:Conclusion:pso-fit-confirms-chemisorption-controlle",
     "paper-A:Measurement:mgo-qmax-for-lactic-acid-334-45-mg-g",
     "paper-A:Sample:magnetically-modified-graphene-oxide-com",
-    "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
+    "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
     "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
     "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h"
    ]
@@ -7140,14 +12107,14 @@
    ],
    "uncertain": [
     {
-     "edge": "R:4e1ef8e791",
+     "edge": "R:d864fd647c",
      "why": [
       "needs_review",
       "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
      ]
     },
     {
-     "edge": "R:d864fd647c",
+     "edge": "R:4e1ef8e791",
      "why": [
       "needs_review",
       "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
@@ -7363,12 +12330,12 @@
      ]
     },
     {
-     "id": "R:94f2af36f0",
+     "id": "R:4469eea123",
      "subject": "magnetically modified graphene oxide composite",
      "predicate": "INVOLVES",
      "object": "π–π interactions",
      "subject_id": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
-     "object_id": "C:Mechanism:interactions",
+     "object_id": "C:Mechanism:pipi-interactions",
      "source_id": "paper-A",
      "conditions": {},
      "strength": "direct",
@@ -7478,12 +12445,12 @@
      ]
     },
     {
-     "id": "R:44944ed1b0",
+     "id": "R:4fc67016ad",
      "subject": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
      "predicate": "ATTRIBUTED_TO",
      "object": "π–π interactions",
      "subject_id": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
-     "object_id": "C:Mechanism:interactions",
+     "object_id": "C:Mechanism:pipi-interactions",
      "source_id": "paper-B",
      "conditions": {},
      "strength": "hedged",
@@ -7671,12 +12638,12 @@
      ]
     },
     {
-     "id": "R:6ca7e73ccf",
+     "id": "R:3fab2701d7",
      "subject": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
      "predicate": "INVOLVES",
      "object": "π–π interactions",
-     "subject_id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
-     "object_id": "C:Mechanism:interactions",
+     "subject_id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
+     "object_id": "C:Mechanism:pipi-interactions",
      "source_id": "paper-B",
      "conditions": {},
      "strength": "hedged",
@@ -7717,12 +12684,12 @@
      ]
     },
     {
-     "id": "R:b3b6109d60",
+     "id": "R:6ef1c181b6",
      "subject": "HA–rGO composite forms mainly through non-covalent interactions (paper B)",
      "predicate": "INVOLVES",
      "object": "π–π interactions",
      "subject_id": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
-     "object_id": "C:Mechanism:interactions",
+     "object_id": "C:Mechanism:pipi-interactions",
      "source_id": "paper-B",
      "conditions": {},
      "strength": "hedged",
@@ -7870,31 +12837,19 @@
    ],
    "uncertain": [
     {
+     "edge": "R:6ef1c181b6",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:665966f364",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
      "edge": "R:387b947927",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:e745caf967",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:6ca7e73ccf",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:b3b6109d60",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:44944ed1b0",
      "why": [
       "hedged"
      ]
@@ -7906,7 +12861,19 @@
      ]
     },
     {
-     "edge": "R:665966f364",
+     "edge": "R:e745caf967",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:3fab2701d7",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:4fc67016ad",
      "why": [
       "hedged"
      ]
@@ -8872,7 +13839,7 @@
     },
     {
      "concept": "π–π interactions",
-     "id": "C:Mechanism:interactions",
+     "id": "C:Mechanism:pipi-interactions",
      "type": "Mechanism",
      "sources": [
       "paper-A",
@@ -8881,12 +13848,12 @@
      "edges_by_paper": {
       "paper-A": [
        {
-        "id": "R:94f2af36f0",
+        "id": "R:4469eea123",
         "subject": "magnetically modified graphene oxide composite",
         "predicate": "INVOLVES",
         "object": "π–π interactions",
         "subject_id": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
-        "object_id": "C:Mechanism:interactions",
+        "object_id": "C:Mechanism:pipi-interactions",
         "source_id": "paper-A",
         "conditions": {},
         "strength": "direct",
@@ -8906,12 +13873,12 @@
       ],
       "paper-B": [
        {
-        "id": "R:b3b6109d60",
+        "id": "R:6ef1c181b6",
         "subject": "HA–rGO composite forms mainly through non-covalent interactions (paper B)",
         "predicate": "INVOLVES",
         "object": "π–π interactions",
         "subject_id": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
-        "object_id": "C:Mechanism:interactions",
+        "object_id": "C:Mechanism:pipi-interactions",
         "source_id": "paper-B",
         "conditions": {},
         "strength": "hedged",
@@ -8929,12 +13896,12 @@
         ]
        },
        {
-        "id": "R:44944ed1b0",
+        "id": "R:4fc67016ad",
         "subject": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
         "predicate": "ATTRIBUTED_TO",
         "object": "π–π interactions",
         "subject_id": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
-        "object_id": "C:Mechanism:interactions",
+        "object_id": "C:Mechanism:pipi-interactions",
         "source_id": "paper-B",
         "conditions": {},
         "strength": "hedged",
@@ -8952,12 +13919,12 @@
         ]
        },
        {
-        "id": "R:6ca7e73ccf",
+        "id": "R:3fab2701d7",
         "subject": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
         "predicate": "INVOLVES",
         "object": "π–π interactions",
-        "subject_id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
-        "object_id": "C:Mechanism:interactions",
+        "subject_id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
+        "object_id": "C:Mechanism:pipi-interactions",
         "source_id": "paper-B",
         "conditions": {},
         "strength": "hedged",
@@ -9166,7 +14133,7 @@
     "C:Material:reduced-graphene-oxide",
     "C:Material:sodium-hydroxide",
     "C:Mechanism:hydrogen-bonding",
-    "C:Mechanism:interactions",
+    "C:Mechanism:pipi-interactions",
     "C:Method:fourier-transform-infrared-spectroscopy",
     "C:Method:freundlich-isotherm-model",
     "C:Method:langmuir-isotherm-model",
@@ -9180,7 +14147,7 @@
     "paper-A:Measurement:pso-fit-r2-0-99-for-all-acids",
     "paper-A:Sample:magnetically-modified-activated-carbon-r",
     "paper-A:Sample:magnetically-modified-graphene-oxide-com",
-    "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
+    "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
     "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
     "paper-B:Measurement:ha-isotherm-fit-freundlich-r2-0-9092-vs",
     "paper-B:Measurement:hargo-isotherm-fit-langmuir-r2-0-9804-vs",
@@ -9945,12 +14912,12 @@
      ]
     },
     {
-     "id": "R:44944ed1b0",
+     "id": "R:4fc67016ad",
      "subject": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
      "predicate": "ATTRIBUTED_TO",
      "object": "π–π interactions",
      "subject_id": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
-     "object_id": "C:Mechanism:interactions",
+     "object_id": "C:Mechanism:pipi-interactions",
      "source_id": "paper-B",
      "conditions": {},
      "strength": "hedged",
@@ -10177,12 +15144,12 @@
      ]
     },
     {
-     "id": "R:c3615510ca",
+     "id": "R:5ec18c0e84",
      "subject": "humic acid/reduced graphene oxide composite",
      "predicate": "HAS_RESULT",
      "object": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
      "subject_id": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
-     "object_id": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+     "object_id": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
      "source_id": "paper-B",
      "conditions": {},
      "strength": "direct",
@@ -10365,11 +15332,11 @@
      ]
     },
     {
-     "id": "R:7bb75c0227",
+     "id": "R:d02dc77849",
      "subject": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
      "predicate": "MEASURED_BY",
      "object": "functional-group titrimetric analysis",
-     "subject_id": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+     "subject_id": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
      "object_id": "C:Method:functional-group-titrimetric-analysis",
      "source_id": "paper-B",
      "conditions": {},
@@ -10484,45 +15451,6 @@
    ],
    "uncertain": [
     {
-     "edge": "R:387b947927",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:47f2658b4f",
-     "why": [
-      "needs_review",
-      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:2cfa5e2574",
-     "why": [
-      "needs_review",
-      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:f533c77089",
-     "why": [
-      "indirect"
-     ]
-    },
-    {
-     "edge": "R:40dcb0566e",
-     "why": [
-      "needs_review",
-      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:44944ed1b0",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
      "edge": "R:b3fdf59987",
      "why": [
       "needs_review",
@@ -10541,6 +15469,45 @@
      "why": [
       "hedged"
      ]
+    },
+    {
+     "edge": "R:387b947927",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:2cfa5e2574",
+     "why": [
+      "needs_review",
+      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:40dcb0566e",
+     "why": [
+      "needs_review",
+      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:47f2658b4f",
+     "why": [
+      "needs_review",
+      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:f533c77089",
+     "why": [
+      "indirect"
+     ]
+    },
+    {
+     "edge": "R:4fc67016ad",
+     "why": [
+      "hedged"
+     ]
     }
    ],
    "related_conflicts": null,
@@ -10548,7 +15515,7 @@
    "not_merged": null,
    "nodes": [
     "C:Mechanism:hydrogen-bonding",
-    "C:Mechanism:interactions",
+    "C:Mechanism:pipi-interactions",
     "C:Method:brunaueremmettteller-method",
     "C:Method:elemental-analysis",
     "C:Method:freundlich-isotherm-model",
@@ -10592,7 +15559,6 @@
     "paper-B:Condition:kinetics-at-initial-phenol-7-5-mg-dm3",
     "paper-B:Condition:static-batch-25-c-phenol-0-515-mg-dm3-0",
     "paper-B:Measurement:carbon-content-ha-47-34-ha-rgo-55-61-wt",
-    "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
     "paper-B:Measurement:ha-isotherm-fit-freundlich-r2-0-9092-vs",
     "paper-B:Measurement:hargo-isotherm-fit-langmuir-r2-0-9804-vs",
     "paper-B:Measurement:hargo-kinetics-pso-r2-0-9939-vs-pfo-0-97",
@@ -10602,6 +15568,7 @@
     "paper-B:Measurement:residual-mass-at-1000-c-ha-59-21-ha-rgo",
     "paper-B:Measurement:rgo-isotherm-fit-langmuir-r2-0-9266-vs-f",
     "paper-B:Measurement:rgo-kinetics-pfo-r2-0-9973-vs-pso-0-9968",
+    "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
     "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
     "paper-B:Sample:rgo-sample-sigma-aldrich"
    ]
@@ -10785,12 +15752,12 @@
      ]
     },
     {
-     "id": "R:44944ed1b0",
+     "id": "R:4fc67016ad",
      "subject": "Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65 mg/g",
      "predicate": "ATTRIBUTED_TO",
      "object": "π–π interactions",
      "subject_id": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
-     "object_id": "C:Mechanism:interactions",
+     "object_id": "C:Mechanism:pipi-interactions",
      "source_id": "paper-B",
      "conditions": {},
      "strength": "hedged",
@@ -10908,12 +15875,12 @@
      ]
     },
     {
-     "id": "R:6ca7e73ccf",
+     "id": "R:3fab2701d7",
      "subject": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
      "predicate": "INVOLVES",
      "object": "π–π interactions",
-     "subject_id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
-     "object_id": "C:Mechanism:interactions",
+     "subject_id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
+     "object_id": "C:Mechanism:pipi-interactions",
      "source_id": "paper-B",
      "conditions": {},
      "strength": "hedged",
@@ -10977,12 +15944,12 @@
      ]
     },
     {
-     "id": "R:b3b6109d60",
+     "id": "R:6ef1c181b6",
      "subject": "HA–rGO composite forms mainly through non-covalent interactions (paper B)",
      "predicate": "INVOLVES",
      "object": "π–π interactions",
      "subject_id": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
-     "object_id": "C:Mechanism:interactions",
+     "object_id": "C:Mechanism:pipi-interactions",
      "source_id": "paper-B",
      "conditions": {},
      "strength": "hedged",
@@ -11106,19 +16073,27 @@
    ],
    "uncertain": [
     {
-     "edge": "R:44944ed1b0",
+     "edge": "R:b3fdf59987",
+     "why": [
+      "needs_review",
+      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:6ef1c181b6",
      "why": [
       "hedged"
      ]
     },
     {
-     "edge": "R:387b947927",
+     "edge": "R:f4c2774b5a",
      "why": [
-      "hedged"
+      "needs_review",
+      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
      ]
     },
     {
-     "edge": "R:e745caf967",
+     "edge": "R:665966f364",
      "why": [
       "hedged"
      ]
@@ -11131,16 +16106,47 @@
      ]
     },
     {
-     "edge": "R:7dbf743e4e",
+     "edge": "R:34b3eca17d",
      "why": [
-      "needs_review",
-      "object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+      "hedged"
      ]
     },
     {
-     "edge": "R:6ca7e73ccf",
+     "edge": "R:387b947927",
      "why": [
       "hedged"
+     ]
+    },
+    {
+     "edge": "R:f533c77089",
+     "why": [
+      "indirect"
+     ]
+    },
+    {
+     "edge": "R:e745caf967",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:b113e63e89",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
+     "edge": "R:2cfa5e2574",
+     "why": [
+      "needs_review",
+      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+     ]
+    },
+    {
+     "edge": "R:d864fd647c",
+     "why": [
+      "needs_review",
+      "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
      ]
     },
     {
@@ -11158,54 +16164,10 @@
      ]
     },
     {
-     "edge": "R:2cfa5e2574",
+     "edge": "R:7dbf743e4e",
      "why": [
       "needs_review",
-      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:b3b6109d60",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:b3fdf59987",
-     "why": [
-      "needs_review",
-      "subject 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:34b3eca17d",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:f533c77089",
-     "why": [
-      "indirect"
-     ]
-    },
-    {
-     "edge": "R:f4c2774b5a",
-     "why": [
-      "needs_review",
-      "subject 'magnetically modified graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
-     ]
-    },
-    {
-     "edge": "R:b113e63e89",
-     "why": [
-      "hedged"
-     ]
-    },
-    {
-     "edge": "R:665966f364",
-     "why": [
-      "hedged"
+      "object 'rGO sample (Sigma-Aldrich)' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
      ]
     },
     {
@@ -11216,6 +16178,12 @@
      ]
     },
     {
+     "edge": "R:3fab2701d7",
+     "why": [
+      "hedged"
+     ]
+    },
+    {
      "edge": "R:40dcb0566e",
      "why": [
       "needs_review",
@@ -11223,10 +16191,9 @@
      ]
     },
     {
-     "edge": "R:d864fd647c",
+     "edge": "R:4fc67016ad",
      "why": [
-      "needs_review",
-      "subject 'humic acid/reduced graphene oxide composite' not named in the evidence paragraph (pronoun/inference?) -> needs_review"
+      "hedged"
      ]
     }
    ],
@@ -11235,8 +16202,8 @@
    "not_merged": null,
    "nodes": [
     "C:Mechanism:hydrogen-bonding",
-    "C:Mechanism:interactions",
     "C:Mechanism:non-covalent-interactions",
+    "C:Mechanism:pipi-interactions",
     "C:Method:elemental-analysis",
     "C:Method:functional-group-titrimetric-analysis",
     "C:Method:langmuir-isotherm-model",
@@ -11249,7 +16216,7 @@
     "paper-A:Measurement:pso-k2-lactic-0-007-succinic-0-0023-citr",
     "paper-A:Measurement:rl-between-2-3-106-and-2-8-103",
     "paper-A:Sample:magnetically-modified-graphene-oxide-com",
-    "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
+    "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
     "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
     "paper-B:Conclusion:results-are-a-preliminary-demonstration",
     "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
@@ -12100,7 +17067,7 @@
    "match": "exact"
   },
   {
-   "item": "R:94f2af36f0",
+   "item": "R:4469eea123",
    "kind": "edge",
    "source_id": "paper-A",
    "paragraph_id": "p-0041",
@@ -12268,7 +17235,7 @@
    "match": "exact"
   },
   {
-   "item": "R:c3615510ca",
+   "item": "R:5ec18c0e84",
    "kind": "edge",
    "source_id": "paper-B",
    "paragraph_id": "p-0038",
@@ -12276,7 +17243,7 @@
    "match": "exact"
   },
   {
-   "item": "R:7bb75c0227",
+   "item": "R:d02dc77849",
    "kind": "edge",
    "source_id": "paper-B",
    "paragraph_id": "p-0020",
@@ -12484,7 +17451,7 @@
    "match": "exact"
   },
   {
-   "item": "R:b3b6109d60",
+   "item": "R:6ef1c181b6",
    "kind": "edge",
    "source_id": "paper-B",
    "paragraph_id": "p-0087",
@@ -12508,7 +17475,7 @@
    "match": "exact"
   },
   {
-   "item": "R:44944ed1b0",
+   "item": "R:4fc67016ad",
    "kind": "edge",
    "source_id": "paper-B",
    "paragraph_id": "p-0090",
@@ -12516,7 +17483,7 @@
    "match": "exact"
   },
   {
-   "item": "R:6ca7e73ccf",
+   "item": "R:3fab2701d7",
    "kind": "edge",
    "source_id": "paper-B",
    "paragraph_id": "p-0104",
@@ -12543,7 +17510,7 @@
  "change_log": [
   {
    "action": "build",
-   "at": "2026-11-28T08:11:14+00:00",
+   "at": "2026-11-28T15:14:23+00:00",
    "previous_graph": null
   }
  ],
@@ -12612,11 +17579,11 @@
    {
     "cmd": "export_graph.py --graph C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\github_repo\\execution\\results\\case1\\work\\graph\\graph.json --out C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\github_repo\\execution\\results\\case1\\output\\graph --queries C:\\Users\\12117\\Desktop\\bohrium-pdf-evidence-reader\\kg_arena10\\github_repo\\execution\\results\\case1\\work\\graph\\queries\\query_results.json",
     "exit": 0,
-    "seconds": 4.96,
+    "seconds": 2.12,
     "stderr_tail": ""
    }
   ],
-  "seconds": 5.2
+  "seconds": 2.36
  },
  "output_contract_mapping": {
   "case_id": "case_id",

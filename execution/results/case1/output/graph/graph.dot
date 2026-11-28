@@ -26,7 +26,7 @@ digraph KG {
   "C:Metric:pseudo-second-order-rate-constant" [label="pseudo-second-order rate constant\n[Metric]" color="#e377c2"];
   "C:Metric:capacity-retention-rate" [label="capacity retention rate\n[Metric]" color="#e377c2"];
   "C:Mechanism:hydrogen-bonding" [label="hydrogen bonding\n[Mechanism]" color="#8c564b"];
-  "C:Mechanism:interactions" [label="π–π interactions\n[Mechanism]" color="#8c564b"];
+  "C:Mechanism:pipi-interactions" [label="π–π interactions\n[Mechanism]" color="#8c564b"];
   "C:Material:activated-carbon" [label="activated carbon\n[Material]" color="#1f77b4"];
   "C:Mechanism:chemisorption" [label="chemisorption\n[Mechanism]" color="#8c564b"];
   "C:Mechanism:steric-hindrance" [label="steric hindrance\n[Mechanism]" color="#8c564b"];
@@ -79,7 +79,7 @@ digraph KG {
   "paper-B:Measurement:carbon-content-ha-47-34-ha-rgo-55-61-wt" [label="carbon content HA 47.34 → HA-rGO 55.61 wt.%\n[Measurement]" color="#ff7f0e"];
   "C:Material:humic-acid" [label="humic acid\n[Material]" color="#1f77b4"];
   "paper-B:Measurement:oxygen-content-ha-48-31-ha-rgo-40-79-wt" [label="oxygen content HA 48.31 → HA-rGO 40.79 wt.%\n[Measurement]" color="#ff7f0e"];
-  "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g" [label="Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g\n[Measurement]" color="#ff7f0e"];
+  "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g" [label="Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g\n[Measurement]" color="#ff7f0e"];
   "paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m" [label="O/C ratio: HA 0.77, rGO 0.36, HA-rGO 0.73 (mechani\n[Measurement]" color="#ff7f0e"];
   "paper-B:Measurement:residual-mass-at-1000-c-ha-59-21-ha-rgo" [label="residual mass at 1000 °C: HA 59.21%, HA-rGO 70.03%\n[Measurement]" color="#ff7f0e"];
   "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h" [label="Langmuir qm phenol: HA–rGO 7.10, rGO 6.02, HA 4.65\n[Measurement]" color="#ff7f0e"];
@@ -93,7 +93,7 @@ digraph KG {
   "paper-B:Conclusion:rgo-incorporation-improves-thermal-stabi" [label="rGO incorporation improves thermal stability of hu\n[Conclusion]" color="#d62728"];
   "paper-B:Conclusion:pso-pfo-fits-are-empirical-and-do-not-es" [label="PSO/PFO fits are empirical and do not establish th\n[Conclusion]" color="#d62728"];
   "paper-B:Conclusion:langmuir-fit-is-a-mathematical-descripti" [label="Langmuir fit is a mathematical description, not pr\n[Conclusion]" color="#d62728"];
-  "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad" [label="H-bonding and π–π contributions to phenol adsorpti\n[Conclusion]" color="#d62728"];
+  "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen" [label="H-bonding and π–π contributions to phenol adsorpti\n[Conclusion]" color="#d62728"];
   "paper-B:Conclusion:results-are-a-preliminary-demonstration" [label="results are a preliminary demonstration, not evide\n[Conclusion]" color="#d62728"];
   "C:Material:phenol" [label="phenol\n[Material]" color="#1f77b4"];
   "C:Method:ultrasonic-treatment" [label="ultrasonic treatment\n[Method]" color="#2ca02c"];
@@ -158,7 +158,7 @@ digraph KG {
   "paper-A:Measurement:mgo-qmax-for-lactic-acid-334-45-mg-g" -> "paper-A:Conclusion:adsorption-governed-by-surface-chemistry" [label="SUPPORTS paper-A:p-0040"];
   "paper-A:Measurement:magnetic-ac-qmax-for-lactic-acid-74-6-mg" -> "paper-A:Conclusion:adsorption-governed-by-surface-chemistry" [label="SUPPORTS paper-A:p-0040"];
   "C:Method:langmuir-isotherm-model" -> "paper-A:Conclusion:langmuir-agreement-suggests-predominantl" [label="SUPPORTS paper-A:p-0069" style=dashed];
-  "paper-A:Sample:magnetically-modified-graphene-oxide-com" -> "C:Mechanism:interactions" [label="INVOLVES paper-A:p-0041"];
+  "paper-A:Sample:magnetically-modified-graphene-oxide-com" -> "C:Mechanism:pipi-interactions" [label="INVOLVES paper-A:p-0041"];
   "paper-A:Sample:magnetically-modified-graphene-oxide-com" -> "C:Mechanism:hydrogen-bonding" [label="INVOLVES paper-A:p-0041"];
   "paper-A:Sample:magnetically-modified-graphene-oxide-com" -> "C:Material:activated-carbon" [label="COMPARED_WITH paper-A:p-0038"];
   "C:Material:lactic-acid" -> "C:Material:citric-acid" [label="COMPARED_WITH paper-A:p-0060"];
@@ -179,8 +179,8 @@ digraph KG {
   "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos" -> "paper-B:Measurement:carbon-content-ha-47-34-ha-rgo-55-61-wt" [label="HAS_RESULT paper-B:p-0035"];
   "paper-B:Measurement:carbon-content-ha-47-34-ha-rgo-55-61-wt" -> "C:Method:elemental-analysis" [label="MEASURED_BY paper-B:p-0018"];
   "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos" -> "paper-B:Measurement:oxygen-content-ha-48-31-ha-rgo-40-79-wt" [label="HAS_RESULT paper-B:p-0035"];
-  "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos" -> "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g" [label="HAS_RESULT paper-B:p-0038"];
-  "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g" -> "C:Method:functional-group-titrimetric-analysis" [label="MEASURED_BY paper-B:p-0020"];
+  "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos" -> "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g" [label="HAS_RESULT paper-B:p-0038"];
+  "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g" -> "C:Method:functional-group-titrimetric-analysis" [label="MEASURED_BY paper-B:p-0020"];
   "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos" -> "paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m" [label="HAS_RESULT paper-B:p-0037"];
   "paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m" -> "C:Metric:atomic-oxygen-to-carbon-ratio" [label="MEASURED_BY paper-B:p-0036"];
   "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos" -> "paper-B:Measurement:residual-mass-at-1000-c-ha-59-21-ha-rgo" [label="HAS_RESULT paper-B:p-0058"];
@@ -206,11 +206,11 @@ digraph KG {
   "paper-B:Measurement:hargo-kinetics-pso-r2-0-9939-vs-pfo-0-97" -> "paper-B:Condition:kinetics-at-initial-phenol-7-5-mg-dm3" [label="UNDER_CONDITION paper-B:p-0031"];
   "paper-B:Measurement:hargo-kinetics-pso-r2-0-9939-vs-pfo-0-97" -> "paper-B:Conclusion:pso-pfo-fits-are-empirical-and-do-not-es" [label="CONTRADICTS paper-B:p-0100"];
   "paper-B:Conclusion:hargo-composite-forms-mainly-through-non" -> "C:Mechanism:non-covalent-interactions" [label="INVOLVES paper-B:p-0081" style=dashed];
-  "paper-B:Conclusion:hargo-composite-forms-mainly-through-non" -> "C:Mechanism:interactions" [label="INVOLVES paper-B:p-0087" style=dashed];
+  "paper-B:Conclusion:hargo-composite-forms-mainly-through-non" -> "C:Mechanism:pipi-interactions" [label="INVOLVES paper-B:p-0087" style=dashed];
   "paper-B:Conclusion:hargo-composite-forms-mainly-through-non" -> "C:Mechanism:hydrogen-bonding" [label="INVOLVES paper-B:p-0087" style=dashed];
   "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h" -> "C:Mechanism:hydrogen-bonding" [label="ATTRIBUTED_TO paper-B:p-0090" style=dashed];
-  "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h" -> "C:Mechanism:interactions" [label="ATTRIBUTED_TO paper-B:p-0090" style=dashed];
-  "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad" -> "C:Mechanism:interactions" [label="INVOLVES paper-B:p-0104" style=dashed];
+  "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h" -> "C:Mechanism:pipi-interactions" [label="ATTRIBUTED_TO paper-B:p-0090" style=dashed];
+  "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen" -> "C:Mechanism:pipi-interactions" [label="INVOLVES paper-B:p-0104" style=dashed];
   "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h" -> "paper-B:Conclusion:results-are-a-preliminary-demonstration" [label="SUPPORTS paper-B:p-0103"];
   "C:Material:reduced-graphene-oxide" -> "C:Material:graphene-oxide" [label="COMPARED_WITH paper-B:p-0034"];
 }

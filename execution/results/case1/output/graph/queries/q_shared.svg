@@ -42,7 +42,7 @@
 <circle cx="370" cy="242" r="6" fill="#e377c2"><title>C:Metric:maximum-adsorption-capacity</title></circle><text x="380" y="246">maximum adsorption capacity <tspan fill="#888" font-size="9">Metric</tspan></text>
 <circle cx="370" cy="216" r="6" fill="#e377c2"><title>C:Metric:equilibrium-adsorption-capacity</title></circle><text x="380" y="220">equilibrium adsorption capacity <tspan fill="#888" font-size="9">Metric</tspan></text>
 <circle cx="370" cy="268" r="6" fill="#8c564b"><title>C:Mechanism:hydrogen-bonding</title></circle><text x="380" y="272">hydrogen bonding <tspan fill="#888" font-size="9">Mechanism</tspan></text>
-<circle cx="370" cy="294" r="6" fill="#8c564b"><title>C:Mechanism:interactions</title></circle><text x="380" y="298">π–π interactions <tspan fill="#888" font-size="9">Mechanism</tspan></text>
+<circle cx="370" cy="294" r="6" fill="#8c564b"><title>C:Mechanism:pipi-interactions</title></circle><text x="380" y="298">π–π interactions <tspan fill="#888" font-size="9">Mechanism</tspan></text>
 <circle cx="40" cy="138" r="6" fill="#ff7f0e"><title>paper-A:Measurement:mgo-qmax-for-lactic-acid-334-45-mg-g</title></circle><text x="50" y="142">MGO qmax for lactic acid 334.45 mg/g <tspan fill="#888" font-size="9">Measurement</tspan></text>
 <circle cx="40" cy="164" r="6" fill="#ff7f0e"><title>paper-A:Measurement:pso-fit-r2-0-99-for-all-acids</title></circle><text x="50" y="168">PSO fit R2 &gt; 0.99 for all acids <tspan fill="#888" font-size="9">Measurement</tspan></text>
 <circle cx="40" cy="112" r="6" fill="#ff7f0e"><title>paper-A:Measurement:lactic-acid-on-mgo-r2-0-826-reported-for</title></circle><text x="50" y="116">lactic acid on MGO R2 = 0.826 (reported … <tspan fill="#888" font-size="9">Measurement</tspan></text>
@@ -56,7 +56,7 @@
 <circle cx="700" cy="190" r="6" fill="#ff7f0e"><title>paper-B:Measurement:hargo-kinetics-pso-r2-0-9939-vs-pfo-0-97</title></circle><text x="710" y="194">HA–rGO kinetics: PSO R2 0.9939 vs PFO 0.… <tspan fill="#888" font-size="9">Measurement</tspan></text>
 <circle cx="700" cy="60" r="6" fill="#1f77b4"><title>C:Material:reduced-graphene-oxide</title></circle><text x="710" y="64">reduced graphene oxide <tspan fill="#888" font-size="9">Material</tspan></text>
 <circle cx="700" cy="268" r="6" fill="#d62728"><title>paper-B:Conclusion:hargo-composite-forms-mainly-through-non</title></circle><text x="710" y="272">HA–rGO composite forms mainly through no… <tspan fill="#888" font-size="9">Conclusion</tspan></text>
-<circle cx="700" cy="242" r="6" fill="#d62728"><title>paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad</title></circle><text x="710" y="246">H-bonding and π–π contributions to pheno… <tspan fill="#888" font-size="9">Conclusion</tspan></text>
+<circle cx="700" cy="242" r="6" fill="#d62728"><title>paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen</title></circle><text x="710" y="246">H-bonding and π–π contributions to pheno… <tspan fill="#888" font-size="9">Conclusion</tspan></text>
 <circle cx="40" cy="342" r="5" fill="#444444"/><text x="48" y="346" font-size="10">Paper</text>
 <circle cx="160" cy="342" r="5" fill="#8c6d31"/><text x="168" y="346" font-size="10">Researcher</text>
 <circle cx="280" cy="342" r="5" fill="#1f77b4"/><text x="288" y="346" font-size="10">Material</text>

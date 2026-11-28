@@ -251,7 +251,10 @@ def _column_order(blocks, width):
 
 
 def _pdf_pages_pymupdf(path):
-    import fitz  # PyMuPDF
+    try:
+        import pymupdf as fitz  # PyMuPDF >= 1.24
+    except ImportError:
+        import fitz  # PyMuPDF
     doc = fitz.open(path)
     if doc.needs_pass:
         raise PermissionError("PDF is encrypted")
@@ -269,10 +272,10 @@ def _pdf_pages_pdftotext(path):
     exe = shutil.which("pdftotext")
     if not exe:
         raise RuntimeError("pdftotext not available")
-    p = subprocess.run([exe, "-enc", "UTF-8", "-bbox-layout", path, "-"], capture_output=True, timeout=180)
+    p = subprocess.run([exe, "-q", "-enc", "UTF-8", "-bbox-layout", path, "-"], capture_output=True, timeout=180)
     if p.returncode != 0:
         msg = p.stderr.decode("utf-8", "replace")
-        if re.search(r"incorrect password|encrypted", msg, re.I):
+        if re.search(r"Incorrect password", msg, re.I):
             raise PermissionError("PDF is encrypted")
         raise RuntimeError(msg[:200] or "pdftotext failed")
     root = ET.fromstring(p.stdout.decode("utf-8", "replace"))
@@ -355,8 +358,11 @@ def pdf_paragraphs(path, src):
                 sec, in_refs = t, False
                 continue
             if in_refs:
-                dropped += 1
-                continue
+                if re.match(r"^(?:appendix|supplementary)\b", t, re.I):
+                    in_refs, sec = False, t
+                else:
+                    dropped += 1
+                    continue
             # paragraph split by a column or page break: join when the previous block is unfinished
             if out and not out[-1]["text"].endswith(END_PUNCT) and t[:1].islower():
                 out[-1]["text"] += " " + t
@@ -423,7 +429,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", default="/input")
     ap.add_argument("--work", default="/app/work")
-    a = ap.parse_args()
+    a = ap.parse_known_args()[0]
     root, files = find_files(a.input)
     cdir = os.path.join(a.work, "corpus")
     os.makedirs(cdir, exist_ok=True)

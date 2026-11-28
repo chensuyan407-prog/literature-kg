@@ -1026,7 +1026,7 @@
    ]
   },
   {
-   "id": "C:Mechanism:interactions",
+   "id": "C:Mechanism:pipi-interactions",
    "type": "Mechanism",
    "label": "π–π interactions",
    "aliases": [
@@ -2844,7 +2844,7 @@
    ]
   },
   {
-   "id": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+   "id": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
    "type": "Measurement",
    "label": "Σ(COOH+OH) HA 5.00 → HA-rGO 5.47 mmol/g",
    "aliases": [],
@@ -2876,7 +2876,7 @@
     }
    ],
    "match_keys": [
-    "Measurement|paper-B|σcooh+ohha500→hargo547mmolg"
+    "Measurement|paper-B|sigmacooh+ohha500→hargo547mmolg"
    ]
   },
   {
@@ -3366,7 +3366,7 @@
    ]
   },
   {
-   "id": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
+   "id": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
    "type": "Conclusion",
    "label": "H-bonding and π–π contributions to phenol adsorption are plausible, not directly demonstrated (paper B)",
    "aliases": [],
@@ -4961,10 +4961,10 @@
    "needs_review": false
   },
   {
-   "id": "R:94f2af36f0",
+   "id": "R:4469eea123",
    "source": "paper-A:Sample:magnetically-modified-graphene-oxide-com",
    "predicate": "INVOLVES",
-   "target": "C:Mechanism:interactions",
+   "target": "C:Mechanism:pipi-interactions",
    "source_id": "paper-A",
    "strength": "direct",
    "attribution": "author",
@@ -5491,10 +5491,10 @@
    "needs_review": false
   },
   {
-   "id": "R:c3615510ca",
+   "id": "R:5ec18c0e84",
    "source": "paper-B:Sample:humic-acid-reduced-graphene-oxide-compos",
    "predicate": "HAS_RESULT",
-   "target": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+   "target": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
    "source_id": "paper-B",
    "strength": "direct",
    "attribution": "author",
@@ -5516,8 +5516,8 @@
    "needs_review": false
   },
   {
-   "id": "R:7bb75c0227",
-   "source": "paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
+   "id": "R:d02dc77849",
+   "source": "paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g",
    "predicate": "MEASURED_BY",
    "target": "C:Method:functional-group-titrimetric-analysis",
    "source_id": "paper-B",
@@ -6200,10 +6200,10 @@
    "needs_review": false
   },
   {
-   "id": "R:b3b6109d60",
+   "id": "R:6ef1c181b6",
    "source": "paper-B:Conclusion:hargo-composite-forms-mainly-through-non",
    "predicate": "INVOLVES",
-   "target": "C:Mechanism:interactions",
+   "target": "C:Mechanism:pipi-interactions",
    "source_id": "paper-B",
    "strength": "hedged",
    "attribution": "author",
@@ -6275,10 +6275,10 @@
    "needs_review": false
   },
   {
-   "id": "R:44944ed1b0",
+   "id": "R:4fc67016ad",
    "source": "paper-B:Measurement:langmuir-qm-phenol-hargo-7-10-rgo-6-02-h",
    "predicate": "ATTRIBUTED_TO",
-   "target": "C:Mechanism:interactions",
+   "target": "C:Mechanism:pipi-interactions",
    "source_id": "paper-B",
    "strength": "hedged",
    "attribution": "author",
@@ -6300,10 +6300,10 @@
    "needs_review": false
   },
   {
-   "id": "R:6ca7e73ccf",
-   "source": "paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad",
+   "id": "R:3fab2701d7",
+   "source": "paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen",
    "predicate": "INVOLVES",
-   "target": "C:Mechanism:interactions",
+   "target": "C:Mechanism:pipi-interactions",
    "source_id": "paper-B",
    "strength": "hedged",
    "attribution": "author",

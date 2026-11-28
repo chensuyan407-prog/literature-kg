@@ -192,20 +192,24 @@ def main():
     evidence_index = [{"item": e["id"], "kind": "edge", "source_id": ev["source_id"], "paragraph_id": ev["paragraph_id"], "quote": ev["quote"], "match": ev.get("match")}
                       for e in g.get("edges", []) for ev in e["evidence"][:1]]
     cid = case["case_id"] if ("case_id" in case and case["case_id"] is not None) else (case["id"] if ("id" in case and case["id"] is not None) else (ing.get("case_id") if ing.get("case_id") is not None else os.path.basename(os.path.abspath(a.input))))
+    nodes_out = [{k: n.get(k) for k in ("id", "type", "label", "aliases", "scope", "sources", "attributes", "definitions")} |
+                 {"evidence": [{k: ev.get(k) for k in ("source_id", "paragraph_id", "quote", "match")} for ev in n.get("evidence", [])[:3]]} for n in g.get("nodes", [])]
+    edges_out = [{k: e.get(k) for k in ("id", "source", "predicate", "target", "source_id", "conditions", "strength", "attribution", "polarity", "needs_review", "flags", "note")} |
+                 {"evidence": [{k: ev.get(k) for k in ("source_id", "paragraph_id", "quote", "match")} for ev in e.get("evidence", [])[:3]]} for e in g.get("edges", [])]
+    status_reason = "; ".join(problems) if problems else "all steps completed"
     result = {
         "case_id": cid,
         "status": status,
+        "status_reason": status_reason,
         "status_detail": problems or ["all steps completed"],
         "skill": {"name": "literature-kg", "version": VERSION},
         "inputs": {"files": ing.get("files", []), "ingest_status": ing.get("status"), "ingest_warnings": ing.get("warnings", [])},
         "sources": [{k: s.get(k) for k in ("source_id", "doi", "title", "authors", "license", "sha256", "role", "paragraph_count")} for s in srcs],
         "graph": {"file": "graph/graph.json", "formats": ["graph/graph.json", "graph/nodes.csv", "graph/edges.csv", "graph/evidence.csv", "graph/graph.graphml",
                                                          "graph/graph.mmd", "graph/graph.dot", "graph/graph.html", "graph/graph.svg", "graph/graph.png"],
-                  "stats": g.get("stats", {})},
-        "nodes": [{k: n.get(k) for k in ("id", "type", "label", "aliases", "scope", "sources", "attributes", "definitions")} |
-                  {"evidence": [{k: ev.get(k) for k in ("source_id", "paragraph_id", "quote", "match")} for ev in n.get("evidence", [])[:3]]} for n in g.get("nodes", [])],
-        "edges": [{k: e.get(k) for k in ("id", "source", "predicate", "target", "source_id", "conditions", "strength", "attribution", "polarity", "needs_review", "flags", "note")} |
-                  {"evidence": [{k: ev.get(k) for k in ("source_id", "paragraph_id", "quote", "match")} for ev in e.get("evidence", [])[:3]]} for e in g.get("edges", [])],
+                  "stats": g.get("stats", {}), "nodes": nodes_out, "edges": edges_out},
+        "nodes": nodes_out,
+        "edges": edges_out,
         "queries": [{k: q.get(k) for k in ("id", "question", "op", "args", "predicate", "source", "status", "reason", "notes", "edges", "uncertain", "related_conflicts", "per_concept", "not_merged")} |
                     {"nodes": [n["id"] for n in q.get("nodes", [])]} for q in queries],
         "alignment": {"merges": g.get("merge_log", []), "not_merged": [c for c in g.get("conflicts", []) if c.get("decision") == "not_merged"],
@@ -229,6 +233,9 @@ def main():
         if not k:
             continue
         want = _want_type(spec)
+        if k == "uncertainty":
+            mapping[k] = k
+            continue
         if k in result and result[k] is not None:
             if k not in CORE_FIELDS:
                 result[k] = _coerce_val(result[k], want)
@@ -245,9 +252,11 @@ def main():
         else:
             result[k] = None
             mapping[k] = None
-            result["uncertainty"].append(f"output_contract field '{k}' could not be filled from the graph; left null (fill via work/contract_fill.json)")
+            uncertainty.append(f"output_contract field '{k}' could not be filled from the graph; left null (fill via work/contract_fill.json)")
             if k in req_fields:
                 problems.append(f"required output_contract field '{k}' is null")
+    if "uncertainty" in schema:
+        result["uncertainty"] = _coerce_val(uncertainty, _want_type(schema["uncertainty"]))
     for k, v in fill.items():
         if k not in CORE_FIELDS:
             result.setdefault(k, _coerce_val(v, _want_type(schema.get(k))) if k in schema else v)
@@ -298,9 +307,20 @@ def safe_main():
             case = read_json(os.path.join(a.input, "case.json"), {}) or {}
         except Exception:  # noqa: BLE001
             pass
-        write_json(os.path.join(a.out, "result.json"), {"case_id": case.get("case_id"), "status": "failed",
-                   "status_detail": [f"run_all crashed: {type(e).__name__}: {e}"], "traceback": traceback.format_exc()[-4000:],
-                   "manual_takeover": f"inspect {a.work}/graph/graph.json and {a.work}/extract/*.json; rerun scripts individually"})
+        err_msg = f"run_all crashed: {type(e).__name__}: {e}"
+        fallback = {
+            "case_id": case.get("case_id") or case.get("id"),
+            "status": "failed",
+            "status_reason": err_msg,
+            "status_detail": [err_msg],
+            "traceback": traceback.format_exc()[-4000:],
+            "manual_takeover": f"inspect {a.work}/graph/graph.json and {a.work}/extract/*.json; rerun scripts individually",
+        }
+        contract = case.get("output_contract") or case.get("output_fields") or case.get("schema") or case.get("deliverables") or {}
+        for k in contract_schema(contract):
+            if k and k not in fallback:
+                fallback[k] = None
+        write_json(os.path.join(a.out, "result.json"), fallback)
         print("run_all: CRASH", e)
         return 3
 

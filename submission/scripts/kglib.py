@@ -156,7 +156,7 @@ def _longest_common_run(a, b):
     return best
 
 
-GREEK = {"α": "alpha", "β": "beta", "γ": "gamma", "δ": "delta", "μ": "mu", "λ": "lambda", "π": "pi", "σ": "sigma", "θ": "theta"}
+GREEK = {"α": "alpha", "β": "beta", "γ": "gamma", "δ": "delta", "Δ": "delta", "μ": "mu", "λ": "lambda", "π": "pi", "σ": "sigma", "Σ": "sigma", "θ": "theta", "Ω": "omega"}
 
 
 def name_key(name):
@@ -185,7 +185,10 @@ def is_abbrev(name):
 
 
 def slug(s, n=40):
-    k = re.sub(r"[^0-9a-z]+", "-", unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower()).strip("-")
+    t = unicodedata.normalize("NFKC", s or "")
+    for g, w in GREEK.items():
+        t = t.replace(g, w)
+    k = re.sub(r"[^0-9a-z]+", "-", unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode().lower()).strip("-")
     return (k[:n].strip("-") or "x") + ("" if k else "-" + short_hash(s, n=6))
 
 

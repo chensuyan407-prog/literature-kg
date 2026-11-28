@@ -35,8 +35,8 @@ node,C:Metric:pseudo-second-order-rate-constant,paper-A,p-0025,exact,k 2 (g/mg·
 node,C:Metric:capacity-retention-rate,paper-A,p-0015,exact,The capacity retention rate was calculated by comparing the q e of each cycle to the initial adsorption capacity.
 node,C:Mechanism:hydrogen-bonding,paper-A,p-0010,exact,promoting recovery through hydrogen bonding and π–π interactions
 node,C:Mechanism:hydrogen-bonding,paper-B,p-0005,exact,including hydrogen bonding and π–π interactions between aromatic fragments
-node,C:Mechanism:interactions,paper-A,p-0010,exact,promoting recovery through hydrogen bonding and π–π interactions
-node,C:Mechanism:interactions,paper-B,p-0082,exact,One of the most probable interaction types is π–π stacking between the aromatic fragments of humic acid
+node,C:Mechanism:pipi-interactions,paper-A,p-0010,exact,promoting recovery through hydrogen bonding and π–π interactions
+node,C:Mechanism:pipi-interactions,paper-B,p-0082,exact,One of the most probable interaction types is π–π stacking between the aromatic fragments of humic acid
 node,C:Material:activated-carbon,paper-A,p-0003,exact,Conventional adsorbents such as activated carbon (AC) are widely employed
 node,C:Mechanism:chemisorption,paper-A,p-0059,exact,This confirms that the adsorption rate is governed by chemical interactions (chemisorption).
 node,C:Mechanism:steric-hindrance,paper-A,p-0060,exact,which causes significant steric hindrance during diffusion into the 4.12 nm mesoporous framework
@@ -92,7 +92,7 @@ node,paper-B:Condition:kinetics-at-initial-phenol-7-5-mg-dm3,paper-B,p-0031,exac
 node,paper-B:Measurement:carbon-content-ha-47-34-ha-rgo-55-61-wt,paper-B,p-0001,exact,The incorporation of rGO increased the carbon content from 47.34 to 55.61 wt.%
 node,C:Material:humic-acid,paper-B,p-0002,exact,Humic acids (HA) are natural high-molecular-weight organic compounds
 node,paper-B:Measurement:oxygen-content-ha-48-31-ha-rgo-40-79-wt,paper-B,p-0001,exact,decreased the oxygen content from 48.31 to 40.79 wt.%
-node,paper-B:Measurement:cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g,paper-B,p-0001,exact,the total content of carboxyl and phenolic hydroxyl groups increased from 5.00 to 5.47 mmol/g
+node,paper-B:Measurement:sigma-cooh-oh-ha-5-00-ha-rgo-5-47-mmol-g,paper-B,p-0001,exact,the total content of carboxyl and phenolic hydroxyl groups increased from 5.00 to 5.47 mmol/g
 node,paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m,paper-B,p-0036,exact,The calculated atomic O/C ratio for the initial humic acid is 0.77
 node,paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m,paper-B,p-0037,exact,"For the HA-rGO composite, the O/C ratio decreases to 0.73."
 node,paper-B:Measurement:o-c-ratio-ha-0-77-rgo-0-36-ha-rgo-0-73-m,paper-B,p-0036,exact,this value is expectedly lower (0.36)
@@ -110,7 +110,7 @@ node,paper-B:Conclusion:hargo-composite-forms-mainly-through-non,paper-B,p-0087,
 node,paper-B:Conclusion:rgo-incorporation-improves-thermal-stabi,paper-B,p-0061,exact,the incorporation of reduced graphene oxide substantially improves the thermal stability of humic acid
 node,paper-B:Conclusion:pso-pfo-fits-are-empirical-and-do-not-es,paper-B,p-0100,exact,"do not, by themselves, establish the chemical nature of adsorption or identify a unique rate-controlling mechanism"
 node,paper-B:Conclusion:langmuir-fit-is-a-mathematical-descripti,paper-B,p-0095,exact,the model fit should be regarded primarily as a mathematical description of the equilibrium data and not as direct proof of a strictly homogeneous monolayer adsorption mechanism
-node,paper-B:Conclusion:h-bonding-and-contributions-to-phenol-ad,paper-B,p-0104,exact,Hydrogen bonding and π–π interactions are therefore considered plausible contributions rather than directly demonstrated elementary mechanisms.
+node,paper-B:Conclusion:h-bonding-and-pipi-contributions-to-phen,paper-B,p-0104,exact,Hydrogen bonding and π–π interactions are therefore considered plausible contributions rather than directly demonstrated elementary mechanisms.
 node,paper-B:Conclusion:results-are-a-preliminary-demonstration,paper-B,p-0103,exact,the present results should be regarded as a preliminary demonstration of enhanced phenol interaction rather than evidence of superiority over existing adsorbents
 node,C:Material:phenol,paper-B,p-0010,exact,its adsorption behavior toward phenol as a model aromatic pollutant
 node,C:Method:ultrasonic-treatment,paper-B,p-0015,exact,The composite was synthesized by ultrasonic treatment in an aqueous medium.
@@ -175,7 +175,7 @@ edge,R:665966f364,paper-A,p-0065,exact,which may facilitate supplementary hydrog
 edge,R:44b16954f5,paper-A,p-0040,exact,its exceptional adsorption capacity (q max = 334.45 mg/g for lactic acid) confirms that the adsorption performance is governed by the synergistic effect of pore accessibility and surface chemistry rather than surface area alone
 edge,R:e14fb1b98d,paper-A,p-0040,exact,which directly underscores that surface area is not the primary determinant of efficiency in these systems
 edge,R:b113e63e89,paper-A,p-0069,exact,"While the Langmuir model demonstrated excellent agreement (R 2 > 0.95), suggesting predominantly monolayer adsorption on a homogeneous distribution of active sites"
-edge,R:94f2af36f0,paper-A,p-0041,exact,which facilitate specific hydrogen bonding and π–π interactions that are absent in the purely physical framework of the AC reference
+edge,R:4469eea123,paper-A,p-0041,exact,which facilitate specific hydrogen bonding and π–π interactions that are absent in the purely physical framework of the AC reference
 edge,R:f6b5a17c10,paper-A,p-0041,exact,which facilitate specific hydrogen bonding and π–π interactions that are absent in the purely physical framework of the AC reference
 edge,R:dbac516b91,paper-A,p-0038,exact,"Unlike activated carbon, graphene oxide possesses a layered graphitic framework rich in oxygen-containing functional groups"
 edge,R:2fe738ca1d,paper-A,p-0060,exact,The lowest k 2 value observed for citric acid (0.0019 g/mg·min) is quantitatively consistent with its bulky tricarboxylic structure
@@ -196,8 +196,8 @@ edge,R:4e1ef8e791,paper-B,p-0020,exact,The content of oxygen-containing function
 edge,R:55a4fca013,paper-B,p-0035,exact,"The carbon content increases to 55.61 wt.%, whereas the oxygen content decreases to 40.79 wt.%."
 edge,R:2422d31bad,paper-B,p-0018,exact,"The contents of carbon, hydrogen, and oxygen were calculated according to the standard procedures provided by the instrument software."
 edge,R:72db0db2f6,paper-B,p-0035,exact,"The carbon content increases to 55.61 wt.%, whereas the oxygen content decreases to 40.79 wt.%."
-edge,R:c3615510ca,paper-B,p-0038,exact,the HA-rGO composite shows an increase in Σ(COOH + OH) to 5.47 mmol/g compared with the initial humic acid (5.00 mmol/g)
-edge,R:7bb75c0227,paper-B,p-0020,exact,the total content of carboxyl and phenolic hydroxyl groups was determined by treating the samples with barium hydroxide solution
+edge,R:5ec18c0e84,paper-B,p-0038,exact,the HA-rGO composite shows an increase in Σ(COOH + OH) to 5.47 mmol/g compared with the initial humic acid (5.00 mmol/g)
+edge,R:d02dc77849,paper-B,p-0020,exact,the total content of carboxyl and phenolic hydroxyl groups was determined by treating the samples with barium hydroxide solution
 edge,R:10d8b47ec4,paper-B,p-0037,exact,"For the HA-rGO composite, the O/C ratio decreases to 0.73."
 edge,R:7a50df097f,paper-B,p-0036,exact,The calculated atomic O/C ratio for the initial humic acid is 0.77
 edge,R:b3509e8b17,paper-B,p-0058,exact,"The residual mass of the initial humic acid is 59.21%, whereas that of the HA-rGO composite increases to 70.03%."
@@ -223,10 +223,10 @@ edge,R:2cfa5e2574,paper-B,p-0099,exact,The pseudo-first-order model exhibited a 
 edge,R:4f584d488e,paper-B,p-0031,exact,Kinetic experiments were performed at an initial phenol concentration of 7.5 mg/dm3.
 edge,R:e4b8301c5e,paper-B,p-0100,exact,These models should be regarded as empirical descriptions of the adsorption-rate data
 edge,R:34b3eca17d,paper-B,p-0081,exact,This suggests that composite formation occurs mainly through non-covalent interactions between the components.
-edge,R:b3b6109d60,paper-B,p-0087,exact,including π–π stacking of aromatic structures and hydrogen bonding between the functional groups of the components
+edge,R:6ef1c181b6,paper-B,p-0087,exact,including π–π stacking of aromatic structures and hydrogen bonding between the functional groups of the components
 edge,R:e745caf967,paper-B,p-0087,exact,including π–π stacking of aromatic structures and hydrogen bonding between the functional groups of the components
 edge,R:387b947927,paper-B,p-0090,exact,"Carboxyl, phenolic, and hydroxyl groups present in humic acid may participate in hydrogen bonding with phenol molecules"
-edge,R:44944ed1b0,paper-B,p-0090,exact,the graphene-like aromatic domains of rGO may promote π–π interactions with the aromatic ring of phenol
-edge,R:6ca7e73ccf,paper-B,p-0104,exact,Hydrogen bonding and π–π interactions are therefore considered plausible contributions
+edge,R:4fc67016ad,paper-B,p-0090,exact,the graphene-like aromatic domains of rGO may promote π–π interactions with the aromatic ring of phenol
+edge,R:3fab2701d7,paper-B,p-0104,exact,Hydrogen bonding and π–π interactions are therefore considered plausible contributions
 edge,R:19e8333da3,paper-B,p-0103,exact,The adsorption capacity of HA–rGO is lower than the values reported for some highly porous graphene-based adsorbents [49].
 edge,R:313959db79,paper-B,p-0034,exact,These results indicate substantial removal of oxygen-containing groups compared with graphene oxide
